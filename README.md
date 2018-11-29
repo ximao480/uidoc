@@ -1,2 +1,2 @@
-# iview-doc
-Doc of iView
+# burgeon-ui-doc
+Doc of burgeon-ui
