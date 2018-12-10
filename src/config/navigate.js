@@ -44,32 +44,32 @@ const list = {
             titleEn: 'Global Options',
             path: '/docs/guide/global'
         },
-        {
-            title: '国际化',
-            titleEn: 'Internationalization',
-            path: '/docs/guide/i18n'
-        },
+        // {
+        //     title: '国际化',
+        //     titleEn: 'Internationalization',
+        //     path: '/docs/guide/i18n'
+        // },
         {
             title: '定制主题',
             titleEn: 'Customize Theme',
             path: '/docs/guide/theme'
         },
-        {
-            title: 'iView Loader',
-            titleEn: 'iView Loader',
-            path: '/docs/guide/iview-loader'
-        },
+        // {
+        //     title: 'burgeon-ui Loader',
+        //     titleEn: 'burgeon-ui Loader',
+        //     path: '/docs/guide/burgeon-ui-loader'
+        // },
         // {
         //     title: '概览',
         //     titleEn: 'Overview',
         //     path: '/overview'
         // },
-        {
-            title: '在 Nuxt.js 中使用',
-            titleEn: 'Using in Nuxt.js',
-            path: 'https://dev.iviewui.com/articles/1024499044308881408',
-            target: '_blank'
-        },
+        // {
+        //     title: '在 Nuxt.js 中使用',
+        //     titleEn: 'Using in Nuxt.js',
+        //     path: 'https://dev.iviewui.com/articles/1024499044308881408',
+        //     target: '_blank'
+        // },
         {
             title: '更新日志',
             titleEn: 'Change Log',

@@ -1,5 +1,6 @@
 <style scoped>
     @import "../styles/common.css";
+    @import '../styles/theme/common/article.less';
     .icon-loading{
         position: fixed;
         top: 10px;
@@ -213,10 +214,10 @@
         },
         mounted () {
             this.handleUpdateSettings();
-            this.getAdList(1);
-            this.getAdList(2);
-            this.getAdList(3);
-            this.getAdList(4);
+            // this.getAdList(1);
+            // this.getAdList(2);
+            // this.getAdList(3);
+            // this.getAdList(4);
         }
     }
 </script>

@@ -205,20 +205,20 @@ const routers = [
         },
         component: (resolve) => require(['./views/guide/global-en.vue'], resolve)
     },
-    {
-        path: '/docs/guide/i18n',
-        meta: {
-            title: '国际化'
-        },
-        component: (resolve) => require(['./views/guide/i18n.vue'], resolve)
-    },
-    {
-        path: '/docs/guide/i18n-en',
-        meta: {
-            title: 'Internationalization'
-        },
-        component: (resolve) => require(['./views/guide/i18n-en.vue'], resolve)
-    },
+    // {
+    //     path: '/docs/guide/i18n',
+    //     meta: {
+    //         title: '国际化'
+    //     },
+    //     component: (resolve) => require(['./views/guide/i18n.vue'], resolve)
+    // },
+    // {
+    //     path: '/docs/guide/i18n-en',
+    //     meta: {
+    //         title: 'Internationalization'
+    //     },
+    //     component: (resolve) => require(['./views/guide/i18n-en.vue'], resolve)
+    // },
     {
         path: '/docs/guide/theme',
         meta: {
@@ -233,20 +233,20 @@ const routers = [
         },
         component: (resolve) => require(['./views/guide/theme-en.vue'], resolve)
     },
-    {
-        path: '/docs/guide/iview-loader',
-        meta: {
-            title: 'iView Loader'
-        },
-        component: (resolve) => require(['./views/guide/iview-loader.vue'], resolve)
-    },
-    {
-        path: '/docs/guide/iview-loader-en',
-        meta: {
-            title: 'iView Loader'
-        },
-        component: (resolve) => require(['./views/guide/iview-loader-en.vue'], resolve)
-    },
+    // {
+    //     path: '/docs/guide/burgeon-ui-loader',
+    //     meta: {
+    //         title: 'burgeon-ui Loader'
+    //     },
+    //     component: (resolve) => require(['./views/guide/burgeon-ui-loader.vue'], resolve)
+    // },
+    // {
+    //     path: '/docs/guide/burgeon-ui-loader-en',
+    //     meta: {
+    //         title: 'burgeon-ui Loader'
+    //     },
+    //     component: (resolve) => require(['./views/guide/burgeon-ui-loader-en.vue'], resolve)
+    // },
     {
         path: '/docs/guide/update',
         meta: {
