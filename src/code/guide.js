@@ -8,7 +8,7 @@ let loader = {};
 let global = {};
 
 introduce.install = `
-$ npm install iview --save
+$ npm install burgeon-ui --save
 `;
 
 introduce.script= `
@@ -80,11 +80,12 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from 'components/app.vue';
 import Routers from './router.js';
-import iView from 'iview';
-import 'iview/dist/styles/iview.css';
+import BurgeonUi from 'burgeon-ui';
+import 'burgeon-ui/dist/styles/burgeon-ui.css';
+//支持根据不同主题引入对应的主题文件
 
 Vue.use(VueRouter);
-Vue.use(iView);
+Vue.use(BurgeonUi);
 
 // The routing configuration
 const RouterConfig = {
@@ -100,7 +101,7 @@ new Vue({
 `;
 
 install.need = `
-import { Button, Table } from 'iview';
+import { Button, Table } from 'burgeon-ui';
 Vue.component('Button', Button);
 Vue.component('Table', Table);
 `;
@@ -120,7 +121,7 @@ npm install babel-plugin-import --save-dev
 // .babelrc
 {
   "plugins": [["import", {
-    "libraryName": "iview",
+    "libraryName": "burgeon-ui",
     "libraryDirectory": "src/components"
   }]]
 }
@@ -243,7 +244,7 @@ i18n.cdnvuei18n = `
 
 
 theme.less = `
-@import '~iview/src/styles/index.less';
+@import '~burgeon-ui/src/styles/index.less';
 
 // Here are the variables to cover, such as:
 @primary-color: #8c0776;
@@ -251,10 +252,10 @@ theme.less = `
 
 theme.lessImport = `
 import Vue from 'vue';
-import iView from 'iview';
+import BurgeonUi from 'burgeon-ui';
 import '../my-theme/index.less';
 
-Vue.use(iView);
+Vue.use(BurgeonUi);
 `;
 
 theme.install = `
@@ -390,7 +391,7 @@ loader.tags = `
 `;
 
 global.example = `
-Vue.use(iView, {
+Vue.use(BurgeonUi, {
     transfer: true,
     size: 'large'
 });

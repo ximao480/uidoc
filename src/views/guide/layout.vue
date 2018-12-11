@@ -651,13 +651,12 @@
     import Demo from '../../components/demo.vue';
     import Code from '../../code/layout';
     import inAnchor from '../../components/anchor.vue';
-
     export default {
         components: {
             iArticle,
             iCode,
             Demo,
-            inAnchor
+            inAnchor,
         },
         data () {
             return {

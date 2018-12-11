@@ -15,10 +15,11 @@ import zhLocale from 'burgeon-ui/dist/locale/zh-CN';
 // import enLocale from 'iview/dist/locale/en-US';
 import Env from './config/env';
 import bus from './components/bus';
-import 'burgeon-ui/dist/styles/burgeon-UI.css';
+import 'burgeon-ui/dist/styles/burgeon-theme.css';
 // import 'iview/dist/styles/iview.css';
-// import './styles/theme-christmas/index.less';
+// import './styles/theme/index.less';
 
+//广告界面
 import ad from './components/ad.vue';
 
 Vue.use(VueRouter);

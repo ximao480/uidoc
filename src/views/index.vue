@@ -32,9 +32,9 @@
                 </i-col>
             </row>
         </div>
-        <div class="index-bg-footer">
+        <!-- <div class="index-bg-footer">
             <img src="../images/bg-index-footer.png">
-        </div>
+        </div> -->
         <!-- <div class="index-extra">
             <Select size="small" value="3" style="width: 60px;margin: 0 10px;" @on-change="handleVersion">
                 <Option value="3">3.x</Option>
@@ -94,9 +94,7 @@
                 this.search = '';
                 this.$refs.select.setQuery('');
                 this.$nextTick(() => {
-                    setTimeout(() => {
-                        this.$router.push(path);
-                    }, 300);
+                    this.$router.push(path);
                 });
             },
         },

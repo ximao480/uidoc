@@ -1,7 +1,7 @@
 {
-  "name": "iview-doc",
+  "name": "burgeon-ui-doc",
   "version": "2.14.3",
-  "description": "Doc of iView",
+  "description": "Doc of burgeon-ui",
   "main": "index.js",
   "scripts": {
     "init": "webpack --progress --config webpack.dev.config.js",
@@ -10,8 +10,7 @@
     "local": "webpack --progress --hide-modules --config webpack.local.config.js"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/iview/iview-doc"
+    "type": "git"
   },
   "author": "Aresn",
   "license": "MIT",

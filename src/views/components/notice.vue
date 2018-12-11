@@ -193,6 +193,7 @@
         },
         methods: {
             open (nodesc) {
+                console.log(this.$Notice)
                 this.$Notice.open({
                     title: '这是通知标题',
                     desc: nodesc ? '' : '这里是通知描述这里,是通知描述这里是通知描述这里,是通知描述这里,是通知描述这里是通知描述这里是通知描述'
