@@ -119,7 +119,7 @@
                     </div>
                     <i-code lang="html" slot="code">{{ code.highlight }}</i-code>
                 </Demo>
-                <Demo title="多选" vertical hide-code>
+                <Demo title="复选框" vertical hide-code>
                     <div slot="demo">
                         <Table border ref="selection" :columns="columns4" :data="data1"></Table>
                         <br>
