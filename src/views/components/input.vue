@@ -325,6 +325,12 @@
                             <td>String</td>
                             <td>soft</td>
                         </tr>
+                        <tr>
+                            <td>regx</td>
+                            <td>正则表达式</td>
+                            <td>正则表达式的类型</td>
+                            <td>无</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Input events" h3></inAnchor>
@@ -340,47 +346,52 @@
                         <tr>
                             <td>on-enter</td>
                             <td>按下回车键时触发</td>
-                            <td>无</td>
+                            <td>event和input组件实例this</td>
                         </tr>
                         <tr>
                             <td>on-click</td>
                             <td>设置 icon 属性后，点击图标时触发</td>
-                            <td>无</td>
+                            <td>event和input组件实例this</td>
                         </tr>
                         <tr>
                             <td>on-change</td>
                             <td>数据改变时触发</td>
-                            <td>event</td>
+                            <td>event和input组件实例this</td>
                         </tr>
                         <tr>
                             <td>on-focus</td>
                             <td>输入框聚焦时触发</td>
-                            <td>无</td>
+                            <td>event和input组件实例this</td>
                         </tr>
                         <tr>
                             <td>on-blur</td>
                             <td>输入框失去焦点时触发</td>
-                            <td>无</td>
+                            <td>event和input组件实例this</td>
                         </tr>
                         <tr>
                             <td>on-keyup</td>
                             <td>原生的 keyup 事件</td>
-                            <td>event</td>
+                            <td>event和input组件实例this</td>
                         </tr>
                         <tr>
                             <td>on-keydown</td>
                             <td>原生的 keydown 事件</td>
-                            <td>event</td>
+                            <td>event和input组件实例this</td>
                         </tr>
                         <tr>
                             <td>on-keypress</td>
                             <td>原生的 keypress 事件</td>
-                            <td>event</td>
+                            <td>event和input组件实例this</td>
                         </tr>
                         <tr>
                             <td>on-search</td>
                             <td>开启 search 时可用，点击搜索或按下回车键时触发</td>
-                            <td>value</td>
+                            <td>value和input组件实例this</td>
+                        </tr>
+                        <tr>
+                            <td>on-regx-check</td>
+                            <td>添加正则后，校验出错的时候触发</td>
+                            <td>正确的值value和input组件实例this和错误的值errorValue</td>
                         </tr>
                     </tbody>
                 </table>
