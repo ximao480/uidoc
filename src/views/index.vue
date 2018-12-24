@@ -92,7 +92,7 @@
             handleSearch (path) {
                 if (this.lang === 'en-US') path += '-en';
                 this.search = '';
-                this.$refs.select.setQuery('');
+                this.$refs.select.setQuery(null);
                 this.$nextTick(() => {
                     this.$router.push(path);
                 });

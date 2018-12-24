@@ -72,7 +72,7 @@ install.demo = `
 `;
 
 install.install = `
-$ npm install iview --save
+$ npm install burgeon-ui --save
 `;
 
 install.import = `

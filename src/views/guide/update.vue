@@ -22,9 +22,8 @@
 <template>
     <i-article>
         <h1>更新日志</h1>
-        <article class="doc-update">
-            暂无更新内容
-            <!-- <Timeline pending>
+        <article class="doc-update" v-if='false'>
+            <Timeline pending>
                 <TimelineItem>
                     <inAnchor title="3.1.3" h2></inAnchor>
                     <p>
@@ -283,7 +282,7 @@
                 <Timeline-item>
                     <Button size="large" @click="handleBefore">查看 2.x 版本的日志</Button>
                 </Timeline-item>
-            </Timeline> -->
+            </Timeline>
         </article>
     </i-article>
 </template>

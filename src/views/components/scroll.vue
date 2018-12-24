@@ -7,8 +7,8 @@
             <h1>Scroll 无限滚动</h1>
             <inAnchor title="概述" h2></inAnchor>
             <p>常用于滚动至底部时，触发加载更多数据。</p>
-            <inAnchor title="代码示例" h2></inAnchor>
-            <Demo title="底部触发">
+            <inAnchor title="滚动代码示例" h2></inAnchor>
+            <Demo title="底部触发 ">
                 <div slot="demo">
                     <Scroll :on-reach-bottom="handleReachBottom">
                         <Card dis-hover v-for="(item, index) in list1" :key="index" style="margin: 32px 0">

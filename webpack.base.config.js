@@ -92,6 +92,9 @@ module.exports = {
             }
         ]
     },
+    devServer:{
+        host:'172.18.34.111'
+    },
     resolve: {
         extensions: ['.js', '.vue'],
         alias: {
