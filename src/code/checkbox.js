@@ -3,6 +3,7 @@ let code = {};
 code.single = `
 <template>
     <Checkbox v-model="single">Checkbox</Checkbox>
+    <Checkbox v-model="single" circle>Checkbox</Checkbox>
 </template>
 <script>
     export default {

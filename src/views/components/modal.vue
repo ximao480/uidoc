@@ -186,7 +186,7 @@
             </Demo>
 
             <inAnchor title="实例化使用方法" h3></inAnchor>
-            <p>除了上述通过标准组件的使用方法，iView 还精心封装了一些实例方法，用来创建一次性的轻量级对话框。</p>
+            <p>除了上述通过标准组件的使用方法，burgeon-ui 还精心封装了一些实例方法，用来创建一次性的轻量级对话框。</p>
             <p>实例以隐式创建 Vue 组件的方式在全局创建一个对话框，并在消失时移除，所以同时只能操作一个对话框。</p>
             <Demo title="基本用法">
                 <div slot="demo">
@@ -194,9 +194,13 @@
                     <Button @click="instance('success')">成功</Button>
                     <Button @click="instance('warning')">警告</Button>
                     <Button @click="instance('error')">错误</Button>
+                    <Button @click="instance('fcSuccess')">fc模式成功</Button>
+                    <Button @click="instance('fcError')">fc模式错误</Button>
+                    <Button @click="instance('fcWarning')">fc模式警告</Button>
+                    <Button @click="instance('posMessage')">pos消息提示</Button>
                 </div>
                 <div slot="desc">
-                    <p>四种基本的对话框，只提供一个确定按钮。</p>
+                    <p>八种基本的对话框，默认只提供一个确定按钮。</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.baseInstance }}</i-code>
             </Demo>
@@ -226,6 +230,15 @@
                     <p><study-render></study-render></p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
+            </Demo>
+            <Demo title="属性测试实例">
+                <div slot="demo">
+                    <Button @click="propsTest">标准</Button>
+                </div>
+                <div slot="desc">
+                    <p>对各个属性使用方法</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.propsTest }}</i-code>
             </Demo>
 
             <ad></ad>
@@ -425,6 +438,18 @@
                     <li>
                         <code>this.$Modal.confirm(config)</code>
                     </li>
+                    <li>
+                        <code>this.$Modal.fcSuccess(config)</code>
+                    </li>
+                    <li>
+                        <code>this.$Modal.fcError(config)</code>
+                    </li>
+                    <li>
+                        <code>this.$Modal.fcWarning(config)</code>
+                    </li>
+                    <li>
+                        <code>this.$Modal.posMessage(config)</code>
+                    </li>
                 </ul>
                 <p>以上方法隐式地创建及维护Vue组件。参数 config 为对象，具体说明如下：</p>
                 <table>
@@ -444,9 +469,21 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>titleAlign</td>
+                            <td>控制title的显示位置</td>
+                            <td>String|目前支持left,center</td>
+                            <td>left</td>
+                        </tr>
+                        <tr>
                             <td>content</td>
                             <td>内容</td>
                             <td>String | Element String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>iconClass</td>
+                            <td>控制消息提示图标显示,只在<code>Modal.info(),Modal.success(),Modal.warning(),Modal.error()</code>下有效</td>
+                            <td>String</td>
                             <td>-</td>
                         </tr>
                         <tr>
@@ -468,10 +505,46 @@
                             <td>确定</td>
                         </tr>
                         <tr>
+                            <td>showCancel</td>
+                            <td>控制取消按钮是否显示</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>cancelText</td>
-                            <td>取消按钮的文字，只在<code>Modal.confirm()</code>下有效</td>
+                            <td>取消按钮的文字</td>
                             <td>String</td>
                             <td>取消</td>
+                        </tr>
+                        <tr>
+                            <td>okType</td>
+                            <td>确定按钮显示类型</td>
+                            <td>String</td>
+                            <td>posdefault</td>
+                        </tr>
+                        <tr>
+                            <td>cancelType</td>
+                            <td>取消按钮显示类型,只在<code>showCancel</code>为<code>true</code>时有效</td>
+                            <td>String</td>
+                            <td>fcdefault</td>
+                        </tr>
+                        <tr>
+                            <td>mask</td>
+                            <td>是否显示蒙层</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>draggable</td>
+                            <td>是否可以拖拽移动</td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td>footerRender</td>
+                            <td>按钮底部自定义内容，使用后不再限制类型，按钮配置也无效。<study-render></study-render></td>
+                            <td>Function</td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td>loading</td>
@@ -600,6 +673,30 @@
                             content: content
                         });
                         break;
+                    case 'fcSuccess':
+                        this.$Modal.fcSuccess({
+                            title: title,
+                            content: content
+                        });
+                        break;
+                    case 'fcError':
+                        this.$Modal.fcError({
+                            title: title,
+                            content: content
+                        });
+                        break;
+                    case 'fcWarning':
+                        this.$Modal.fcWarning({
+                            title: title,
+                            content: content
+                        });
+                        break;
+                    case 'posMessage':
+                        this.$Modal.posMessage({
+                            title: title,
+                            content: content
+                        });
+                        break;
                 }
             },
             confirm () {
@@ -651,6 +748,16 @@
                             }
                         })
                     }
+                })
+            },
+            propsTest () {
+                this.$Modal.info({
+                    title:'提示',
+                    content:'<p>一些对话框内容</p><p>一些对话框内容</p>',
+                    cancelType:true,
+                    titleAlign:'left',
+                    mask:true,
+                    draggable:true
                 })
             }
         }

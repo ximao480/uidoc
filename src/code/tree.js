@@ -132,6 +132,46 @@ code.lazy = `
 </script>
 `;
 
+code.nodeInteraction = `
+<template>
+    <Tree :data="data3" :nodeInteraction='false' show-checkbox></Tree>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                data3: [
+                    {
+                        title: 'parent',
+                        loading: false,
+                        children: []
+                    }
+                ]
+            }
+        },
+        methods: {
+            loadData (item, callback) {
+                setTimeout(() => {
+                    const data = [
+                        {
+                            title: 'children',
+                            loading: false,
+                            children: []
+                        },
+                        {
+                            title: 'children',
+                            loading: false,
+                            children: []
+                        }
+                    ];
+                    callback(data);
+                }, 1000);
+            }
+        }
+    }
+</script>
+`
+
 code.more = `
 <template>
     <Tree :data="data4" show-checkbox multiple></Tree>

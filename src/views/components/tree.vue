@@ -34,6 +34,16 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.lazy }}</i-code>
             </Demo>
+            <Demo title="取消父子节点联动">
+                <div slot="demo">
+                    <Tree :data="data6" :nodeInteraction='false' show-checkbox></Tree>
+                </div>
+                <div slot="desc">
+                    <p>使用 <code>nodeInteraction</code> 属性可以控制父子节点的联动。</p>
+                    <p><code>nodeInteraction</code> 字段为<code>true</code>，则父子节点在选中时联动触发,否则父子节点不存在联动关系。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.nodeInteraction }}</i-code>
+            </Demo>
             <Demo title="默认展开、选中、勾选和禁用">
                 <div slot="demo">
                     <Tree :data="data4" show-checkbox multiple></Tree>
@@ -119,6 +129,12 @@
                             <td>定义子节点键</td>
                             <td>String</td>
                             <td>children</td>
+                        </tr>
+                        <tr>
+                            <td>nodeInteraction</td>
+                            <td>定义父子节点之间是否存在状态联动</td>
+                            <td>Boolean</td>
+                            <td>true</td>
                         </tr>
                     </tbody>
                 </table>
@@ -261,6 +277,38 @@
             return {
                 code: Code,
                 data1: [
+                    {
+                        title: 'parent 1',
+                        expand: true,
+                        children: [
+                            {
+                                title: 'parent 1-1',
+                                expand: true,
+                                children: [
+                                    {
+                                        title: 'leaf 1-1-1'
+                                    },
+                                    {
+                                        title: 'leaf 1-1-2'
+                                    }
+                                ]
+                            },
+                            {
+                                title: 'parent 1-2',
+                                expand: true,
+                                children: [
+                                    {
+                                        title: 'leaf 1-2-1'
+                                    },
+                                    {
+                                        title: 'leaf 1-2-1'
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                data6: [
                     {
                         title: 'parent 1',
                         expand: true,

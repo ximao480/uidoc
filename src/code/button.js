@@ -3,6 +3,8 @@ let code = {};
 code.type = `
 <template>
     <Button>Default</Button>
+    <Button type="fcdefault">fcdefault</Button>
+    <Button type="posdefault">posdefault</Button>
     <Button type="primary">Primary</Button>
     <Button type="dashed">Dashed</Button>
     <Button type="text">Text</Button>

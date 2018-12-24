@@ -207,17 +207,21 @@ code.position = `
 
 code.baseInstance = `
 <template>
-    <Button @click="instance('info')">Info</Button>
-    <Button @click="instance('success')">Success</Button>
-    <Button @click="instance('warning')">Warning</Button>
-    <Button @click="instance('error')">Error</Button>
+    <Button @click="instance('info')">消息</Button>
+    <Button @click="instance('success')">成功</Button>
+    <Button @click="instance('warning')">警告</Button>
+    <Button @click="instance('error')">错误</Button>
+    <Button @click="instance('fcSuccess')">fc模式成功</Button>
+    <Button @click="instance('fcError')">fc模式错误</Button>
+    <Button @click="instance('fcWarning')">fc模式警告</Button>
+    <Button @click="instance('posMessage')">pos消息提示</Button>
 </template>
 <script>
     export default {
         methods: {
             instance (type) {
-                const title = 'Title';
-                const content = '<p>Content of dialog</p><p>Content of dialog</p>';
+                const title = '对话框的标题';
+                const content = '<p>一些对话框内容</p><p>一些对话框内容</p>';
                 switch (type) {
                     case 'info':
                         this.$Modal.info({
@@ -239,6 +243,30 @@ code.baseInstance = `
                         break;
                     case 'error':
                         this.$Modal.error({
+                            title: title,
+                            content: content
+                        });
+                        break;
+                    case 'fcSuccess':
+                        this.$Modal.fcSuccess({
+                            title: title,
+                            content: content
+                        });
+                        break;
+                    case 'fcError':
+                        this.$Modal.fcError({
+                            title: title,
+                            content: content
+                        });
+                        break;
+                    case 'fcWarning':
+                        this.$Modal.fcWarning({
+                            title: title,
+                            content: content
+                        });
+                        break;
+                    case 'posMessage':
+                        this.$Modal.posMessage({
                             title: title,
                             content: content
                         });
@@ -372,6 +400,28 @@ code.draggable = `
             return {
                 modal12: false,
                 modal13: false
+            }
+        }
+    }
+</script>
+`;
+
+code.propsTest = `
+<template>
+    <Button @click="propsTest">Normal</Button>
+</template>
+<script>
+    export default {
+        methods: {
+            propsTest () {
+                this.$Modal.info({
+                    title:'提示',
+                    content:'<p>一些对话框内容</p><p>一些对话框内容</p>',
+                    cancelType:true,
+                    titleAlign:'left',
+                    mask:true,
+                    draggable:true
+                })
             }
         }
     }

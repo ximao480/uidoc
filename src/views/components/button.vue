@@ -8,6 +8,8 @@
             <Demo title="按钮类型">
                 <div slot="demo">
                     <Button>Default</Button>
+                    <Button type="fcdefault">fcdefault</Button>
+                    <Button type="posdefault">posdefault</Button>
                     <Button type="primary">Primary</Button>
                     <Button type="dashed">Dashed</Button>
                     <Button type="text">Text</Button>
@@ -19,7 +21,7 @@
                 </div>
                 <div slot="desc">
                     <p>按钮类型有：默认按钮、主按钮、虚线按钮、文字按钮以及四种颜色按钮。</p>
-                    <p>通过设置<code>type</code>为<code>primary</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
+                    <p>通过设置<code>type</code>为<code>fcdefault</code>、<code>posdefault</code>、<code>primary</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
@@ -291,7 +293,7 @@
                     <tbody>
                         <tr>
                             <td>type</td>
-                            <td>按钮类型，可选值为 <code>default</code>、<code>primary</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>或者不设置</td>
+                            <td>按钮类型，可选值为 <code>default</code>、<code>fcdefault</code>、<code>posdefault</code>、<code>primary</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>或者不设置</td>
                             <td>String</td>
                             <td>default</td>
                         </tr>

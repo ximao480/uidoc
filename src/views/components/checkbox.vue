@@ -13,6 +13,7 @@
             <Demo title="单独使用">
                 <div slot="demo">
                     <Checkbox v-model="single">Checkbox</Checkbox>
+                    <Checkbox v-model="single" circle>Checkbox</Checkbox>
                     <p class="demo-data">{{ single }}</p>
                 </div>
                 <div slot="desc">
@@ -168,6 +169,12 @@
                             <td>false-value</td>
                             <td>没有选中时的值，当使用类似 1 和 0 来判断是否选中时会很有用</td>
                             <td>String, Number, Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>circle</td>
+                            <td>支持checkout样式为radio样式</td>
+                            <td>Boolean</td>
                             <td>false</td>
                         </tr>
                     </tbody>

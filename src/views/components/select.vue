@@ -123,6 +123,9 @@
                     <p class="demo-data">{{ model10 }}</p>
                     <Select v-model="model10" multiple style="width:260px">
                         <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
+                    </Select><br></br>
+                    <Select v-model="model10" multiple multipleType style="width:260px">
+                        <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
                     </Select>
                 </div>
                 <div slot="desc">
@@ -209,6 +212,12 @@
                         <tr>
                             <td>multiple</td>
                             <td>是否支持多选</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>multipleType</td>
+                            <td>多选情况下的样式控制,只在multiple为true有效</td>
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
