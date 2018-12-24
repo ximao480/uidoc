@@ -93,9 +93,10 @@
                 if (this.lang === 'en-US') path += '-en';
                 this.search = '';
                 this.$refs.select.setQuery(null);
-                this.$nextTick(() => {
-                    this.$router.push(path);
-                });
+                this.$router.push(path);  //谢世华修改
+                // this.$nextTick(() => {
+                //     this.$router.push(path);
+                // });
             },
         },
         mounted () {

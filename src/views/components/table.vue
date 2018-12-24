@@ -657,7 +657,7 @@
                         <tr>
                             <td>indexMethod</td>
                             <td>type 为 index 时可用，自定义序号</td>
-                            <td>Function，参数 row 为当前行内容</td>
+                            <td>Function，参数 row 为当前行内容,length为表格当前页数据总行</td>
                             <td>-</td>
                         </tr>
                         <tr>
