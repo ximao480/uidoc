@@ -426,6 +426,18 @@ const list = {
             ]
         },
         {
+            type: 'fcComponents',
+            title: 'FC组件',
+            list: [
+                {
+                    title: 'FkrpSelect 下拉选择',
+                    path: '/components/fkrp-select',
+                    iconfont: 'iconfont',
+                    icon: 'iconfont icon-bj_xldx'
+                }
+            ]
+        },
+        {
             type: 'Other',
             title: '其它',
             list: [
