@@ -857,6 +857,13 @@ const routers = [
         component: (resolve) => require(['./views/components/circle.vue'], resolve)
     },
     {
+        path: '/components/fkrp-select',
+        meta: {
+            title: 'FkrpSelect 下拉选择'
+        },
+        component: (resolve) => require(['./views/components/fkrp-select.vue'], resolve)
+    },
+    {
         path: '/components/circle-en',
         meta: {
             title: 'Circle'
