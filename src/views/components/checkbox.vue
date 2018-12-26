@@ -17,7 +17,7 @@
                     <p class="demo-data">{{ single }}</p>
                 </div>
                 <div slot="desc">
-                    <p>使用 v-model 可以双向绑定数据。</p>
+                    <p>使用 v-model 可以双向绑定数据。多选框支持不同样式展示。</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.single }}</i-code>
             </Demo>
