@@ -157,7 +157,7 @@
             <Demo title="全屏">
                 <div slot="demo">
                     <Button @click="modal11 = true">显示全屏对话框</Button>
-                    <Modal v-model="modal11" fullscreen title="全屏对话框">
+                    <Modal v-model="modal11" fullscreen :draggable='false' title="全屏对话框">
                         <div>这是一个全屏的对话框</div>
                     </Modal>
                 </div>
@@ -652,49 +652,58 @@
                     case 'info':
                         this.$Modal.info({
                             title: title,
-                            content: content
+                            content: content,
+                            draggable:false
                         });
                         break;
                     case 'success':
                         this.$Modal.success({
                             title: title,
-                            content: content
+                            content: content,
+                            draggable:false
+                            
                         });
                         break;
                     case 'warning':
                         this.$Modal.warning({
                             title: title,
-                            content: content
+                            content: content,
+                            draggable:false
                         });
                         break;
                     case 'error':
                         this.$Modal.error({
                             title: title,
-                            content: content
+                            content: content,
+                            draggable:false
                         });
                         break;
                     case 'fcSuccess':
                         this.$Modal.fcSuccess({
                             title: title,
-                            content: content
+                            content: content,
+                            draggable:false
                         });
                         break;
                     case 'fcError':
                         this.$Modal.fcError({
                             title: title,
-                            content: content
+                            content: content,
+                            draggable:false
                         });
                         break;
                     case 'fcWarning':
                         this.$Modal.fcWarning({
                             title: title,
-                            content: content
+                            content: content,
+                            draggable:false
                         });
                         break;
                     case 'posMessage':
                         this.$Modal.posMessage({
                             title: title,
-                            content: content
+                            content: content,
+                            draggable:false
                         });
                         break;
                 }

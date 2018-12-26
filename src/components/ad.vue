@@ -76,10 +76,11 @@
 </script>
 <style lang="less">
     .advertisement{
-        margin: 32px 0;
-        padding: 6px;
-        border: 1px solid #dcdee2;
-        border-radius: 6px;
+
+        // margin: 32px 0;
+        // padding: 6px;
+        // border: 1px solid #dcdee2;
+        // border-radius: 6px;
 
         &-main{
             position: relative;

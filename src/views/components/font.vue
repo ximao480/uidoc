@@ -11,7 +11,7 @@
         <article>
             <h1>Font 字体</h1>
             <inAnchor title="概述" h2></inAnchor>
-            <p>iView 的 CSS 对字体进行了统一规范，力求在不同平台、浏览器下能显示出其最佳的效果。我们推荐 <Icon type="logo-apple"></Icon> macOS（iOS）优先的策略，在不支持苹方字体的情况，使用备用字体。</p>
+            <p>burgeon-ui 的 CSS 对字体进行了统一规范，力求在不同平台、浏览器下能显示出其最佳的效果。我们推荐 <Icon type="logo-apple"></Icon> macOS（iOS）优先的策略，在不支持苹方字体的情况，使用备用字体。</p>
             <inAnchor title="字体预览" h3></inAnchor>
             <ul>
                 <li>中文字体</li>

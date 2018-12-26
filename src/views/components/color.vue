@@ -19,9 +19,9 @@
         <article>
             <h1>Color 色彩</h1>
             <inAnchor title="概述" h2></inAnchor>
-            <p>iView 推荐使用以下调色板的颜色作为设计和开发规范，以保证页面和组件之间的视觉一致。</p>
+            <p>burgeon-ui 推荐使用以下调色板的颜色作为设计和开发规范，以保证页面和组件之间的视觉一致。</p>
             <inAnchor title="主色" h3></inAnchor>
-            <p>iView 使用较为安全的蓝色作为主色调，其中 Light Primary 常用于 hover，Dark Primary 常用于 active。</p>
+            <p>burgeon-ui 使用较为安全的蓝色作为主色调，其中 Light Primary 常用于 hover，Dark Primary 常用于 active。</p>
             <Row :gutter="16">
                 <i-col span="8">
                     <Card :bordered="false" style="background:#2d8cf0">

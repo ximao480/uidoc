@@ -136,8 +136,9 @@
             <Demo title="信息预览抽屉">
                 <div slot="demo">
                     <Button @click="value4 = true" type="primary">View Profile</Button>
-                    <Drawer :closable="false" width="640" v-model="value4">
-                        <p :style="pStyle">User Profile</p>
+                    <Drawer :closable="false" width="900" v-model="value4">
+                        <iframe src="http://www.burgeon.cn/" width="100%" height="100%" scrolling='yes'></iframe>
+                        <!-- <p :style="pStyle">User Profile</p>
                         <p :style="pStyle">Personal</p>
                         <div class="demo-drawer-profile">
                             <Row>
@@ -200,7 +201,7 @@
                                     GitHub: <a href="https://github.com/iview/iview" target="_blank">https://github.com/iview/iview</a>
                                 </Col>
                             </Row>
-                        </div>
+                        </div> -->
                     </Drawer>
                 </div>
                 <div slot="desc">

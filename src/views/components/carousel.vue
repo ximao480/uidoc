@@ -63,16 +63,16 @@
                 <div slot="demo">
                     <Form :model="setting" :label-width="100">
                         <FormItem label="自动切换">
-                            <Switch v-model="setting.autoplay">
+                            <i-switch v-model="setting.autoplay">
                                 <span slot="open">开</span>
                                 <span slot="close">关</span>
-                            </Switch>
+                            </i-switch>
                         </FormItem>
                         <FormItem label="圆形指示器">
-                            <Switch v-model="setting.radiusDot">
+                            <i-switch v-model="setting.radiusDot">
                                 <span slot="open">开</span>
                                 <span slot="close">关</span>
-                            </Switch>
+                            </i-switch>
                         </FormItem>
                         <FormItem label="自动切换速度">
                             <Slider v-model="setting.autoplaySpeed" :min="300" :max="10000" :step="100"></Slider>
