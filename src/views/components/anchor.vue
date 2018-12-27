@@ -50,7 +50,7 @@
                 </Demo>
             </div>
 
-            <ad></ad>
+ 
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>

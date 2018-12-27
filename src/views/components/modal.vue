@@ -241,7 +241,7 @@
                 <i-code lang="html" slot="code">{{ code.propsTest }}</i-code>
             </Demo>
 
-            <ad></ad>
+           
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>

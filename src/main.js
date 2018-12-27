@@ -19,14 +19,13 @@ import 'burgeon-ui/dist/styles/burgeon-theme.css';
 // import 'iview/dist/styles/iview.css';
 // import './styles/theme/index.less';
 
-//广告界面
-import ad from './components/ad.vue';
+
 
 Vue.use(VueRouter);
 Vue.use(VueI18n);
 Vue.use(BurgeonUi);
 
-Vue.component('ad', ad);
+
 
 // 开启debug模式
 Vue.config.debug = true;

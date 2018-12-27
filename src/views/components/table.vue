@@ -32,7 +32,7 @@
                 <inAnchor title="概述" h2></inAnchor>
                 <p>主要用于展示大量结构化数据。</p>
                 <p>支持排序、筛选、分页、自定义操作、导出 csv 等复杂功能。</p>
-                <Alert show-icon style="margin-top: 16px">注意：非 template/render 模式下，需使用 <code>i-table</code>。</Alert>
+                <Alert show-icon style="margin-top: 16px">注意：需使用 <code>i-table</code>。</Alert>
                 <inAnchor title="代码示例" h2></inAnchor>
                 <Demo title="基础用法" vertical hide-code>
                     <div slot="demo">
@@ -246,7 +246,7 @@
                 <Button type="primary" size="large" @click="table2 = true">多列指标筛选的表格</Button>
                 <Button type="primary" size="large" @click="table3 = true">多种效果组合的表格</Button>
 
-                <ad></ad>
+
 
                 <div class="api">
                     <inAnchor title="API" h2></inAnchor>

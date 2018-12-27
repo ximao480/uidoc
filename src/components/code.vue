@@ -36,11 +36,11 @@
 <template>
     <div>
         <pre :class="{bg: bg}"><code :class="language" ref="code"><slot></slot></code></pre>
-        <span class="open-fiddle" v-if="title !== 'Code'" @click="openFiddle">
+        <!-- <span class="open-fiddle" v-if="title !== 'Code'" @click="openFiddle">
             <Tooltip :content="$t('index.code_jsfiddle')" placement="top" transfer>
                 <Icon type="md-code" size="18" />
             </Tooltip>
-        </span>
+        </span> -->
         <span class="scale" @click="scale">
             <Tooltip :content="$t('index.code_fullscreen')" placement="top" transfer>
                 <Icon type="md-qr-scanner" size="18"></Icon>

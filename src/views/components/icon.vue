@@ -340,7 +340,7 @@
         <article>
             <h1>Icon 图标</h1>
             <inAnchor title="概述" h2></inAnchor>
-            <p>iView 的图标使用开源项目<a href="http://ionicons.com/" target="_blank"><Icon type="ios-ionic"></Icon> ionicons</a> 3.x 版本。</p>
+            <p>burgeon-ui 的图标使用开源项目<a href="http://ionicons.com/" target="_blank"><Icon type="ios-ionic"></Icon> ionicons</a> 3.x 版本。和<a href="https://www.iconfont.cn/" target="_blank">Iconfont</a> </p>
             <inAnchor title="如何使用" h2></inAnchor>
             <p>使用<code>&lt;Icon /></code>组件，指定图标对应的<code>type</code>属性，示例代码：</p>
             <i-code lang="html" bg>{{ code.demo }}</i-code>
@@ -394,14 +394,14 @@
                     <Icon custom="i-icon i-icon-financial_fill" size="24" />
                 </div>
                 <div slot="desc">
-                    <p>iView 的 Icon 支持使用第三方自定义图标，你可以引入任意的字体文件库来使用。</p>
+                    <p>burgeon-ui 的 Icon 支持使用第三方自定义图标，你可以引入任意的字体文件库来使用。</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
 
-            <Alert show-icon>
+            <!-- <Alert show-icon>
                 <template slot="desc">iView 3 使用的是 ionicons 3.x 的图标，iView 2 使用的是 ionicons 2.x 的图标，如果是从 iView 2 升级至 iView 3，需要查找并修改使用过的图标名称，因为很多图标名称改变了。</template>
-            </Alert>
+            </Alert> -->
             <inAnchor title="所有图标" h2></inAnchor>
             <div class="icon-search">
                 <input

@@ -303,18 +303,18 @@ const list = {
                     img: 'rate.png',
                     icon: 'ios-star'
                 },
-                {
-                    title: 'Upload 上传',
-                    path: '/components/upload',
-                    img: 'upload.png',
-                    icon: 'ios-cloud-upload-outline'
-                },
-                {
-                    title: 'ColorPicker 颜色选择器',
-                    path: '/components/color-picker',
-                    img: 'color-picker.png',
-                    icon: 'ios-color-palette-outline'
-                },
+                // {
+                //     title: 'Upload 上传',
+                //     path: '/components/upload',
+                //     img: 'upload.png',
+                //     icon: 'ios-cloud-upload-outline'
+                // },
+                // {
+                //     title: 'ColorPicker 颜色选择器',
+                //     path: '/components/color-picker',
+                //     img: 'color-picker.png',
+                //     icon: 'ios-color-palette-outline'
+                // },
                 {
                     title: 'Form 表单',
                     path: '/components/form',

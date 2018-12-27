@@ -14,7 +14,7 @@
             <inAnchor title="概述" h2></inAnchor>
             <p>使用模拟的增强下拉选择器来代替浏览器原生的选择器。</p>
             <p>选择器支持单选、多选、搜索，以及键盘快捷操作。</p>
-            <Alert show-icon style="margin-top: 16px">注意：非 template/render 模式下，需使用 <code>i-select</code>、<code>i-option</code>。</Alert>
+            <Alert show-icon style="margin-top: 16px">注意：需使用 <code>i-select</code>、<code>i-option</code>。</Alert>
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo">
@@ -188,7 +188,7 @@
                 <i-code lang="html" slot="code">{{ code.remote }}</i-code>
             </Demo>
 
-            <ad></ad>
+       
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
