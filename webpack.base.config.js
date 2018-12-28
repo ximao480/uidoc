@@ -93,7 +93,7 @@ module.exports = {
         ]
     },
     devServer:{
-        host:'172.18.34.167'
+        host:'localhost'
     },
     resolve: {
         extensions: ['.js', '.vue'],
