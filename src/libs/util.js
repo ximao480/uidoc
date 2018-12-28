@@ -11,7 +11,6 @@ util.alert = function(content) {
 };
 
 util.title = function (title) {
-    console.log()
     title = title ? title + ' - Burgeon-Ui' : 'Burgeon-Ui - A high quality UI Toolkit based on Vue.js';
     window.document.title = title;
 };
