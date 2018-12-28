@@ -239,6 +239,12 @@
                     </thead>
                     <tbody>
                     <tr>
+                        <td>value</td>
+                        <td>绑定的值，可使用 v-model 双向绑定</td>
+                        <td>String</td>
+                        <td>空</td>
+                    </tr>
+                    <tr>
                         <td>on-fkrp-selected</td>
                         <td>选中的值时触发</td>
                         <td>value（是个数组包含ID和lable）和 FkrpSelect 组件实例this</td>
