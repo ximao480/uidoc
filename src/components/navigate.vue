@@ -40,7 +40,7 @@
                     <template v-else>{{ item.titleEn }}</template>
                 </template>
                 <template v-if="item.title === '更新日志'">
-                    <Badge :dot="showDot">
+                    <Badge :dot="false">
                         <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
                         <template v-else>{{ item.titleEn }}</template>
                     </Badge>

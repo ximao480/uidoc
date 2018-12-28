@@ -26,7 +26,8 @@ config.plugins = (config.plugins || []).concat([
     new HtmlWebpackPlugin({
         filename: './index.html',
         template: './src/template/index.ejs',
-        inject: false
+        inject: false,
+        favicon:'./src/images/logo.ico'
     })
 ]);
 
