@@ -95,6 +95,12 @@
                     </thead>
                     <tbody>
                     <tr>
+                        <td>value</td>
+                        <td>绑定的值，可使用 v-model 双向绑定</td>
+                        <td>String</td>
+                        <td>空</td>
+                    </tr>
+                    <tr>
                         <td>single</td>
                         <td>是否是单选，可选值为 <code>true</code>、<code>false</code></td>
                         <td>Boolean</td>
