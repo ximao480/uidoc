@@ -184,7 +184,7 @@
                 <i-code lang="html" slot="code">{{ code.format }}</i-code>
             </Demo>
 
- 
+
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
@@ -291,7 +291,7 @@
                         </tr>
                         <tr>
                             <td>number</td>
-                            <td>将用户的输入转换为 Number 类型</td>
+                            <td>将用户的输入转换为 Number 类型。在有正则的时候：1）该输入框为空的时候，值为空字符串。2）input方法不可用。</td>
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
