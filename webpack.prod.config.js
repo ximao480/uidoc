@@ -20,9 +20,9 @@ function  assetsPath (_path) {
     return path.posix.join('chunk/', _path)
   }
 
-  
+
 config.output.filename = assetsPath('js/[name].[chunkhash:8].js');                 // 带hash值的入口js名称
-config.output.chunkFilename =chunkPath('[name].[hash].chunk.js');      // 带hash值的路由js名称  '[name].[hash].chunk.js'
+config.output.chunkFilename ='[name].[hash].chunk.js';      // 带hash值的路由js名称  '[name].[hash].chunk.js'
 
 
 config.plugins = (config.plugins || []).concat([
@@ -33,7 +33,7 @@ config.plugins = (config.plugins || []).concat([
     }),
     new webpack.optimize.CommonsChunkPlugin({
         name: 'vendors',
-        filename: assetsPath('js/vendors.[hash].js')   //'vendors.[hash].js'
+        filename: 'vendors.[hash].js'   //'vendors.[hash].js'
     }),
     new webpack.DefinePlugin({
         'process.env': {

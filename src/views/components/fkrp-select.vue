@@ -79,8 +79,6 @@
                 <i-code lang="html" slot="code">{{ code.fkrp_select_multiple1 }}</i-code>
             </Demo>
 
-            <ad></ad>
-
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
                 <inAnchor title="FkrpSelect props" h3></inAnchor>
