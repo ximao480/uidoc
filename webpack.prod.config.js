@@ -22,12 +22,12 @@ function  assetsPath (_path) {
 
 
 config.output.filename = assetsPath('js/[name].[chunkhash:8].js');                 // 带hash值的入口js名称
-config.output.chunkFilename ='[name].[hash].chunk.js';      // 带hash值的路由js名称  '[name].[hash].chunk.js'
+config.output.chunkFilename =chunkPath('[name].[hash].chunk.js');      // 带hash值的路由js名称  '[name].[hash].chunk.js'
 
 
 config.plugins = (config.plugins || []).concat([
     new ExtractTextPlugin({
-        filename: assetsPath('[name].[hash].css'),  //'[name].[hash].css'
+        filename: '[name].[hash].css',  //'[name].[hash].css'
         disable: false,
         allChunks: true
     }),
@@ -48,7 +48,8 @@ config.plugins = (config.plugins || []).concat([
     new HtmlWebpackPlugin({
         filename: './index.html',
         template: './src/template/index.ejs',
-        inject: false
+        inject: false,
+        favicon:'./src/images/logo.ico'
     })
 ]);
 
