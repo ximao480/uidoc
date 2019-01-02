@@ -9,7 +9,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var fs = require('fs');
 
-config.output.publicPath = path.join('./dist/');
+config.output.publicPath = path.join('');
 config.output.filename = '[name].[hash].js';                 // 带hash值的入口js名称
 config.output.chunkFilename = '[name].[hash].chunk.js';      // 带hash值的路由js名称
 
@@ -29,15 +29,19 @@ config.plugins = (config.plugins || []).concat([
         }
     }),
     // 压缩文件
-    new webpack.optimize.UglifyJsPlugin({
-        compress: {
-            warnings: false
-        }
-    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //     compress: {
+    //         warnings: false
+    //     }
+    // }),
     new HtmlWebpackPlugin({
-        filename: '../index_prod.html',
+        filename: './index.html',
         template: './src/template/index.ejs',
-        inject: false
+        inject: false,
+        minify: { //压缩HTML文件
+            removeComments: true, //移除HTML中的注释
+            collapseWhitespace: false //删除空白符与换行符
+        }
     })
 ]);
 
