@@ -4,6 +4,7 @@
 const path=require('path');
 var webpack = require('webpack');
 var config = require('./webpack.base.config');
+const uglify = require('uglifyjs-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var fs = require('fs');
@@ -40,6 +41,7 @@ config.plugins = (config.plugins || []).concat([
             NODE_ENV: '"production"'
         }
     }),
+    new uglify(),
     // new webpack.optimize.UglifyJsPlugin({
     //     compress: {
     //         warnings: false

@@ -118,12 +118,12 @@ code.search = `
                         title: '话题',
                         children: [
                             {
-                                title: 'iView',
+                                title: 'burgeon-ui',
                                 count: 10000,
 
                             },
                             {
-                                title: 'iView UI',
+                                title: 'burgeon-ui',
                                 count: 10600,
 
                             }
@@ -133,12 +133,12 @@ code.search = `
                         title: '问题',
                         children: [
                             {
-                                title: 'iView UI 有多好',
+                                title: 'burgeon-ui 有多好',
                                 count: 60100,
 
                             },
                             {
-                                title: 'iView 是啥',
+                                title: 'burgeon-ui 是啥',
                                 count: 30010,
 
                             }
@@ -148,7 +148,7 @@ code.search = `
                         title: '文章',
                         children: [
                             {
-                                title: 'iView 是一个设计语言',
+                                title: 'burgeon-ui 是一个设计语言',
                                 count: 100000,
 
                             }
