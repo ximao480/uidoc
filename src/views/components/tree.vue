@@ -66,7 +66,7 @@
                         <li><strong>node</strong> &lt;Object&gt;：当前节点</li>
                         <li><strong>data</strong> &lt;Object&gt;：当前节点的数据</li>
                     </ul>
-                    <p>通过合理地使用 root、node 和 data 可以实现各种效果，其中，iView 给每个节点都设置了一个 <code>nodeKey</code> 字段，用来标识节点的 id。</p>
+                    <p>通过合理地使用 root、node 和 data 可以实现各种效果，其中，burgeon-ui 给每个节点都设置了一个 <code>nodeKey</code> 字段，用来标识节点的 id。</p>
                     <p>Render 函数分两种，一种是给当前树的每个节点都设置同样的渲染内容，此 render 通过 Tree 组件的属性 <code>render</code> 传递；另一种是单独给某个节点设置，在该节点的 <code>render</code> 字段内设置；同时设置时，会优先使用当前节点的 Render 函数。</p>
                     <p><study-render></study-render></p>
                 </div>

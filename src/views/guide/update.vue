@@ -147,7 +147,7 @@
                     <br>
                     <h3>全局配置</h3>
                     <ul>
-                        <li>使用 iView 时，可以进行全局配置组件的一些属性，例如：</li>
+                        <li>使用 burgeon-ui 时，可以进行全局配置组件的一些属性，例如：</li>
                         <i-code lang="auto" bg>{{ code.global.example }}</i-code>
                         目前只支持配置 transfer 和 size 两个属性。组件会优先使用 prop 设置的属性，如果未设置，再使用全局配置。
                     </ul>

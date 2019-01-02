@@ -99,13 +99,13 @@
                     <tbody>
                         <tr>
                             <td>color</td>
-                            <td>进度条的颜色，默认为 iView 主色</td>
+                            <td>进度条的颜色，默认为 burgeon-ui 主色</td>
                             <td>String</td>
                             <td>primary</td>
                         </tr>
                         <tr>
                             <td>failedColor</td>
-                            <td>失败时的进度条颜色，默认为 iView 主色</td>
+                            <td>失败时的进度条颜色，默认为 burgeon-ui 主色</td>
                             <td>String</td>
                             <td>error</td>
                         </tr>

@@ -2,16 +2,16 @@ let code = {};
 
 code.router = `
 // 部分代码省略
-import iView from 'iview';
-Vue.use(iView);
+import BurgeonUI from 'burgeon-ui';
+Vue.use(BurgeonUI);
 
 router.beforeEach((to, from, next) => {
-    iView.LoadingBar.start();
+    BurgeonUI.LoadingBar.start();
     next();
 });
 
 router.afterEach(route => {
-    iView.LoadingBar.finish();
+    BurgeonUI.LoadingBar.finish();
 });
 `;
 
