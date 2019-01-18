@@ -353,10 +353,15 @@
                                     <li><code>column</code>：当前列的数据</li>
                                     <li><code>rowIndex</code>：当前行数据</li>
                                     <li><code>columnIndex</code>：当列的索引</li>
+                                    <li><code>函数返回值</code>： ' return {
+                                        rowspan:[1,0,1,0,0], //向下合并
+                                        colspan:[0,0,0,1,1]  /向上合并
+                                        }; '</li>
+
                                 </ul>
                             </td>
-                            <td></td>
-                            <td>-</td>
+                            <td>1 表示显示 ，0 表示合并;函数必须有返回值  </td>
+                            <td>Function</td>
                         </tr>
                         <tr>
                             <td>size</td>

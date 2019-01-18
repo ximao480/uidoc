@@ -434,7 +434,13 @@ const list = {
                     path: '/components/fkrp-select',
                     iconfont: 'iconfont',
                     icon: 'iconfont icon-bj_xldx'
-                }
+                },
+              {
+                title: 'FkrpPoptip 气泡',
+                path: '/components/fkrp-poptip',
+                iconfont: 'iconfont',
+                icon: 'iconfont icon-bj_more'
+              }
             ]
         },
         {

@@ -541,6 +541,13 @@ const routers = [
         },
         component: (resolve) => require(['./views/components/fkrp-select.vue'], resolve)
     },
+   {
+     path: '/components/fkrp-poptip',
+     meta: {
+      title: 'FkrpPoptip 气泡'
+     },
+     component: (resolve) => require(['./views/components/fkrp-poptip.vue'], resolve)
+   },
     {
         path: '/components/affix',
         meta: {
