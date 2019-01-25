@@ -93,7 +93,7 @@
             },
             handleStart () {
                 this.$router.push('/docs/guide/install');
-                window.cancelAnimationFrame(window.drawFrame)
+                
             },
             handleGithub () {
                 window.open('https://github.com/iview/iview');

@@ -23,13 +23,17 @@
         },
         data () {
             return {
-
+                drawFrame:''
             };
         },
         methods: {
 
         },
+        destroyed () {
+            window.cancelAnimationFrame(this.drawFrame)
+        },
         mounted () {
+            let self = this
             const id = this.cid;
             var canvas = document.getElementById(id);
             var context = canvas.getContext("2d");
@@ -119,7 +123,7 @@
             
 
             (function drawFrame(){
-                window.drawFrame = window.requestAnimationFrame(drawFrame);
+                self.drawFrame = window.requestAnimationFrame(drawFrame);
                 context.clearRect(0, 0, W, H);
 
                 for (var i = 0; i < word.placement.length; i++){
