@@ -30,7 +30,7 @@
                 <i-col span="24">
                     <h2>
                         <canvasText key="canvas1" cid="canvas1" content="新年快乐" v-show="index % 2 !== 0"></canvasText>
-                        <canvasText key="canvas2" cid="canvas2" content="iView UI"
+                        <canvasText key="canvas2" cid="canvas2" content="BurgeonUi"
                                     v-show="index % 2 === 0"></canvasText>
                     </h2>
                     <div class="list">
@@ -39,9 +39,9 @@
                             <template v-if="lang === 'zh-CN'">开始使用</template>
                             <template v-else>Getting Started</template>
                         </Button>
-                        <Button size="large" shape="circle" type="success" style="min-width: 130px" icon="social-github"
+                        <!-- <Button size="large" shape="circle" type="success" style="min-width: 130px" icon="social-github"
                                 @click="handleGithub">GitHub
-                        </Button>
+                        </Button> -->
                     </div>
                 </i-col>
             </Row>

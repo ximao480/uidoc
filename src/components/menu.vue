@@ -11,10 +11,10 @@
     <Menu mode="horizontal" :active-name="currentActiveKey" @on-select="handleSelect">
         <div class="wrapper-header-nav">
             <router-link to="/" class="wrapper-header-nav-logo">
-                <img src="../images/burgeon.png">
+                <img src="../../themelogo/New Year.png">
             </router-link>
             <ApplicationMenu></ApplicationMenu>
-            <!-- <div class="wrapper-header-nav-search">
+            <div class="wrapper-header-nav-search">
                 <i-select
                     ref="select"
                     v-model="search"
@@ -27,7 +27,7 @@
                         <template v-else>{{ item.title.split(' ')[0] }}</template>
                     </i-option>
                 </i-select>
-            </div> -->
+            </div>
             <div class="wrapper-header-nav-list">
                 <!-- <Menu-item name="guide" :to="handleGoToMenu('/docs/guide/introduce')">
                     {{ $t('index.guide') }}
@@ -128,7 +128,7 @@
             handleSearch (path) {
                 if (this.lang === 'en-US') path += '-en';
                 this.search = '';
-                this.$refs.select.setQuery('');
+                this.$refs.select.setQuery(null);
                 this.$nextTick(() => {
                     setTimeout(() => {
                         this.$router.push(path);

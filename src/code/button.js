@@ -286,7 +286,7 @@ code.link = `
 <template>
     <Button to="/components/icon-en">Normal</Button>
     <Button to="/components/icon-en" replace>No history</Button>
-    <Button to="//iviewui.com" target="_blank">New window</Button>
+    <Button to="http://www.burgeon.cn/" target="_blank">New window</Button>
 </template>
 <script>
     export default {

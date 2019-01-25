@@ -2,7 +2,7 @@ let code = {};
 
 code.base = `
 <template>
-    <Switch v-model="switch1" @on-change="change" />
+    <i-switch v-model="switch1" @on-change="change" />
 </template>
 <script>
     export default {
@@ -22,9 +22,9 @@ code.base = `
 
 code.size = `
 <template>
-    <Switch size="large" />
-    <Switch />
-    <Switch size="small" />
+    <i-switch size="large" />
+    <i-switch />
+    <i-switch size="small" />
 </template>
 <script>
     export default {
@@ -35,23 +35,23 @@ code.size = `
 
 code.custom = `
 <template>
-    <Switch>
+    <i-switch>
         <span slot="open">开</span>
         <span slot="close">关</span>
-    </Switch>
-    <Switch>
+    </i-switch>
+    <i-switch>
         <Icon type="md-checkmark" slot="open"></Icon>
         <Icon type="md-close" slot="close"></Icon>
-    </Switch>
+    </i-switch>
     <br><br>
-    <Switch size="large">
+    <i-switch size="large">
         <span slot="open">开启</span>
         <span slot="close">关闭</span>
-    </Switch>
-    <Switch size="large">
+    </i-switch>
+    <i-switch size="large">
         <span slot="open">ON</span>
         <span slot="close">OFF</span>
-    </Switch>
+    </i-switch>
 </template>
 <script>
     export default {
@@ -62,7 +62,7 @@ code.custom = `
 
 code.disabled = `
 <template>
-    <Switch :disabled="disabled" />
+    <i-switch :disabled="disabled" />
     <Button type="primary" @click="disabled = !disabled">Toggle Disabled</Button>
 </template>
 <script>
@@ -78,8 +78,8 @@ code.disabled = `
 
 code.loading = `
 <template>
-    <Switch loading :value="true" />
-    <Switch loading :value="false" size="small" />
+    <i-switch loading :value="true" />
+    <i-switch loading :value="false" size="small" />
 </template>
 <script>
     export default {

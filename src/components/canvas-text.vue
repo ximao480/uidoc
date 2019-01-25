@@ -14,7 +14,7 @@
             },
             width: {
                 type: Number,
-                default: 800
+                default: 900
             },
             height: {
                 type: Number,
@@ -37,8 +37,8 @@
                 H = canvas.height,
                 gridX = 7,
                 gridY = 7,
-                colors = ['#ffffff', '#fffb8f', '#eaff8f', '#91d5ff', '#ffadd2', '#d3adf7'],
-            durVal = 0.1;
+                colors = ['#A090F3', '#FFD8BD', '#93F4A1', '#FFFFFF', '#FDAFF7', '#FF82A4'],
+                durVal = 0.1;
 
             // 粒子
             function Particle(x, y){
@@ -91,7 +91,7 @@
             }
             Shape.prototype.getValue = function(){
                 context.textAlign = "center";
-                context.font = this.size+"px arial";
+                context.font = this.size+"px Microsoft YaHei";
                 context.fillText(this.text, this.x, this.y);
 
                 // 复制画布上指定矩形的像素数据
@@ -111,9 +111,12 @@
             }
 
             // 创建模型数据对象
-            var word = new Shape(this.content, 200, W/2, H/2);
+            var word = new Shape(this.content, 170, W/2, H/2);
             // 调用getValue方法，获取数据位置信息
-            word.getValue();
+            if(word.getValue){
+                word.getValue()
+            }
+            
 
             (function drawFrame(){
                 window.requestAnimationFrame(drawFrame);

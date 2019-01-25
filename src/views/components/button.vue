@@ -266,7 +266,7 @@
                 <div slot="demo">
                     <Button to="/components/icon">普通跳转</Button>
                     <Button to="/components/icon" replace>不保存历史的跳转</Button>
-                    <Button to="//iviewui.com" target="_blank">新窗口打开</Button>
+                    <Button to="http://www.burgeon.cn/" target="_blank">新窗口打开</Button>
                 </div>
                 <div slot="desc">
                     <p>通过设置 <code>to</code> 可以实现点击按钮直接跳转，支持传入 vue-router 对象。</p>
