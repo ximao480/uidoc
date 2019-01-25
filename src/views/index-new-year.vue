@@ -47,12 +47,12 @@
             </Row>
         </div>
         <canvas id="indexLizi"></canvas>
-        <div class="index-lang">
+        <!-- <div class="index-lang">
             <span @click="handleChangeLang">
                 <template v-if="lang === 'zh-CN'">EN</template>
                 <template v-else>中文</template>
             </span>
-        </div>
+        </div> -->
         <!--<div class="index-logo-new-year">-->
         <!--<img src="../images/logo-doc-2018.png">-->
         <!--</div>-->
@@ -93,6 +93,7 @@
             },
             handleStart () {
                 this.$router.push('/docs/guide/install');
+                
             },
             handleGithub () {
                 window.open('https://github.com/iview/iview');
