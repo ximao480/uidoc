@@ -22,7 +22,7 @@
 <template>
     <i-article>
         <h1>更新日志</h1>
-        <article class="doc-update" v-if='false'>
+        <article class="doc-update" >
             <Timeline pending>
                 <TimelineItem>
                     <inAnchor title="0.1.31" h2></inAnchor>
