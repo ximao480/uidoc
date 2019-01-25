@@ -15,7 +15,7 @@ import zhLocale from 'burgeon-ui/dist/locale/zh-CN';
 // import enLocale from 'iview/dist/locale/en-US';
 import Env from './config/env';
 import bus from './components/bus';
-import 'burgeon-ui/dist/styles/burgeon-theme.css';
+import 'burgeon-ui/dist/styles/burgeon-ui.css';
 // import 'iview/dist/styles/iview.css';
 // import './styles/theme/index.less';
 
