@@ -119,7 +119,7 @@
             
 
             (function drawFrame(){
-                window.requestAnimationFrame(drawFrame);
+                window.drawFrame = window.requestAnimationFrame(drawFrame);
                 context.clearRect(0, 0, W, H);
 
                 for (var i = 0; i < word.placement.length; i++){
