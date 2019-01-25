@@ -6,7 +6,7 @@
             <p>FC组件，支持下拉单选,模糊搜索,筛选弹窗提示。</p>
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="下拉单选">
-                <div slot="demo">
+
                     <FkrpPoptip
                         v-model="value"
                         :placeholder="placeholder"
@@ -16,14 +16,13 @@
                         :filter-method="filterMethod"
                     >
                     </FkrpPoptip>
-                </div>
                 <div slot="desc">
                     <p>下拉单选</p>
                     <p>可以默认筛选</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.fkrp_poptip_single }}</i-code>
             </Demo>
-            <Demo title="下拉单选+气泡">
+            <Demo title="输入框+气泡">
                 <div slot="demo">
                     <FkrpPoptip
                             v-model="value"
@@ -33,13 +32,12 @@
                             :datalist="datalist"
                             :optionTip="true"
                             @click='showIndex' >
-                            :AuotData="code.AuotData2"
                             :filter-method="filterMethod"
                     >
                     </FkrpPoptip>
                 </div>
                 <div slot="desc">
-                    <p>下拉单选+气泡</p>
+                    <p>输入框+气泡</p>
                     <p>可以默认筛选</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.fkrp_poptip_single2 }}</i-code>
@@ -74,9 +72,10 @@
                             :datalist="datalist"
                             :AuotData="AuotData"
                             :columns="columns"
-                            v-model="message"
+                            v-model="value"
                             :placeholder="placeholder"
                             :dialog="dialog"
+                            :show="true"
                             :optionTip="optionTip"
                             :filterTip="filterTip"
                             :disabled="disabled"
@@ -122,6 +121,12 @@
                     <tr>
                         <td>optionTip</td>
                         <td>是否显示气泡提示框 <code>true</code>、<code>false</code></td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>show</td>
+                        <td>是否显示输入完成后是否禁用 <code>true</code>、<code>false</code></td>
                         <td>Boolean</td>
                         <td>true</td>
                     </tr>

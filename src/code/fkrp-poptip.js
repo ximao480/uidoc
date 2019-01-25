@@ -51,7 +51,7 @@ code.AuotData2=[
 code.fkrp_poptip_single = `
 <template>
       <FkrpPoptip
-                        v-model="value"
+                        v-model="message"
                         :placeholder="placeholder"
                         @keydown="showName"
                         :columns="columns"
@@ -65,6 +65,7 @@ code.fkrp_poptip_single = `
         data () {
             return {
                 value:'',
+                message:'',
                 placeholder:'请输入查询条件',
                 disabled:false,
                 datalist: code.datalist,

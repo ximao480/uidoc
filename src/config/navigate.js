@@ -427,7 +427,7 @@ const list = {
         },
         {
             type: 'fcComponents',
-            title: 'FC组件',
+            title: 'R3组件',
             list: [
                 {
                     title: 'FkrpSelect 下拉选择',
