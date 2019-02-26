@@ -647,6 +647,13 @@ const routers = [
         component: (resolve) => require(['./views/components/drawer.vue'], resolve)
     },
     {
+      path: '/components/split-panel',
+      meta: {
+        title: 'SplitPanel 多面板分割'
+      },
+      component: (resolve) => require(['./views/components/split-panel.vue'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

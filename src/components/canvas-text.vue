@@ -115,7 +115,7 @@
             }
 
             // 创建模型数据对象
-            var word = new Shape(this.content, 170, W/2, H/2);
+            var word = new Shape(this.content, 160, W/2, H/2);
             // 调用getValue方法，获取数据位置信息
             if(word.getValue){
                 word.getValue()

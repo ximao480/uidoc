@@ -435,12 +435,18 @@ const list = {
                     iconfont: 'iconfont',
                     icon: 'iconfont icon-bj_xldx'
                 },
-              {
-                title: 'FkrpPoptip 气泡',
-                path: '/components/fkrp-poptip',
-                iconfont: 'iconfont',
-                icon: 'iconfont icon-bj_more'
-              }
+                {
+                  title: 'FkrpPoptip 气泡',
+                  path: '/components/fkrp-poptip',
+                  iconfont: 'iconfont',
+                  icon: 'iconfont icon-bj_more'
+                },
+                {
+                  title: 'SplitPanel 多面板分割',
+                  path: '/components/split-panel',
+                  img: 'split.png',
+                  icon: 'ios-square-outline'
+                }
             ]
         },
         {
