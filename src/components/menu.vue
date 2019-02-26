@@ -11,7 +11,7 @@
     <Menu mode="horizontal" :active-name="currentActiveKey" @on-select="handleSelect">
         <div class="wrapper-header-nav">
             <router-link to="/" class="wrapper-header-nav-logo">
-                <img src="../../themelogo/New Year.png">
+                <img src="../images/burgeon.png">
             </router-link>
             <ApplicationMenu></ApplicationMenu>
             <div class="wrapper-header-nav-search">
