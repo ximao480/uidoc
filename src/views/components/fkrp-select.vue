@@ -164,7 +164,7 @@
                     </tr>
                     <tr>
                         <td>on-input-value-change</td>
-                        <td>设置模糊搜索后，输入值时触发</td>
+                        <td>模糊搜索，输入值时触发</td>
                         <td>输入的值value和 FkrpSelect 组件实例this</td>
                     </tr>
                     </tbody>

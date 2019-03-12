@@ -654,6 +654,13 @@ const routers = [
       component: (resolve) => require(['./views/components/split-panel.vue'], resolve)
     },
     {
+      path: '/components/integrate-search-filter',
+      meta: {
+        title: 'IntegrateSearchFilter 集成搜索'
+      },
+      component: (resolve) => require(['./views/components/integrate-search-filter'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }

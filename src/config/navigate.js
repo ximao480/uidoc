@@ -446,6 +446,12 @@ const list = {
                   path: '/components/split-panel',
                   img: 'split.png',
                   icon: 'ios-square-outline'
+                },
+                {
+                  title: 'IntegrateSearchFilter 集成搜索',
+                  path: '/components/integrate-search-filter',
+                  iconfont: 'iconfont',
+                  icon: 'iconfont icon-bj_search'
                 }
             ]
         },
