@@ -7,7 +7,7 @@
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="下拉单选">
 
-                    <FkrpPoptip
+                    <AttachFilter
                         v-model="value"
                         :placeholder="placeholder"
                         @keydown="showName"
@@ -15,7 +15,7 @@
                         :AuotData="code.AuotData2"
                         :filter-method="filterMethod"
                     >
-                    </FkrpPoptip>
+                    </AttachFilter>
                 <div slot="desc">
                     <p>下拉单选</p>
                     <p>可以默认筛选</p>
@@ -24,7 +24,7 @@
             </Demo>
             <Demo title="输入框+气泡">
                 <div slot="demo">
-                    <FkrpPoptip
+                    <AttachFilter
                             v-model="value"
                             :placeholder="placeholder"
                             @keydown="showName"
@@ -34,7 +34,7 @@
                             @click='showIndex' >
                             :filter-method="filterMethod"
                     >
-                    </FkrpPoptip>
+                    </AttachFilter>
                 </div>
                 <div slot="desc">
                     <p>输入框+气泡</p>
@@ -44,7 +44,7 @@
             </Demo>
             <Demo title="下拉单选+弹窗框">
                 <div slot="demo">
-                    <FkrpPoptip
+                    <AttachFilter
                             v-model="value"
                             :placeholder="placeholder"
                             @keydown="showName"
@@ -58,7 +58,7 @@
                         <div slot="daigo">
                              弹窗的组件内容区域
                         </div>
-                    </FkrpPoptip>
+                    </AttachFilter>
                 </div>
                 <div slot="desc">
                     <p>下拉单选+弹窗框</p>
@@ -68,7 +68,7 @@
             </Demo>
             <Demo title="下拉单选+弹窗框+气泡">
                 <div slot="demo">
-                    <FkrpPoptip
+                    <AttachFilter
                             :datalist="datalist"
                             :AuotData="AuotData"
                             :columns="columns"
@@ -85,7 +85,7 @@
                         <div slot="daigo">
                             弹窗的组件内容区域
                         </div>
-                    </FkrpPoptip>
+                    </AttachFilter>
                 </div>
                 <div slot="desc">
                     <p>下拉单选+弹窗框</p>

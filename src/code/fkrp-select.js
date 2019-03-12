@@ -639,7 +639,7 @@ code.AutoData2 = [
 
 code.fkrp_select_single = `
 <template>
-    <FkrpSelect :single="true"
+    <DropDownSelectFilter :single="true"
                 :data="data1"
                 :totalRowCount="totalRowCount"
                 :pageSize="pageSize"
@@ -648,7 +648,7 @@ code.fkrp_select_single = `
                 :dataEmptyMessage="dataEmptyMessage"
                 :columns="columns"
                 :AutoData="AutoData">
-    </FkrpSelect>
+    </DropDownSelectFilter>
 </template>
 <script>
     export default {
@@ -887,7 +887,7 @@ code.fkrp_select_single = `
 `;
 code.fkrp_select_single1 = ` 
 <template>
-    <FkrpSelect :single="true"
+    <DropDownSelectFilter :single="true"
                 :data="data1"
                 :totalRowCount="totalRowCount"
                 :pageSize="pageSize"
@@ -896,7 +896,7 @@ code.fkrp_select_single1 = `
                 :dataEmptyMessage="dataEmptyMessage"
                 :columns="columns"
                 :AutoData="AutoData">
-    </FkrpSelect>
+    </DropDownSelectFilter>
 </template>
 <script>
     export default {
@@ -1200,13 +1200,13 @@ code.fkrp_select_single1 = `
 
 code.fkrp_select_multiple = `
 <template>
-    <FkrpSelect :single="false"
+    <DropDownSelectFilter :single="false"
                 :totalRowCount="totalRowCount"
                 :pageSize="pageSize"
                 @on-page-change="changePage"
                 :dataEmptyMessage="dataEmptyMessage"
                 :data="data2">
-    </FkrpSelect>
+    </DropDownSelectFilter>
 </template>
 <script>
     export default {
@@ -1515,13 +1515,13 @@ code.fkrp_select_multiple = `
 
 code.fkrp_select_multiple1 = `
 <template>
-    <FkrpSelect :single="false"
+    <DropDownSelectFilter :single="false"
                 :totalRowCount="totalRowCount"
                 :pageSize="pageSize"
                 @on-page-change="changePage"
                 :dataEmptyMessage="dataEmptyMessage"
                 :data="data2">
-    </FkrpSelect>
+    </DropDownSelectFilter>
 </template>
 <script>
     export default {
