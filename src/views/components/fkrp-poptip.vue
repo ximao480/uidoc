@@ -6,18 +6,20 @@
             <p>FC组件，支持下拉单选,模糊搜索,筛选弹窗提示。</p>
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="下拉单选">
-
+                <div slot="demo">
                     <AttachFilter
-                        v-model="value"
-                        :placeholder="placeholder"
-                        @keydown="showName"
-                        :columns="columns"
-                        :AuotData="code.AuotData2"
-                        :filter-method="filterMethod"
-                    >
+                            v-model="value"
+                            :placeholder="placeholder"
+                            @keydown="showName"
+                            :columns="columns"
+                            :AuotData="code.AuotData2"
+                            :filter-method="filterMethod">
+
+                        >
                     </AttachFilter>
+                </div>
                 <div slot="desc">
-                    <p>下拉单选</p>
+                    <p>输入框+气泡</p>
                     <p>可以默认筛选</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.fkrp_poptip_single }}</i-code>
@@ -30,6 +32,7 @@
                             @keydown="showName"
                             :columns="columns"
                             :datalist="datalist"
+                            :AuotData="code.AuotData2"
                             :optionTip="true"
                             @click='showIndex' >
                             :filter-method="filterMethod"

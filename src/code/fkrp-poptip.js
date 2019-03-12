@@ -51,14 +51,14 @@ code.AuotData2=[
 code.fkrp_poptip_single = `
 <template>
       <AttachFilter
-                        v-model="message"
-                        :placeholder="placeholder"
-                        @keydown="showName"
-                        :columns="columns"
-                        :AuotData="code.AuotData2"
-                        :filter-method="filterMethod"
-                    >
-                    </AttachFilter>
+          v-model="message"
+          :placeholder="placeholder"
+          @keydown="showName"
+          :columns="columns"
+          :AuotData="code.AuotData1"
+          :filter-method="filterMethod"
+      >
+      </AttachFilter>
 </template>
 <script>
     export default {
