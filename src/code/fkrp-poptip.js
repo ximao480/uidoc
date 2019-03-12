@@ -53,7 +53,7 @@ code.fkrp_poptip_single = `
       <AttachFilter
           v-model="message"
           :placeholder="placeholder"
-          @keydown="showName"
+          @on-change="showName"
           :columns="columns"
           :AuotData="code.AuotData1"
           :filter-method="filterMethod"
@@ -105,7 +105,7 @@ code.fkrp_poptip_single2 = `
        <AttachFilter
               v-model="value"
               :placeholder="placeholder"
-              @keydown="showName"
+              @on-change="showName"   
               :columns="columns"
               :datalist="datalist"
               :optionTip="true"
@@ -159,7 +159,7 @@ code.fkrp_poptip_single3 = `
        <AttachFilter
               v-model="value"
               :placeholder="placeholder"
-              @keydown="showName"
+              @on-change="showName"
               :columns="columns"
               :datalist="datalist"
               :optionTip="true"
@@ -213,7 +213,7 @@ code.fkrp_poptip_single4 = `
        <AttachFilter
               v-model="value"
               :placeholder="placeholder"
-              @keydown="showName"
+              @on-change="showName"
               :columns="columns"
               :datalist="datalist"
               :optionTip="true"

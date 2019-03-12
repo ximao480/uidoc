@@ -10,7 +10,7 @@
                     <AttachFilter
                             v-model="value"
                             :placeholder="placeholder"
-                            @keydown="showName"
+                            @on-change="showName"
                             :columns="columns"
                             :AuotData="code.AuotData2"
                             :filter-method="filterMethod">
@@ -29,7 +29,7 @@
                     <AttachFilter
                             v-model="value"
                             :placeholder="placeholder"
-                            @keydown="showName"
+                            @on-change="showName"
                             :columns="columns"
                             :datalist="datalist"
                             :AuotData="code.AuotData2"
@@ -50,7 +50,7 @@
                     <AttachFilter
                             v-model="value"
                             :placeholder="placeholder"
-                            @keydown="showName"
+                            @on-change="showName"
                             :columns="columns"
                             :filterTip="true"
                             @click='showIndex'
@@ -82,7 +82,7 @@
                             :optionTip="optionTip"
                             :filterTip="filterTip"
                             :disabled="disabled"
-                            @keydown="showName"
+                            @on-change="showName"
                             :filter-method="filterMethod"
                             @click='showIndex' >
                         <div slot="daigo">
