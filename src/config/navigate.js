@@ -430,13 +430,13 @@ const list = {
             title: 'R3组件',
             list: [
                 {
-                    title: 'FkrpSelect 下拉选择',
+                    title: 'DropDownSelectFilter 下拉选择',
                     path: '/components/fkrp-select',
                     iconfont: 'iconfont',
                     icon: 'iconfont icon-bj_xldx'
                 },
                 {
-                  title: 'FkrpPoptip 气泡',
+                  title: 'AttachFilter 气泡',
                   path: '/components/fkrp-poptip',
                   iconfont: 'iconfont',
                   icon: 'iconfont icon-bj_more'

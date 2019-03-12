@@ -1,40 +1,43 @@
 <template>
     <i-article>
         <article>
-            <h1>FkrpPoptip 气泡</h1>
+            <h1>AttachFilter 气泡</h1>
             <inAnchor title="概述" h2></inAnchor>
             <p>FC组件，支持下拉单选,模糊搜索,筛选弹窗提示。</p>
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="下拉单选">
+                <div slot="demo">
+                    <AttachFilter
+                            v-model="value"
+                            :placeholder="placeholder"
+                            @keydown="showName"
+                            :columns="columns"
+                            :AuotData="code.AuotData2"
+                            :filter-method="filterMethod">
 
-                    <FkrpPoptip
-                        v-model="value"
-                        :placeholder="placeholder"
-                        @keydown="showName"
-                        :columns="columns"
-                        :AuotData="code.AuotData2"
-                        :filter-method="filterMethod"
-                    >
-                    </FkrpPoptip>
+                        >
+                    </AttachFilter>
+                </div>
                 <div slot="desc">
-                    <p>下拉单选</p>
+                    <p>输入框+气泡</p>
                     <p>可以默认筛选</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.fkrp_poptip_single }}</i-code>
             </Demo>
             <Demo title="输入框+气泡">
                 <div slot="demo">
-                    <FkrpPoptip
+                    <AttachFilter
                             v-model="value"
                             :placeholder="placeholder"
                             @keydown="showName"
                             :columns="columns"
                             :datalist="datalist"
+                            :AuotData="code.AuotData2"
                             :optionTip="true"
                             @click='showIndex' >
                             :filter-method="filterMethod"
                     >
-                    </FkrpPoptip>
+                    </AttachFilter>
                 </div>
                 <div slot="desc">
                     <p>输入框+气泡</p>
@@ -44,7 +47,7 @@
             </Demo>
             <Demo title="下拉单选+弹窗框">
                 <div slot="demo">
-                    <FkrpPoptip
+                    <AttachFilter
                             v-model="value"
                             :placeholder="placeholder"
                             @keydown="showName"
@@ -58,7 +61,7 @@
                         <div slot="daigo">
                              弹窗的组件内容区域
                         </div>
-                    </FkrpPoptip>
+                    </AttachFilter>
                 </div>
                 <div slot="desc">
                     <p>下拉单选+弹窗框</p>
@@ -68,7 +71,7 @@
             </Demo>
             <Demo title="下拉单选+弹窗框+气泡">
                 <div slot="demo">
-                    <FkrpPoptip
+                    <AttachFilter
                             :datalist="datalist"
                             :AuotData="AuotData"
                             :columns="columns"
@@ -85,7 +88,7 @@
                         <div slot="daigo">
                             弹窗的组件内容区域
                         </div>
-                    </FkrpPoptip>
+                    </AttachFilter>
                 </div>
                 <div slot="desc">
                     <p>下拉单选+弹窗框</p>
