@@ -1,7 +1,7 @@
 <template>
     <i-article>
         <article>
-            <h1>FkrpPoptip 气泡</h1>
+            <h1>AttachFilter 气泡</h1>
             <inAnchor title="概述" h2></inAnchor>
             <p>FC组件，支持下拉单选,模糊搜索,筛选弹窗提示。</p>
             <inAnchor title="代码示例" h2></inAnchor>
