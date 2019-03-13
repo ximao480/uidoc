@@ -6,18 +6,20 @@
             <p>FC组件，支持下拉单选,模糊搜索,筛选弹窗提示。</p>
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="下拉单选">
-
+                <div slot="demo">
                     <AttachFilter
-                        v-model="value"
-                        :placeholder="placeholder"
-                        @keydown="showName"
-                        :columns="columns"
-                        :AuotData="code.AuotData2"
-                        :filter-method="filterMethod"
-                    >
+                            v-model="value"
+                            :placeholder="placeholder"
+                            @on-change="showName"
+                            :columns="columns"
+                            :AuotData="code.AuotData2"
+                            :filter-method="filterMethod">
+
+                        >
                     </AttachFilter>
+                </div>
                 <div slot="desc">
-                    <p>下拉单选</p>
+                    <p>输入框+气泡</p>
                     <p>可以默认筛选</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.fkrp_poptip_single }}</i-code>
@@ -27,13 +29,14 @@
                     <AttachFilter
                             v-model="value"
                             :placeholder="placeholder"
-                            @keydown="showName"
+                            @on-change="showName"
                             :columns="columns"
                             :datalist="datalist"
+                            :AuotData="code.AuotData2"
                             :optionTip="true"
                             @click='showIndex' >
-                            :filter-method="filterMethod"
-                    >
+                        :filter-method="filterMethod"
+                        >
                     </AttachFilter>
                 </div>
                 <div slot="desc">
@@ -47,16 +50,16 @@
                     <AttachFilter
                             v-model="value"
                             :placeholder="placeholder"
-                            @keydown="showName"
+                            @on-change="showName"
                             :columns="columns"
                             :filterTip="true"
                             @click='showIndex'
                             :dialog="dialog"
                             :AuotData="code.AuotData2"
                             :filter-method="filterMethod"
-                        >
+                    >
                         <div slot="daigo">
-                             弹窗的组件内容区域
+                            弹窗的组件内容区域
                         </div>
                     </AttachFilter>
                 </div>
@@ -79,7 +82,7 @@
                             :optionTip="optionTip"
                             :filterTip="filterTip"
                             :disabled="disabled"
-                            @keydown="showName"
+                            @on-change="showName"
                             :filter-method="filterMethod"
                             @click='showIndex' >
                         <div slot="daigo">
@@ -101,7 +104,7 @@
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
-                <inAnchor title="FkrpPoptip props" h3></inAnchor>
+                <inAnchor title="AttachFilter props" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>
@@ -122,19 +125,19 @@
                         <td>optionTip</td>
                         <td>是否显示气泡提示框 <code>true</code>、<code>false</code></td>
                         <td>Boolean</td>
-                        <td>true</td>
+                        <td>false</td>
                     </tr>
                     <tr>
                         <td>show</td>
                         <td>是否显示输入完成后是否禁用 <code>true</code>、<code>false</code></td>
                         <td>Boolean</td>
-                        <td>true</td>
+                        <td>false</td>
                     </tr>
                     <tr>
                         <td>filterTip</td>
                         <td>是否显示筛选提示弹窗 <code>true</code>、<code>false</code></td>
                         <td>Boolean</td>
-                        <td>true</td>
+                        <td>false</td>
                     </tr>
                     <tr>
                         <td>disabled</td>
@@ -166,9 +169,44 @@
                         <td> 在model里面配置弹窗选项及回调事件</td>
                         <td>空</td>
                     </tr>
+                    <tr>
+                        <td>model</td>
+                        <td>turn:true,
+                            窗口是否打开</td>
+                        <td> Number</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>title:'',
+                            窗口标题</td>
+                        <td>string</td>
+                        <td>默认'标题弹窗' 可传空</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>width:100,
+                            弹窗宽度</td>
+                        <td>Number</td>
+                        <td>默认100</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>ok(){},
+                            弹窗点击确定的函数回调</td>
+                        <td>函数</td>
+                        <td>Function</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>cancel(){},
+                            弹窗点击取消的函数回调</td>
+                        <td>函数</td>
+                        <td>Function</td>
+                    </tr>
                     </tbody>
                 </table>
-                <inAnchor title="FkrpPoptip events" h3></inAnchor>
+                <inAnchor title="AttachFilter events" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>
@@ -179,12 +217,12 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>on-keydown</td>
-                        <td>输入框的的键盘事件</td>
-                        <td>value</td>
+                        <td>on-change</td>
+                        <td>input 输入事件</td>
+                        <td>默认传值 (value,event)</td>
                     </tr>
                     <tr>
-                        <td>on-click</td>
+                        <td>click</td>
                         <td>气泡点击事件的 index </td>
                         <td>返回所在位置 </td>
                     </tr>
