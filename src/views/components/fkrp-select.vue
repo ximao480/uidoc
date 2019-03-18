@@ -81,7 +81,7 @@
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
-                <inAnchor title="FkrpSelect props" h3></inAnchor>
+                <inAnchor title="DropDownSelectFilter props" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>
@@ -140,9 +140,15 @@
                         <td>Array</td>
                         <td>空</td>
                     </tr>
+                    <tr>
+                        <td>transfer</td>
+                        <td>是否将弹层放置于 body 内。</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                    </tr>
                     </tbody>
                 </table>
-                <inAnchor title="FkrpSelect events" h3></inAnchor>
+                <inAnchor title="DropDownSelectFilter events" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>
@@ -155,17 +161,37 @@
                     <tr>
                         <td>on-fkrp-selected</td>
                         <td>选中的值时触发</td>
-                        <td>value（是个数组包含ID和lable）和 FkrpSelect 组件实例this</td>
+                        <td>value（是个数组包含ID和lable）和 DropDownSelectFilter 组件实例this</td>
                     </tr>
                     <tr>
                         <td>on-page-change</td>
                         <td>页码更改时触发</td>
-                        <td>页码值value和 FkrpSelect 组件实例this</td>
+                        <td>页码值value和 DropDownSelectFilter 组件实例this</td>
                     </tr>
                     <tr>
                         <td>on-input-value-change</td>
                         <td>模糊搜索，输入值时触发</td>
-                        <td>输入的值value和 FkrpSelect 组件实例this</td>
+                        <td>输入的值value和 DropDownSelectFilter 组件实例this</td>
+                    </tr>
+                    <tr>
+                        <td>on-focus</td>
+                        <td>聚焦的时候触发</td>
+                        <td>event 和 DropDownSelectFilter 组件实例this</td>
+                    </tr>
+                    <tr>
+                        <td>on-blur</td>
+                        <td>失去焦点的时候触发</td>
+                        <td>event 和 DropDownSelectFilter 组件实例this</td>
+                    </tr>
+                    <tr>
+                        <td>on-keyup</td>
+                        <td>原生的 keyup 事件</td>
+                        <td>event 和 DropDownSelectFilter 组件实例this</td>
+                    </tr>
+                    <tr>
+                        <td>on-keydown</td>
+                        <td>原生的 keydown 事件</td>
+                        <td>event 和 DropDownSelectFilter 组件实例this</td>
                     </tr>
                     </tbody>
                 </table>
