@@ -158,6 +158,13 @@
                         <td>[]</td>
                     </tr>
                     <tr>
+                        <td>datalist</td>
+                        <td>气泡内容</td>
+                        <td>JSON</td>
+                        <td>[]</td>
+                    </tr>
+
+                    <tr>
                         <td>columns</td>
                         <td>定义选中展示的文字的key，</td>
                         <td>Array</td>
@@ -204,6 +211,11 @@
                         <td>函数</td>
                         <td>Function</td>
                     </tr>
+                    <tr>
+                        <td>filter-method</td>
+                        <td> 配置过滤属性,返回筛选配置value, option</td>
+                        <td> return option.name.indexOf(value) !== -1;</td>
+                    </tr>
                     </tbody>
                 </table>
                 <inAnchor title="AttachFilter events" h3></inAnchor>
@@ -217,19 +229,69 @@
                     </thead>
                     <tbody>
                     <tr>
+                        <td>on-dbpopclick</td>
+                        <td>气泡双击事件</td>
+                        <td>当前位置和当前的对象 (index,object)</td>
+                    </tr>
+                    <tr>
+                        <td>on-popclick</td>
+                        <td>气泡单击事件</td>
+                        <td>当前位置和当前的对象 (index,object)</td>
+                    </tr>
+                    <tr>
                         <td>on-change</td>
-                        <td>input 输入事件</td>
+                        <td>input change下事件</td>
                         <td>默认传值 (value,event)</td>
                     </tr>
                     <tr>
-                        <td>click</td>
-                        <td>气泡点击事件的 index </td>
-                        <td>返回所在位置 </td>
+                        <td>on-keydown</td>
+                        <td>input 键盘按下事件</td>
+                        <td>默认传值 (value,event)</td>
                     </tr>
                     <tr>
-                        <td>filter-method</td>
-                        <td>返回筛选配置value, option</td>
-                        <td> return option.name.indexOf(value) !== -1;</td>
+                        <td>on-keyup</td>
+                        <td>input 键盘松开事件</td>
+                        <td>默认传值 (value,event)</td>
+                    </tr>
+                    <tr>
+                        <td>on-enter</td>
+                        <td>input 回车事件</td>
+                        <td>默认传值 (value,event)</td>
+                    </tr>
+                    <tr>
+                        <td>on-focus</td>
+                        <td>input 获取焦点事件</td>
+                        <td>默认传值 (value,event)</td>
+                    </tr>
+                    <tr>
+                        <td>on-blur</td>
+                        <td>input 失去焦点事件</td>
+                        <td>默认传值 (value,event)</td>
+                    </tr>
+                    <tr>
+                        <td>on-input</td>
+                        <td>input input事件</td>
+                        <td>默认传值 (value,event)</td>
+                    </tr>
+                    <tr>
+                        <td>on-select</td>
+                        <td>模糊查询下拉点击事件 </td>
+                        <td>默认传值 (value) (value 是个对象)</td>
+                    </tr>
+                    <tr>
+                        <td>on-clear</td>
+                        <td>清除事件 </td>
+                        <td>无默认传值</td>
+                    </tr>
+                    <tr>
+                        <td>on-cancel</td>
+                        <td>弹窗取消按钮功能 </td>
+                        <td>默认传值 (弹窗solt 插入组件的实例)</td>
+                    </tr>
+                    <tr>
+                        <td>on-ok</td>
+                        <td>弹窗确定按钮功能 </td>
+                        <td>默认传值 (弹窗solt 插入组件的实例)</td>
                     </tr>
                     </tbody>
                 </table>
