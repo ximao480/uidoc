@@ -303,6 +303,12 @@ const list = {
                     img: 'rate.png',
                     icon: 'ios-star'
                 },
+                  {
+                      title: 'dragImg 拖拽图片',
+                      path: '/components/dragImg',
+                      img: 'upload.png',
+                      icon: 'ios-cloud-upload-outline'
+                  },
                 // {
                 //     title: 'Upload 上传',
                 //     path: '/components/upload',

@@ -11,7 +11,7 @@
                             v-model="value"
                             :placeholder="placeholder"
                             @on-change="showName"
-                            :columns="columns"
+                            :columnsKey="columnsKey"
                             :AuotData="code.AuotData2"
                             :filter-method="filterMethod">
 
@@ -30,7 +30,7 @@
                             v-model="value"
                             :placeholder="placeholder"
                             @on-change="showName"
-                            :columns="columns"
+                            :columnsKey="columnsKey"
                             :datalist="datalist"
                             :AuotData="code.AuotData2"
                             :optionTip="true"
@@ -51,7 +51,7 @@
                             v-model="value"
                             :placeholder="placeholder"
                             @on-change="showName"
-                            :columns="columns"
+                            :columnsKey="columnsKey"
                             :filterTip="true"
                             @click='showIndex'
                             :dialog="dialog"
@@ -74,7 +74,7 @@
                     <AttachFilter
                             :datalist="datalist"
                             :AuotData="AuotData"
-                            :columns="columns"
+                            :columnsKey="columnsKey"
                             v-model="value"
                             :placeholder="placeholder"
                             :dialog="dialog"
@@ -165,15 +165,21 @@
                     </tr>
 
                     <tr>
-                        <td>columns</td>
-                        <td>定义选中展示的文字的key，</td>
+                        <td>columnsKey</td>
+                        <td>定义input中展示的对象的key，</td>
+                        <td>Array</td>
+                        <td>[]</td>
+                    </tr>
+                    <tr>
+                        <td>hidecolumns</td>
+                        <td>定义下拉列表中不展示内容的key，</td>
                         <td>Array</td>
                         <td>[]</td>
                     </tr>
                     <tr>
                         <td>dialog</td>
                         <td>配置弹窗的配置项 model: </td>
-                        <td> 在model里面配置弹窗选项及回调事件</td>
+                        <td> 在model里面配置弹窗选项及回调事件(配置内容同弹窗实例)</td>
                         <td>空</td>
                     </tr>
                     <tr>
@@ -197,20 +203,21 @@
                         <td>Number</td>
                         <td>默认100</td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td>ok(){},
-                            弹窗点击确定的函数回调</td>
-                        <td>函数</td>
-                        <td>Function</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>cancel(){},
-                            弹窗点击取消的函数回调</td>
-                        <td>函数</td>
-                        <td>Function</td>
-                    </tr>
+
+                    <!--<tr>-->
+                        <!--<td></td>-->
+                        <!--<td>ok(){},-->
+                            <!--弹窗点击确定的函数回调</td>-->
+                        <!--<td>函数</td>-->
+                        <!--<td>Function返回弹窗内容对象的实例</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td></td>-->
+                        <!--<td>cancel(){},-->
+                            <!--弹窗点击取消的函数回调</td>-->
+                        <!--<td>函数</td>-->
+                        <!--<td>Function 返回弹窗内容对象的实例</td>-->
+                    <!--</tr>-->
                     <tr>
                         <td>filter-method</td>
                         <td> 配置过滤属性,返回筛选配置value, option</td>
@@ -228,6 +235,11 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <tr>
+                        <td>on-show</td>
+                        <td>按钮点击事件</td>
+                        <td>当前的input 的 value和当前的实例</td>
+                    </tr>
                     <tr>
                         <td>on-dbpopclick</td>
                         <td>气泡双击事件</td>
@@ -344,7 +356,7 @@
             }
           }
         },
-        columns:['name','age'],  // 展现的组
+        columnsKey:['name','age'],  // 展现的组
         AuotData: [
           {
             id:0,

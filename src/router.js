@@ -639,12 +639,19 @@ const routers = [
         },
         component: (resolve) => require(['./views/components/divider.vue'], resolve)
     },
-    {
+      {
         path: '/components/drawer',
         meta: {
-            title: '抽屉 Drawer'
+          title: '抽屉 Drawer'
         },
         component: (resolve) => require(['./views/components/drawer.vue'], resolve)
+      },
+    {
+        path: '/components/dragImg',
+        meta: {
+            title: '图片展示 dragImg'
+        },
+        component: (resolve) => require(['./views/components/dragImg.vue'], resolve)
     },
     {
       path: '/components/split-panel',
