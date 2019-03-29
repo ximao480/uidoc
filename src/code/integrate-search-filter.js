@@ -211,6 +211,9 @@ code.base = `
                         type: 'Input',
                         componentAttribute: {
                         },
+                        componentEvent: {
+                            'on-enter': () =>{}
+                        },
                         value: ''
                     },
                     {
