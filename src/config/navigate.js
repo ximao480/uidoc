@@ -458,6 +458,12 @@ const list = {
                   path: '/components/integrate-search-filter',
                   iconfont: 'iconfont',
                   icon: 'iconfont icon-bj_search'
+                },
+                {
+                  title: 'TabPanels 标签面板',
+                  path: '/components/tab-panels',
+                  img: 'tabs.png',
+                  icon: 'ios-more-outline'
                 }
             ]
         },

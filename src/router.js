@@ -668,6 +668,13 @@ const routers = [
       component: (resolve) => require(['./views/components/integrate-search-filter'], resolve)
     },
     {
+      path: '/components/tab-panels',
+      meta: {
+        title: 'TabPanels 标签面板'
+      },
+      component: (resolve) => require(['./views/components/tab-panels'], resolve)
+    },
+    {
         path: '*',
         redirect: '/'
     }
