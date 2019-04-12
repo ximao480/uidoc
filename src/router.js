@@ -654,6 +654,13 @@ const routers = [
       component: (resolve) => require(['./views/components/split-panel.vue'], resolve)
     },
     {
+        path: '/components/ImageUpload',
+        meta: {
+          title: 'ImageUpload 多面板分割'
+        },
+        component: (resolve) => require(['./views/components/ImageUpload.vue'], resolve)
+      },
+    {
         path: '*',
         redirect: '/'
     }
