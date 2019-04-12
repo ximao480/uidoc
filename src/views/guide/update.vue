@@ -48,6 +48,19 @@
                 </TimelineItem>
             </Timeline>
         </article>
+        <article class="doc-update" >
+            <Timeline pending>
+                <TimelineItem>
+                    <inAnchor title="0.1.38" h2></inAnchor>
+                    <p>
+                        <code>2019-01-30</code>
+                    </p>
+                    <ul>
+                        <li>新增 "dragImg" 图片拖拽</li>
+                    </ul>
+                </TimelineItem>
+            </Timeline>
+        </article>
     </i-article>
 </template>
 <script>

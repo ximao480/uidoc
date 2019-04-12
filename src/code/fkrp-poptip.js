@@ -50,15 +50,15 @@ code.AuotData2=[
 
 code.fkrp_poptip_single = `
 <template>
-      <FkrpPoptip
-                        v-model="message"
-                        :placeholder="placeholder"
-                        @keydown="showName"
-                        :columns="columns"
-                        :AuotData="code.AuotData2"
-                        :filter-method="filterMethod"
-                    >
-                    </FkrpPoptip>
+      <AttachFilter
+          v-model="message"
+          :placeholder="placeholder"
+          @on-change="showName"
+          :columnsKey="columnsKey"
+          :AuotData="code.AuotData1"
+          :filter-method="filterMethod"
+      >
+      </AttachFilter>
 </template>
 <script>
     export default {
@@ -102,18 +102,18 @@ code.fkrp_poptip_single = `
 `;
 code.fkrp_poptip_single2 = `
 <template>
-       <FkrpPoptip
+       <AttachFilter
               v-model="value"
               :placeholder="placeholder"
-              @keydown="showName"
-              :columns="columns"
+              @on-change="showName"   
+              :columnsKey="columnsKey"
               :datalist="datalist"
               :optionTip="true"
               @click='showIndex' >
               :AuotData="code.AuotData2"
               :filter-method="filterMethod"
       >
-      </FkrpPoptip>
+      </AttachFilter>
 </template>
 <script>
     export default {
@@ -156,18 +156,18 @@ code.fkrp_poptip_single2 = `
 `;
 code.fkrp_poptip_single3 = `
 <template>
-       <FkrpPoptip
+       <AttachFilter
               v-model="value"
               :placeholder="placeholder"
-              @keydown="showName"
-              :columns="columns"
+              @on-change="showName"
+              :columnsKey="columnsKey"
               :datalist="datalist"
               :optionTip="true"
               @click='showIndex' >
               :AuotData="code.AuotData2"
               :filter-method="filterMethod"
       >
-      </FkrpPoptip>
+      </AttachFilter>
 </template>
 <script>
     export default {
@@ -210,18 +210,18 @@ code.fkrp_poptip_single3 = `
 `;
 code.fkrp_poptip_single4 = `
 <template>
-       <FkrpPoptip
+       <AttachFilter
               v-model="value"
               :placeholder="placeholder"
-              @keydown="showName"
-              :columns="columns"
+              @on-change="showName"
+              :columnsKey="columnsKey"
               :datalist="datalist"
               :optionTip="true"
               @click='showIndex' >
               :AuotData="code.AuotData2"
               :filter-method="filterMethod"
       >
-      </FkrpPoptip>
+      </AttachFilter>
 </template>
 <script>
     export default {

@@ -303,6 +303,12 @@ const list = {
                     img: 'rate.png',
                     icon: 'ios-star'
                 },
+                  {
+                      title: 'dragImg 拖拽图片',
+                      path: '/components/dragImg',
+                      img: 'upload.png',
+                      icon: 'ios-cloud-upload-outline'
+                  },
                 // {
                 //     title: 'Upload 上传',
                 //     path: '/components/upload',
@@ -430,13 +436,13 @@ const list = {
             title: 'R3组件',
             list: [
                 {
-                    title: 'FkrpSelect 下拉选择',
+                    title: 'DropDownSelectFilter 下拉选择',
                     path: '/components/fkrp-select',
                     iconfont: 'iconfont',
                     icon: 'iconfont icon-bj_xldx'
                 },
                 {
-                  title: 'FkrpPoptip 气泡',
+                  title: 'AttachFilter 气泡',
                   path: '/components/fkrp-poptip',
                   iconfont: 'iconfont',
                   icon: 'iconfont icon-bj_more'
@@ -453,6 +459,17 @@ const list = {
                     img: 'split.png',
                     icon: 'ios-square-outline'
                   }
+                  title: 'IntegrateSearchFilter 集成搜索',
+                  path: '/components/integrate-search-filter',
+                  iconfont: 'iconfont',
+                  icon: 'iconfont icon-bj_search'
+                },
+                {
+                  title: 'TabPanels 标签面板',
+                  path: '/components/tab-panels',
+                  img: 'tabs.png',
+                  icon: 'ios-more-outline'
+                }
             ]
         },
         {

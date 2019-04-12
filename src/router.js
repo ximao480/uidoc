@@ -639,12 +639,19 @@ const routers = [
         },
         component: (resolve) => require(['./views/components/divider.vue'], resolve)
     },
-    {
+      {
         path: '/components/drawer',
         meta: {
-            title: '抽屉 Drawer'
+          title: '抽屉 Drawer'
         },
         component: (resolve) => require(['./views/components/drawer.vue'], resolve)
+      },
+    {
+        path: '/components/dragImg',
+        meta: {
+            title: '图片展示 dragImg'
+        },
+        component: (resolve) => require(['./views/components/dragImg.vue'], resolve)
     },
     {
       path: '/components/split-panel',
@@ -660,6 +667,19 @@ const routers = [
         },
         component: (resolve) => require(['./views/components/ImageUpload.vue'], resolve)
       },
+      path: '/components/integrate-search-filter',
+      meta: {
+        title: 'IntegrateSearchFilter 集成搜索'
+      },
+      component: (resolve) => require(['./views/components/integrate-search-filter'], resolve)
+    },
+    {
+      path: '/components/tab-panels',
+      meta: {
+        title: 'TabPanels 标签面板'
+      },
+      component: (resolve) => require(['./views/components/tab-panels'], resolve)
+    },
     {
         path: '*',
         redirect: '/'
