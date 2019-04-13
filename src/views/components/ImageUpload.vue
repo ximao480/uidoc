@@ -43,7 +43,7 @@
                     </tbody>
                 </table>
 
-                <inAnchor title="props 属性说明" h3></inAnchor>
+                <inAnchor title="dataitem 属性说明" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>

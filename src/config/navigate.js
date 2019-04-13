@@ -458,7 +458,8 @@ const list = {
                     path: '/components/ImageUpload',
                     img: 'split.png',
                     icon: 'ios-square-outline'
-                  }
+                  },
+                  {
                   title: 'IntegrateSearchFilter 集成搜索',
                   path: '/components/integrate-search-filter',
                   iconfont: 'iconfont',
