@@ -454,6 +454,12 @@ const list = {
                   icon: 'ios-square-outline'
                 },
                 {
+                    title: 'ImageUpload 图片上传',
+                    path: '/components/ImageUpload',
+                    img: 'split.png',
+                    icon: 'ios-square-outline'
+                  },
+                  {
                   title: 'IntegrateSearchFilter 集成搜索',
                   path: '/components/integrate-search-filter',
                   iconfont: 'iconfont',

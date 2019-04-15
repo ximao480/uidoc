@@ -1,0 +1,202 @@
+<template>
+    <i-article>
+        <article>
+            <h1>ImageUpload 图片上传组件</h1>
+            <inAnchor title="概述" h2></inAnchor>
+            <p>图片上传组件，支持图片单张上传，支持删除单张图片，支持自定义宽度，支持自定义高度，支持单张图片预览。</p>
+            <inAnchor title="代码示例" h2></inAnchor>
+            <Demo title="水平分割">
+                <div slot="demo">
+                    <div class="demo-split-panel">
+                        <ImageUpload
+                        :dataitem="dataitem"
+                        ></ImageUpload>
+                    </div>
+                </div>
+                <div slot="desc">
+                    <p>基础用法</p>
+                    <p>默认宽高为200px</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.ImageUpload }}</i-code>
+            </Demo>
+
+         
+            <div class="api">
+                <inAnchor title="API" h2></inAnchor>
+                <inAnchor title="ImageUpload props" h3></inAnchor>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>属性</th>
+                        <th>说明</th>
+                        <th>类型</th>
+                        <th>默认值</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>dataitem</td>
+                        <td>prop数据格式为对象</td>
+                        <td>Object</td>
+                        <td>{}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <inAnchor title="dataitem 属性说明" h3></inAnchor>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>属性</th>
+                        <th>说明</th>
+                        <th>类型</th>
+                        <th>默认值</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>dataitem.url</td>
+                        <td>上传地址</td>
+                        <td>String</td>
+                        <td>""</td>
+                    </tr>
+                    <tr>
+                        <td>dataitem.sendData</td>
+                        <td>上传参数</td>
+                        <td>Object</td>
+                        <td>{}</td>
+                    </tr>
+                    <tr>
+                        <td>dataitem.width</td>
+                        <td>宽度</td>
+                        <td>Number</td>
+                        <td>200</td>
+                    </tr>
+                   
+                    <tr>
+                       <td>dataitem.height</td>
+                        <td>高度</td>
+                        <td>Number</td>
+                        <td>200</td>
+                    </tr>
+                     <tr>
+                       <td>dataitem.readonly</td>
+                        <td>是否禁用上传</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                    </tr>
+                     <tr>
+                       <td>dataitem.valuedata</td>
+                        <td>图片路径</td>
+                        <td>Array</td>
+                        <td>[]</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+
+                 <inAnchor title="图片路径 dataitem.valuedata props" h3></inAnchor>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>属性</th>
+                        <th>说明</th>
+                        <th>类型</th>
+                        <th>默认值</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>NAME</td>
+                        <td>图片名称</td>
+                        <td>String</td>
+                        <td>""</td>
+                    </tr>
+                      <tr>
+                        <td>URL</td>
+                        <td>图片路径</td>
+                        <td>String</td>
+                        <td>""</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <inAnchor title="FkrpSelect events" h3></inAnchor>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>事件名</th>
+                        <th>说明</th>
+                        <th>返回值</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>deleteImg</td>
+                        <td>删除方法的回调</td>
+                        <td>无</td>
+                    </tr>
+                    <tr>
+                        <td>uploadFileChangeSuccess</td>
+                        <td>上传成功的回调</td>
+                        <td>无</td>
+                    </tr>
+                     <tr>
+                        <td>uploadFileChangeOnerror</td>
+                        <td>上传失败的回调</td>
+                        <td>无</td>
+                    </tr>
+                     <tr>
+                        <td>uploadFileChangeOnload</td>
+                        <td>上传的回调</td>
+                        <td>无</td>
+                    </tr>
+                     <tr>
+                        <td>uploadFileChangeOnloadstart</td>
+                        <td>在图片上传开始加载时的回调</td>
+                        <td>无</td>
+                    </tr>
+                    <tr>
+                        <td>uploadFileChangeOnloadend</td>
+                        <td>在图片上传加载完成时的回调</td>
+                        <td>无</td>
+                    </tr>
+                   </tbody>
+               </table> 
+            </div>
+        </article>
+    </i-article>
+</template>
+<script>
+  import iArticle from '../../components/article.vue';
+  import iCode from 'iCode';
+  import Demo from '../../components/demo.vue';
+  import Code from '../../code/ImageUpload';
+  import inAnchor from '../../components/anchor.vue';
+
+  export default {
+    name: 'ImageUploadDoc',
+    components: {
+      iArticle,
+      iCode,
+      Demo,
+      inAnchor,
+    },
+    data () {
+      return {
+        code: Code,
+        dataitem:{}
+     
+      }
+    },
+    computed: {
+    },
+    methods: {
+    }
+  }
+</script>
+<style>
+    .demo-split-panel {
+        height: 200px;
+        border: 1px solid #dcdee2;
+    }
+</style>
