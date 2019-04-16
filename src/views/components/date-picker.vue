@@ -227,7 +227,7 @@
                     <i-code lang="html" slot="code">{{ code.size }}</i-code>
                 </Demo>
 
-  
+
 
                 <div class="api">
                     <inAnchor title="API" h2></inAnchor>
@@ -381,6 +381,12 @@
                             <td>可以在 type 为 datetime 和 datetimerange 下，配置 TimePicker 的属性，比如时间间隔 steps：<code>:time-picker-options="{steps: [1, 10, 10]}"</code></td>
                             <td>Object</td>
                             <td>{}</td>
+                        </tr>
+                        <tr>
+                            <td>isEmitOnChange</td>
+                            <td>给value赋值的时候是否触犯on-change</td>
+                            <td>Boolean</td>
+                            <td>false</td>
                         </tr>
                         </tbody>
                     </table>
