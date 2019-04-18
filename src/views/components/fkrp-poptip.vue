@@ -159,9 +159,25 @@
                     </tr>
                     <tr>
                         <td>datalist</td>
-                        <td>气泡内容</td>
+                        <td>气泡内容  {value:'展示内容'},value 必填</td>
                         <td>JSON</td>
-                        <td>[]</td>
+                        <td>[{value:'展示内容'}]</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> 
+                             value:'导入'</br>
+                             会添加上传功能,需要添加 url,sendData  </br>
+                        </td>
+                        <td> {
+                                value: '导入',
+                                url:'',
+                                sendData:{
+                                    table: 'C_STORE'
+                                }
+                            }
+                        </td>
+                        <td>提供上传所需数据</td>
                     </tr>
 
                     <tr>
@@ -225,6 +241,26 @@
                     </tr>
                     </tbody>
                 </table>
+                <inAnchor title="AttachFilter solt" h3></inAnchor>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>事件名</th>
+                        <th>说明</th>
+                        <th>返回值</th>
+                    </tr>
+                    </thead>
+                
+                    <tr>
+                        <td>slot="daigo"</td>
+                        <td> 添加弹窗内卡槽 slot="daigo" 必填 </td>
+                        <td>  
+                            "<div slot="daigo">
+                                    <component :is=""></component>
+                            </div>"
+                        </td>
+                    </tr>
+                </table>
                 <inAnchor title="AttachFilter events" h3></inAnchor>
                 <table>
                     <thead>
@@ -243,12 +279,12 @@
                     <tr>
                         <td>on-dbpopclick</td>
                         <td>气泡双击事件</td>
-                        <td>当前位置和当前的对象 (index,object)</td>
+                        <td>当前位置,当前数据，当前的元素的名称和当前的对象 (index,row,tagName,$this)</td>
                     </tr>
                     <tr>
                         <td>on-popclick</td>
                         <td>气泡单击事件</td>
-                        <td>当前位置和当前的对象 (index,object)</td>
+                        <td>当前位置和当前的对象 (index,row,tagName,$this)</td>
                     </tr>
                     <tr>
                         <td>on-change</td>
@@ -304,6 +340,11 @@
                         <td>on-ok</td>
                         <td>弹窗确定按钮功能 </td>
                         <td>默认传值 (弹窗solt 插入组件的实例)</td>
+                    </tr>
+                    <tr>
+                        <td>on-uploadFile</td>
+                         <td>导入 上传回调事件，成功失败返回结果,和当前点击位置 </td>
+                        <td>(index,res)</td>
                     </tr>
                     </tbody>
                 </table>
