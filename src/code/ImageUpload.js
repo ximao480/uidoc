@@ -4,7 +4,6 @@ code.ImageUpload = `
 <template>
     <ImageUpload
             :dataitem="dataitem"
-            @uploadFileChange="uploadFileChange"
             @deleteImg="deleteImg"
             @uploadFileChangeSuccess="uploadFileChangeSuccess"
             @uploadFileChangeOnerror="uploadFileChangeOnerror"

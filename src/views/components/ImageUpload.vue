@@ -133,32 +133,32 @@
                     <tr>
                         <td>deleteImg</td>
                         <td>删除方法的回调</td>
-                        <td>无</td>
+                        <td>当前索引和 组件实例this</td>
                     </tr>
                     <tr>
                         <td>uploadFileChangeSuccess</td>
                         <td>上传成功的回调</td>
-                        <td>无</td>
+                        <td>上传成功的接口返回值</td>
                     </tr>
                      <tr>
                         <td>uploadFileChangeOnerror</td>
                         <td>上传失败的回调</td>
-                        <td>无</td>
+                        <td>上传失败的接口返回值</td>
                     </tr>
                      <tr>
                         <td>uploadFileChangeOnload</td>
                         <td>上传的回调</td>
-                        <td>无</td>
+                        <td>event</td>
                     </tr>
                      <tr>
                         <td>uploadFileChangeOnloadstart</td>
                         <td>在图片上传开始加载时的回调</td>
-                        <td>无</td>
+                        <td>event</td>
                     </tr>
                     <tr>
                         <td>uploadFileChangeOnloadend</td>
                         <td>在图片上传加载完成时的回调</td>
-                        <td>无</td>
+                        <td>event</td>
                     </tr>
                    </tbody>
                </table> 
