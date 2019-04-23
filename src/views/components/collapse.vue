@@ -106,7 +106,7 @@
                 <i-code lang="html" slot="code">{{ code.simple }}</i-code>
             </Demo>
 
-   
+
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
@@ -180,6 +180,12 @@
                             <td>隐藏箭头</td>
                             <td>Boolean</td>
                             <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>isTitleShow</td>
+                            <td>是否显示头部</td>
+                            <td>Boolean</td>
+                            <td>true</td>
                         </tr>
                     </tbody>
                 </table>
