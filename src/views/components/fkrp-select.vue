@@ -135,6 +135,12 @@
                         <td>暂无数据</td>
                     </tr>
                     <tr>
+                        <td>placeholder</td>
+                        <td>占位文本</td>
+                        <td>String</td>
+                        <td>空</td>
+                    </tr>
+                    <tr>
                         <td>defaultSelected</td>
                         <td>下拉多选 默认选中数据</td>
                         <td>Array</td>
