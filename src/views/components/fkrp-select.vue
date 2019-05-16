@@ -9,6 +9,8 @@
                 <div slot="demo">
                     <DropDownSelectFilter :single="true"
                                 :data="data"
+                                          :transfer="false"
+                                          :showColnameKey="'show'"
                                 :totalRowCount="totalRowCount"
                                 :pageSize="pageSize"
                                 @on-page-change="changePage"
@@ -29,6 +31,8 @@
                                 :data="data1"
                                 :totalRowCount="totalRowCount"
                                 :pageSize="pageSize"
+                                          :transfer="false"
+                                          :showColnameKey="'show'"
                                 @on-page-change="changePage1"
                                 @on-input-value-change="InputValueChange"
                                 @on-fkrp-selected="selectedChange"
@@ -49,6 +53,8 @@
                     <DropDownSelectFilter :single="false"
                                 :totalRowCount="totalRowCount"
                                 :pageSize="pageSize"
+                                          :transfer="false"
+                                          :showColnameKey="'show'"
                                 @on-page-change="changePage2"
                                 :dataEmptyMessage="dataEmptyMessage"
                                 :data="data2">
@@ -66,6 +72,8 @@
                     <DropDownSelectFilter :single="false"
                                 :totalRowCount="totalRowCount"
                                 :pageSize="pageSize"
+                                          :transfer="false"
+                                          :showColnameKey="'show'"
                                 :defaultSelected="defaultSelected"
                                 @on-page-change="changePage3"
                                 :dataEmptyMessage="dataEmptyMessage"
@@ -119,20 +127,32 @@
                     <tr>
                         <td>AutoData</td>
                         <td>模糊搜索的数据</td>
-                        <td>Array</td>
+                        <td>[]</td>
                         <td>空</td>
                     </tr>
                     <tr>
-                        <td>columns</td>
-                        <td>模糊搜索要显示的列</td>
+                        <td>columnsKey</td>
+                        <td>定义input中展示的对象的key，</td>
                         <td>Array</td>
-                        <td>空</td>
+                        <td>[]</td>
+                    </tr>
+                    <tr>
+                        <td>hidecolumns</td>
+                        <td>定义下拉列表中不展示内容的key，</td>
+                        <td>Array</td>
+                        <td>[]</td>
                     </tr>
                     <tr>
                         <td>dataEmptyMessage</td>
                         <td>无数据的时候提示</td>
                         <td>String</td>
                         <td>暂无数据</td>
+                    </tr>
+                    <tr>
+                        <td>showColnameKey</td>
+                        <td>输入框上展示值的key</td>
+                        <td>String</td>
+                        <td>isak</td>
                     </tr>
                     <tr>
                         <td>placeholder</td>
@@ -151,6 +171,128 @@
                         <td>是否将弹层放置于 body 内。</td>
                         <td>Boolean</td>
                         <td>false</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <inAnchor title="data props" h3></inAnchor>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>属性</th>
+                        <th>说明</th>
+                        <th>类型</th>
+                        <th>默认值</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>start</td>
+                        <td>表格起始的序号值</td>
+                        <td>Number</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>tabth</td>
+                        <td>表头</td>
+                        <td>Array</td>
+                        <td>[]</td>
+                    </tr>
+                    <tr>
+                        <td>row</td>
+                        <td>表数据</td>
+                        <td>Array</td>
+                        <td>[]</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <inAnchor title="tabth props" h3></inAnchor>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>属性</th>
+                        <th>说明</th>
+                        <th>类型</th>
+                        <th>默认值</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>colname</td>
+                        <td>列头显示文字</td>
+                        <td>String</td>
+                        <td>空</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>对应列内容的字段名</td>
+                        <td>String</td>
+                        <td>空</td>
+                    </tr>
+                    <tr>
+                        <td>isak</td>
+                        <td>输入框是否显示该列（该字段名字可以根据showColnameKey来设置）</td>
+                        <td>Boolean</td>
+                        <td>无</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <inAnchor title="row props" h3></inAnchor>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>说明</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>如果tabth 为 [
+                            {
+                            "colname": "ID",
+                            "name": "ID",
+                            "show": true
+                            }
+                            ] 该row为 [
+                            {
+                            "ID": {
+                            "val": "1242"
+                            }
+                            },
+                            {
+                            "ID": {
+                            "val": "1243"
+                            }
+                            },
+                            {
+                            "ID": {
+                            "val": "4983"
+                            }
+                            }
+                            ]</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <inAnchor title="AutoData props" h3></inAnchor>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>属性</th>
+                        <th>说明</th>
+                        <th>类型</th>
+                        <th>默认值</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>数据id，支持ID （必传）</td>
+                        <td>String</td>
+                        <td>''</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>其他的属性随便传，界面显示根据columnsKey 和 hidecolumns 来设置</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     </tbody>
                 </table>
@@ -229,10 +371,15 @@
         totalRowCount: 39,
         pageSize: 10,
         AutoData: [],
-        defaultSelected: Code.defaultSelected,
+        defaultSelected: [],
         dataEmptyMessage: '数据加载中...', // 无数据的提示
         columns:['name','value']// 展现的组
       }
+    },
+    mounted() {
+      setTimeout(() =>{
+        this.defaultSelected = Code.defaultSelected;
+      },300);
     },
     computed: {
       formatNumber () {
