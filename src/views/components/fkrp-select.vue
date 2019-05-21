@@ -309,37 +309,47 @@
                     <tr>
                         <td>on-fkrp-selected</td>
                         <td>选中的值时触发</td>
-                        <td>value（是个数组包含ID和lable）和 DropDownSelectFilter 组件实例this</td>
+                        <td>value（是个数组包含ID和lable）和 DropDownSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-page-change</td>
                         <td>页码更改时触发</td>
-                        <td>页码值value和 DropDownSelectFilter 组件实例this</td>
+                        <td>页码值value和 DropDownSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-input-value-change</td>
                         <td>模糊搜索，输入值时触发</td>
-                        <td>输入的值value和 DropDownSelectFilter 组件实例this</td>
+                        <td>输入的值value和 DropDownSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-focus</td>
                         <td>聚焦的时候触发</td>
-                        <td>event 和 DropDownSelectFilter 组件实例this</td>
+                        <td>event 和 DropDownSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-blur</td>
                         <td>失去焦点的时候触发</td>
-                        <td>event 和 DropDownSelectFilter 组件实例this</td>
+                        <td>event 和 DropDownSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-keyup</td>
                         <td>原生的 keyup 事件</td>
-                        <td>event 和 DropDownSelectFilter 组件实例this</td>
+                        <td>event 和 DropDownSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-keydown</td>
                         <td>原生的 keydown 事件</td>
-                        <td>event 和 DropDownSelectFilter 组件实例this</td>
+                        <td>event 和 DropDownSelectFilter 组件实例</td>
+                    </tr>
+                    <tr>
+                        <td>on-popper-show</td>
+                        <td>气泡弹出时触发</td>
+                        <td>DropDownSelectFilter 组件实例</td>
+                    </tr>
+                    <tr>
+                        <td>on-popper-hide</td>
+                        <td>气泡关闭时触发</td>
+                        <td>DropDownSelectFilter 组件实例</td>
                     </tr>
                     </tbody>
                 </table>
