@@ -567,19 +567,19 @@ code.data8 = {
 code.defaultSelected = [
   {
     "ID":  "4919",
-    "Lable": "[00]总部"
+    "Label": "[00]总部"
   },
   {
     "ID": "4971",
-    "Lable": "[002]002"
+    "Label": "[002]002"
   },
   {
     "ID": "1240",
-    "Lable": "[01]杭州仓库"
+    "Label": "[01]杭州仓库"
   },
   {
     "ID": "1242",
-    "Lable": "[03]北京仓库"
+    "Label": "[03]北京仓库"
   }
 ];
 code.AutoData = [

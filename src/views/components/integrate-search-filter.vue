@@ -228,6 +228,11 @@
                         <td>删除单个检索项时触发</td>
                         <td>该检索项下标index </td>
                     </tr>
+                    <tr>
+                        <td>on-value-change</td>
+                        <td>单个组件改变时触发</td>
+                        <td>该组件的配置项和改变的值 </td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
