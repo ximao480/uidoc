@@ -414,6 +414,12 @@
                             <td>String | Number</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>arrowdown</td>
+                            <td>控制折叠箭头是否展示,默认不展示</td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Submenu slot" h3></inAnchor>

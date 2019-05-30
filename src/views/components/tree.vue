@@ -136,6 +136,30 @@
                             <td>Boolean</td>
                             <td>true</td>
                         </tr>
+                        <tr>
+                            <td>query</td>
+                            <td>模糊匹配字符</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>queryStyle</td>
+                            <td>设置匹配字符样式</td>
+                            <td>Object</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>selectMessageShow</td>
+                            <td>控制是否显示当前节点的选中个数</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>selectMessage</td>
+                            <td>回调函数，可以自定义显示显示内容，返回参数为当前节点选中的个数</td>
+                            <td>Function</td>
+                            <td>-</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Tree events" h3></inAnchor>
@@ -151,12 +175,12 @@
                         <tr>
                             <td>on-select-change</td>
                             <td>点击树节点时触发</td>
-                            <td>当前已选中的节点数组</td>
+                            <td>当前已选中的节点数组和当前改变的节点数据</td>
                         </tr>
                         <tr>
                             <td>on-check-change</td>
                             <td>点击复选框时触发</td>
-                            <td>当前已勾选节点的数组</td>
+                            <td>当前已勾选节点的数组和当前改变的节点数据</td>
                         </tr>
                         <tr>
                             <td>on-toggle-expand</td>
