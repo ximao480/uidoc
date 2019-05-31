@@ -311,6 +311,24 @@
                             <td>String</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>clickOutsideBlur</td>
+                            <td>失去焦点时是否同时关闭下拉</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>optionsVisible</td>
+                            <td>控制options是否开启v-if控制</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>chooseAll</td>
+                            <td>点击全选时是否勾选所有的选项</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Select events" h3></inAnchor>

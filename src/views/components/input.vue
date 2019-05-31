@@ -303,7 +303,7 @@
                         </tr>
                         <tr>
                             <td>autocomplete</td>
-                            <td>原生的自动完成功能，可选值为 off 和 on</td>
+                            <td>原生的自动完成功能，可选值为 off 和 on,new-password</td>
                             <td>String</td>
                             <td>off</td>
                         </tr>
