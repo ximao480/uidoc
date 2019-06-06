@@ -23,6 +23,60 @@
     <i-article>
         <h1>更新日志</h1>
         <article class="doc-update" >
+            <TimelineItem pending>
+                    <inAnchor title="1.0.3" h2></inAnchor>
+                    <p>
+                        <code>2019-06-06</code>
+                    </p>
+                    <ul>
+                        <li>日期控件对range类型，选择后一个日期时默认选中当天日期的23:59:59</li>
+                        <li>Modal控件添加@on-keyDown事件，每次键盘事件触发，返回event</li>
+                    </ul>
+                </TimelineItem>
+            <TimelineItem pending>
+                    <inAnchor title="1.0.2" h2></inAnchor>
+                    <p>
+                        <code>2019-06-04</code>
+                    </p>
+                    <ul>
+                        <li>修复表格 对齐</li>
+                    </ul>
+                </TimelineItem>
+             <TimelineItem pending>
+                    <inAnchor title="1.0.1" h2></inAnchor>
+                    <p>
+                        <code>2019-06-03</code>
+                    </p>
+                    <ul></ul>
+                        <li>修复表格 默认选中index 事件， 修复 AttachFilter 弹窗内容结构赋值</li>
+                        <li>select添加属性chooseAll控制在全选是选项是否全部选中</li>
+                        <li>修复外键模糊查询 下拉选中报错</li>
+                        <li>table 修复CheckBox 选中表格变色 bug</li>
+                        <li>form  必填字段不能监听问题  (使用时请配合 Object.assign)</li>
+                        <!-- 2019-06-03 -->
+                        <li>修复表格定位层级问题，给td 在合计情况下添加zindex 属性</li>
+                    </ul>
+                </TimelineItem>
+             <TimelineItem pending>
+                    <inAnchor title="1.0.0" h2></inAnchor>
+                    <p>
+                        <code>2019-01-30</code>
+                    </p>
+                    <ul>
+                        <li>全局添加 defaultZindex 默认层级的设置，Vue.use(BurgeonUi,{ defaultZindex: 3000 });</li>
+                        <li>input 添加中文输入change 拦截，中文输入完成时候在触发 change Input事件</li>
+                    </ul>
+                </TimelineItem>
+            <Timeline pending>
+                <TimelineItem>
+                    <inAnchor title="0.1.38" h2></inAnchor>
+                    <p>
+                        <code>2019-01-30</code>
+                    </p>
+                    <ul>
+                        <li>新增 "dragImg" 图片拖拽</li>
+                    </ul>
+                     <article class="doc-update" >
             <Timeline pending>
                 <TimelineItem>
                     <inAnchor title="0.1.31" h2></inAnchor>
@@ -48,18 +102,10 @@
                 </TimelineItem>
             </Timeline>
         </article>
-        <article class="doc-update" >
-            <Timeline pending>
-                <TimelineItem>
-                    <inAnchor title="0.1.38" h2></inAnchor>
-                    <p>
-                        <code>2019-01-30</code>
-                    </p>
-                    <ul>
-                        <li>新增 "dragImg" 图片拖拽</li>
-                    </ul>
-                </TimelineItem>
+                </TimelineItem>     
+                          
             </Timeline>
+            
         </article>
     </i-article>
 </template>
