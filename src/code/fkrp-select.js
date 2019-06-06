@@ -642,6 +642,7 @@ code.fkrp_select_single = `
     <DropDownSelectFilter :single="true"
                 :data="data1"
                 :totalRowCount="totalRowCount"
+                :showColnameKey="'show'"
                 :pageSize="pageSize"
                 @on-page-change="changePage1"
                 @on-input-value-change="InputValueChange"
@@ -885,12 +886,13 @@ code.fkrp_select_single = `
     }
 </script>
 `;
-code.fkrp_select_single1 = ` 
+code.fkrp_select_single1 = `
 <template>
     <DropDownSelectFilter :single="true"
                 :data="data1"
                 :totalRowCount="totalRowCount"
                 :pageSize="pageSize"
+                :showColnameKey="'show'"
                 @on-page-change="changePage1"
                 @on-input-value-change="InputValueChange"
                 :dataEmptyMessage="dataEmptyMessage"
@@ -1203,6 +1205,7 @@ code.fkrp_select_multiple = `
     <DropDownSelectFilter :single="false"
                 :totalRowCount="totalRowCount"
                 :pageSize="pageSize"
+                :showColnameKey="'show'"
                 @on-page-change="changePage"
                 :dataEmptyMessage="dataEmptyMessage"
                 :data="data2">
@@ -1518,6 +1521,7 @@ code.fkrp_select_multiple1 = `
     <DropDownSelectFilter :single="false"
                 :totalRowCount="totalRowCount"
                 :pageSize="pageSize"
+                :showColnameKey="'show'"
                 @on-page-change="changePage"
                 :dataEmptyMessage="dataEmptyMessage"
                 :data="data2">
@@ -1602,19 +1606,19 @@ code.fkrp_select_multiple1 = `
                 defaultSelected: [
                   {
                     "ID":  "4919",
-                    "Lable": "[00]总部"
+                    "Label": "[00]总部"
                   },
                   {
                     "ID": "4971",
-                    "Lable": "[002]002"
+                    "Label": "[002]002"
                   },
                   {
                     "ID": "1240",
-                    "Lable": "[01]杭州仓库"
+                    "Label": "[01]杭州仓库"
                   },
                   {
                     "ID": "1242",
-                    "Lable": "[03]北京仓库"
+                    "Label": "[03]北京仓库"
                   }
                 ]
             }
