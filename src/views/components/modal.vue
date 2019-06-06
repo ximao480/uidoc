@@ -391,6 +391,11 @@
                             <td>显示状态发生变化时触发</td>
                             <td>true / false</td>
                         </tr>
+                        <tr>
+                            <td>on-keyDown</td>
+                            <td>keyDown时触发</td>
+                            <td>无</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Modal slot" h3></inAnchor>
