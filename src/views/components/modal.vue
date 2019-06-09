@@ -392,8 +392,8 @@
                             <td>true / false</td>
                         </tr>
                         <tr>
-                            <td>on-keyDown</td>
-                            <td>keyDown时触发</td>
+                            <td>on-keydown</td>
+                            <td>keydown时触发</td>
                             <td>无</td>
                         </tr>
                     </tbody>
