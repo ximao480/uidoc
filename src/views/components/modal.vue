@@ -270,7 +270,7 @@
                         </tr>
                         <tr>
                             <td>closable</td>
-                            <td>是否显示右上角的关闭按钮，关闭后 Esc 按键也将关闭</td>
+                            <td>是否显示右上角的关闭按钮</td>
                             <td>Boolean</td>
                             <td>true</td>
                         </tr>
@@ -564,10 +564,10 @@
                             <td>false</td>
                         </tr>
                         <tr>
-                            <td>closable</td>
-                            <td>是否可以按 Esc 键关闭</td>
-                            <td>Boolean</td>
-                            <td>false</td>
+                            <td>keyDown</td>
+                            <td>快捷键回调</td>
+                            <td>Function</td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td>onOk</td>
