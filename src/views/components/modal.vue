@@ -272,7 +272,7 @@
                             <td>closable</td>
                             <td>是否显示右上角的关闭按钮</td>
                             <td>Boolean</td>
-                            <td>true</td>
+                            <td>false</td>
                         </tr>
                         <tr>
                             <td>mask-closable</td>
