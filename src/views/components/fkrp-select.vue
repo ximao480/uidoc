@@ -170,7 +170,7 @@
                         <td>transfer</td>
                         <td>是否将弹层放置于 body 内。</td>
                         <td>Boolean</td>
-                        <td>false</td>
+                        <td>true</td>
                     </tr>
                     </tbody>
                 </table>

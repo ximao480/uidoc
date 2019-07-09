@@ -114,6 +114,12 @@
                         <td>String</td>
                         <td>top</td>
                     </tr>
+                    <tr>
+                        <td>isSearchItemShow</td>
+                        <td>是否显示检索项</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                    </tr>
                     </tbody>
                 </table>
                 <inAnchor title="dropDownList props" h3></inAnchor>
@@ -147,7 +153,7 @@
                     </tr>
                     <tr>
                         <td>type</td>
-                        <td>组件类型, 可选值为 Input  Select  DatePicker</td>
+                        <td>组件类型, 可选值为 Input  Select  DatePicker DropDownSelectFilter</td>
                         <td>String</td>
                         <td>Input</td>
                     </tr>
