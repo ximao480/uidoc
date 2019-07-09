@@ -104,6 +104,15 @@
                     </div>
                     <i-code lang="html" slot="code">{{ code.fixedAll }}</i-code>
                 </Demo>
+                <!-- <Demo title="固定尾部" vertical hide-code>
+                    <div slot="demo">
+                        <Table width="550" height="200" border :columns="columns2" :data="data4" :totalData="total"></Table>
+                    </div>
+                    <div slot="desc">
+                        <p>同时应用上述两个属性，可以同时固定表头和列。</p>
+                    </div>
+                    <i-code lang="html" slot="code">{{ code.fixedFooter }}</i-code>
+                </Demo> -->
                 <Demo title="单选" vertical hide-code>
                     <div slot="demo">
                         <Table highlight-row ref="currentRowTable" :columns="columns3" :data="data1"></Table>
@@ -262,6 +271,12 @@
                         </thead>
                         <tbody>
                         <tr>
+                            <td>totalData</td>
+                            <td>显示表格底部固定列，可传多行(传值数据参考data)</td>
+                            <td>Array</td>
+                            <td>[]</td>
+                        </tr>
+                         <tr>
                             <td>data</td>
                             <td>显示的结构化数据，其中，字段 cellClassName 用于设置任意单元格的样式名称，因此数据不能使用该字段，详见示例<strong>特定样式</strong>。</td>
                             <td>Array</td>
@@ -527,6 +542,7 @@
                         </tr>
                         </tbody>
                     </table>
+                    
                     <inAnchor title="Table methods" h3></inAnchor>
                     <table>
                         <thead>
@@ -1868,6 +1884,13 @@
               name: 'demo-table-info-cell-name'
             }
           }
+        ],
+        total:[
+                     {
+                        name: '合计',
+                        zip: 800000
+                    },
+
         ],
         data9: [
           {

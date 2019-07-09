@@ -1,28 +1,39 @@
 <style>
-    .doc-update .burgeon-timeline .burgeon-timeline-item-content{
-        top: -14px;
-    }
-    .doc-update h2{
-        margin: 0;
-        font-weight: normal;
-    }
-    .doc-update code{
-        margin: 8px 0 10px;
-    }
-    .doc-update ul{
-        padding-left: 22px !important;
-    }
-    .doc-update-important{
-        color: #3399ff;
-    }
-    .doc-update-loop.burgeon-load-loop{
-        animation-duration: 3s;
-    }
+.doc-update .burgeon-timeline .burgeon-timeline-item-content {
+  top: -14px;
+}
+.doc-update h2 {
+  margin: 0;
+  font-weight: normal;
+}
+.doc-update code {
+  margin: 8px 0 10px;
+}
+.doc-update ul {
+  padding-left: 22px !important;
+}
+.doc-update-important {
+  color: #3399ff;
+}
+.doc-update-loop.burgeon-load-loop {
+  animation-duration: 3s;
+}
 </style>
 <template>
     <i-article>
         <h1>更新日志</h1>
         <article class="doc-update" >
+            <TimelineItem pending>
+                    <inAnchor title="1.0.10" h2></inAnchor>
+                    <p>
+                        <code>2019-06-21</code>
+                    </p>
+                    <ul>
+                        <li>table 列浮动定位的 固定行渲染问题的优化</li>
+                        <li>input ,textarea,checkbox,radio 去除外边框阴影</li>
+                        <!-- <li>外键模糊 清除事件的 失去焦点的优化</li> -->
+                    </ul>
+                </TimelineItem>
             <TimelineItem pending>
                     <inAnchor title="1.0.3" h2></inAnchor>
                     <p>
@@ -110,36 +121,35 @@
     </i-article>
 </template>
 <script>
-    import iArticle from '../../components/article.vue';
-    import iCode from 'iCode';
-    import Code from '../../code/guide';
-    import inAnchor from '../../components/anchor.vue';
-    import issue from '../../components/issue.vue';
-    import mention from '../../components/mention.vue';
+import iArticle from "../../components/article.vue";
+import iCode from "iCode";
+import Code from "../../code/guide";
+import inAnchor from "../../components/anchor.vue";
+import issue from "../../components/issue.vue";
+import mention from "../../components/mention.vue";
 
-    import version from '../../config/config';
+import version from "../../config/config";
 
-    export default {
-        components: {
-            iArticle,
-            iCode,
-            inAnchor,
-            issue,
-            mention
-        },
-        data () {
-            return {
-                code: Code
-            }
-        },
-        mounted () {
-            window.localStorage.setItem('version', version.version);
-        },
-        methods: {
-            handleBefore () {
-                window.open('http://v2.iviewui.com/docs/guide/update');
-            },
-
-        }
+export default {
+  components: {
+    iArticle,
+    iCode,
+    inAnchor,
+    issue,
+    mention
+  },
+  data() {
+    return {
+      code: Code
+    };
+  },
+  mounted() {
+    window.localStorage.setItem("version", version.version);
+  },
+  methods: {
+    handleBefore() {
+      window.open("http://v2.iviewui.com/docs/guide/update");
     }
+  }
+};
 </script>
