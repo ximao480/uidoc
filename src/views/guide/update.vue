@@ -24,6 +24,18 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                    <inAnchor title="1.0.19" h2></inAnchor>
+                    <p>
+                        <code>2019-07-16</code>
+                    </p>
+                    <ul>
+                        <li>table  双击行和单击事件，抛出点击位置的列数据</li>
+                        <li>模糊查询 配置 图标点击事件的回调（在清除事件 配置后 不抛出）</li>
+                        <li>外键模糊查询 enterType 为true 的时候 回车 和失去光标默认选中 第一条</li>
+                        <li>修复checkbox 默认值 设置的时候 先选中 在取消的效果</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
                     <inAnchor title="1.0.10" h2></inAnchor>
                     <p>
                         <code>2019-06-21</code>
@@ -68,7 +80,7 @@
                         <li>修复表格定位层级问题，给td 在合计情况下添加zindex 属性</li>
                     </ul>
                 </TimelineItem>
-             <TimelineItem pending>
+             <TimelineItem>
                     <inAnchor title="1.0.0" h2></inAnchor>
                     <p>
                         <code>2019-01-30</code>
@@ -78,44 +90,36 @@
                         <li>input 添加中文输入change 拦截，中文输入完成时候在触发 change Input事件</li>
                     </ul>
                 </TimelineItem>
-            <Timeline pending>
-                <TimelineItem>
-                    <inAnchor title="0.1.38" h2></inAnchor>
-                    <p>
-                        <code>2019-01-30</code>
-                    </p>
-                    <ul>
-                        <li>新增 "dragImg" 图片拖拽</li>
-                    </ul>
-                     <article class="doc-update" >
-            <Timeline pending>
-                <TimelineItem>
-                    <inAnchor title="0.1.31" h2></inAnchor>
-                    <p>
-                        <code>2019-01-25</code>
-                    </p>
-                    <ul>
-                        <li>Select可搜索情况下，不展示数据问题</li>
-                    </ul>
-                </TimelineItem>
-            </Timeline>
+                
         </article>
-        <article class="doc-update" >
-            <Timeline pending>
-                <TimelineItem>
-                    <inAnchor title="0.1.32" h2></inAnchor>
-                    <p>
-                        <code>2019-01-30</code>
-                    </p>
-                    <ul>
-                        <li>新增 "SplitPanel 多面板分割" 组件</li>
-                    </ul>
-                </TimelineItem>
-            </Timeline>
-        </article>
-                </TimelineItem>     
-                          
-            </Timeline>
+        <TimelineItem>
+            <inAnchor title="0.1.38" h2></inAnchor>
+            <p>
+                <code>2019-01-30</code>
+            </p>
+            <ul>
+                <li>新增 "dragImg" 图片拖拽</li>
+            </ul>
+            </TimelineItem>
+   
+        <TimelineItem>
+            <inAnchor title="0.1.31" h2></inAnchor>
+            <p>
+                <code>2019-01-25</code>
+            </p>
+            <ul>
+                <li>Select可搜索情况下，不展示数据问题</li>
+            </ul>
+        </TimelineItem>
+        <TimelineItem>
+            <inAnchor title="0.1.32" h2></inAnchor>
+            <p>
+                <code>2019-01-30</code>
+            </p>
+            <ul>
+                <li>新增 "SplitPanel 多面板分割" 组件</li>
+            </ul>
+        </TimelineItem>
             
         </article>
     </i-article>
