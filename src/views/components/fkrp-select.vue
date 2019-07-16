@@ -172,6 +172,12 @@
                         <td>Boolean</td>
                         <td>true</td>
                     </tr>
+                    <tr>
+                        <td>isShowPopTip</td>
+                        <td>点击icon的时候是否显示下拉框</td>
+                        <td>Function</td>
+                        <td></td>
+                    </tr>
                     </tbody>
                 </table>
                 <inAnchor title="data props" h3></inAnchor>
