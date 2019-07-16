@@ -439,13 +439,13 @@ const list = {
                     title: 'DropDownSelectFilter 下拉选择',
                     path: '/components/fkrp-select',
                     iconfont: 'iconfont',
-                    icon: 'iconfont icon-bj_xldx'
+                    icon: 'iconfont iconbj_xldx'
                 },
                 {
                   title: 'AttachFilter 气泡',
                   path: '/components/fkrp-poptip',
                   iconfont: 'iconfont',
-                  icon: 'iconfont icon-bj_more'
+                  icon: 'iconfont iconbj_more'
                 },
                 {
                   title: 'SplitPanel 多面板分割',
@@ -463,7 +463,7 @@ const list = {
                   title: 'IntegrateSearchFilter 集成搜索',
                   path: '/components/integrate-search-filter',
                   iconfont: 'iconfont',
-                  icon: 'iconfont icon-bj_search'
+                  icon: 'iconfont iconbj_search'
                 },
                 {
                   title: 'TabPanels 标签面板',

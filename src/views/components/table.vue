@@ -494,6 +494,7 @@
                                 <ul>
                                     <li>当前行的数据</li>
                                     <li>index</li>
+                                    <li>当前列的数据</li>
                                 </ul>
                             </td>
                         </tr>
@@ -504,6 +505,7 @@
                                 <ul>
                                     <li>当前行的数据</li>
                                     <li>index</li>
+                                    <li>当前列的数据</li>
                                 </ul>
                             </td>
                         </tr>
