@@ -189,7 +189,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <inAnchor title="Tree methods" h3></inAnchor>
+                <inAnchor title="Tree methods(通过实例调用)" h3></inAnchor>
                 <table>
                     <thead>
                         <tr>
@@ -209,11 +209,11 @@
                             <td>获取被选中的节点</td>
                             <td>无</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td>getCheckedAndIndeterminateNodes</td>
                             <td>获取选中及半选节点</td>
                             <td>无</td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
                 <inAnchor title="children" h3></inAnchor>
