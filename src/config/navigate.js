@@ -442,6 +442,12 @@ const list = {
                     icon: 'iconfont iconbj_xldx'
                 },
                 {
+                    title: 'DropMultiSelectFilter 下拉多选',
+                    path: '/components/DropMultiSelectFilter',
+                    iconfont: 'iconfont',
+                    icon: 'iconfont iconbj_xldx'
+                },
+                {
                   title: 'AttachFilter 气泡',
                   path: '/components/fkrp-poptip',
                   iconfont: 'iconfont',
