@@ -314,8 +314,8 @@
                         </tr>
                         <tr>
                             <td>height</td>
-                            <td>表格高度，单位 px，设置后，如果表格内容大于此值，会固定表头,如果设置成为true，则自动获取父节点的高度(父级的高度如果是flex 布局，请添加overflow:hidden)，false 自动撑开</td>
-                            <td>Number | String |Boolean</td>
+                            <td>表格高度，单位 px，设置后，如果表格内容大于此值，会固定表头,(父级的高度如果是flex 布局，请添加overflow:hidden)，false 自动撑开</td>
+                            <td>Number | String </td>
                             <td>-</td>
                         </tr>
                         <tr>
