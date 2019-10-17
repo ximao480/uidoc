@@ -173,6 +173,12 @@
                         <td>true</td>
                     </tr>
                     <tr>
+                        <td>isBackRowItem</td>
+                        <td>表格和模糊搜索的数据是否返回选中的整个对象，当此属性为true的时候在返回值里有rowItem这个key</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
                         <td>isShowPopTip</td>
                         <td>点击icon的时候是否显示下拉框</td>
                         <td>Function</td>
@@ -346,6 +352,11 @@
                         <td>on-keydown</td>
                         <td>原生的 keydown 事件</td>
                         <td>event 和 DropDownSelectFilter 组件实例</td>
+                    </tr>
+                    <tr>
+                        <td>on-clear</td>
+                        <td>输入框清空时触发</td>
+                        <td>DropDownSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-popper-show</td>
