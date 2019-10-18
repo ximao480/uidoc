@@ -1217,6 +1217,75 @@ code.DropMultiSelectFilter = `
     export default {
         data () {
             return {
+                data1: {
+                    "start": 0,
+                        "tabth": [
+                            {
+                                "colname": "ID",
+                                "name": "ID",
+                                "show": false
+                            },
+                            {
+                                "colname": "ECODE",
+                                "name": "编码",
+                                "show": false
+                            },
+                            {
+                                "colname": "MIXNAME",
+                                "name": "[编码]名称",
+                                "show": true
+                            },
+                            {
+                                "colname": "ENAME",
+                                "name": "名称",
+                                "show": false
+                            }
+                        ],
+                        "row": [
+                            {
+                                "ENAME": {
+                                    "val": "总部"
+                                },
+                                "ECODE": {
+                                    "val": "00"
+                                },
+                                "MIXNAME": {
+                                    "val": "[00]总部"
+                                },
+                                "ID": {
+                                    "val": "4919"
+                                }
+                            },
+                            {
+                                 "ENAME": {
+                                    "val": "中央仓仓库"
+                                 },
+                                 "ECODE": {
+                                    "val": "000"
+                                 },
+                                 "MIXNAME": {
+                                    "val": "[000]中央仓仓库"
+                                 },
+                                 "ID": {
+                                    "val": "1250"
+                                 }
+                            },
+                            {
+                                "ENAME": {
+                                    "val": "001"
+                                },
+                                "ECODE": {
+                                    "val": "001"
+                                },
+                                "MIXNAME": {
+                                    "val": "[001]001"
+                                },
+                                "ID": {
+                                    "val": "4970"
+                                }
+                            }
+                        ]
+                },
                 totalRowCount: 39,
                 pageSize: 10,
                 AutoData: [],
