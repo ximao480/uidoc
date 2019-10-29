@@ -11,7 +11,7 @@ util.alert = function(content) {
 };
 
 util.title = function (title) {
-    title = title ? title + ' - Burgeon-Ui' : 'Burgeon-Ui - A high quality UI Toolkit based on Vue.js';
+    title = title ? title + ' - ARK-Ui' : 'ARK-Ui - A high quality UI Toolkit based on Vue.js';
     window.document.title = title;
 };
 const SPECIAL_CHARS_REGEXP = /([\:\-\_]+(.))/g;

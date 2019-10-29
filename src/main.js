@@ -10,12 +10,12 @@ import App from './components/app.vue';
 import Routers from './router';
 import Util from './libs/util';
 // import iView from 'iview';
-import BurgeonUi from 'burgeon-ui';
+import ArkUi from 'ark-ui';
 import zhLocale from 'burgeon-ui/dist/locale/zh-CN';
 // import enLocale from 'iview/dist/locale/en-US';
 import Env from './config/env';
 import bus from './components/bus';
-import 'burgeon-ui/dist/styles/burgeon-ui.css';
+import '@syman/ark-ui/dist/styles/ark-ui.css';
 // import 'iview/dist/styles/iview.css';
 // import './styles/theme/index.less';
 
