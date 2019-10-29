@@ -226,7 +226,7 @@
                 <i-code lang="html" slot="code">{{ code.multiple }}</i-code>
             </Demo>
 
-        
+
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
@@ -315,7 +315,8 @@
                         </tr>
                         <tr>
                             <td>class-name</td>
-                            <td>设置抽屉容器.burgeon-drawer-wrap的类名</td>
+                            <td>设置抽屉容器的类名</td>
+                            <!--<td>设置抽屉容器.burgeon-drawer-wrap的类名</td>-->
                             <td>String</td>
                             <td>-</td>
                         </tr>

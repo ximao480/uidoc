@@ -186,7 +186,7 @@
             </Demo>
 
             <inAnchor title="实例化使用方法" h3></inAnchor>
-            <p>除了上述通过标准组件的使用方法，burgeon-ui 还精心封装了一些实例方法，用来创建一次性的轻量级对话框。</p>
+            <p>除了上述通过标准组件的使用方法，ark-ui 还精心封装了一些实例方法，用来创建一次性的轻量级对话框。</p>
             <p>实例以隐式创建 Vue 组件的方式在全局创建一个对话框，并在消失时移除，所以同时只能操作一个对话框。</p>
             <Demo title="基本用法">
                 <div slot="demo">
@@ -241,7 +241,7 @@
                 <i-code lang="html" slot="code">{{ code.propsTest }}</i-code>
             </Demo>
 
-           
+
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
@@ -336,13 +336,15 @@
                         </tr>
                         <tr>
                             <td>styles</td>
-                            <td>设置浮层样式，调整浮层位置等，该属性设置的是<code>.burgeon-modal</code>的样式</td>
+                            <td>设置浮层样式，调整浮层位置等</td>
+                            <!--<td>设置浮层样式，调整浮层位置等，该属性设置的是<code>.burgeon-modal</code>的样式</td>-->
                             <td>Object</td>
                             <td>-</td>
                         </tr>
                         <tr>
                             <td>class-name</td>
-                            <td>设置对话框容器<code>.burgeon-modal-wrap</code>的类名，可辅助实现垂直居中等自定义效果</td>
+                            <td>可辅助实现垂直居中等自定义效果</td>
+                            <!--<td>设置对话框容器<code>.burgeon-modal-wrap</code>的类名，可辅助实现垂直居中等自定义效果</td>-->
                             <td>String</td>
                             <td>-</td>
                         </tr>
@@ -666,7 +668,7 @@
                             title: title,
                             content: content,
                             draggable:false
-                            
+
                         });
                         break;
                     case 'warning':

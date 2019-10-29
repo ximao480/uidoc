@@ -3,7 +3,7 @@
         <article>
             <h1>快速上手</h1>
             <inAnchor title="使用之前" h2></inAnchor>
-            <p>高效的开发，离不开基础工程的搭建。在开始使用 burgeon-ui 之前，有必要先了解以下基础知识，我们也假设您已经写过 Vue，并掌握了下面的内容。</p>
+            <p>高效的开发，离不开基础工程的搭建。在开始使用 ark-ui 之前，有必要先了解以下基础知识，我们也假设您已经写过 Vue，并掌握了下面的内容。</p>
             <ul>
                 <li>
                     <a href="https://cn.vuejs.org/v2/guide/components.html" target="_blank">Vue组件</a>
@@ -12,7 +12,7 @@
                     <a href="https://cn.vuejs.org/v2/guide/single-file-components.html" target="_blank">单文件组件</a>
                 </li>
             </ul>
-            <p>以下概念贯穿 burgeon-ui 前后，建议开发者花点时间来了解。</p>
+            <p>以下概念贯穿 ark-ui 前后，建议开发者花点时间来了解。</p>
             <ul>
                 <li>
                     <code>props</code> 传递数据
@@ -44,7 +44,7 @@
                 如果你未接触过 webpack，建议 <Study type="webpack"></Study>。
             </Alert> -->
 
-            <inAnchor title="引入 burgeon-ui" h2></inAnchor>
+            <inAnchor title="引入 ark-ui" h2></inAnchor>
             <p>一般在 webpack 入口页面 <code>main.js</code> 中如下配置：</p>
             <i-code lang="js" bg>{{ code.install.import }}</i-code>
             <inAnchor title="按需引用" h2></inAnchor>
@@ -54,7 +54,7 @@
             <i-code bg>{{ code.install.need }}</i-code>
             <inAnchor title="特别提醒" h2></inAnchor>
             <ul>
-                <li>按需引用仍然需要导入样式，即在 <strong>main.js</strong> 或根组件执行 <code>import 'burgeon-ui/dist/styles/burgeon-ui.css';</code></li>
+                <li>按需引用仍然需要导入样式，即在 <strong>main.js</strong> 或根组件执行 <code>import 'ark-ui/dist/styles/ark-ui.css';</code></li>
                 <!--<li>按需引用是直接引用的组件库源代码，需要借助 babel 进行编译，以 webpack 为例：</li>-->
                 <!--<i-code lang="js" bg>{{ code.install.warning }}</i-code>-->
             </ul>

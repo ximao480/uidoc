@@ -10,7 +10,7 @@ code.base = `
 </template>
 <script>
     export default {
-        
+    
     }
 </script>
 `;
@@ -25,7 +25,7 @@ code.disabled = `
 </template>
 <script>
     export default {
-        
+    
     }
 </script>
 `;
@@ -40,7 +40,7 @@ code.icon = `
 </template>
 <script>
     export default {
-        
+    
     }
 </script>
 `;
@@ -55,7 +55,7 @@ code.mini = `
 </template>
 <script>
     export default {
-        
+    
     }
 </script>
 `;
@@ -70,7 +70,7 @@ code.card = `
 </template>
 <script>
     export default {
-        
+    
     }
 </script>
 `;
@@ -162,47 +162,47 @@ code.animated = `
 </template>
 <script>
     export default {
-        
+    
     }
 </script>
 `;
-
+// .demo-tabs-style1 > .burgeon-tabs-card > .burgeon-tabs-content {
+//   height: 120px;
+//   margin-top: -16px;
+// }
+//
+// .demo-tabs-style1 > .burgeon-tabs-card > .burgeon-tabs-content > .burgeon-tabs-tabpane {
+//   background: #fff;
+//   padding: 16px;
+// }
+//
+// .demo-tabs-style1 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab {
+//   border-color: transparent;
+// }
+//
+// .demo-tabs-style1 > .burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab-active {
+//   border-color: #fff;
+// }
+// .demo-tabs-style2 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab{
+//   border-radius: 0;
+//   background: #fff;
+// }
+// .demo-tabs-style2 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab-active{
+//   border-top: 1px solid #3399ff;
+// }
+// .demo-tabs-style2 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab-active:before{
+//   content: '';
+//   display: block;
+//   width: 100%;
+//   height: 1px;
+//   background: #3399ff;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }
 code.style = `
 <style>
-    .demo-tabs-style1 > .burgeon-tabs-card > .burgeon-tabs-content {
-        height: 120px;
-        margin-top: -16px;
-    }
 
-    .demo-tabs-style1 > .burgeon-tabs-card > .burgeon-tabs-content > .burgeon-tabs-tabpane {
-        background: #fff;
-        padding: 16px;
-    }
-
-    .demo-tabs-style1 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab {
-        border-color: transparent;
-    }
-
-    .demo-tabs-style1 > .burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab-active {
-        border-color: #fff;
-    }
-    .demo-tabs-style2 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab{
-        border-radius: 0;
-        background: #fff;
-    }
-    .demo-tabs-style2 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab-active{
-        border-top: 1px solid #3399ff;
-    }
-    .demo-tabs-style2 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab-active:before{
-        content: '';
-        display: block;
-        width: 100%;
-        height: 1px;
-        background: #3399ff;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
 </style>
 <template>
     <Row :gutter="32">
@@ -224,7 +224,7 @@ code.style = `
 </template>
 <script>
     export default {
-        
+    
     }
 </script>
 `;

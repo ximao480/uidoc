@@ -2,7 +2,7 @@ let code = {};
 
 code.router = `
 // 部分代码省略
-import BurgeonUI from 'burgeon-ui';
+import BurgeonUI from 'ark-ui';
 Vue.use(BurgeonUI);
 
 router.beforeEach((to, from, next) => {

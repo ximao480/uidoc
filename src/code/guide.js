@@ -8,7 +8,7 @@ let loader = {};
 let global = {};
 
 introduce.install = `
-$ npm install burgeon-ui --save
+$ npm install ark-ui --save
 `;
 
 introduce.script= `
@@ -72,7 +72,7 @@ install.demo = `
 `;
 
 install.install = `
-$ npm install burgeon-ui --save
+$ npm install @syman/ark-ui --save
 `;
 
 install.import = `
@@ -80,8 +80,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from 'components/app.vue';
 import Routers from './router.js';
-import BurgeonUi from 'burgeon-ui';
-import 'burgeon-ui/dist/styles/burgeon-ui.css';
+import BurgeonUi from 'ark-ui';
+import 'ark-ui/dist/styles/ark-ui.css';
 //支持根据不同主题引入对应的主题文件
 
 Vue.use(VueRouter);
@@ -101,7 +101,7 @@ new Vue({
 `;
 
 install.need = `
-import { Button, Table } from 'burgeon-ui';
+import { Button, Table } from 'ark-ui';
 Vue.component('Button', Button);
 Vue.component('Table', Table);
 `;
@@ -121,7 +121,7 @@ npm install babel-plugin-import --save-dev
 // .babelrc
 {
   "plugins": [["import", {
-    "libraryName": "burgeon-ui",
+    "libraryName": "ark-ui",
     "libraryDirectory": "src/components"
   }]]
 }
@@ -244,7 +244,7 @@ i18n.cdnvuei18n = `
 
 
 theme.less = `
-@import '~burgeon-ui/src/styles/index.less';
+@import '~ark-ui/src/styles/index.less';
 
 // Here are the variables to cover, such as:
 @primary-color: #8c0776;
@@ -252,7 +252,7 @@ theme.less = `
 
 theme.lessImport = `
 import Vue from 'vue';
-import BurgeonUi from 'burgeon-ui';
+import BurgeonUi from 'ark-ui';
 import '../my-theme/index.less';
 
 Vue.use(BurgeonUi);
@@ -296,7 +296,7 @@ module: {
                 {
                     loader: 'vue-loader',
                     options: {
-                        
+                    
                     }
                 },
                 {

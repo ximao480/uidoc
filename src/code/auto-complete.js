@@ -118,12 +118,12 @@ code.search = `
                         title: '话题',
                         children: [
                             {
-                                title: 'burgeon-ui',
+                                title: 'ark-ui',
                                 count: 10000,
 
                             },
                             {
-                                title: 'burgeon-ui',
+                                title: 'ark-ui',
                                 count: 10600,
 
                             }
@@ -133,12 +133,12 @@ code.search = `
                         title: '问题',
                         children: [
                             {
-                                title: 'burgeon-ui 有多好',
+                                title: 'ark-ui 有多好',
                                 count: 60100,
 
                             },
                             {
-                                title: 'burgeon-ui 是啥',
+                                title: 'ark-ui 是啥',
                                 count: 30010,
 
                             }
@@ -148,7 +148,7 @@ code.search = `
                         title: '文章',
                         children: [
                             {
-                                title: 'burgeon-ui 是一个设计语言',
+                                title: 'ark-ui 是一个设计语言',
                                 count: 100000,
 
                             }
