@@ -9,16 +9,19 @@
                 <div slot="demo">
                     <Button type="primary" @click="scaleDiv(1)">放大</Button>
                     <Button type="primary" @click="scaleDiv(-1)">缩小</Button>
-                    <Button type="primary" @click="add('http://img.hb.aicdn.com/40eaab4cafa7909bfa90758da14e20fbdfdc3edf156e5-de0R8y_fw658')">点击图片预览</Button>
-                    <Button type="primary" @click="add('http://img.hb.aicdn.com/40eaab4cafa7909bfa90758da14e20fbdfdc3edf156e5-de0R8y_fw658')">点击图片预览</Button>
-                    <drag-img
-                            :imgUrl="img"
-                            :divWidth="width"
-                            :divHeight="height"
-                            @on-scaleImg="scaleImg"
-                            ref="dragDiv"
-                    >
-                    </drag-img>
+                    <!-- <Button type="primary" @click="add('http://img.hb.aicdn.com/40eaab4cafa7909bfa90758da14e20fbdfdc3edf156e5-de0R8y_fw658')">点击图片预览</Button> -->
+                    <!-- <Button type="primary" @click="add('http://img.hb.aicdn.com/40eaab4cafa7909bfa90758da14e20fbdfdc3edf156e5-de0R8y_fw658')">点击图片预览</Button> -->
+                    
+                   <drag-img
+                          :imgUrl="img"
+                          :divWidth="width"
+                          :divHeight="height"
+                          @on-scaleImg="scaleImg"
+                          ref="dragDiv"
+                      >
+                      </drag-img>
+                    
+                   
                 </div>
                 <i-code lang="html" slot="code">{{ code.dragImg }}</i-code>
             </Demo>
@@ -89,15 +92,17 @@
   import Demo from '../../components/demo.vue';
   import inAnchor from '../../components/anchor.vue';
   import Code from '../../code/dragImg';
+  import imgSrc from '../../images/bg-christmas.jpg'
 
   export default {
     data () {
       return {
-        width:200,
+        width:400,
         code:Code,
         height:200,
+        show:false,
         scale:1,
-        img: 'http://img.hb.aicdn.com/cb645376ae7aead0d2976d9132fed34dab68c7ac2743cb-gWZ12D_fw658'
+        img:imgSrc
       };
     },
     components: {
@@ -114,18 +119,19 @@
         console.log(x,obj);
       },
       add(url){
-        this.$Modal.confirm({
-          title:'款式图片',
-          render: (h) => h('dragImg',{
-            props:{
-              imgUrl:url,
-              divHeight:300
-            }
-          }),
-          mask:true,
-          width:400,
-          closable:true
-        });
+        // this.$Modal.confirm({
+        //   title:'款式图片',
+        //   render: (h) => h('dragImg',{
+        //     props:{
+        //       imgUrl:url,
+        //       divHeight:300
+        //     }
+        //   }),
+        //   mask:true,
+        //   width:400,
+        //   closable:true
+        // });
+        this.show = true;
       }
     },
     computed:{
