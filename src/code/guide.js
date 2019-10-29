@@ -80,12 +80,12 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from 'components/app.vue';
 import Routers from './router.js';
-import BurgeonUi from 'ark-ui';
+import ArkUi from 'ark-ui';
 import 'ark-ui/dist/styles/ark-ui.css';
 //支持根据不同主题引入对应的主题文件
 
 Vue.use(VueRouter);
-Vue.use(BurgeonUi);
+Vue.use(ArkUi);
 
 // The routing configuration
 const RouterConfig = {
@@ -252,10 +252,10 @@ theme.less = `
 
 theme.lessImport = `
 import Vue from 'vue';
-import BurgeonUi from 'ark-ui';
+import ArkUi from 'ark-ui';
 import '../my-theme/index.less';
 
-Vue.use(BurgeonUi);
+Vue.use(ArkUi);
 `;
 
 theme.install = `
@@ -391,7 +391,7 @@ loader.tags = `
 `;
 
 global.example = `
-Vue.use(BurgeonUi, {
+Vue.use(ArkUi, {
     transfer: true,
     size: 'large'
 });
