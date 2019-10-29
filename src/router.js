@@ -675,6 +675,13 @@ const routers = [
       component: (resolve) => require(['./views/components/integrate-search-filter'], resolve)
     },
     {
+      path: '/components/DropMultiSelectFilter',
+      meta: {
+        title: 'DropMultiSelectFilter 下拉多选'
+      },
+      component: (resolve) => require(['./views/components/drop-multi-select-filter'], resolve)
+    },
+    {
       path: '/components/tab-panels',
       meta: {
         title: 'TabPanels 标签面板'

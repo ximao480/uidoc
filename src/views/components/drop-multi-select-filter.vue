@@ -1,95 +1,57 @@
 <template>
     <i-article>
         <article>
-            <h1>DropDownSelectFilter 下拉选择组件</h1>
+            <h1>DropMultiSelectFilter 下拉选择组件</h1>
             <inAnchor title="概述" h2></inAnchor>
-            <p>FC组件，支持下拉单选和下拉多选，单选和多选都支持模糊搜索。</p>
+            <p>FC组件，下拉多选，支持模糊搜索。</p>
             <inAnchor title="代码示例" h2></inAnchor>
-            <Demo title="下拉单选">
-                <div slot="demo">
-                    <DropDownSelectFilter :single="true"
-                                :data="data"
-                                          :transfer="false"
-                                          :showColnameKey="'show'"
-                                :totalRowCount="totalRowCount"
-                                :pageSize="pageSize"
-                                @on-page-change="changePage"
-                                @on-fkrp-selected="selectedChange"
-                                :dataEmptyMessage="dataEmptyMessage">
-                    </DropDownSelectFilter>
-                </div>
-                <div slot="desc">
-                    <p>下拉单选</p>
-                    <p>可以直接设置 style 来改变输入框的宽度，默认 100%。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.fkrp_select_single }}</i-code>
-            </Demo>
 
-            <Demo title="下拉单选并且有模糊搜索的用法">
+            <Demo title="下拉多选并且有模糊搜索的用法">
                 <div slot="demo">
-                    <DropDownSelectFilter :single="true"
-                                :data="data1"
-                                :totalRowCount="totalRowCount"
-                                :pageSize="pageSize"
+                    <DropMultiSelectFilter
+                                          :data="data1"
+                                          :totalRowCount="totalRowCount"
+                                          :pageSize="pageSize"
                                           :transfer="false"
                                           :showColnameKey="'show'"
-                                @on-page-change="changePage1"
-                                @on-input-value-change="InputValueChange"
-                                @on-fkrp-selected="selectedChange"
-                                :dataEmptyMessage="dataEmptyMessage"
-                                :columns="columns"
-                                :AutoData="AutoData">
-                    </DropDownSelectFilter>
+                                          @on-page-change="changePage1"
+                                          @on-input-value-change="InputValueChange"
+                                          @on-fkrp-selected="selectedChange"
+                                          :dataEmptyMessage="dataEmptyMessage"
+                                          :columns="columns"
+                                          :AutoData="AutoData">
+                    </DropMultiSelectFilter>
                 </div>
                 <div slot="desc">
                     <p>下拉单选,模糊搜索可以输入1或者12或者123测试</p>
                     <p>可以直接设置 style 来改变输入框的宽度，默认 100%。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.fkrp_select_single1 }}</i-code>
-            </Demo>
-
-            <Demo title="下拉多选用法">
-                <div slot="demo">
-                    <DropDownSelectFilter :single="false"
-                                :totalRowCount="totalRowCount"
-                                :pageSize="pageSize"
-                                          :transfer="false"
-                                          :showColnameKey="'show'"
-                                @on-page-change="changePage2"
-                                :dataEmptyMessage="dataEmptyMessage"
-                                :data="data2">
-                    </DropDownSelectFilter>
-                </div>
-                <div slot="desc">
-                    <p>下拉多选，选中的数据超过两条置灰</p>
-                    <p>可以直接设置 style 来改变输入框的宽度，默认 100%。</p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.fkrp_select_multiple }}</i-code>
+                <i-code lang="html" slot="code">{{ code.DropMultiSelectFilter }}</i-code>
             </Demo>
 
             <Demo title="下拉多选有默认值用法">
                 <div slot="demo">
-                    <DropDownSelectFilter :single="false"
-                                :totalRowCount="totalRowCount"
-                                :pageSize="pageSize"
+                    <DropMultiSelectFilter
+                                          :totalRowCount="totalRowCount"
+                                          :pageSize="pageSize"
                                           :transfer="false"
                                           :showColnameKey="'show'"
-                                :defaultSelected="defaultSelected"
-                                @on-page-change="changePage3"
-                                :dataEmptyMessage="dataEmptyMessage"
-                                :data="data3">
-                    </DropDownSelectFilter>
+                                          :defaultSelected="defaultSelected"
+                                          @on-page-change="changePage3"
+                                          :dataEmptyMessage="dataEmptyMessage"
+                                          :data="data3">
+                    </DropMultiSelectFilter>
                 </div>
                 <div slot="desc">
                     <p>下拉多选，有默认数据</p>
                     <p>可以直接设置 style 来改变输入框的宽度，默认 100%。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.fkrp_select_multiple1 }}</i-code>
+                <i-code lang="html" slot="code">{{ code.DropMultiSelectFilter2 }}</i-code>
             </Demo>
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
-                <inAnchor title="DropDownSelectFilter props" h3></inAnchor>
+                <inAnchor title="DropMultiSelectFilter props" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>
@@ -171,12 +133,6 @@
                         <td>是否将弹层放置于 body 内。</td>
                         <td>Boolean</td>
                         <td>true</td>
-                    </tr>
-                    <tr>
-                        <td>isBackRowItem</td>
-                        <td>表格和模糊搜索的数据是否返回选中的整个对象，当此属性为true的时候在返回值里有rowItem这个key</td>
-                        <td>Boolean</td>
-                        <td>false</td>
                     </tr>
                     <tr>
                         <td>isShowPopTip</td>
@@ -308,7 +264,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <inAnchor title="DropDownSelectFilter events" h3></inAnchor>
+                <inAnchor title="DropMultiSelectFilter events" h3></inAnchor>
                 <table>
                     <thead>
                     <tr>
@@ -321,52 +277,52 @@
                     <tr>
                         <td>on-fkrp-selected</td>
                         <td>选中的值时触发</td>
-                        <td>value（是个数组包含ID和lable）和 DropDownSelectFilter 组件实例</td>
+                        <td>value（是个数组包含ID和lable）和 DropMultiSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-page-change</td>
                         <td>页码更改时触发</td>
-                        <td>页码值value和 DropDownSelectFilter 组件实例</td>
+                        <td>页码值value和 DropMultiSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-input-value-change</td>
                         <td>模糊搜索，输入值时触发</td>
-                        <td>输入的值value和 DropDownSelectFilter 组件实例</td>
+                        <td>输入的值value和 DropMultiSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-focus</td>
                         <td>聚焦的时候触发</td>
-                        <td>event 和 DropDownSelectFilter 组件实例</td>
+                        <td>event 和 DropMultiSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-blur</td>
                         <td>失去焦点的时候触发</td>
-                        <td>event 和 DropDownSelectFilter 组件实例</td>
+                        <td>event 和 DropMultiSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-keyup</td>
                         <td>原生的 keyup 事件</td>
-                        <td>event 和 DropDownSelectFilter 组件实例</td>
+                        <td>event 和 DropMultiSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-keydown</td>
                         <td>原生的 keydown 事件</td>
-                        <td>event 和 DropDownSelectFilter 组件实例</td>
+                        <td>event 和 DropMultiSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-clear</td>
                         <td>输入框清空时触发</td>
-                        <td>DropDownSelectFilter 组件实例</td>
+                        <td>DropMultiSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-popper-show</td>
                         <td>气泡弹出时触发</td>
-                        <td>DropDownSelectFilter 组件实例</td>
+                        <td>DropMultiSelectFilter 组件实例</td>
                     </tr>
                     <tr>
                         <td>on-popper-hide</td>
                         <td>气泡关闭时触发</td>
-                        <td>DropDownSelectFilter 组件实例</td>
+                        <td>DropMultiSelectFilter 组件实例</td>
                     </tr>
                     </tbody>
                 </table>
