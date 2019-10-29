@@ -103,7 +103,7 @@
                 <i-code lang="html" slot="code">{{ code.search }}</i-code>
             </Demo>
 
-    
+
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
@@ -256,12 +256,12 @@
                         title: '话题',
                         children: [
                             {
-                                title: 'burgeon-ui',
+                                title: 'ark-ui',
                                 count: 10000,
 
                             },
                             {
-                                title: 'burgeon-ui UI',
+                                title: 'ark-ui UI',
                                 count: 10600,
 
                             }
@@ -271,12 +271,12 @@
                         title: '问题',
                         children: [
                             {
-                                title: 'burgeon-ui UI 有多好',
+                                title: 'ark-ui UI 有多好',
                                 count: 60100,
 
                             },
                             {
-                                title: 'burgeon-ui 是啥',
+                                title: 'ark-ui 是啥',
                                 count: 30010,
 
                             }
@@ -286,7 +286,7 @@
                         title: '文章',
                         children: [
                             {
-                                title: 'burgeon-ui 是一个设计语言',
+                                title: 'ark-ui 是一个设计语言',
                                 count: 100000,
 
                             }

@@ -2,7 +2,7 @@
     <i-article>
         <article>
             <h1>全局配置</h1>
-            <p>使用 burgeon-ui 时，可以进行全局配置组件的一些属性。</p>
+            <p>使用 ark-ui 时，可以进行全局配置组件的一些属性。</p>
             <p>目前只支持配置 <code>transfer</code> 和 <code>size</code> 两个属性。组件会优先使用 prop 设置的属性，如果未设置，再使用全局配置。</p>
             <ul>
                 <li>

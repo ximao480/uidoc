@@ -544,7 +544,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    
+
                     <inAnchor title="Table methods" h3></inAnchor>
                     <table>
                         <thead>

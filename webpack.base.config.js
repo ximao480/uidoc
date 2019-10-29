@@ -55,11 +55,13 @@ module.exports = {
             //     test: /iview\/.*?js$/,
             //     loader: 'babel-loader'
             // },
-            {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
-            },
+          {
+            test: /\.m?js$/,
+            exclude: /(node_modules|bower_components)/,
+            use: {
+              loader: 'babel-loader'
+            }
+          },
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
