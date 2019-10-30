@@ -1,7 +1,7 @@
 <template>
     <i-article>
         <article>
-            <h1>DropMultiSelectFilter 下拉选择组件</h1>
+            <h1>DropMultiSelectFilter 下拉多选组件</h1>
             <inAnchor title="概述" h2></inAnchor>
             <p>FC组件，下拉多选，支持模糊搜索。</p>
             <inAnchor title="代码示例" h2></inAnchor>
@@ -133,6 +133,12 @@
                         <td>是否将弹层放置于 body 内。</td>
                         <td>Boolean</td>
                         <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>disabled</td>
+                        <td>是否为禁用状态</td>
+                        <td>Boolean</td>
+                        <td>false</td>
                     </tr>
                     <tr>
                         <td>isShowPopTip</td>

@@ -439,7 +439,7 @@ const list = {
                     title: 'DropDownSelectFilter 下拉选择',
                     path: '/components/fkrp-select',
                     iconfont: 'iconfont',
-                    icon: 'iconfont iconbj_xldx'
+                    icon: 'iconfont iconbj_xldan'
                 },
                 {
                     title: 'DropMultiSelectFilter 下拉多选',
@@ -457,25 +457,28 @@ const list = {
                   title: 'SplitPanel 多面板分割',
                   path: '/components/split-panel',
                   img: 'split.png',
-                  icon: 'ios-square-outline'
+                  iconfont: 'iconfont',
+                  icon: 'iconfont iconbj_tuozhuai'
                 },
                 {
                     title: 'ImageUpload 图片上传',
                     path: '/components/ImageUpload',
                     img: 'split.png',
-                    icon: 'ios-square-outline'
+                    iconfont: 'iconfont',
+                    icon: 'iconfont iconmd-photos'
                   },
                   {
                   title: 'IntegrateSearchFilter 集成搜索',
                   path: '/components/integrate-search-filter',
                   iconfont: 'iconfont',
-                  icon: 'iconfont iconbj_search'
+                  icon: 'iconfont iconmd-search'
                 },
                 {
                   title: 'TabPanels 标签面板',
                   path: '/components/tab-panels',
                   img: 'tabs.png',
-                  icon: 'ios-more-outline'
+                  iconfont: 'iconfont',
+                  icon: 'iconfont iconmd-list'
                 }
             ]
         },

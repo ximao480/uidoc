@@ -1,7 +1,7 @@
 <template>
     <i-article>
         <article>
-            <h1>TabPanels</h1>
+            <h1>TabPanels 标签面板组件</h1>
             <inAnchor title="概述" h2></inAnchor>
             <p></p>
             <inAnchor title="代码示例" h2></inAnchor>

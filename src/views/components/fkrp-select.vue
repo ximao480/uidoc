@@ -173,6 +173,12 @@
                         <td>true</td>
                     </tr>
                     <tr>
+                        <td>disabled</td>
+                        <td>是否为禁用状态</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
                         <td>isBackRowItem</td>
                         <td>表格和模糊搜索的数据是否返回选中的整个对象，当此属性为true的时候在返回值里有rowItem这个key</td>
                         <td>Boolean</td>
