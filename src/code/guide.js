@@ -8,7 +8,7 @@ let loader = {};
 let global = {};
 
 introduce.install = `
-$ npm install ark-ui --save
+$ npm install @syamn/ark-ui --save
 `;
 
 introduce.script= `
@@ -252,7 +252,7 @@ theme.less = `
 
 theme.lessImport = `
 import Vue from 'vue';
-import ArkUi from 'ark-ui';
+import ArkUi from '@syamn/ark-ui';
 import '../my-theme/index.less';
 
 Vue.use(ArkUi);
