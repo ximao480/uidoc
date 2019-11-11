@@ -381,6 +381,13 @@ const routers = [
         component: (resolve) => require(['./views/components/form.vue'], resolve)
     },
     {
+        path: '/components/formlayout',
+        meta: {
+            title: '表单布局 formlayout'
+        },
+        component: (resolve) => require(['./views/components/formlayout.vue'], resolve)
+    },
+    {
         path: '/components/alert',
         meta: {
             title: '警告提示 Alert'
