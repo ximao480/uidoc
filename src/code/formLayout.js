@@ -25,8 +25,7 @@ code.inline = `
                         },
                         event: {
                         'on-change': (e) => {
-                            this.number = 2;
-                            //this.config[1].show = false;
+                            this.defaultColumn = 2;
                         }
                         }
                     }
@@ -46,8 +45,6 @@ code.inline = `
                         },
                         event: {
                         'on-change': (e) => {
-                            this.number = 2;
-                            //this.config[1].show = false;
                         }
                         }
                     }

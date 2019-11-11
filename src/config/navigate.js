@@ -328,7 +328,7 @@ const list = {
                     icon: 'ios-list-box-outline'
                 },
                 {
-                    title: 'Form 表单配置',
+                    title: 'Formlayout 表单配置',
                     path: '/components/formlayout',
                     img: 'form.png',
                     icon: 'ios-list-box-outline'
