@@ -15,7 +15,7 @@
                 </div>
                 <div slot="desc">
                     <p>基础用法</p>
-                    <p>默认宽高为200px</p>
+                    <p>默认宽高为200px,宽高最小值为50px</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.ImageUpload }}</i-code>
             </Demo>
