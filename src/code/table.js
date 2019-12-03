@@ -2291,5 +2291,219 @@ code.head = `
     }
 </script>
 `;
+code.slot = `
+<Table :columns="columnssolt"
+           :data="datasolt">
+      <template slot-scope="{ row, index }"
+                slot="name">
+        <Input type="text"
+               v-model="editName"
+               v-if="editIndex === index" />
+        <span v-else>{{ row.name }}</span>
+      </template>
+      <template slot-scope="{ row, index }"
+                slot="age">
+        <Input type="text"
+               v-model="editAge"
+               v-if="editIndex === index" />
+        <span v-else>{{ row.age }}</span>
+      </template>
+
+      <template slot-scope="{ row, index }"
+                slot="birthday">
+        <Input type="text"
+               v-model="editBirthday"
+               v-if="editIndex === index" />
+        <span v-else>{{ getBirthday(row.birthday) }}</span>
+      </template>
+
+      <template slot-scope="{ row, index }"
+                slot="address">
+        <Input type="text"
+               v-model="editAddress"
+               v-if="editIndex === index" />
+        <span v-else>{{ row.address }}</span>
+      </template>
+
+      <template slot-scope="{ row, index }"
+                slot="action">
+                <Button>保存</Button>
+                <Button>取消</Button>
+      </template>
+    </Table>
+<script>
+    export default {
+        data () {
+            return {
+                editIndex: -1, // 当前聚焦的输入框的行数
+                editName: '', // 第一列输入框，当然聚焦的输入框的输入内容，与 data 分离避免重构的闪烁
+                editAge: '', // 第二列输入框
+                editBirthday: '', // 第三列输入框
+                editAddress: '', // 第四列输入框
+                columnssolt: [
+                    {
+                      title: '姓名',
+                      slot: 'name'
+                    },
+                    {
+                      title: '年龄',
+                      slot: 'age'
+                    },
+                    {
+                      title: '出生日期',
+                      slot: 'birthday'
+                    },
+                    {
+                      title: '地址',
+                      slot: 'address'
+                    },
+                    {
+                      title: '操作',
+                      slot: 'action'
+                    }
+                  ],
+                  datasolt: [
+                    {
+                      name: '王小明',
+                      age: 18,
+                      birthday: '919526400000',
+                      address: '北京市朝阳区芍药居'
+                    },
+                    {
+                      name: '张小刚',
+                      age: 25,
+                      birthday: '696096000000',
+                      address: '北京市海淀区西二旗'
+                    },
+                    {
+                      name: '李小红',
+                      age: 30,
+                      birthday: '563472000000',
+                      address: '上海市浦东新区世纪大道'
+                    },
+                    {
+                      name: '周小伟',
+                      age: 26,
+                      birthday: '687024000000',
+                      address: '深圳市南山区深南大道'
+                    }
+                  ],
+            }
+        },
+        mounted () {
+           
+        }
+    }
+</script>
+`;
+code.treedata = `
+    <Table :columns="columnstree" 
+           @on-row-dblclick="rowClick"
+          :tree-props="treePropsData"
+          :data="datatree"></Table>
+           <Table :columns="columns101" 
+
+          :data="data9"></Table>
+
+          <script>
+    export default {
+        data () {
+            return {
+                columnstree: [
+                    {
+                      title: 'Name',
+                      key: 'name'
+                    },
+                    {
+                      title: 'Age',
+                      key: 'age'
+                    },
+                    {
+                      title: 'Address',
+                      key: 'address'
+                    }
+                  ],
+                  datatree: [
+                    {
+                      name: 'John Brown',
+                      age: 18,
+                      address: 'New York No. 1 Lake Park',
+                      job: 'Data engineer',
+                      interest: 'badminton',
+                      birthday: '1991-05-14',
+                      children: [{
+                        id: 31,
+                        date: '2016-05-01',
+                        name: 'John 1 王小虎',
+                        address: '上海市普陀区金沙江路 1519 弄',
+                        children: [{
+                            id: 31,
+                            date: '2016-05-01',
+                            name: 'John 2 666',
+                            address: '上海市普陀区金沙江路 1519 弄'
+            
+            
+                          }, {
+                            id: 32,
+                            date: '2016-05-01',
+                            name: 'John 2 777',
+                            address: '上海市普陀区金沙江路 1519 弄'
+                          }]
+            
+            
+                      }, {
+                        id: 32,
+                        date: '2016-05-01',
+                        name: 'John 1 王rrr小虎',
+                        address: '上海市普陀区金沙江路 1519 弄'
+                      }],
+                      book: 'Steve Jobs',
+                      movie: 'The Prestige',
+                      music: 'I Cry'
+                    },
+                    {
+                      name: 'Jim 1 Green',
+                      age: 25,
+                      address: 'London No. 1 Lake Park',
+                      job: 'Data Scientist',
+                      interest: 'volleyball',
+                      birthday: '1989-03-18',
+                      book: 'My Struggle',
+                      movie: 'Roman Holiday',
+                      music: 'My Heart Will Go On'
+                    },
+                    {
+                      name: 'Joe Black',
+                      age: 30,
+                      address: 'Sydney No. 1 Lake Park',
+                      job: 'Data Product Manager',
+                      interest: 'tennis',
+                      birthday: '1992-01-31',
+                      book: 'Win',
+                      movie: 'Jobs',
+                      music: 'Don’t Cry'
+                    },
+                    {
+                      name: 'Jon Snow',
+                      age: 26,
+                      address: 'Ottawa No. 2 Lake Park',
+                      job: 'Data Analyst',
+                      interest: 'snooker',
+                      birthday: '1988-7-25',
+                      book: 'A Dream in Red Mansions',
+                      movie: 'A Chinese Ghost Story',
+                      music: 'actor'
+                    }
+                  ],
+            }
+        },
+        mounted () {
+           
+        }
+    }
+</script>
+
+`;
+
 
 export default code;

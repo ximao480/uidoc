@@ -612,6 +612,13 @@ const routers = [
         component: (resolve) => require(['./views/components/scroll.vue'], resolve)
     },
     {
+        path: '/components/wangEditor',
+        meta: {
+            title: '富文本编辑器 wangEditor'
+        },
+        component: (resolve) => require(['./views/components/wangEditor.vue'], resolve)
+    },
+    {
         path: '/components/time',
         meta: {
             title: '相对时间 Time'

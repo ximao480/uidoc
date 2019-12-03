@@ -249,6 +249,67 @@
                     </div>
                     <i-code lang="html" slot="code">{{ code.csv }}</i-code>
                 </Demo>
+                <Demo title="卡槽" vertical hide-code>
+                    <div slot="demo">
+                        <Table :columns="columnssolt"
+           :data="datasolt">
+      <template slot-scope="{ row, index }"
+                slot="name">
+        <Input type="text"
+               v-model="editName"
+               v-if="editIndex === index" />
+        <span v-else>{{ row.name }}</span>
+      </template>
+      <template slot-scope="{ row, index }"
+                slot="age">
+                <Input type="text"
+                      v-model="editAge"
+                      v-if="editIndex === index" />
+                <span v-else>{{ row.age }}</span>
+              </template>
+
+              <template slot-scope="{ row, index }"
+                        slot="birthday">
+                <Input type="text"
+                      v-model="editBirthday"
+                      v-if="editIndex === index" />
+                <span v-else>{{ getBirthday(row.birthday) }}</span>
+              </template>
+
+              <template slot-scope="{ row, index }"
+                        slot="address">
+                <Input type="text"
+                      v-model="editAddress"
+                      v-if="editIndex === index" />
+                <span v-else>{{ row.address }}</span>
+              </template>
+
+              <template slot-scope="{ row, index }"
+                        slot="action">
+                        <Button>保存</Button>
+                        <Button>取消</Button>
+              </template>
+              </Table>
+                    </div>
+                    <div slot="desc">
+                        <p>通过设置属性 <code>slot</code> 可以让表格分开渲染，节约渲染时间。</p>
+                    </div>
+                    <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                </Demo>
+                 <Demo title="树形结构数据" vertical hide-code>
+                    <div slot="demo">
+                        <Table :columns="columnstree" 
+                          :tree-props="treePropsData"
+                          :data="datatree"></Table>
+                          <Table :columns="columns101" 
+
+                          :data="data9"></Table>
+                    </div>
+                    <div slot="desc">
+                        <p>通过设置属性 <code>size</code> 为 <code>large</code> 或 <code>small</code> 可以调整表格尺寸为大或小，默认不填或填写 <code>default</code> 为中。</p>
+                    </div>
+                    <i-code lang="html" slot="code">{{ code.treedata }}</i-code>
+                </Demo>
                 <inAnchor title="高级示例" h2></inAnchor>
                 <p>以上示例已经基本涵盖了表格组件的所有功能，我们根据实际业务场景，增加了一些较为复杂的示例，可以结合来看，更深入了解表格组件的使用。</p>
                 <Button type="primary" size="large" @click="table1 = true">带有分页的复杂表格</Button>
@@ -492,7 +553,7 @@
                             <td>单击某一行时触发</td>
                             <td>
                                 <ul>
-                                    <li>当前行的数据</li>
+                                    <li>当前行的数据(树形结构数据中_parentIndex 对象的父级所在位置)</li>
                                     <li>index</li>
                                     <li>event</li>
                                 </ul>
@@ -690,6 +751,13 @@
                             <td>false</td>
                         </tr>
                         <tr>
+                            <td>slot</td>
+                            <!--<td>自定义渲染列，传入三个参数 row、column 和 index，分别指当前行数据，当前列数据，当前行索引，详见示例</td>-->
+                            <td>自定义渲染列。结合  slot-scope="{ row, index } 方法使用<study-render></study-render></td>
+                            <td>Function</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
                             <td>render</td>
                             <!--<td>自定义渲染列，传入三个参数 row、column 和 index，分别指当前行数据，当前列数据，当前行索引，详见示例</td>-->
                             <td>自定义渲染列，使用 Vue 的 Render 函数。传入两个参数，第一个是 h，第二个为对象，包含 row、column 和 index，分别指当前行数据，当前列数据，当前行索引，详见示例。<study-render></study-render></td>
@@ -708,6 +776,7 @@
                             <td>Function，参数 row 为当前行内容,length为表格当前页数据总行</td>
                             <td>-</td>
                         </tr>
+
                         <tr>
                             <td>sortable</td>
                             <td>对应列是否可以排序，如果设置为 <code>custom</code>，则代表用户希望远程排序，需要监听 Table 的 on-sort-change 事件</td>
@@ -761,6 +830,12 @@
                             <td>表头分组</td>
                             <td>Array</td>
                             <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>tree-props</td>
+                            <td>表格树形结构 子集字段的配置</td>
+                            <td>Object</td>
+                            <td>{children: '对象的子集的key'}</td>
                         </tr>
                         </tbody>
                     </table>
@@ -866,6 +941,146 @@
         table3: false,
         tableData1: this.mockTableData1(),
         tableData2: this.mockTableData2(),
+        treePropsData: { children: 'children' },
+        columnssolt: [
+        {
+          title: '姓名',
+          slot: 'name'
+        },
+        {
+          title: '年龄',
+          slot: 'age'
+        },
+        {
+          title: '出生日期',
+          slot: 'birthday'
+        },
+        {
+          title: '地址',
+          slot: 'address'
+        },
+        {
+          title: '操作',
+          slot: 'action'
+        }
+      ],
+      datasolt: [
+        {
+          name: '王小明',
+          age: 18,
+          birthday: '919526400000',
+          address: '北京市朝阳区芍药居'
+        },
+        {
+          name: '张小刚',
+          age: 25,
+          birthday: '696096000000',
+          address: '北京市海淀区西二旗'
+        },
+        {
+          name: '李小红',
+          age: 30,
+          birthday: '563472000000',
+          address: '上海市浦东新区世纪大道'
+        },
+        {
+          name: '周小伟',
+          age: 26,
+          birthday: '687024000000',
+          address: '深圳市南山区深南大道'
+        }
+      ],
+      columnstree: [
+                    {
+                      title: 'Name',
+                      key: 'name'
+                    },
+                    {
+                      title: 'Age',
+                      key: 'age'
+                    },
+                    {
+                      title: 'Address',
+                      key: 'address'
+                    }
+                  ],
+                  datatree: [
+        {
+          name: 'John Brown',
+          age: 18,
+          address: 'New York No. 1 Lake Park',
+          job: 'Data engineer',
+          interest: 'badminton',
+          birthday: '1991-05-14',
+          children: [{
+            id: 31,
+            date: '2016-05-01',
+            name: 'John 1 王小虎',
+            address: '上海市普陀区金沙江路 1519 弄',
+            children: [{
+                id: 31,
+                date: '2016-05-01',
+                name: 'John 2 666',
+                address: '上海市普陀区金沙江路 1519 弄'
+
+
+              }, {
+                id: 32,
+                date: '2016-05-01',
+                name: 'John 2 777',
+                address: '上海市普陀区金沙江路 1519 弄'
+              }]
+
+
+          }, {
+            id: 32,
+            date: '2016-05-01',
+            name: 'John 1 王rrr小虎',
+            address: '上海市普陀区金沙江路 1519 弄'
+          }],
+          book: 'Steve Jobs',
+          movie: 'The Prestige',
+          music: 'I Cry'
+        },
+        {
+          name: 'Jim 1 Green',
+          age: 25,
+          address: 'London No. 1 Lake Park',
+          job: 'Data Scientist',
+          interest: 'volleyball',
+          birthday: '1989-03-18',
+          book: 'My Struggle',
+          movie: 'Roman Holiday',
+          music: 'My Heart Will Go On'
+        },
+        {
+          name: 'Joe Black',
+          age: 30,
+          address: 'Sydney No. 1 Lake Park',
+          job: 'Data Product Manager',
+          interest: 'tennis',
+          birthday: '1992-01-31',
+          book: 'Win',
+          movie: 'Jobs',
+          music: 'Don’t Cry'
+        },
+        {
+          name: 'Jon Snow',
+          age: 26,
+          address: 'Ottawa No. 2 Lake Park',
+          job: 'Data Analyst',
+          interest: 'snooker',
+          birthday: '1988-7-25',
+          book: 'A Dream in Red Mansions',
+          movie: 'A Chinese Ghost Story',
+          music: 'actor'
+        }
+      ],
+      editIndex: -1, // 当前聚焦的输入框的行数
+      editName: '', // 第一列输入框，当然聚焦的输入框的输入内容，与 data 分离避免重构的闪烁
+      editAge: '', // 第二列输入框
+      editBirthday: '', // 第三列输入框
+      editAddress: '', // 第四列输入框
         tableData3: [
           {
             name: 'John Brown',

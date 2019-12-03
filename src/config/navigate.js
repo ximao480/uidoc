@@ -515,6 +515,12 @@ const list = {
                     path: '/components/scroll',
                     img: 'scroll.png',
                     icon: 'ios-more'
+                },
+                {
+                    title: '富文本编辑器',
+                    path: '/components/wangEditor',
+                    img: 'scroll.png',
+                    icon: 'ios-more'
                 }
             ]
         }
