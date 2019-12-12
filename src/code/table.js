@@ -2398,17 +2398,13 @@ code.slot = `
 `;
 code.treedata = `
     <Table :columns="columnstree" 
-           @on-row-dblclick="rowClick"
           :tree-props="treePropsData"
           :data="datatree"></Table>
-           <Table :columns="columns101" 
-
-          :data="data9"></Table>
-
           <script>
     export default {
         data () {
             return {
+                treePropsData: { children: 'children' },
                 columnstree: [
                     {
                       title: 'Name',

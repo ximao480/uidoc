@@ -301,12 +301,9 @@
                         <Table :columns="columnstree" 
                           :tree-props="treePropsData"
                           :data="datatree"></Table>
-                          <Table :columns="columns101" 
-
-                          :data="data9"></Table>
                     </div>
                     <div slot="desc">
-                        <p>通过设置属性 <code>size</code> 为 <code>large</code> 或 <code>small</code> 可以调整表格尺寸为大或小，默认不填或填写 <code>default</code> 为中。</p>
+                        <p>tree-props 表格树形结构 子集字段的配置</p>
                     </div>
                     <i-code lang="html" slot="code">{{ code.treedata }}</i-code>
                 </Demo>
