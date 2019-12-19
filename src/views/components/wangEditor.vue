@@ -24,7 +24,7 @@
     import Demo from '../../components/demo.vue';
     import Code from '../../code/scroll';
     import inAnchor from '../../components/anchor.vue';
-    import wangEditor from 'burgeon-ui/dist/wangEditor.min'
+    import wangEditor from '@syman/ark-ui/dist/wangEditor.min'
 
     export default {
         components: {

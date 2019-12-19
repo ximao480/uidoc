@@ -5,7 +5,7 @@ code.demo = `
 `;
 
 code.render = `
-<i class="burgeon-icon burgeon-icon-ios-checkmark"></i>
+<i class="ark-icon ark-icon-ios-checkmark"></i>
 `;
 code.custom = `
 <template>

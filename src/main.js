@@ -10,20 +10,20 @@ import App from './components/app.vue';
 import Routers from './router';
 import Util from './libs/util';
 // import iView from 'iview';
-import BurgeonUi from 'burgeon-ui';
-import zhLocale from 'burgeon-ui/dist/locale/zh-CN';
+import ArkUi from '@syman/ark-ui';
+import zhLocale from '@syman/ark-ui/dist/locale/zh-CN';
 // import enLocale from 'iview/dist/locale/en-US';
 import Env from './config/env';
 import bus from './components/bus';
-import 'burgeon-ui/dist/styles/burgeon-ui.css';
-// import 'iview/dist/styles/iview.css';
+import '@syman/ark-ui/dist/styles/ark-ui.css'
+ import '@syman/ark-ui/dist/styles/bjIconfonts/iconfont.css';
 // import './styles/theme/index.less';
 
 
 
 Vue.use(VueRouter);
 Vue.use(VueI18n);
-Vue.use(BurgeonUi);
+Vue.use(ArkUi);
 
 
 

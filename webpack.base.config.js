@@ -13,7 +13,7 @@ module.exports = {
     // 入口
     entry: {
         main: './src/main',
-        vendors: ['vue', 'vue-router', 'burgeon-ui', 'highlightjs/highlight.pack.js', 'clipboard']
+        vendors: ['vue', 'vue-router', '@syman/ark-ui', 'highlightjs/highlight.pack.js', 'clipboard']
     },
     // 输出
     output: {

@@ -414,7 +414,7 @@
             </div>
             <div class="icons">
                 <div class="icons-item" v-for="item in filterIcons" @click="clip(item)">
-                    <i class="burgeon-icon" :class="[`burgeon-icon-${item.name}`]" style="font-size:32px"></i>
+                    <i class="ark-icon " :class="[`ark-icon iconfont icon${item.name}`]" style="font-size:32px"></i>
                     <p>
                         {{ item.name }}
                     </p>
