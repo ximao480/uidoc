@@ -161,27 +161,27 @@ code.border = `
     }
 </script>
 `;
-// .burgeon-table .demo-table-info-row td{
+// .ark-table .demo-table-info-row td{
 //   background-color: #2db7f5;
 //   color: #fff;
 // }
-// .burgeon-table .demo-table-error-row td{
+// .ark-table .demo-table-error-row td{
 //   background-color: #ff6600;
 //   color: #fff;
 // }
-// .burgeon-table td.demo-table-info-column{
+// .ark-table td.demo-table-info-column{
 //   background-color: #2db7f5;
 //   color: #fff;
 // }
-// .burgeon-table .demo-table-info-cell-name {
+// .ark-table .demo-table-info-cell-name {
 //   background-color: #2db7f5;
 //   color: #fff;
 // }
-// .burgeon-table .demo-table-info-cell-age {
+// .ark-table .demo-table-info-cell-age {
 //   background-color: #ff6600;
 //   color: #fff;
 // }
-// .burgeon-table .demo-table-info-cell-address {
+// .ark-table .demo-table-info-cell-address {
 //   background-color: #187;
 //   color: #fff;
 // }

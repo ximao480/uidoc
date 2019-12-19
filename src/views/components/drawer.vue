@@ -12,7 +12,7 @@
     .demo-drawer-profile{
         font-size: 14px;
     }
-    .demo-drawer-profile .burgeon-col{
+    .demo-drawer-profile .ark-col{
         margin-bottom: 12px;
     }
 </style>
@@ -316,7 +316,7 @@
                         <tr>
                             <td>class-name</td>
                             <td>设置抽屉容器的类名</td>
-                            <!--<td>设置抽屉容器.burgeon-drawer-wrap的类名</td>-->
+                            <!--<td>设置抽屉容器.ark-drawer-wrap的类名</td>-->
                             <td>String</td>
                             <td>-</td>
                         </tr>

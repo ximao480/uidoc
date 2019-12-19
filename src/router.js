@@ -206,18 +206,18 @@ const routers = [
         component: (resolve) => require(['./views/guide/theme.vue'], resolve)
     },
     // {
-    //     path: '/docs/guide/burgeon-ui-loader',
+    //     path: '/docs/guide/ark-ui-loader',
     //     meta: {
-    //         title: 'burgeon-ui Loader'
+    //         title: 'ark-ui Loader'
     //     },
-    //     component: (resolve) => require(['./views/guide/burgeon-ui-loader.vue'], resolve)
+    //     component: (resolve) => require(['./views/guide/ark-ui-loader.vue'], resolve)
     // },
     // {
-    //     path: '/docs/guide/burgeon-ui-loader-en',
+    //     path: '/docs/guide/ark-ui-loader-en',
     //     meta: {
-    //         title: 'burgeon-ui Loader'
+    //         title: 'ark-ui Loader'
     //     },
-    //     component: (resolve) => require(['./views/guide/burgeon-ui-loader-en.vue'], resolve)
+    //     component: (resolve) => require(['./views/guide/ark-ui-loader-en.vue'], resolve)
     // },
     {
         path: '/docs/guide/update',

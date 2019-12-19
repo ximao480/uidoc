@@ -166,31 +166,31 @@ code.animated = `
     }
 </script>
 `;
-// .demo-tabs-style1 > .burgeon-tabs-card > .burgeon-tabs-content {
+// .demo-tabs-style1 > .ark-tabs-card > .ark-tabs-content {
 //   height: 120px;
 //   margin-top: -16px;
 // }
 //
-// .demo-tabs-style1 > .burgeon-tabs-card > .burgeon-tabs-content > .burgeon-tabs-tabpane {
+// .demo-tabs-style1 > .ark-tabs-card > .ark-tabs-content > .ark-tabs-tabpane {
 //   background: #fff;
 //   padding: 16px;
 // }
 //
-// .demo-tabs-style1 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab {
+// .demo-tabs-style1 > .ark-tabs.ark-tabs-card > .ark-tabs-bar .ark-tabs-tab {
 //   border-color: transparent;
 // }
 //
-// .demo-tabs-style1 > .burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab-active {
+// .demo-tabs-style1 > .ark-tabs-card > .ark-tabs-bar .ark-tabs-tab-active {
 //   border-color: #fff;
 // }
-// .demo-tabs-style2 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab{
+// .demo-tabs-style2 > .ark-tabs.ark-tabs-card > .ark-tabs-bar .ark-tabs-tab{
 //   border-radius: 0;
 //   background: #fff;
 // }
-// .demo-tabs-style2 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab-active{
+// .demo-tabs-style2 > .ark-tabs.ark-tabs-card > .ark-tabs-bar .ark-tabs-tab-active{
 //   border-top: 1px solid #3399ff;
 // }
-// .demo-tabs-style2 > .burgeon-tabs.burgeon-tabs-card > .burgeon-tabs-bar .burgeon-tabs-tab-active:before{
+// .demo-tabs-style2 > .ark-tabs.ark-tabs-card > .ark-tabs-bar .ark-tabs-tab-active:before{
 //   content: '';
 //   display: block;
 //   width: 100%;

@@ -241,7 +241,7 @@ code.profile = `
     .demo-drawer-profile{
         font-size: 14px;
     }
-    .demo-drawer-profile .burgeon-col{
+    .demo-drawer-profile .ark-col{
         margin-bottom: 12px;
     }
 </style>

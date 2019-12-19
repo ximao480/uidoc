@@ -1,8 +1,8 @@
 <style lang="less">
-    .burgeon-article .burgeon-select li{
+    .ark-article .ark-select li{
         margin-bottom: 0;
     }
-    .burgeon-article .burgeon-select ul{
+    .ark-article .ark-select ul{
         padding-left: 0 !important;
         list-style-type: none;
     }

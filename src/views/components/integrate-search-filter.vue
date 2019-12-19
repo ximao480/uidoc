@@ -159,19 +159,19 @@
                     </tr>
                     <tr>
                         <td>componentAttribute</td>
-                        <td>组件属性,参考Burgeon-ui的属性</td>
+                        <td>组件属性,参考ark-ui的属性</td>
                         <td>String</td>
                         <td>空</td>
                     </tr>
                     <tr>
                         <td>componentEvent</td>
-                        <td>组件events,参考Burgeon-ui的events</td>
+                        <td>组件events,参考ark-ui的events</td>
                         <td>String</td>
                         <td>空</td>
                     </tr>
                     <tr>
                         <td>list</td>
-                        <td>选项，当type为Select时此选项必填，参考Burgeon-ui的下拉选项</td>
+                        <td>选项，当type为Select时此选项必填，参考ark-ui的下拉选项</td>
                         <td>Array</td>
                         <td>[]</td>
                     </tr>

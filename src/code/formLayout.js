@@ -105,7 +105,7 @@ code.label = `
 <FormLayout :defaultColumn="defaultColumn" ref="FormLayout"
 :defaultconfig="config">
 <div slot-scope="props" slot="label" class="formlayout-label">
-       <i class="ark-icon ark-icon-ios-color-fill-outline "></i> {{props.item.label}}:
+       <i class="ark-icon iconios-color-fill-outline "></i> {{props.item.label}}:
  </div>
 
 </FormLayout>

@@ -168,7 +168,7 @@ code.position = `
         align-items: center;
         justify-content: center;
 
-        .burgeon-modal{
+        .ark-modal{
             top: 0;
         }
     }

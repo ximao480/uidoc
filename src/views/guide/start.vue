@@ -3,6 +3,9 @@
         <article>
             <h1>快速上手</h1>
             <inAnchor title="使用之前" h2></inAnchor>
+             <Alert show-icon>
+                字体和ui 框架 目前是分离状态，请注意引入字体
+            </Alert>
             <p>高效的开发，离不开基础工程的搭建。在开始使用 ark-ui 之前，有必要先了解以下基础知识，我们也假设您已经写过 Vue，并掌握了下面的内容。</p>
             <ul>
                 <li>

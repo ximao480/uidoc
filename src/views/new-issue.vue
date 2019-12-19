@@ -17,7 +17,7 @@
             &-main {
                 width: 800px;
                 margin: 10px auto;
-                .burgeon-avatar {
+                .ark-avatar {
                     vertical-align: middle;
                     background: transparent;
                 }
@@ -45,7 +45,7 @@
         align-items: center;
         justify-content: center;
 
-        .burgeon-modal {
+        .ark-modal {
             top: 0;
         }
     }
@@ -65,7 +65,7 @@
         </div>
         <div class="issue-main" v-if="lang === 'zh-CN'">
             <Card shadow>
-                <div class="burgeon-article">
+                <div class="ark-article">
                     <h2>在你开始之前...</h2>
                     <p>
                         首先，虽然我们为了中文用户的方便提供了中文的表单，但在填写时请尽量使用英文。iView 社区不只有中国人。如果你想让尽可能多的人能够看懂你的 issue，就请尽量用英文。
@@ -115,7 +115,7 @@
                             <FormItem label="这个功能解决了什么问题？" prop="problem">
                                 <Input type="textarea" v-model="formData.problem" :autosize="{minRows: 2,maxRows: 10}"/>
                             </FormItem>
-                            <div class="burgeon-article" style="margin-bottom: 20px">
+                            <div class="ark-article" style="margin-bottom: 20px">
                                 <p>
                                     请尽可能详尽地说明这个需求的用例和场景。最重要的是：解释清楚是怎样的用户体验需求催生了这个功能上的需求。iView 的一个重要设计原则是保持 API 的简洁和直接。通常来说，我们只考虑添加在现有的 API 下无法轻松实现的功能。新功能的用例也应当足够常见。
                                 </p>
@@ -123,7 +123,7 @@
                             <FormItem label="你期望的 API 是怎样的？" prop="api">
                                 <Input type="textarea" v-model="formData.api" :autosize="{minRows: 2,maxRows: 10}"/>
                             </FormItem>
-                            <div class="burgeon-article" style="margin-bottom: 20px">
+                            <div class="ark-article" style="margin-bottom: 20px">
                                 <p>
                                     描述一下你期望这个新功能的 API 是如何使用的，并提供一些代码示例。请用 <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown</a> 格式化你的代码片段。
                             </p>
@@ -134,7 +134,7 @@
                             <FormItem label="重现链接：" prop="link">
                                 <Input v-model="formData.link"/>
                             </FormItem>
-                            <div class="burgeon-article" style="margin-bottom: 20px">
+                            <div class="ark-article" style="margin-bottom: 20px">
                                 <p>
                                     请提供一个尽可能精简的 <a href="https://run.iviewui.com/" target="_blank">iView Run</a> 或 <a href="https://jsfiddle.net/yyrzhm46/" target="_blank">JSFiddle</a> 链接。
                             </p>
@@ -148,7 +148,7 @@
                             <FormItem label="重现步骤：" prop="step">
                                 <Input type="textarea" v-model="formData.step" :autosize="{minRows: 2,maxRows: 10}"/>
                             </FormItem>
-                            <div class="burgeon-article" style="margin-bottom: 20px">
+                            <div class="ark-article" style="margin-bottom: 20px">
                                 <p>
                                     简洁清晰的重现步骤能够帮助我们更迅速地定位问题所在。支持使用 <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown</a> 来格式化列表或是代码片段。
                             </p>
@@ -164,7 +164,7 @@
                             <FormItem label="补充说明（可选）：" prop="supplement">
                                 <Input type="textarea" v-model="formData.supplement" :autosize="{minRows: 2,maxRows: 10}"/>
                             </FormItem>
-                            <div class="burgeon-article">
+                            <div class="ark-article">
                                 <p>比如：遇到这个 bug 的业务场景、上下文。</p>
                             </div>
                         </template>
@@ -176,7 +176,7 @@
             </Card>
 
             <Modal v-model="isStrict" class-name="issue-vertical-center-modal" title="为什么要有这么严格的 issue 规定" width="680">
-                <div class="burgeon-article">
+                <div class="ark-article">
                     <p>
                         维护开源项目，尤其是流行的项目，是<a
                             href="https://nolanlawson.com/2017/03/05/what-it-feels-like-to-be-an-open-source-maintainer/"
@@ -201,7 +201,7 @@
                 </div>
             </Modal>
             <Modal v-model="isMin" class-name="issue-vertical-center-modal" title="关于重现" width="680">
-                <div class="burgeon-article">
+                <div class="ark-article">
                     <p>
                         所谓『重现』，就是一段可以运行并展示一个 bug 如何发生的代码。
                     </p>
@@ -232,7 +232,7 @@
                 </div>
             </Modal>
             <Modal v-model="isPreview" title="Issue 预览" width="680">
-                <div class="burgeon-article" v-if="isPreview" v-html="content.html"></div>
+                <div class="ark-article" v-if="isPreview" v-html="content.html"></div>
                 <div slot="footer">
                     <Button type="primary" size="large" @click="handleCreate">创建</Button>
                 </div>
@@ -241,7 +241,7 @@
 
         <div class="issue-main" v-else>
             <Card shadow>
-                <div class="burgeon-article">
+                <div class="ark-article">
                     <h2>Before You Start...</h2>
                     <p>
                         The issue list is reserved exclusively for bug reports and feature requests. That means we do not accept usage questions. If you open an issue that does not conform to the requirements, it will be closed immediately. <a @click="handleOpenStrict">Why are we so strict about this?</a>
@@ -286,7 +286,7 @@
                             <FormItem label="What problem does solve this feature?" prop="problem">
                                 <Input type="textarea" v-model="formData.problem" :autosize="{minRows: 2,maxRows: 10}"/>
                             </FormItem>
-                            <div class="burgeon-article" style="margin-bottom: 20px">
+                            <div class="ark-article" style="margin-bottom: 20px">
                                 <p>
                                     Explain your use case, context, and rationale behind this feature request. More importantly, what is the end user experience you are trying to build that led to the need for this feature? An important design goal of iView is keeping the API surface small and straightforward. In general, we only consider adding new features that solve a problem that cannot be easily dealt with using existing APIs (i.e. not just an alternative way of doing things that can already be done). The problem should also be common enough to justify the addition.
                                 </p>
@@ -294,7 +294,7 @@
                             <FormItem label="What does the proposed api look like?" prop="api">
                                 <Input type="textarea" v-model="formData.api" :autosize="{minRows: 2,maxRows: 10}"/>
                             </FormItem>
-                            <div class="burgeon-article" style="margin-bottom: 20px">
+                            <div class="ark-article" style="margin-bottom: 20px">
                                 <p>
                                     Describe how you propose to solve the problem and provide code samples of how the API would work once implemented. Note that you can use <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown</a> to format your code blocks.
                                 </p>
@@ -305,7 +305,7 @@
                             <FormItem label="Link to minimal reproduction:" prop="link">
                                 <Input v-model="formData.link"/>
                             </FormItem>
-                            <div class="burgeon-article" style="margin-bottom: 20px">
+                            <div class="ark-article" style="margin-bottom: 20px">
                                 <p>
                                     Please provide a link to a <a href="https://jsfiddle.net/yyrzhm46/" target="_blank">JSFiddle</a> or provide a GitHub repo.
                             </p>
@@ -319,7 +319,7 @@
                             <FormItem label="Step to reproduce:" prop="step">
                                 <Input type="textarea" v-model="formData.step" :autosize="{minRows: 2,maxRows: 10}"/>
                             </FormItem>
-                            <div class="burgeon-article" style="margin-bottom: 20px">
+                            <div class="ark-article" style="margin-bottom: 20px">
                                 <p>
                                     Clear and concise reproduction instructions are important for us to be able to triage your issue in a timely manner. Note that you can use <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown</a> to format lists and code.
                             </p>
@@ -335,7 +335,7 @@
                             <FormItem label="Any additional comments(optional):" prop="supplement">
                                 <Input type="textarea" v-model="formData.supplement" :autosize="{minRows: 2,maxRows: 10}"/>
                             </FormItem>
-                            <div class="burgeon-article">
+                            <div class="ark-article">
                                 <p>e.g. some background/context of how you ran into this bug.</p>
                             </div>
                         </template>
@@ -347,7 +347,7 @@
             </Card>
 
             <Modal v-model="isStrict" class-name="issue-vertical-center-modal" title="The reason behind our strict issue policy" width="680">
-                <div class="burgeon-article">
+                <div class="ark-article">
                     <p>
                         Maintaining open source projects, especially popular ones, is <a href="https://nolanlawson.com/2017/03/05/what-it-feels-like-to-be-an-open-source-maintainer/" target="_blank">hard work</a>. As iView's user base has grown, we are getting more and more usage questions, bug reports, feature requests and pull requests every single day.
                     </p>
@@ -367,7 +367,7 @@
                 </div>
             </Modal>
             <Modal v-model="isMin" title="About Reproductions" width="680">
-                <div class="burgeon-article">
+                <div class="ark-article">
                     <p>
                         A bug reproduction is a piece of code that can run and demonstrate how a bug can happen.
                     </p>
@@ -397,7 +397,7 @@
                 </div>
             </Modal>
             <Modal v-model="isPreview" title="Preview Issue" width="680">
-                <div class="burgeon-article" v-if="isPreview" v-html="content.html"></div>
+                <div class="ark-article" v-if="isPreview" v-html="content.html"></div>
                 <div slot="footer">
                     <Button type="primary" size="large" @click="handleCreate">Create</Button>
                 </div>

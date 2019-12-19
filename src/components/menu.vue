@@ -1,8 +1,8 @@
 <style>
-    .wrapper-header-nav .burgeon-menu-item i{
+    .wrapper-header-nav .ark-menu-item i{
         margin-right: 6px;
     }
-    .wrapper-header .burgeon-menu{
+    .wrapper-header .ark-menu{
         z-index: 901;
         box-shadow: 0 1px 1px rgba(0,0,0,.08);
     }

@@ -82,6 +82,8 @@ import App from 'components/app.vue';
 import Routers from './router.js';
 import ArkUi from '@syman/ark-ui'
 import '@syman/ark-ui/dist/styles/ark-ui.css'
+import '@syman/ark-ui/dist/styles/bjIconfonts/iconfont.css';
+
 //支持根据不同主题引入对应的主题文件
 
 Vue.use(VueRouter);

@@ -2,7 +2,7 @@
     @import "../styles/index.less";
 </style>
 <style>
-    .index-version .burgeon-badge-count{
+    .index-version .ark-badge-count{
         box-shadow: none;
         right: 0;
         top: -3px;

@@ -1,9 +1,9 @@
 <style>
-    .demo-avatar .burgeon-avatar{
+    .demo-avatar .ark-avatar{
         margin-top: 16px;
         margin-right: 16px;
     }
-    .demo-avatar-badge .burgeon-badge{
+    .demo-avatar-badge .ark-badge{
         margin-right: 16px;
     }
 </style>

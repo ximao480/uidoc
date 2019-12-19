@@ -46,7 +46,7 @@
             </ul>
             <inAnchor title="其它" h3></inAnchor>
             <ul>
-                <li>css前缀使用<code>burgeon-</code></li>
+                <li>css前缀使用<code>ark-</code></li>
             </ul>
         </article>
     </i-article>

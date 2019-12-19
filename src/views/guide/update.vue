@@ -1,5 +1,5 @@
 <style>
-.doc-update .burgeon-timeline .burgeon-timeline-item-content {
+.doc-update .ark-timeline .ark-timeline-item-content {
   top: -14px;
 }
 .doc-update h2 {
@@ -15,7 +15,7 @@
 .doc-update-important {
   color: #3399ff;
 }
-.doc-update-loop.burgeon-load-loop {
+.doc-update-loop.ark-load-loop {
   animation-duration: 3s;
 }
 </style>

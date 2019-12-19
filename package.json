@@ -1,7 +1,7 @@
 {
-  "name": "burgeon-ui-doc",
+  "name": "ark-ui-doc",
   "version": "2.14.3",
-  "description": "Doc of burgeon-ui",
+  "description": "Doc of ark-ui",
   "main": "index.js",
   "scripts": {
     "init": "webpack --progress --config webpack.dev.config.js",
@@ -15,8 +15,7 @@
   "author": "Aresn",
   "license": "MIT",
   "dependencies": {
-    "@sy/ark-ui": "^1.0.40",
-    "@syman/ark-ui": "^1.0.41",
+    "@syman/ark-ui": "^1.0.43",
     "axios": "^0.19.0",
     "clean-webpack-plugin": "^3.0.0",
     "clipboard": "^1.7.1",

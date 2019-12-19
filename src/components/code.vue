@@ -26,7 +26,7 @@
     }
 </style>
 <style>
-    .code-scale-modal .burgeon-modal-body{
+    .code-scale-modal .ark-modal-body{
         background-color: #f7f7f7;
     }
     .code-scale-modal pre{

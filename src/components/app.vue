@@ -24,7 +24,7 @@
             </div>
         </transition>
         <!--<Modal v-if="lang === 'zh-CN'" v-model="fee" title="第一期前端探索交流会" width="750" :closable="false" :mask-closable="false">-->
-            <!--<div class="burgeon-article">-->
+            <!--<div class="ark-article">-->
                 <!--<p>活动介绍：前端探索交流会 FEE(Front End Explore) 是由 TalkingData 可视化团队发起的非盈利性前端开发者交流会，旨在分享、探索和传播具有创新的、有价值的思想、灵感或经验。</p>-->
                 <!--<p>直播时间：2017-12-09 14:30</p>-->
                 <!--<p style="font-size: 16px;font-weight: bold;">-->

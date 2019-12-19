@@ -148,8 +148,8 @@
                 </tbody>
             </table>
         </div>
-        <div class="burgeon-article demo-date-type">
-            <p>以上是 burgeon-ui 支持的日期格式，你可以自由组合出你需要的类型，例如：</p>
+        <div class="ark-article demo-date-type">
+            <p>以上是 ark-ui 支持的日期格式，你可以自由组合出你需要的类型，例如：</p>
             <ul>
                 <li><strong>yyyy年M月d日</strong>：2016年1月1日</li>
                 <li><strong>MM/dd/yy</strong>：12/24/16</li>

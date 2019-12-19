@@ -1,9 +1,9 @@
 <style lang="less">
-    .burgeon-article{
-        .burgeon-card p{
+    .ark-article{
+        .ark-card p{
             margin: 0;
         }
-        .burgeon-card ul{
+        .ark-card ul{
             padding: 0 !important;
             li{
                 list-style: none;
@@ -16,7 +16,7 @@
                 }
             }
         }
-        .burgeon-card img{
+        .ark-card img{
             height: 85px;
         }
 

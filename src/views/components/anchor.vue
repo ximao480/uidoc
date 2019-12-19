@@ -1,5 +1,5 @@
 <style>
-    .demo-anchor .burgeon-affix{
+    .demo-anchor .ark-affix{
         z-index: 1000;
     }
 </style>

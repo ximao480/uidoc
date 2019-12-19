@@ -7,7 +7,7 @@
         position: relative;
         top: 5px;
 
-        .burgeon-dropdown-rel{
+        .ark-dropdown-rel{
             height: 57px;
         }
 

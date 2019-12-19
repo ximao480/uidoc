@@ -1,5 +1,5 @@
 <style scoped>
-    .burgeon-slider{
+    .ark-slider{
         position: relative;
         z-index: 1;
     }

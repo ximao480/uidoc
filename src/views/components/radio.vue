@@ -1,5 +1,5 @@
 <style scoped>
-    .burgeon-icon{
+    .ark-icon{
         /*font-size: 14px;*/
     }
 </style>

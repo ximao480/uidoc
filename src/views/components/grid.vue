@@ -21,16 +21,16 @@
         background: rgba(0, 153, 229, .3);
     }
 
-    .example-demo .burgeon-col, .example-demo .burgeon-col div{
+    .example-demo .ark-col, .example-demo .ark-col div{
         color: #fff;
         padding: 10px 0;
         text-align: center;
         background: rgba(0, 153, 229, .9);
     }
-    .example-demo .gutter .burgeon-col{
+    .example-demo .gutter .ark-col{
         background: transparent !important;
     }
-    .example-demo  .burgeon-col:nth-child(odd), .example-demo  .burgeon-col:nth-child(odd) div{
+    .example-demo  .ark-col:nth-child(odd), .example-demo  .ark-col:nth-child(odd) div{
         background: rgba(0, 153, 229, .7);
     }
 

@@ -55,9 +55,9 @@ const list = {
             path: '/docs/guide/theme'
         },
         // {
-        //     title: 'burgeon-ui Loader',
-        //     titleEn: 'burgeon-ui Loader',
-        //     path: '/docs/guide/burgeon-ui-loader'
+        //     title: 'ark-ui Loader',
+        //     titleEn: 'ark-ui Loader',
+        //     path: '/docs/guide/ark-ui-loader'
         // },
         // {
         //     title: '概览',

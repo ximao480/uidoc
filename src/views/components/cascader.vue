@@ -1,5 +1,5 @@
 <style scoped>
-    .burgeon-cascader{
+    .ark-cascader{
         width: 200px;
     }
 </style>

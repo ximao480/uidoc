@@ -1,25 +1,25 @@
 <style>
-    .burgeon-table .demo-table-info-row td{
+    .ark-table .demo-table-info-row td{
         background-color: #2db7f5;
         color: #fff;
     }
-    .burgeon-table .demo-table-error-row td{
+    .ark-table .demo-table-error-row td{
         background-color: #ff6600;
         color: #fff;
     }
-    .burgeon-table td.demo-table-info-column{
+    .ark-table td.demo-table-info-column{
         background-color: #2db7f5;
         color: #fff;
     }
-    .burgeon-table .demo-table-info-cell-name {
+    .ark-table .demo-table-info-cell-name {
         background-color: #2db7f5;
         color: #fff;
     }
-    .burgeon-table .demo-table-info-cell-age {
+    .ark-table .demo-table-info-cell-age {
         background-color: #ff6600;
         color: #fff;
     }
-    .burgeon-table .demo-table-info-cell-address {
+    .ark-table .demo-table-info-cell-address {
         background-color: #187;
         color: #fff;
     }
@@ -844,7 +844,7 @@
         </i-article>
         <Modal v-model="table1" title="带有分页的复杂表格" width="1000" :styles="{top: '20px'}">
             <div v-if="table1">
-                <div class="burgeon-article">
+                <div class="ark-article">
                     <blockquote>
                         <p>该表格来自于 TalkingData <a href="https://www.talkingdata.com/product-MarketingCloud.jsp" target="_blank">MarketingCloud</a> 产品，展示的是人群画像列表，数据为模拟数据，分页只是提供效果展示，并非真实拉取服务端数据。</p>
                     </blockquote>
@@ -860,7 +860,7 @@
         </Modal>
         <Modal v-model="table2" title="多列指标筛选的表格" width="1000" :styles="{top: '20px'}">
             <div v-if="table2">
-                <div class="burgeon-article">
+                <div class="ark-article">
                     <blockquote>
                         <p>该表格来自于 TalkingData <a href="https://www.talkingdata.com/product-AdTracking.jsp">Ad Tracking</a> 产品，展示各种推广活动不同指标的数据，数据为模拟数据。</p>
                         <p>该示例主要展示固定列、自定义列数量以及排序的功能。</p>
@@ -886,7 +886,7 @@
         </Modal>
         <Modal v-model="table3" title="多种效果组合的表格" width="1000" :styles="{top: '20px'}">
             <div v-if="table3">
-                <div class="burgeon-article">
+                <div class="ark-article">
                     <blockquote>
                         <p>该示例主要展示了表格丰富的显示效果。</p>
                     </blockquote>
