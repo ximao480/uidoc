@@ -9,6 +9,7 @@
                 <div slot="demo">
                      <FormLayout :defaultColumn="defaultColumn" ref="FormLayout"
                         :defaultconfig="config">
+                            <Button type="posdefault" style="margin-left:120px" slot="buttonSlot">这是个插槽</Button>
                         </FormLayout>    
                     
                 </div>
@@ -192,26 +193,42 @@
                     row: 1, // 行高
                     col: 1, // 列宽
                     item: {
-                        type: 'Input', // 组件类型
-                        required: true, // 是否必填
-                        label: 'Input组件',
-                        props: {
-                        placeholder: '后台字段',
-                        value: '',
-                        regularMessage:'请输入文字描述' // 报错提示
-                        },
-                        event: {
-                        'on-change': (e) => {
-                            this.number = 2;
-                            //this.config[1].show = false;
+                            type: 'Checkbox', // 组件类型
+                            required: true, // 是否必填
+                            label: '116666',
+                            props: {
+                            circle:true,
+                            value:'555'
+                            },
+                            event: {
+                            'on-change': (e) => {
+                                //this.number = 2;
+                                //this.config[1].show = false;
+                            }
+                            }
                         }
-                        }
-                    }
                     },
+                     {
+                        item: {
+                            type: 'Button', // 组件类型
+                            required: true, // 是否必填
+                            label: 'Button',
+                            vHtml:'按钮',
+                            props: {
+                            },
+                            event: {
+                            click: (e) => {
+                                console.log(e);
+                                //this.number = 2;
+                                //this.config[1].show = false;
+                            }
+                            }
+                        }
+                        },
                     {
                     show: true,// 是否显示隐藏
                     row: 1, // 行高
-                    col: 1, // 列宽
+                    col: 2, // 列宽
                     item: {
                         type: 'Select', // 组件类型
                         required: true,
@@ -249,7 +266,14 @@
                         }
                         }
                     }
-                    }
+                    },
+                    {
+                        show: true,// 是否显示隐藏
+                    col: 2, // 列宽
+                        item: {
+                            soltName: 'buttonSlot'// 组件类型
+                        }
+                        },
                 ]
                 
             }

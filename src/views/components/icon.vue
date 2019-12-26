@@ -387,17 +387,18 @@
                 </table>
             </div>
 
-            <Demo title="自定义图标用法">
+            <!-- <Demo title="自定义图标用法">
                 <div slot="demo">
-                    <Icon custom="i-icon i-icon-shop_fill" size="24" />
-                    <Icon custom="i-icon i-icon-publishgoods_fill" size="24" />
-                    <Icon custom="i-icon i-icon-financial_fill" size="24" />
+                    <Icon type="ios-add-circle" size="24" />
+                    <Icon type="md-add" size="24" />
+                    <Icon type="ios-albums-outline" size="24" />
+
                 </div>
                 <div slot="desc">
                     <p>ark-ui 的 Icon 支持使用第三方自定义图标，你可以引入任意的字体文件库来使用。</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.custom }}</i-code>
-            </Demo>
+            </Demo> -->
 
             <!-- <Alert show-icon>
                 <template slot="desc">iView 3 使用的是 ionicons 3.x 的图标，iView 2 使用的是 ionicons 2.x 的图标，如果是从 iView 2 升级至 iView 3，需要查找并修改使用过的图标名称，因为很多图标名称改变了。</template>
