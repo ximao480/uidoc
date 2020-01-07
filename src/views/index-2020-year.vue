@@ -213,7 +213,6 @@
   canvas.style.top = 0;
   canvas.style.bottom = 0;
   canvas.style.overflow = 'hidden';
-  canvas.style['z-index'] = -1;
   const context = canvas.getContext('2d');
   const time = new Time;
   let rockets = [];
