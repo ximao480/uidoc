@@ -2,7 +2,7 @@
     @import "../styles/index2020.less";
 </style>
 <template>
-    <div class="index">
+    <div class="index" id="index">
         <div class="index-main">
             <img src="../images/burgeon.png" class="index-logo">
             <div class="index-search">
@@ -213,6 +213,7 @@
   canvas.style.top = 0;
   canvas.style.bottom = 0;
   canvas.style.overflow = 'hidden';
+  canvas.style['z-index'] = -1;
   const context = canvas.getContext('2d');
   const time = new Time;
   let rockets = [];
@@ -293,7 +294,7 @@
   };
 
   const render = function() {
-    window.requestAnimationFrame(render);
+    requestAnimationFrame(render);
 
     time.update();
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -308,15 +309,6 @@
     canvas.height = window.innerHeight;
     canvas.width = window.innerWidth;
   };
-
-  canvas.onclick = addRocket;
-  document.body.appendChild(canvas);
-
-  window.onresize = resize;
-  resize();
-
-  setInterval(addRocket, 2000);
-  render();
 
   import bus from '../../src/components/bus';
   import navigate from '../config/navigate';
@@ -369,6 +361,15 @@
     },
     mounted () {
       this.lang = this.$lang;
+
+      canvas.onclick = addRocket;
+      document.getElementById('index').appendChild(canvas);
+
+      window.onresize = resize;
+      resize();
+
+      setInterval(addRocket, 2000);
+      render();
     },
     created () {
       this.lang = this.$lang;
