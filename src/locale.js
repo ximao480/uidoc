@@ -2,8 +2,8 @@ export default {
     'zh-CN': {
         index: {
             title: '一套基于 Vue.js 的高质量 UI 组件库',
-            title1: '一套基于 Vue.js 的高质量',
-            title2: 'UI 组件库',
+            title1: '基于让软件操作变得舒适、简单、自由的设计价值观',
+            title2: 'ARK UI为设计者和开发者提供模块化解决方案',
             start: '开始使用',
             guide: '指南',
             component: '组件',
