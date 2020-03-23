@@ -183,7 +183,6 @@
                         },
                         event: {
                         'on-change': (e) => {
-                            this.defaultColumn = 1;
                         }
                         }
                     }

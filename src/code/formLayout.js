@@ -26,7 +26,6 @@ code.inline = `
                         },
                         event: {
                         'on-change': (e) => {
-                            this.defaultColumn = 1;
                         }
                         }
                     }
@@ -45,8 +44,7 @@ code.inline = `
                             },
                             event: {
                             'on-change': (e) => {
-                                //this.number = 2;
-                                //this.config[1].show = false;
+                                
                             }
                             }
                         }
@@ -62,8 +60,7 @@ code.inline = `
                             event: {
                             click: (e) => {
                                 console.log(e);
-                                //this.number = 2;
-                                //this.config[1].show = false;
+                               
                             }
                             }
                         }
@@ -200,7 +197,7 @@ code.label = `
                     {
                     show: true,// 是否显示隐藏
                     row: 1, // 行高
-                    col: 2, // 列宽
+                    col: 1, // 列宽
                     item: {
                         type: 'Select', // 组件类型
                         required: true,
