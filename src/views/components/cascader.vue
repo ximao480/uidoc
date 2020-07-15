@@ -221,6 +221,18 @@
                             <td>String</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>valueName</td>
+                            <td>重新定义value字段</td>
+                            <td>String</td>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <td>labelName</td>
+                            <td>重新定义label字段</td>
+                            <td>String</td>
+                            <td>label</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Cascader events" h3></inAnchor>
