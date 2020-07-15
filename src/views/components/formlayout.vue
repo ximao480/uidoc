@@ -3,13 +3,24 @@
         <article>
             <h1>FormLayout 表单</h1>
             <inAnchor title="概述" h2></inAnchor>
-            <p>具有配置绘制界面的自定义配置功能，局限于表单，可用于界面的绘制。</p>           
+            <p>具有配置绘制界面的自定义配置功能，不局限于表单。</p>  
+            <Alert show-icon style="margin-top: 16px">可以动态import 引入组件，赋值给type，可用于界面的绘制，
+                该组件的引入的组件如果支持v-model，则数据双向绑定
+            </Alert>
+
+         
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="">
                 <div slot="demo">
-                     <FormLayout :defaultColumn="defaultColumn" ref="FormLayout"
+                     <FormLayout :defaultColumn="defaultColumn" ref="FormLayoutone"
                         :defaultconfig="config">
-                            <Button type="posdefault" style="margin-left:120px" slot="buttonSlot">这是个插槽</Button>
+                        <div slot="buttonSlot">
+                             <Button type="posdefault" style="margin-left:120px" @click="submit" >提交</Button>
+                            <Button type="posdefault" style="margin-left:120px" @click="reset" >重置</Button>
+
+                        </div>
+                           
+
                         </FormLayout>    
                     
                 </div>
@@ -22,7 +33,6 @@
                         <div slot-scope="props" slot="label" class="formlayout-label">
                                <i class="ark-icon iconfont iconios-color-fill-outline "></i> {{props.item.label}}:
                          </div>
-
                         </FormLayout>
                    
                 </div>
@@ -107,6 +117,24 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>field</td>
+                            <td>后台字段</td>
+                            <td>string</td>
+                            <td></td>
+                        </tr>
+                         <tr>
+                            <td>show</td>
+                            <td>是否显示</td>
+                            <td>布尔值</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td>trigger</td>
+                            <td>是否触发 失去焦点的校验( true 且必填 是触发)</td>
+                            <td>布尔值</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>type</td>
                             <td>组件类型，可以直接等于import 引入的组件 </td>
                             <td>string/Object</td>
@@ -135,7 +163,14 @@
                             <td>event</td>
                             <td>组件的方法传参</td>
                             <td>Object</td>
-                            <td>{}</td>
+                            <td>{
+                                'on-change':(e)=>{
+                                  console.log(e);
+                                },
+                                'on-clear':(e)=>{
+
+                                }
+                            }</td>
                         </tr>
                         <tr>
                             <td>soltName</td>
@@ -143,6 +178,52 @@
                             <td>string</td>
                             <td>{}</td>    
                         </tr>    
+                    </tbody>
+                </table>
+                <inAnchor title="event 事件" h3></inAnchor>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>名称</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>获取change后的值</td>
+                            <td>this.$refs[实例名称].formData </td>
+                        </tr>
+                        <tr>
+                             <td>获取校验的值</td>
+                            <td>this.$refs[实例名称].verifyMessage() </td>
+                        </tr>
+                        <tr>
+                            <td>重置表单</td>
+                            <td>this.$refs[实例名称].reset() </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <inAnchor title="slot 的名称" h3></inAnchor>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>名称</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>label</td>
+                            <td>修改组件标签的展现形式 </td>
+                        </tr>
+                        <tr>
+                            <td>tip</td>
+                            <td>提示的卡槽，可以支持自定义</td>
+                        </tr>
+                        <tr>
+                            <td>content</td>
+                            <td>文件内容展示的,可以支持自定义</td>
+                        </tr>
                     </tbody>
                 </table>
                 
@@ -174,16 +255,13 @@
                     item: {
                         type: 'Input', // 组件类型
                         required: true, // 是否必填
+                        field:'key1',
                         label: 'Input组件',
                         props: {
                         placeholder: '后台字段',
-                        value: '666',
+                        value: '',
                         regularMessage:'请输入内容', // 报错提示
-                        regx:/[0-9]/g // 校验规则
-                        },
-                        event: {
-                        'on-change': (e) => {
-                        }
+                        regx: /^\d+$|^\d+[.]?\d+$/ // 校验规则
                         }
                     }
                     },
@@ -195,15 +273,10 @@
                             type: 'Checkbox', // 组件类型
                             required: true, // 是否必填
                             label: '116666',
+                            field:'key2',
                             props: {
                             circle:true,
-                            value:'555'
-                            },
-                            event: {
-                            'on-change': (e) => {
-                                //this.number = 2;
-                                //this.config[1].show = false;
-                            }
+                            value:false
                             }
                         }
                     },
@@ -214,14 +287,8 @@
                             label: 'Button',
                             vHtml:'按钮',
                             props: {
-                            },
-                            event: {
-                            click: (e) => {
-                                console.log(e);
-                                //this.number = 2;
-                                //this.config[1].show = false;
                             }
-                            }
+                            
                         }
                         },
                     {
@@ -231,6 +298,7 @@
                     item: {
                         type: 'Select', // 组件类型
                         required: true,
+                        field:'key3',
                         label: '下拉框组件',
                         props: {
                         placeholder: '后台字段',
@@ -268,11 +336,13 @@
                     },
                     {
                         show: true,// 是否显示隐藏
-                    col: 2, // 列宽
+                        col: 2, // 列宽
                         item: {
                             soltName: 'buttonSlot'// 组件类型
                         }
-                        },
+                        }
+                        
+                        
                 ]
                 
             }
@@ -286,6 +356,15 @@
                         this.$Message.error('Fail!');
                     }
                 })
+            },
+            reset(){
+               this.$refs.FormLayoutone.reset();
+            },
+            submit(){
+                let verifyMessage = this.$refs.FormLayoutone.verifyMessage();
+                this.$Message.warning(verifyMessage[0] && verifyMessage[0].tip)
+               console.log(verifyMessage,this.$refs.FormLayoutone.formData);
+
             },
             handleReset (name) {
                 this.$refs[name].resetFields();
