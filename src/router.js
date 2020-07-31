@@ -359,13 +359,13 @@ const routers = [
         },
         component: (resolve) => require(['./views/components/rate.vue'], resolve)
     },
-    // {
-    //     path: '/components/upload',
-    //     meta: {
-    //         title: '上传 Upload'
-    //     },
-    //     component: (resolve) => require(['./views/components/upload.vue'], resolve)
-    // },
+    {
+        path: '/components/upload',
+        meta: {
+            title: '上传 Upload'
+        },
+        component: (resolve) => require(['./views/components/upload.vue'], resolve)
+    },
     // {
     //     path: '/components/upload-en',
     //     meta: {
