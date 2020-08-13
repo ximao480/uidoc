@@ -366,7 +366,7 @@
                         </tr>
                         <tr>
                             <td>width</td>
-                            <td>表格宽度，单位 px(如果出现界面在不断重绘的情况，因flex 布局会脱离文档流，请在父级 添加overflow:hidden)</td>
+                            <td>表格宽度，单位 px(如果出现界面在不断重绘的情况，因flex 布局会脱离文档流，请在父级 添加overflow:hidden,或者是在子级flex：1的同层级加上width等于0)</td>
                             <td>Number | String</td>
                             <td>自动</td>
                         </tr>
