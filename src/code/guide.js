@@ -246,7 +246,7 @@ i18n.cdnvuei18n = `
 
 
 theme.less = `
-@import '~ark-ui/src/styles/index.less';
+@import '~@syamn/ark-ui/src/styles/index.less';
 
 // Here are the variables to cover, such as:
 @primary-color: #8c0776;
