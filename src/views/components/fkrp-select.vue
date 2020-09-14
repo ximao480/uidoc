@@ -190,6 +190,12 @@
                         <td>Function</td>
                         <td></td>
                     </tr>
+                    <tr>
+                        <td>className</td>
+                        <td>可辅助实现垂直居中等自定义效果</td>
+                        <td>String</td>
+                        <td>-</td>
+                    </tr>
                     </tbody>
                 </table>
                 <inAnchor title="data props" h3></inAnchor>

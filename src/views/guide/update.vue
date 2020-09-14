@@ -30,6 +30,7 @@
                     </p>
                     <ul>
                         <li>修复textarea在ie中拖拽的兼容性问题</li>
+                        <li>DropDownSelectFilter,DropMultiSelectFilter增加className属性</li>
                     </ul>
            </TimelineItem>
             <TimelineItem pending>
