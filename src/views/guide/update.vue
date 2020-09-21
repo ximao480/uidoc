@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                    <inAnchor title="1.1.0" h2></inAnchor>
+                    <p>
+                        <code>2020-09-11</code>
+                    </p>
+                    <ul>
+                        <li>修复textarea在ie中拖拽的兼容性问题</li>
+                        <li>DropDownSelectFilter,DropMultiSelectFilter增加className属性</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
                     <inAnchor title="1.0.19" h2></inAnchor>
                     <p>
                         <code>2019-07-16</code>
