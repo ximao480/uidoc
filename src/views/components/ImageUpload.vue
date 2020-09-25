@@ -160,6 +160,11 @@
                         <td>在图片上传加载完成时的回调</td>
                         <td>event</td>
                     </tr>
+                    <tr>
+                        <td>dbclick</td>
+                        <td>图片双击事件</td>
+                        <td>event</td>
+                    </tr>
                    </tbody>
                </table> 
             </div>
