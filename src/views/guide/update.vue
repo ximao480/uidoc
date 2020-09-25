@@ -29,7 +29,7 @@
                         <code>2020-09-25</code>
                     </p>
                     <ul>
-                        <li>ImageUpload<增加双击事件/li>
+                        <li>ImageUpload增加双击事件</li>
                     </ul>
            </TimelineItem>
             <TimelineItem pending>
