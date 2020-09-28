@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                    <inAnchor title="1.1.2" h2></inAnchor>
+                    <p>
+                        <code>2020-09-28</code>
+                    </p>
+                    <ul>
+                        <li>Page优化显示</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
                     <inAnchor title="1.1.1" h2></inAnchor>
                     <p>
                         <code>2020-09-25</code>
