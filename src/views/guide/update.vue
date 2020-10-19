@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                    <inAnchor title="1.1.3" h2></inAnchor>
+                    <p>
+                        <code>2020-10-19</code>
+                    </p>
+                    <ul>
+                        <li>去除textarea在ie中的兼容，防止matches方法报错</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
                     <inAnchor title="1.1.2" h2></inAnchor>
                     <p>
                         <code>2020-09-28</code>
