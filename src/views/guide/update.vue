@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                    <inAnchor title="1.1.4" h2></inAnchor>
+                    <p>
+                        <code>2020-11-23</code>
+                    </p>
+                    <ul>
+                        <li>1.selection类型表头checkbox支持禁用</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
                     <inAnchor title="1.1.3" h2></inAnchor>
                     <p>
                         <code>2020-10-19</code>
