@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                    <inAnchor title="1.1.8" h2></inAnchor>
+                    <p>
+                        <code>2020-12-16</code>
+                    </p>
+                    <ul>
+                        <li>1.修改下拉多选弹窗的点击区域以及弹窗自动获取焦点功能</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
                     <inAnchor title="1.1.4" h2></inAnchor>
                     <p>
                         <code>2020-11-23</code>
@@ -31,7 +40,7 @@
                     <ul>
                         <li>1.selection类型表头checkbox支持禁用</li>
                     </ul>
-           </TimelineItem>
+            </TimelineItem>
             <TimelineItem pending>
                     <inAnchor title="1.1.3" h2></inAnchor>
                     <p>
