@@ -29,7 +29,7 @@
                         <code>2020-12-18</code>
                     </p>
                     <ul>
-                        <li>1.修改输入框的正则表达式校验处理/li>
+                        <li>1.修改输入框的正则表达式校验处理</li>
                     </ul>
            </TimelineItem>
             <TimelineItem pending>
