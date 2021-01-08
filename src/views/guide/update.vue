@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                    <inAnchor title="1.1.11" h2></inAnchor>
+                    <p>
+                        <code>2021-01-08</code>
+                    </p>
+                    <ul>
+                        <li>1.修改输入框的正则表达式校验处理</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
                     <inAnchor title="1.1.9" h2></inAnchor>
                     <p>
                         <code>2020-12-18</code>
