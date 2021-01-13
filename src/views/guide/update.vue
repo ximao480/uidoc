@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                    <inAnchor title="1.1.12" h2></inAnchor>
+                    <p>
+                        <code>2021-01-13</code>
+                    </p>
+                    <ul>
+                        <li>1.修复集成搜索组件select类型查询时不清空输入框内内容</li>
+                        <li>2.外健字段模糊搜索禁止特殊字符输入</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
                     <inAnchor title="1.1.11" h2></inAnchor>
                     <p>
                         <code>2021-01-08</code>
