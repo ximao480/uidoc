@@ -103,7 +103,7 @@ new Vue({
 `;
 
 install.need = `
-import { Button, Table } from 'ark-ui';
+import { Button, Table } from '@syman/ark-ui';
 Vue.component('Button', Button);
 Vue.component('Table', Table);
 `;
@@ -123,7 +123,7 @@ npm install babel-plugin-import --save-dev
 // .babelrc
 {
   "plugins": [["import", {
-    "libraryName": "ark-ui",
+    "libraryName": "@syman/ark-ui",
     "libraryDirectory": "src/components"
   }]]
 }
