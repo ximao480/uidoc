@@ -57,7 +57,8 @@
             <i-code bg>{{ code.install.need }}</i-code>
             <inAnchor title="特别提醒" h2></inAnchor>
             <ul>
-                <li>按需引用仍然需要导入样式，即在 <strong>main.js</strong> 或根组件执行 <code>import 'ark-ui/dist/styles/ark-ui.css';</code></li>
+                <li>按需引用仍然需要导入样式，即在 <strong>main.js</strong> 或根组件执行 <code>import '@syman/ark-ui/dist/styles/ark-ui.css'
+;</code></li>
                 <!--<li>按需引用是直接引用的组件库源代码，需要借助 babel 进行编译，以 webpack 为例：</li>-->
                 <!--<i-code lang="js" bg>{{ code.install.warning }}</i-code>-->
             </ul>

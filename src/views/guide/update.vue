@@ -24,6 +24,70 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                    <inAnchor title="1.1.12" h2></inAnchor>
+                    <p>
+                        <code>2021-01-13</code>
+                    </p>
+                    <ul>
+                        <li>1.修复集成搜索组件select类型查询时不清空输入框内内容</li>
+                        <li>2.外健字段模糊搜索禁止特殊字符输入</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
+                    <inAnchor title="1.1.11" h2></inAnchor>
+                    <p>
+                        <code>2021-01-08</code>
+                    </p>
+                    <ul>
+                        <li>1.修改输入框的正则表达式校验处理</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
+                    <inAnchor title="1.1.9" h2></inAnchor>
+                    <p>
+                        <code>2020-12-18</code>
+                    </p>
+                    <ul>
+                        <li>1.修改输入框的正则表达式校验处理</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
+                    <inAnchor title="1.1.8" h2></inAnchor>
+                    <p>
+                        <code>2020-12-16</code>
+                    </p>
+                    <ul>
+                        <li>1.修改下拉多选弹窗的点击区域以及弹窗自动获取焦点功能</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
+                    <inAnchor title="1.1.4" h2></inAnchor>
+                    <p>
+                        <code>2020-11-23</code>
+                    </p>
+                    <ul>
+                        <li>1.selection类型表头checkbox支持禁用</li>
+                    </ul>
+            </TimelineItem>
+            <TimelineItem pending>
+                    <inAnchor title="1.1.3" h2></inAnchor>
+                    <p>
+                        <code>2020-10-19</code>
+                    </p>
+                    <ul>
+                        <li>去除textarea在ie中的兼容，防止matches方法报错</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
+                    <inAnchor title="1.1.2" h2></inAnchor>
+                    <p>
+                        <code>2020-09-28</code>
+                    </p>
+                    <ul>
+                        <li>Page优化显示</li>
+                    </ul>
+           </TimelineItem>
+            <TimelineItem pending>
                     <inAnchor title="1.1.1" h2></inAnchor>
                     <p>
                         <code>2020-09-25</code>

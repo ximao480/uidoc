@@ -834,6 +834,12 @@
                             <td>Object</td>
                             <td>{children: '对象的子集的key'}</td>
                         </tr>
+                        <tr>
+                            <td>_disabled</td>
+                            <td>selection类型表头checkbox禁用</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
