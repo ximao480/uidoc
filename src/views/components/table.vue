@@ -568,6 +568,16 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>on-column-click</td>
+                            <td>单击表头时触发</td>
+                            <td>
+                                <ul>
+                                    <li>event</li>
+                                    <li>column</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>on-expand</td>
                             <td>展开或收起某一行时触发</td>
                             <td>
@@ -832,8 +842,14 @@
                             <td>tree-props</td>
                             <td>表格树形结构 子集字段的配置</td>
                             <td>Object</td>
-                            <td>{children: '对象的子集的key'}</td>
+                            <td>{children: '对象的子集的key',columnIndex:'箭头所在第几列',expand:'默认第几行打开'}</td>
                         </tr>
+                          <!-- <tr>
+                            <td>lazy</td>
+                            <td>表格树形结构 动态加载数据显示loading</td>
+                            <td>Boolean</td>
+                            <td>true</td>
+                        </tr> -->
                         <tr>
                             <td>_disabled</td>
                             <td>selection类型表头checkbox禁用</td>

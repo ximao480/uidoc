@@ -23,6 +23,16 @@
     <i-article>
         <h1>更新日志</h1>
         <article class="doc-update" >
+             <TimelineItem pending>
+                    <inAnchor title="1.1.16" h2></inAnchor>
+                    <p>
+                        <code>2021-03-03</code>
+                    </p>
+                    <ul>
+                        <li>1.表格添加点击表头事件on-column-click,抛出 event 和 当前 column</li>
+                        <li>2.修复scroll 组件动态加载数据，滚动条跳动问题</li>
+                    </ul>
+           </TimelineItem>
             <TimelineItem pending>
                     <inAnchor title="1.1.12" h2></inAnchor>
                     <p>
