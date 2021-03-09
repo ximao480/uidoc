@@ -335,7 +335,7 @@
                             <td>eg :[{name:'<div>合计</div>'}]</td>
                         </tr>
                         <tr>
-                            <td>totalAglin</td>
+                            <td>totalAlign</td>
                             <td>底部表格的对齐方式,居中，居左，居右</td>
                             <td>String</td>
                             <td>center,right,left</td>
@@ -736,6 +736,12 @@
                         <tr>
                             <td>align</td>
                             <td>对齐方式，可选值为 <code>left</code> 左对齐、<code>right</code> 右对齐和 <code>center</code> 居中对齐</td>
+                            <td>String</td>
+                            <td>left</td>
+                        </tr>
+                          <tr>
+                            <td>tdAlign</td>
+                            <td>表体的对齐方式，可选值为 <code>left</code> 左对齐、<code>right</code> 右对齐和 <code>center</code> 居中对齐</td>
                             <td>String</td>
                             <td>left</td>
                         </tr>
