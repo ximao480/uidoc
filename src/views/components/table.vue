@@ -330,9 +330,15 @@
                         <tbody>
                         <tr>
                             <td>totalData</td>
-                            <td>显示表格底部固定列，可传多行(传值数据参考data)</td>
+                            <td>显示表格底部固定列，可传多行(传值数据参考data),支持字段传html</td>
                             <td>Array</td>
-                            <td>[]</td>
+                            <td>eg :[{name:'<div>合计</div>'}]</td>
+                        </tr>
+                        <tr>
+                            <td>totalAglin</td>
+                            <td>底部表格的对齐方式,居中，居左，居右</td>
+                            <td>String</td>
+                            <td>center,right,left</td>
                         </tr>
                          <tr>
                             <td>data</td>
