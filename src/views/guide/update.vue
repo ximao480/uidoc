@@ -24,14 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
-                <inAnchor title="1.1.18" h2></inAnchor>
+                <inAnchor title="1.1.19" h2></inAnchor>
                 <p>
                     <code>2021-03-09</code>
                 </p>
                 <ul>
                     <li>1.表格合计对齐方式 totalAglin:'center,right,left'</li>
                     <li>2.修复表格合计对齐方式,默认继承表头</li>
-                    <li>3.修复表格合计内容支持自定义颜色及html内容</li>
+                    <li>3.添加tdAling</li>
+                    <li>4.修复表格合计内容支持自定义颜色及html内容</li>
+                    <li>5.添加tree methods handleCheck 说明文档</li>
                 </ul>
            </TimelineItem>
              <TimelineItem pending>

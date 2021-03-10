@@ -209,6 +209,11 @@
                             <td>获取被选中的节点</td>
                             <td>无</td>
                         </tr>
+                        <tr>
+                            <td>handleCheck</td>
+                            <td>设置节点是否选中</td>
+                            <td>({ checked(true or false), nodeKey })</td>
+                        </tr>
                         <!-- <tr>
                             <td>getCheckedAndIndeterminateNodes</td>
                             <td>获取选中及半选节点</td>
