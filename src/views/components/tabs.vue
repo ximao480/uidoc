@@ -183,7 +183,17 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.style }}</i-code>
             </Demo>
-
+             <Demo title="拖拽">
+                <div slot="demo">
+                   <Tabs type="card" :draggable="true" @on-drag-drop="handleDragDrop">
+                        <TabPane v-for="(tab, index) in tabList" :key="index" :label="tab.label" :name="tab.name">{{ tab.label }}</TabPane>
+                 </Tabs>
+                </div>
+                <div slot="desc">
+                    <p>通过设置属性 <code>animated</code> 为 <code>false</code> 可以禁用动画。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.animated }}</i-code>
+            </Demo>
 
 
             <div class="api">
@@ -263,6 +273,16 @@
                             <td>tab 被关闭时触发</td>
                             <td>name</td>
                         </tr>
+                        <tr>
+                            <td>on-tab-remove</td>
+                            <td>tab 被关闭时触发</td>
+                            <td>name</td>
+                        </tr>
+                        <tr>
+                            <td>on-drag-drop</td>
+                            <td>拖拽调整页签顺序时触发</td>
+                            <td>name1, name2, index1, index2, names</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Tabs slot" h3></inAnchor>
@@ -321,6 +341,12 @@
                             <td>Boolean</td>
                             <td>null</td>
                         </tr>
+                         <tr>
+                            <td>draggable</td>
+                            <td>是否可拖拽</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -350,6 +376,28 @@
                 tab1: true,
                 tab2: true,
                 tabs: 2,
+                tabList: [
+                    {
+                        label: '标签一',
+                        name: 'name1'
+                    },
+                    {
+                        label: '标签二',
+                        name: 'name2'
+                    },
+                    {
+                        label: '标签三',
+                        name: 'name3'
+                    },
+                    {
+                        label: '标签四',
+                        name: 'name4'
+                    },
+                    {
+                        label: '标签五',
+                        name: 'name5'
+                    }
+                ],
                 label: (h) => {
                     return h('div', [
                         h('span', '标签一'),
@@ -368,6 +416,10 @@
             },
             handleTabsAdd () {
                 this.tabs ++;
+            },
+            handleDragDrop (name, newName, a, b, names) {
+                // names 为调整后的 name 集合
+                this.tabList.splice(b,1,...this.tabList.splice(a, 1 , this.tabList[b]));
             }
         }
     }

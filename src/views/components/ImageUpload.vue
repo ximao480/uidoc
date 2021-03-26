@@ -91,6 +91,18 @@
                         <td>Array</td>
                         <td>[]</td>
                     </tr>
+                    <tr>
+                       <td>dataitem.length</td>
+                        <td>图片上传数量</td>
+                        <td>number</td>
+                        <td></td>
+                    </tr>
+                     <tr>
+                       <td>dataitem.size</td>
+                        <td>图片路径</td>
+                        <td>number</td>
+                        <td></td>
+                    </tr>
                     
                     </tbody>
                 </table>

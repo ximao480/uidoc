@@ -24,6 +24,21 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                <inAnchor title="1.1.21" h2></inAnchor>
+                <p>
+                    <code>2021-03-26</code>
+                </p>
+                <ul>
+                    <li>1.ImageUpload图片添加length 字段，限制图片上传数量,size 字段，限制图片上传大小</li>
+                    <li>2.优化日期控件时区问题展示数据错误</li>
+                    <li>3.this.$Modal 弹窗添加className 属性</li>
+                    <li>4.table 表头添加点击选中配置  highlight-th</li>
+                    <li>5.select 优化赋值事件不触发</li>
+                    <li>6. tabs 支持拖拽</li>
+
+                </ul>
+           </TimelineItem>
+            <TimelineItem pending>
                 <inAnchor title="1.1.19" h2></inAnchor>
                 <p>
                     <code>2021-03-09</code>

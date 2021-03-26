@@ -466,6 +466,12 @@
                             <td>String</td>
                             <td>暂无筛选结果</td>
                         </tr>
+                         <tr>
+                            <td>highlight-th</td>
+                            <td>点击头部添加选中标记</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                         </tbody>
                     </table>
                     <inAnchor title="Table events" h3></inAnchor>
