@@ -29,6 +29,16 @@
                     <code>2021-03-26</code>
                 </p>
                 <ul>
+                    <li>1.处理select组件多选时展示不全问题</li>
+                    <li>2.优化Carousel 循环播放有遮盖问题</li>
+                </ul>
+           </TimelineItem>
+            <TimelineItem pending>
+                <inAnchor title="1.1.21" h2></inAnchor>
+                <p>
+                    <code>2021-03-26</code>
+                </p>
+                <ul>
                     <li>1.ImageUpload图片添加length 字段，限制图片上传数量,size 字段，限制图片上传大小</li>
                     <li>2.优化日期控件时区问题展示数据错误</li>
                     <li>3.this.$Modal 弹窗添加className 属性</li>
