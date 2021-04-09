@@ -24,7 +24,7 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
-                <inAnchor title="1.1.21" h2></inAnchor>
+                <inAnchor title="1.1.23" h2></inAnchor>
                 <p>
                     <code>2021-04-8</code>
                 </p>
