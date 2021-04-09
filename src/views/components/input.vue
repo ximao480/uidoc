@@ -331,6 +331,12 @@
                             <td>正则表达式的类型</td>
                             <td>无</td>
                         </tr>
+                        <tr>
+                            <td>encrypt</td>
+                            <td>组件type值为textarea时，加上该属性可以密文方式显示展示的内容</td>
+                            <td>String</td>
+                            <td>-</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Input events" h3></inAnchor>

@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
             <TimelineItem pending>
+                <inAnchor title="1.1.21" h2></inAnchor>
+                <p>
+                    <code>2021-04-8</code>
+                </p>
+                <ul>
+                    <li>1.input的类型为textarea支持密文的展示形式</li>
+                </ul>
+            </TimelineItem>
+            <TimelineItem pending>
                 <inAnchor title="1.1.22" h2></inAnchor>
                 <p>
                     <code>2021-03-31</code>
