@@ -23,6 +23,16 @@
     <i-article>
         <h1>更新日志</h1>
         <article class="doc-update" >
+          <TimelineItem pending>
+            <inAnchor title="1.1.24" h2></inAnchor>
+            <p>
+              <code>2021-04</code>
+            </p>
+            <ul>
+              <li>1.input支持展示字数统计</li>
+              <li>2.DatePicker在v-model绑定数据时候支持返回format之后的值</li>
+            </ul>
+          </TimelineItem>
             <TimelineItem pending>
                 <inAnchor title="1.1.23" h2></inAnchor>
                 <p>
@@ -230,7 +240,7 @@
                         <li>input 添加中文输入change 拦截，中文输入完成时候在触发 change Input事件</li>
                     </ul>
                 </TimelineItem>
-                
+
         </article>
         <TimelineItem>
             <inAnchor title="0.1.38" h2></inAnchor>
@@ -241,7 +251,7 @@
                 <li>新增 "dragImg" 图片拖拽</li>
             </ul>
             </TimelineItem>
-   
+
         <TimelineItem>
             <inAnchor title="0.1.31" h2></inAnchor>
             <p>
@@ -260,7 +270,7 @@
                 <li>新增 "SplitPanel 多面板分割" 组件</li>
             </ul>
         </TimelineItem>
-            
+
         </article>
     </i-article>
 </template>

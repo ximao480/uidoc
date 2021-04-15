@@ -184,6 +184,23 @@
                 <i-code lang="html" slot="code">{{ code.format }}</i-code>
             </Demo>
 
+            <Demo title="输入长度限制">
+                <div slot="demo">
+                    <Row :gutter="8">
+                        <Col span="12">
+                            <Input v-model="value16" clearable wordLimit :maxlength="10" placeholder="Enter something..." style="width: 200px" />
+                        </Col>
+                        <Col span="12">
+                            <Input v-model="value17" wordLimit type="textarea" :rows="4" :maxlength="30" placeholder="Enter something..." style="width: 200px" />
+                        </Col>
+                    </Row>
+                </div>
+                <div slot="desc">
+                    <p>maxlength 和 minlength 是原生属性，用来限制输入框的字符长度，其中字符长度是用 Javascript 的字符串长度统计的。</p>
+                    <p>对于类型为 text 或 textarea 的输入框，在使用 maxlength 属性限制最大输入长度的同时，可通过设置 wordLimit 属性来展示字数统计。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.wordLimit }}</i-code>
+            </Demo>
 
 
             <div class="api">
@@ -337,6 +354,12 @@
                             <td>String</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>wordLimit</td>
+                            <td>展示字数统计。设置maxlength时才生效</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Input events" h3></inAnchor>
@@ -482,6 +505,8 @@
                 value13: '',
                 value14: 'Hello World',
                 value15: '',
+                value16: '',
+                value17: '',
                 select1: 'http',
                 select2: 'com',
                 select3: 'day'

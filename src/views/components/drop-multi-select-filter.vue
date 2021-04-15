@@ -12,7 +12,6 @@
                                           :data="data1"
                                           :totalRowCount="totalRowCount"
                                           :pageSize="pageSize"
-                                          :transfer="false"
                                           :showColnameKey="'show'"
                                           @on-page-change="changePage1"
                                           @on-input-value-change="InputValueChange"
@@ -34,7 +33,6 @@
                     <DropMultiSelectFilter
                                           :totalRowCount="totalRowCount"
                                           :pageSize="pageSize"
-                                          :transfer="false"
                                           :showColnameKey="'show'"
                                           :defaultSelected="defaultSelected"
                                           @on-page-change="changePage3"

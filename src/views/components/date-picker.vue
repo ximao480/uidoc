@@ -266,6 +266,12 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td>vModelFormat</td>
+                            <td>开启后使用v-model返回format后的日期，默认返回Date类型</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
                             <td>format</td>
                             <td>展示的日期格式</td>
                             <td>
