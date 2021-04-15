@@ -227,4 +227,21 @@ code.format = `
 </script>
 `;
 
+code.wordLimit = `
+<template>
+  <Input v-model="value16" clearable wordLimit :maxlength="10" placeholder="Enter something..." style="width: 200px" />
+  <Input v-model="value17" wordLimit type="textarea" :rows="4" :maxlength="30" placeholder="Enter something..." style="width: 200px" />
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                value16: '',
+                value17: '',
+            }
+        },
+    }
+</script>
+`;
+
 export default code;
