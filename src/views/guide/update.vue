@@ -23,6 +23,16 @@
     <i-article>
         <h1>更新日志</h1>
         <article class="doc-update" >
+          <TimelineItem pending>
+            <inAnchor title="1.1.25" h2></inAnchor>
+            <p>
+              <code>2021-04-16</code>
+            </p>
+            <ul>
+              <li>1.input支持展示字数统计[wordLimit:false]</li>
+              <li>2.DatePicker在v-model绑定数据时候支持返回format之后的值[vModelFormat:false]</li>
+            </ul>
+          </TimelineItem>
             <TimelineItem pending>
                 <inAnchor title="1.1.24" h2></inAnchor>
                 <p>
@@ -36,7 +46,7 @@
             <TimelineItem pending>
                 <inAnchor title="1.1.23" h2></inAnchor>
                 <p>
-                    <code>2021-04-8</code>
+                    <code>2021-04-08</code>
                 </p>
                 <ul>
                     <li>1.input的类型为textarea支持密文的展示形式</li>
