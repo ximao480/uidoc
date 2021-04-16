@@ -34,16 +34,6 @@
             </ul>
           </TimelineItem>
             <TimelineItem pending>
-                <inAnchor title="1.1.24" h2></inAnchor>
-                <p>
-                    <code>2021-04</code>
-                </p>
-                <ul>
-                    <li>1.input支持展示字数统计</li>
-                    <li>2.DatePicker在v-model绑定数据时候支持返回format之后的值</li>
-                </ul>
-            </TimelineItem>
-            <TimelineItem pending>
                 <inAnchor title="1.1.23" h2></inAnchor>
                 <p>
                     <code>2021-04-08</code>
