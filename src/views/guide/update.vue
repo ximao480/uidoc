@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.26" h2></inAnchor>
+            <p>
+              <code>2021-04-21</code>
+            </p>
+            <ul>
+              <li>1.[input]修复正则匹配删除错误</li>
+              <li>2.[input]修复textarea输入中文不响应v-model</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.25" h2></inAnchor>
             <p>
               <code>2021-04-16</code>

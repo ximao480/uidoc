@@ -298,7 +298,7 @@
                 </Demo>
                  <Demo title="树形结构数据" vertical hide-code>
                     <div slot="demo">
-                        <Table :columns="columnstree" 
+                        <Table :columns="columnstree"
                           :tree-props="treePropsData"
                           :data="datatree"></Table>
                     </div>
@@ -879,8 +879,8 @@
                 </div>
             </article>
         </i-article>
-        <Modal v-model="table1" title="带有分页的复杂表格" width="1000" :styles="{top: '20px'}">
-            <div v-if="table1">
+        <Modal v-model="table1" title="带有分页的复杂表格" closable width="1000">
+            <div v-if="table1" style="height: 550px;overflow-y: auto">
                 <div class="ark-article">
                     <blockquote>
                         <p>该表格来自于 TalkingData <a href="https://www.talkingdata.com/product-MarketingCloud.jsp" target="_blank">MarketingCloud</a> 产品，展示的是人群画像列表，数据为模拟数据，分页只是提供效果展示，并非真实拉取服务端数据。</p>
@@ -895,8 +895,8 @@
                 <i-code lang="html" bg>{{ code.table1 }}</i-code>
             </div>
         </Modal>
-        <Modal v-model="table2" title="多列指标筛选的表格" width="1000" :styles="{top: '20px'}">
-            <div v-if="table2">
+        <Modal v-model="table2" title="多列指标筛选的表格" closable width="1000">
+            <div v-if="table2" style="height: 550px;overflow-y: auto">
                 <div class="ark-article">
                     <blockquote>
                         <p>该表格来自于 TalkingData <a href="https://www.talkingdata.com/product-AdTracking.jsp">Ad Tracking</a> 产品，展示各种推广活动不同指标的数据，数据为模拟数据。</p>
@@ -921,8 +921,8 @@
                 <i-code lang="html" bg>{{ code.table2 }}</i-code>
             </div>
         </Modal>
-        <Modal v-model="table3" title="多种效果组合的表格" width="1000" :styles="{top: '20px'}">
-            <div v-if="table3">
+        <Modal v-model="table3" title="多种效果组合的表格" closable width="1000">
+            <div v-if="table3" style="height: 550px;overflow-y: auto">
                 <div class="ark-article">
                     <blockquote>
                         <p>该示例主要展示了表格丰富的显示效果。</p>

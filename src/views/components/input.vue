@@ -523,6 +523,11 @@
                 return parseNumber(this.value15);
             }
         },
+        watch: {
+            value17(val) {
+                console.log(val)
+            }
+        },
         methods: {
 
         }
