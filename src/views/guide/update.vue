@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.27" h2></inAnchor>
+            <p>
+              <code>2021-04-23</code>
+            </p>
+            <ul>
+              <li>1.[tabs]优化DOM结构</li>
+              <li>2.[AttachFilter]优化删除按钮显示</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.26" h2></inAnchor>
             <p>
               <code>2021-04-21</code>
