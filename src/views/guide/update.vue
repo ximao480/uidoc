@@ -24,6 +24,18 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.28" h2></inAnchor>
+            <p>
+              <code>2021-05-08</code>
+            </p>
+            <ul>
+              <li>1.[inputNumber]setValue类型NaN问题</li>
+              <li>2.[menu]新增当前选中状态可取消</li>
+              <li>3.[AttachFilter]重复回调问题</li>
+              <li>4.[Modal]关闭icon的样式问题</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.27" h2></inAnchor>
             <p>
               <code>2021-04-23</code>

@@ -263,7 +263,7 @@
                 <i-code lang="html" slot="code">{{ code.group }}</i-code>
             </Demo>
 
-         
+
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
@@ -313,6 +313,12 @@
                             <td>导航菜单的宽度，只在 <code>mode="vertical"</code> 时有效，如果使用 <code>Col</code> 等布局，建议设置为 <code>auto</code></td>
                             <td>String</td>
                             <td>240px</td>
+                        </tr>
+                        <tr>
+                            <td>clearable</td>
+                            <td>当前选中状态可取消</td>
+                            <td>Boolean</td>
+                            <td>false</td>
                         </tr>
                     </tbody>
                 </table>
