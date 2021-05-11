@@ -24,9 +24,9 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
-            <inAnchor title="1.1.28" h2></inAnchor>
+            <inAnchor title="1.1.29" h2></inAnchor>
             <p>
-              <code>2021-05-08</code>
+              <code>2021-05-10</code>
             </p>
             <ul>
               <li>1.[inputNumber]setValue类型NaN问题</li>
