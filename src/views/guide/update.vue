@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.30" h2></inAnchor>
+            <p>
+              <code>2021-05-14</code>
+            </p>
+            <ul>
+              <li>1.[select]修复多选过滤情况下无法删除query的问题</li>
+              <li>2.[table]table-foot的样式问题、table重新activated时候重新调整高度</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.29" h2></inAnchor>
             <p>
               <code>2021-05-10</code>
