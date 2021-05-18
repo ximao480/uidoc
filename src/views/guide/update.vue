@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.31" h2></inAnchor>
+            <p>
+              <code>2021-05-18</code>
+            </p>
+            <ul>
+              <li>1.[select]双向绑定与query冲突的问题</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.30" h2></inAnchor>
             <p>
               <code>2021-05-14</code>
