@@ -24,6 +24,19 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.32" h2></inAnchor>
+            <p>
+              <code>2021-05-20</code>
+            </p>
+            <ul>
+              <li>1，[select]初始值bug</li>
+              <li>2，[图片上传]新增serviceId网关</li>
+              <li>3，[dropDownSelectFilter]展开层的位置优化</li>
+              <li>4，[input]search查询隔离</li>
+              <li>5，[table]表格监听父容器变化调整表格高度</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.31" h2></inAnchor>
             <p>
               <code>2021-05-18</code>
