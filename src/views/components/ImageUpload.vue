@@ -20,7 +20,7 @@
                 <i-code lang="html" slot="code">{{ code.ImageUpload }}</i-code>
             </Demo>
 
-         
+
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
                 <inAnchor title="ImageUpload props" h3></inAnchor>
@@ -72,7 +72,7 @@
                         <td>Number</td>
                         <td>200</td>
                     </tr>
-                   
+
                     <tr>
                        <td>dataitem.height</td>
                         <td>高度</td>
@@ -103,7 +103,13 @@
                         <td>number</td>
                         <td></td>
                     </tr>
-                    
+                     <tr>
+                       <td>dataitem.serviceId</td>
+                        <td>图片上传路径网关</td>
+                        <td>string</td>
+                        <td></td>
+                    </tr>
+
                     </tbody>
                 </table>
 
@@ -178,7 +184,7 @@
                         <td>event</td>
                     </tr>
                    </tbody>
-               </table> 
+               </table>
             </div>
         </article>
     </i-article>
@@ -222,7 +228,7 @@
                 ],
                 name: '上传'
          }
-     
+
       }
     },
     computed: {
