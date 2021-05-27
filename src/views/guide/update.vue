@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.33" h2></inAnchor>
+            <p>
+              <code>2021-05-27</code>
+            </p>
+            <ul>
+              <li>1.下拉选择、下拉多选、气泡组件禁止输入单引号</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.32" h2></inAnchor>
             <p>
               <code>2021-05-20</code>
