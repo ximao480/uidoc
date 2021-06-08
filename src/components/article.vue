@@ -1,7 +1,7 @@
 <style lang="less">
     @import "../styles/article.less";
     @import "../styles/theme/common/article.less";
-    
+
 </style>
 <template>
     <div>
@@ -11,51 +11,55 @@
             </div>
             <div class="wrapper-container">
                 <Row>
-                    <i-col span="4" class="wrapper-navigate">
+                    <i-col span="4" class="wrapper-navigate" style="min-height: 200px">
                         <Navigate :type="activeKey"></Navigate>
                     </i-col>
-                    <i-col span="17">
-                        <div class="wrapper-content ark-article">
-                            <slot></slot>
-                        </div>
-                    </i-col>
-                    <i-col span="3">
-                        <Affix :offset-top="75">
-                            <div class="catalogue" v-if="list.length">
-                                <!--<card dis-hover>-->
-                                    <!--<div class="catalogue-title">-->
+                    <i-col span="20">
+                        <Row>
+                            <i-col span="21">
+                                <div class="wrapper-content ark-article">
+                                    <slot></slot>
+                                </div>
+                            </i-col>
+                            <i-col span="3">
+                                <Affix :offset-top="75">
+                                    <div class="catalogue" v-if="list.length">
+                                        <!--<card dis-hover>-->
+                                        <!--<div class="catalogue-title">-->
                                         <!--<template v-if="lang === 'zh-CN'">目录</template>-->
                                         <!--<template v-else>Catalogue</template>-->
-                                    <!--</div>-->
-                                    <!--<div class="catalogue-content">-->
+                                        <!--</div>-->
+                                        <!--<div class="catalogue-content">-->
                                         <!--<ul>-->
-                                            <!--<li v-for="item in list">-->
-                                                <!--<a :href="'#' + item.path" @click.stop.prevent="handleClickLink(item.path)">{{ item.title }}</a>-->
-                                            <!--</li>-->
-                                            <!--<li v-if="need_api">-->
-                                                <!--<a href="#API" @click.stop.prevent="handleClickLink('API')">API</a>-->
-                                            <!--</li>-->
+                                        <!--<li v-for="item in list">-->
+                                        <!--<a :href="'#' + item.path" @click.stop.prevent="handleClickLink(item.path)">{{ item.title }}</a>-->
+                                        <!--</li>-->
+                                        <!--<li v-if="need_api">-->
+                                        <!--<a href="#API" @click.stop.prevent="handleClickLink('API')">API</a>-->
+                                        <!--</li>-->
                                         <!--</ul>-->
-                                    <!--</div>-->
-                                <!--</card>-->
-                                <Anchor show-ink>
-                                    <AnchorLink v-for="item in list" :key="item.path" :href="'#' + item.path" :title="item.title" />
-                                    <AnchorLink :scroll-offset="140" href="#API" title="API" v-if="need_api" />
-                                </Anchor>
-                            </div>
+                                        <!--</div>-->
+                                        <!--</card>-->
+                                        <Anchor show-ink>
+                                            <AnchorLink v-for="item in list" :key="item.path" :href="'#' + item.path" :title="item.title" />
+                                            <AnchorLink :scroll-offset="140" href="#API" title="API" v-if="need_api" />
+                                        </Anchor>
+                                    </div>
 
-                            <template v-if="lang === 'zh-CN'">
-                                <div style="margin-top: 20px"></div>
-                                <a v-for="item in app.adList2" :href="item.link" :key="item.id" @click="handleAsideAd(item.id)" target="_blank" class="wrapper-aside wrapper-aside-no-padding">
-                                    <img :src="item.img">
-                                </a>
-                            </template>
-                        </Affix>
+                                    <template v-if="lang === 'zh-CN'">
+                                        <div style="margin-top: 20px"></div>
+                                        <a v-for="item in app.adList2" :href="item.link" :key="item.id" @click="handleAsideAd(item.id)" target="_blank" class="wrapper-aside wrapper-aside-no-padding">
+                                            <img :src="item.img">
+                                        </a>
+                                    </template>
+                                </Affix>
+                            </i-col>
+                        </Row>
                     </i-col>
                 </Row>
             </div>
         </div>
-        
+
         <!--<Modal v-model="donate" v-if="lang === 'zh-CN'" title="支持 iView 的开发" @on-ok="handleModalClose" @on-cancel="handleModalClose" class-name="vertical-center-modal">-->
             <!--<div class="ark-article">-->
                 <!--<p>iView 是采用 MIT 许可的开源项目，您可以在个人或企业项目中免费使用。不过，如果您觉得 iView 对您的项目带来了帮助，提高开发效率，可以用捐助来表示您的谢意：)</p>-->
