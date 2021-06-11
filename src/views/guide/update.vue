@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.35" h2></inAnchor>
+            <p>
+              <code>2021-06-11</code>
+            </p>
+            <ul>
+              <li>1.[input]textarea下支持clearable</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.34" h2></inAnchor>
             <p>
               <code>2021-06-10</code>

@@ -191,7 +191,7 @@
                             <Input v-model="value16" clearable wordLimit :maxlength="10" placeholder="Enter something..." style="width: 200px" />
                         </Col>
                         <Col span="12">
-                            <Input v-model="value17" wordLimit type="textarea" :rows="4" :maxlength="30" placeholder="Enter something..." style="width: 200px" />
+                            <Input v-model="value17" clearable wordLimit type="textarea" :rows="4" :maxlength="30" placeholder="Enter something..." style="width: 200px" />
                         </Col>
                     </Row>
                 </div>
