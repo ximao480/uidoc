@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.34" h2></inAnchor>
+            <p>
+              <code>2021-06-10</code>
+            </p>
+            <ul>
+              <li>1.[图片上传]优化占位图逻辑</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.33" h2></inAnchor>
             <p>
               <code>2021-05-27</code>

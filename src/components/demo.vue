@@ -66,14 +66,14 @@
                 if (this.hideCode) {
                     return true;
                 } else {
-                    return this.app.settingData.code == '1' ? false : true;
+                    return this.app.settingData.code !== '1';
                 }
             },
             isVertical () {
                 if (this.vertical) {
                     return true;
                 } else {
-                    return this.app.settingData.code == '1' ? false : true;
+                    return this.app.settingData.code !== '1';
                 }
             },
             settingCode () {
@@ -112,6 +112,7 @@
         methods: {
             init () {
                 this.$nextTick(() => {
+                    console.log(this.$children[0])
                     const demo_height = this.$children[0].$children[0].$el.clientHeight;
                     const code_height = this.$children[0].$children[1].$el.clientHeight + 20;
 

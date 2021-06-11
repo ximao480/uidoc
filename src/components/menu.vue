@@ -54,15 +54,15 @@
                 </Menu-item> -->
                 <!-- <Submenu name="ecosystem">
                     <template slot="title">
-                       
+
                         {{ $t('index.ecosystem') }}
                     </template>
                     <Menu-item name="cli" :to="handleGoToMenu('/cli')">
-                        
+
                         {{ $t('index.cli') }}
                     </Menu-item>
                     <Menu-item name="iview-loader" :to="handleGoToMenu('/docs/guide/iview-loader')">
-                        
+
                         iView Loader
                     </Menu-item>
                     <Menu-item name="iview-admin">

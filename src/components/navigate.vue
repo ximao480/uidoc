@@ -72,7 +72,7 @@
                 <template v-else>{{ item.titleEn }}</template>
             </Menu-item>
         </Menu>
-       
+
     </div>
 </template>
 <script>
