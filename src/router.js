@@ -724,6 +724,13 @@ const routers = [
     component: (resolve) => require(['./views/bcl/Docfile'], resolve)
   },
   {
+    path: '/bcl/ImageUpload',
+    meta: {
+      title: 'ImageUpload 图片上传'
+    },
+    component: (resolve) => require(['./views/bcl/ImageUpload'], resolve)
+  },
+  {
     path: '*',
     redirect: '/'
   }

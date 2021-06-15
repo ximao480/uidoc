@@ -510,6 +510,12 @@ const list = {
           iconfont: 'iconfont',
           icon: 'ios-cloud-upload-outline'
         },
+        {
+          title: 'ImageUpload 图片上传',
+          path: '/bcl/ImageUpload',
+          iconfont: 'iconfont',
+          icon: 'iconfont iconmd-photos'
+        },
       ]
     },
     {
