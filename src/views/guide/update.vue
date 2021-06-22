@@ -24,6 +24,18 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.36" h2></inAnchor>
+            <p>
+              <code>2021-06-22</code>
+            </p>
+            <ul>
+              <li>1.[select]选中值带\n的问题</li>
+              <li>2.[select]开启过滤时无法删除query的问题</li>
+              <li>3.[modal]自适应屏幕宽度</li>
+              <li>4.[drop-down-select-filter]最大高度问题</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.35" h2></inAnchor>
             <p>
               <code>2021-06-11</code>
