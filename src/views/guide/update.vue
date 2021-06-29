@@ -24,6 +24,19 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.37" h2></inAnchor>
+            <p>
+              <code>2021-06-28</code>
+            </p>
+            <ul>
+              <li>1.[input]的on-clear触发onchange事件</li>
+              <li>2.[drop-multi-select-filter]isBackRowItem在模糊搜索下未正确返回的问题</li>
+              <li>3.修复外键单引号问题</li>
+              <li>4.[select]修复空值判断报错</li>
+              <li>5.[select]兼容性问题</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.36" h2></inAnchor>
             <p>
               <code>2021-06-22</code>
