@@ -24,6 +24,17 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.38" h2></inAnchor>
+            <p>
+              <code>2021-07-08</code>
+            </p>
+            <ul>
+              <li>1.[select]新增on-enter事件</li>
+              <li>2.[input.number]新增on-enter事件</li>
+              <li>3.[FormLayout]修复props变化时组件内部不及时更新</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.37" h2></inAnchor>
             <p>
               <code>2021-06-28</code>

@@ -81,7 +81,7 @@
                 <i-code lang="html" slot="code">{{ code.editable }}</i-code>
             </Demo>
 
-         
+
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
@@ -206,6 +206,11 @@
                             <td>on-blur</td>
                             <td>失焦时触发</td>
                             <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>on-enter</td>
+                            <td>input.number回车事件</td>
+                            <td>默认传值 (event, 当前实例)</td>
                         </tr>
                     </tbody>
                 </table>

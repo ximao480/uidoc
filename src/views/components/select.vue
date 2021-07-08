@@ -188,7 +188,7 @@
                 <i-code lang="html" slot="code">{{ code.remote }}</i-code>
             </Demo>
 
-       
+
 
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
@@ -360,6 +360,11 @@
                             <td>on-open-change</td>
                             <td>下拉框展开或收起时触发</td>
                             <td>true / false</td>
+                        </tr>
+                        <tr>
+                            <td>on-enter</td>
+                            <td>select在filterable模式下的回车事件</td>
+                            <td>默认传值 (event)</td>
                         </tr>
                     </tbody>
                 </table>
