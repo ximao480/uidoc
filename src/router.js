@@ -191,13 +191,13 @@ const routers = [
       },
       component: (resolve) => require(['./views/guide/i18n.vue'], resolve)
   },
-  {
-      path: '/docs/guide/i18n-en',
-      meta: {
-          title: 'Internationalization'
-      },
-      component: (resolve) => require(['./views/guide/i18n-en.vue'], resolve)
-  },
+  // {
+  //     path: '/docs/guide/i18n-en',
+  //     meta: {
+  //         title: 'Internationalization'
+  //     },
+  //     component: (resolve) => require(['./views/guide/i18n-en.vue'], resolve)
+  // },
   {
     path: '/docs/guide/theme',
     meta: {
