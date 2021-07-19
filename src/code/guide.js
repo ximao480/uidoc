@@ -149,17 +149,16 @@ Incorrect usage:
 
 i18n.demo = `
 import Vue from 'vue';
-import iView from 'iview';
-import locale from 'iview/dist/locale/en-US';
+import Ark from '@syman/ark-ui';
+import locale from '@syman/ark-ui/dist/locale/en-US';
 
-Vue.use(iView, { locale });
+Vue.use(Ark, { locale });
 `;
 
 i18n.demand = `
 import Vue from 'vue';
-// importing iView on demand
-import { locale, Page } from 'iview';
-import lang from 'iview/dist/locale/en-US';
+import { locale, Page } from '@syman/ark-ui';
+import lang from '@syman/ark-ui/dist/locale/en-US';
 
 // configure language
 locale(lang);
@@ -209,27 +208,27 @@ Vue.locale('zh-CN', zh);
 `;
 
 i18n.cdn = `
-<script src="//unpkg.com/vue"></script>
-<script src="//unpkg.com/iview/dist/iview.min.js"></script>
-<script src="//unpkg.com/iview/dist/locale/en-US.js"></script>
+<script src="//cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/dist/ark.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/src/locale/lang/en-US.js"></script>
 
 <script>
-    iview.lang('en-US');
+    Ark.lang('en-US');
 </script>
 `;
 
 i18n.cdnvuei18n = `
-<script src="//unpkg.com/vue"></script>
-<script src="//unpkg.com/iview/dist/iview.min.js"></script>
-<script src="//unpkg.com/iview/dist/locale/en-US.js"></script>
-<script src="//unpkg.com/iview/dist/locale/zh-CN.js"></script>
+<script src="//cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/dist/ark.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/src/locale/lang/en-US.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/src/locale/lang/zh-CN.js"></script>
 
 <script>
     // you need to add Polyfill if your browser doesn't support ES2015
     Vue.locale = () => {};
     const messages = {
-        en: Object.assign({ message: 'hello' }, iview.langs['en-US']),
-        zh: Object.assign({ message: '你好' }, iview.langs['zh-CN'])
+      en: Object.assign({ message: 'gotogoto' }, Ark.langs['en-US']),
+      zh: Object.assign({ message: '你好' }, Ark.langs['en-CN'])
     };
 
     const i18n = new VueI18n({

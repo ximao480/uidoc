@@ -44,11 +44,11 @@ const list = {
       titleEn: 'Global Options',
       path: '/docs/guide/global'
     },
-    // {
-    //     title: '国际化',
-    //     titleEn: 'Internationalization',
-    //     path: '/docs/guide/i18n'
-    // },
+    {
+        title: '国际化',
+        titleEn: 'Internationalization',
+        path: '/docs/guide/i18n'
+    },
     {
       title: '定制主题',
       titleEn: 'Customize Theme',

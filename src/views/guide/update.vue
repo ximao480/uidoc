@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.40" h2></inAnchor>
+            <p>
+              <code>2021-07-15</code>
+            </p>
+            <ul>
+              <li>1.[select]选择器通过数据修改，组件未完全更新</li>
+              <li>2.国际化适配</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.38" h2></inAnchor>
             <p>
               <code>2021-07-08</code>
