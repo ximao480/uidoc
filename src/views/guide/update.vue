@@ -26,7 +26,7 @@
           <TimelineItem pending>
             <inAnchor title="1.1.40" h2></inAnchor>
             <p>
-              <code>2021-07-15</code>
+              <code>2021-07-19</code>
             </p>
             <ul>
               <li>1.[select]选择器通过数据修改，组件未完全更新</li>
