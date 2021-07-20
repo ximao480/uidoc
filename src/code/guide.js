@@ -210,7 +210,7 @@ Vue.locale('zh-CN', zh);
 i18n.cdn = `
 <script src="//cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/dist/ark.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/src/locale/lang/en-US.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/dist/locale/en-US.js"></script>
 
 <script>
     Ark.lang('en-US');
@@ -220,8 +220,8 @@ i18n.cdn = `
 i18n.cdnvuei18n = `
 <script src="//cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/dist/ark.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/src/locale/lang/en-US.js"></script>
-<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/src/locale/lang/zh-CN.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/dist/locale/en-US.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/dist/locale/zh-CN.js"></script>
 
 <script>
     // you need to add Polyfill if your browser doesn't support ES2015
