@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.41" h2></inAnchor>
+            <p>
+              <code>2021-07-26</code>
+            </p>
+            <ul>
+              <li>1.[Modal]最大宽高适配窗口大小</li>
+              <li>1.[Table]单选样式增加radio样式</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.40" h2></inAnchor>
             <p>
               <code>2021-07-19</code>
