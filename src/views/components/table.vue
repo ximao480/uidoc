@@ -125,6 +125,7 @@
                         <p>通过给 <code>columns</code> 数据设置一项，指定 <code>type: 'index'</code>，可以自动显示一个从 1 开始的索引列。使用 <code>indexMethod</code> 可以自定义序号。</p>
                         <p>给 data 项设置特殊 key <code>_highlight: true</code> 可以默认选中当前项。</p>
                         <p>调用 <code>clearCurrentRow</code> 方法可以手动清除选中项。</p>
+                        <p>【1.1.41支持】通过给 <code>columns</code> 数据设置一项，指定 <code>type: 'selection'</code>，即可展示辅助radio。</p>
                     </div>
                     <i-code lang="html" slot="code">{{ code.highlight }}</i-code>
                 </Demo>
