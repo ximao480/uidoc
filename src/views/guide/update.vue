@@ -30,7 +30,7 @@
             </p>
             <ul>
               <li>1.[Modal]蒙层优化上下滚动条</li>
-              <li>1.[input.number]限制小数的输入</li>
+              <li>2.[input.number]限制小数的输入</li>
             </ul>
           </TimelineItem>
           <TimelineItem pending>
@@ -40,7 +40,7 @@
             </p>
             <ul>
               <li>1.[Modal]最大宽高适配窗口大小</li>
-              <li>1.[Table]单选样式增加radio样式</li>
+              <li>2.[Table]单选样式增加radio样式</li>
             </ul>
           </TimelineItem>
           <TimelineItem pending>
