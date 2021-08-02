@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.42" h2></inAnchor>
+            <p>
+              <code>2021-08-02</code>
+            </p>
+            <ul>
+              <li>1.[Modal]蒙层优化上下滚动条</li>
+              <li>1.[input.number]限制小数的输入</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.41" h2></inAnchor>
             <p>
               <code>2021-07-26</code>

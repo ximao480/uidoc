@@ -164,7 +164,7 @@
                         </tr>
                         <tr>
                             <td>precision</td>
-                            <td>数值精度</td>
+                            <td>数值精度，不设置即限制小数的输入</td>
                             <td>Number</td>
                             <td>-</td>
                         </tr>
