@@ -115,12 +115,12 @@
                 </Demo> -->
                 <Demo title="单选" vertical hide-code>
                     <div slot="demo">
-                        <Table highlight-row ref="currentRowTable" :columns="columns3" :data="data1"></Table>
+                        <Table :multiple="false" highlight-row ref="currentRowTable" :columns="columns3" :data="data1"></Table>
                         <br>
                         <Button @click="handleClearCurrentRow">清除单选</Button>
                     </div>
                     <div slot="desc">
-                        <p>通过设置属性 <code>highlight-row</code>，可以选中某一行。</p>
+                        <p>通过设置属性 <code>highlight-row</code> <code>multiple: false</code>，可以选中某一行。</p>
                         <p>当选择时，触发事件 <code>@on-current-change</code>，可以自定义操作，事件返回两个值 <code>currentRow</code> 和 <code>oldCurrentRow</code>，分别为当前行的数据和上一次选择的数据。</p>
                         <p>通过给 <code>columns</code> 数据设置一项，指定 <code>type: 'index'</code>，可以自动显示一个从 1 开始的索引列。使用 <code>indexMethod</code> 可以自定义序号。</p>
                         <p>给 data 项设置特殊 key <code>_highlight: true</code> 可以默认选中当前项。</p>
@@ -131,7 +131,7 @@
                 </Demo>
                 <Demo title="复选框" vertical hide-code>
                     <div slot="demo">
-                        <Table border ref="selection" :columns="columns4" :data="data1"></Table>
+                        <Table multiple border ref="selection" :columns="columns4" :data="data1"></Table>
                         <br>
                         <Button @click="handleSelectAll(true)">设置全选</Button>
                         <Button @click="handleSelectAll(false)">取消全选</Button>

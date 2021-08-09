@@ -24,6 +24,17 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.45" h2></inAnchor>
+            <p>
+              <code>2021-08-09</code>
+            </p>
+            <ul>
+              <li>1.[Modal]拖拽条件下的初始定位bug，内容区域新增overflow</li>
+              <li>2.[Table]单选多选api-multiple新增</li>
+              <li>3.[下拉单选、多选]多选情况下选中值的已知bug</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.42" h2></inAnchor>
             <p>
               <code>2021-08-02</code>
