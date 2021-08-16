@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.46" h2></inAnchor>
+            <p>
+              <code>2021-08-16</code>
+            </p>
+            <ul>
+              <li>1.[Tree]偏移一像素样式修改</li>
+              <li>2.[DatePicker]在Safari下的兼容性问题</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.45" h2></inAnchor>
             <p>
               <code>2021-08-09</code>
