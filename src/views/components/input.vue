@@ -361,6 +361,12 @@
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
+                        <tr>
+                            <td>htmlExp</td>
+                            <td>onBlur触发转义</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Input events" h3></inAnchor>

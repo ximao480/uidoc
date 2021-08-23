@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.48" h2></inAnchor>
+            <p>
+              <code>2021-08-23</code>
+            </p>
+            <ul>
+              <li>1.[input]新增htmlExp属性onBlur触发转义</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.47" h2></inAnchor>
             <p>
               <code>2021-08-16</code>
