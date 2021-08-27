@@ -177,9 +177,12 @@
                 ];
 
                 const route = this.$route.path;
-                if (route.indexOf('component') > -1 || route.indexOf('bcl') > -1 || componentList.indexOf(route) > -1) {
+                if (route.indexOf('component') > -1 || componentList.indexOf(route) > -1) {
                     this.activeKey = 'component';
-                } else if (route.indexOf('practice') > -1) {
+                } else if (route.indexOf('bcl') > -1) {
+                    this.activeKey = 'bcl';
+                }
+                else if (route.indexOf('practice') > -1) {
                     this.activeKey = 'practice';
                 } else if (route.indexOf('live') > -1) {
                     this.activeKey = 'live';

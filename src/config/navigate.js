@@ -489,36 +489,6 @@ const list = {
       ]
     },
     {
-      type: 'bcl',
-      title: '业务组件库',
-      list: [
-        {
-          title: 'DropDownSelectFilter 下拉单选',
-          path: '/bcl/DropDownSelectFilter',
-          iconfont: 'iconfont',
-          icon: 'iconfont iconbj_xldan'
-        },
-        {
-          title: 'DropMultiSelectFilter 下拉多选',
-          path: '/bcl/DropMultiSelectFilter',
-          iconfont: 'iconfont',
-          icon: 'iconfont iconbj_xldx'
-        },
-        {
-          title: 'Docfile 文件上传',
-          path: '/bcl/Docfile',
-          iconfont: 'iconfont',
-          icon: 'ios-cloud-upload-outline'
-        },
-        {
-          title: 'ImageUpload 图片上传',
-          path: '/bcl/ImageUpload',
-          iconfont: 'iconfont',
-          icon: 'iconfont iconmd-photos'
-        },
-      ]
-    },
-    {
       type: 'Other',
       title: '其它',
       list: [
@@ -572,6 +542,50 @@ const list = {
       title: '最新课程',
       path: '/live'
     }
+  ],
+  bclStart: [
+    {
+      title: '快速上手',
+      titleEn: 'Quick Start',
+      path: '/bcl/start'
+    },
+    {
+      title: '更新日志',
+      titleEn: 'Change Log',
+      path: '/bcl/changelog'
+    },
+  ],
+  bcl: [
+    {
+      type: 'bcls',
+      title: '业务组件',
+      list: [
+        {
+          title: 'DropDownSelectFilter 下拉单选',
+          path: '/bcl/DropDownSelectFilter',
+          iconfont: 'iconfont',
+          icon: 'iconfont iconbj_xldan'
+        },
+        {
+          title: 'DropMultiSelectFilter 下拉多选',
+          path: '/bcl/DropMultiSelectFilter',
+          iconfont: 'iconfont',
+          icon: 'iconfont iconbj_xldx'
+        },
+        {
+          title: 'Docfile 文件上传',
+          path: '/bcl/Docfile',
+          iconfont: 'iconfont',
+          icon: 'ios-cloud-upload-outline'
+        },
+        {
+          title: 'ImageUpload 图片上传',
+          path: '/bcl/ImageUpload',
+          iconfont: 'iconfont',
+          icon: 'iconfont iconmd-photos'
+        },
+      ]
+    },
   ]
 };
 

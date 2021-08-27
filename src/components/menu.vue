@@ -36,6 +36,10 @@
                     <!--<Icon type="ios-keypad"></Icon>-->
                     {{ $t('index.component') }}
                 </Menu-item>
+                <Menu-item name="bcl" :to="handleGoToMenu('/bcl/start')">
+                    <!--<Icon type="ios-keypad"></Icon>-->
+                    {{ $t('index.componentPro') }}
+                </Menu-item>
                 <!-- <Menu-item name="live" v-if="lang === 'zh-CN'" :to="handleGoToMenu('/live')">
                     <Badge :dot="liveDot" :offset="[20,0]">
                         {{ $t('index.live') }}
@@ -180,6 +184,8 @@
                 const route = this.$route.path;
                 if (route.indexOf('component') > -1 || componentList.indexOf(route) > -1) {
                     this.currentActiveKey = 'component';
+                } else if (route.indexOf('bcl') > -1) {
+                    this.currentActiveKey = 'componentPro';
                 } else if (route.indexOf('practice') > -1) {
                     this.currentActiveKey = 'practice';
                 } else if (route.indexOf('live') > -1) {

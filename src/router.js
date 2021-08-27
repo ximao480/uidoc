@@ -702,6 +702,21 @@ const routers = [
     },
     component: (resolve) => require(['./views/components/tab-panels'], resolve)
   },
+
+  {
+    path: '/bcl/start',
+    meta: {
+      title: '快速上手'
+    },
+    component: (resolve) => require(['./views/bcl/start'], resolve)
+  },
+  {
+    path: '/bcl/changelog',
+    meta: {
+      title: '更新日志'
+    },
+    component: (resolve) => require(['./views/bcl/changelog'], resolve)
+  },
   {
     path: '/bcl/DropDownSelectFilter',
     meta: {

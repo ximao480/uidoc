@@ -72,7 +72,25 @@
                 <template v-else>{{ item.titleEn }}</template>
             </Menu-item>
         </Menu>
-
+        <Menu width="auto" :active-name="activeKey" v-if="type === 'bcl'">
+            <Menu-item v-for="item in navigate.bclStart" :key="item.path" :name="item.path" :to="handleGoToMenu(item.path)">
+                <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
+                <template v-else>{{ item.titleEn }}</template>
+            </Menu-item>
+        </Menu>
+        <Menu width="auto" :active-name="activeKey" v-if="type === 'bcl'">
+            <Menu-group v-for="item in navigate.bcl" :key="item.type" :title="lang === 'zh-CN' ? item.title : item.type">
+                <Menu-item v-for="component in item.list" :key="component.path" :name="component.path" :to="handleGoToMenu(component.path)">
+                    <i v-if="!component.iconfont" class="ark-icon" :class="'iconfont icon' + component.icon"></i>
+                    <i v-if="component.iconfont" class="iconfont" :class="'ark-iconfont icon' + component.icon"></i>
+                    <template v-if="lang === 'zh-CN'">
+                        {{ component.title.split(' ')[0] }}
+                        <span class="navigate-group-span">{{ component.title.split(' ')[1] }}</span>
+                    </template>
+                    <template v-else>{{ component.title.split(' ')[0] }}</template>
+                </Menu-item>
+            </Menu-group>
+        </Menu>
     </div>
 </template>
 <script>
