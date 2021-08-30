@@ -24,6 +24,9 @@
     <h1>更新日志</h1>
     <article class="doc-update" >
       <TimelineItem pending>
+        <inAnchor title="1.0.0" h2></inAnchor>
+      </TimelineItem>
+      <TimelineItem pending>
         <inAnchor title="0.3.10" h2></inAnchor>
         <ul>
           <li>fix: 1.表格激活时有时没自适应</li>

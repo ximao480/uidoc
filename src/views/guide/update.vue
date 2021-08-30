@@ -29,7 +29,7 @@
               <code>2021-08-30</code>
             </p>
             <ul>
-              <li>1.[国际化]国际化的查缺补漏</li>
+              <li>1.[国际化]国际化语言包的补充</li>
               <li>2.[modal]实例按类型在content层新增class类</li>
             </ul>
           </TimelineItem>
