@@ -25,6 +25,7 @@
     "marked": "^0.7.0",
     "vue": "^2.5.16",
     "vue-i18n": "^5.0.3",
+    "v-viewer": "^1.5.1",
     "vue-router": "^2.8.1"
   },
   "devDependencies": {

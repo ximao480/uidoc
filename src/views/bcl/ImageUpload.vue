@@ -146,7 +146,15 @@
     data() {
       return {
         code: Code,
-        valuedata: [],
+        valuedata:  [{
+          "NAME": "package.json",
+          "URL": "http://arkui.dev.syman.cn/7ae2876ae1edf36a6e738d7b37910dd0.png",
+          "Size": "2K"
+        }, {
+          "NAME": "build.config - 副本.json",
+          "URL": "http://arkui.dev.syman.cn/7ae2876ae1edf36a6e738d7b37910dd0.png",
+          "Size": "638B"
+        }],
         localHost: 'r3-app',
         dataitem: {
           url: '/posts', // 上传地址

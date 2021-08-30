@@ -96,6 +96,12 @@ module.exports = {
     },
     devServer:{
         //host:'localhost'
+        proxy: [
+            {
+              context: '/p/cs',
+              target: 'http://ark-api.ark.burgeononline.com/mock/736/',
+              changeOrigin: true,
+            }]
     },
     resolve: {
         extensions: ['.js', '.vue'],

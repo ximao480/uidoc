@@ -19,11 +19,13 @@ import '@syman/ark-ui/dist/styles/ark-ui.css'
  import '@syman/ark-ui/dist/styles/bjIconfonts/iconfont.css';
 // import './styles/theme/index.less';
 
-
+import Viewer from 'v-viewer'
+import 'viewerjs/dist/viewer.css'
 
 Vue.use(VueRouter);
 Vue.use(VueI18n);
 Vue.use(ArkUi);
+Vue.use(Viewer)
 
 
 

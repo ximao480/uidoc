@@ -7,7 +7,7 @@ const routers = [
     meta: {
       title: ''
     },
-    component: (resolve) => require(['./views/index-2020-year.vue'], resolve)
+    component: (resolve) => require(['./views/index.vue'], resolve)
   },
   // {
   //     path: '/vue-book',

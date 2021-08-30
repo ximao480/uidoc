@@ -16,15 +16,18 @@ code.base = `
           "name": "package.json",
           "url": "http://r3-project-file.oss-cn-hangzhou.aliyuncs.com/haha/package.json",
           "Size": "2K"
-        }, {
-          "name": "build.config - 副本.json",
-          "url": "http://r3-project-file.oss-cn-hangzhou.aliyuncs.com/haha/build.config - 副本.json",
-          "Size": "638B"
         }],
         dataitem: {
-          url: '/posts', // 上传地址
+          readonly: false, //控制字段是否可编辑
+          url:'/p/cs/batchUpload',
+          filesLength:2,
+          filesize:2*1024*1024,
+          sendData:{
+            path: '',
+          },
         },
-        localHost: "http://jsonplaceholder.typicode.com",
+        localHost:'add-app'
+        http:(当前项目的),
       }
     },
   }
