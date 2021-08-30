@@ -108,8 +108,8 @@ module.exports = {
         alias: {
             'hljs': 'highlightjs/highlight.pack.js',
             'iCode': '../../components/code.vue',
-            // 'vue': 'vue/dist/vue.esm.js',
-            'vue': 'vue/dist/vue.runtime.js'
+            'vue$': 'vue/dist/vue.esm.js',
+            // 'vue': 'vue/dist/vue.runtime.js'
             // '@': resolve('src')
         }
     }

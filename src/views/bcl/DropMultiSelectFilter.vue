@@ -8,14 +8,14 @@
 
       <Demo title="基础用法">
         <div slot="demo">
-          <vbsDropMultiSelectFilter :PropsData="propsData"
+          <arkDropMultiSelectFilter :PropsData="propsData"
                                 :Url="url"
                                 v-model="value"
                                 :http="network"
                                 :AutoRequest="sendAutoMessage"
                                 :TableRequest="sendTableMessage"
                                 @on-valueChange="valueChange"
-                                :EventFun="eventFun"></vbsDropMultiSelectFilter>
+                                :EventFun="eventFun"></arkDropMultiSelectFilter>
         </div>
         <i-code lang="html" slot="code">{{ code.base }}</i-code>
       </Demo>
@@ -128,7 +128,7 @@
   import Code from '../../code/bcl/DropMultiSelectFilter';
   import inAnchor from '../../components/anchor.vue';
   import Mixin from '../../mixins/common';
-  import {DropMultiSelectFilter as vbsDropMultiSelectFilter} from '@syman/ark-ui-bcl';
+  // import {DropMultiSelectFilter as vbsDropMultiSelectFilter} from '@syman/ark-ui-bcl';
 
   export default {
     components: {
@@ -136,7 +136,7 @@
       iCode,
       Demo,
       inAnchor,
-      vbsDropMultiSelectFilter
+      // vbsDropMultiSelectFilter
     },
     mixins: [Mixin],
     data() {

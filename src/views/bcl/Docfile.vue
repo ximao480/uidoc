@@ -8,11 +8,11 @@
 
       <Demo title="基础用法">
         <div slot="demo">
-          <bclDocfile
+          <arkDocfile
                   v-model="value"
                   :dataitem="dataitem"
                   :serviceId="localHost"
-          ></bclDocfile>
+          ></arkDocfile>
         </div>
         <i-code lang="html" slot="code">{{ code.base }}</i-code>
       </Demo>
@@ -157,7 +157,7 @@
   import Code from '../../code/bcl/Docfile';
   import inAnchor from '../../components/anchor.vue';
   import Mixin from '../../mixins/common';
-  import {Docfile as bclDocfile} from '@syman/ark-ui-bcl';
+  // import {Docfile as bclDocfile} from '@syman/ark-ui-bcl';
 
   export default {
     components: {
@@ -165,7 +165,7 @@
       iCode,
       Demo,
       inAnchor,
-      bclDocfile
+      // bclDocfile
     },
     mixins: [Mixin],
     data() {

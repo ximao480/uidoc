@@ -8,11 +8,11 @@
 
       <Demo title="基础用法">
         <div slot="demo">
-          <bclImageUpload
+          <arkImageUpload
                   :serviceId="localHost"
                   :PropsData="dataitem"
                   v-model="valuedata"
-          ></bclImageUpload>
+          ></arkImageUpload>
         </div>
         <i-code lang="html" slot="code">{{ code.base }}</i-code>
       </Demo>
@@ -132,7 +132,7 @@
   import Code from '../../code/bcl/ImageUpload';
   import inAnchor from '../../components/anchor.vue';
   import Mixin from '../../mixins/common';
-  import {ImageUpload as bclImageUpload} from '@syman/ark-ui-bcl';
+  // import {ImageUpload as bclImageUpload} from '@syman/ark-ui-bcl';
 
   export default {
     components: {
@@ -140,7 +140,7 @@
       iCode,
       Demo,
       inAnchor,
-      bclImageUpload
+      // bclImageUpload
     },
     mixins: [Mixin],
     data() {

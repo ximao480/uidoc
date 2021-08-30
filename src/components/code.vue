@@ -101,6 +101,9 @@
             }
         },
         mounted () {
+            if(!this.$refs.code || !this.$refs.code2) {
+                return
+            }
             this.code = this.$refs.code.innerHTML.replace(/\n/, '');
             this.$refs.code.innerHTML = this.code;
             hljs.highlightBlock(this.$refs.code);

@@ -16,12 +16,13 @@
       </Alert>
       <i-code lang="js" bg>{{ code.tip }}</i-code>
 
-      <inAnchor title="按需使用方式" h2></inAnchor>
+      <!-- <inAnchor title="按需使用方式" h2></inAnchor>
       <Alert show-icon>
         按需引入，减轻项目包体及重复代码
       </Alert>
-       <i-code lang="js" bg>{{ code.import }}</i-code>
-      <inAnchor title="提示" h2></inAnchor>
+       <i-code lang="js" bg>{{ code.import }}</i-code> -->
+      <inAnchor title="国际化" h2></inAnchor>
+      <i-code lang="js" bg>{{ code.lang }}</i-code>
      
     </article>
   </i-article>

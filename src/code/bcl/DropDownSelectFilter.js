@@ -2,7 +2,7 @@ let code = {};
 
 code.base = `
 <template>
-    <DropDownSelectFilter :PropsData="propsData"
+    <arkDropDownSelectFilter :PropsData="propsData"
                           :Url="url"
                           ref="vbsDropDownSelectFilter"
                           v-model="value"
@@ -10,7 +10,7 @@ code.base = `
                           :AutoRequest="sendAutoMessage"
                           :TableRequest="sendTableMessage"
                           @on-valueChange="valueChange"
-                          :EventFun="eventFun"></DropDownSelectFilter>
+                          :EventFun="eventFun"></arkDropDownSelectFilter>
 </template>
 <script>
   export default {

@@ -4,18 +4,15 @@ code.base = `
 <template>
   <div>
     <H5>图片上传</H5>
-    <ImageUpload
+    <arkImageUpload
       :serviceId="localHost"
       :PropsData="dataitem"
       v-model="valuedata"
-    ></ImageUpload>
+    ></arkImageUpload>
   </div>
 </template>
 <script>
   export default {
-    components: {
-      ImageUpload,
-    },
     data() {
       return {
         valuedata: [{

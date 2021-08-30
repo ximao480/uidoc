@@ -8,7 +8,7 @@
 
       <Demo title="基础用法">
         <div slot="demo">
-          <vbsDropDownSelectFilter :PropsData="propsData"
+          <arkDropDownSelectFilter :PropsData="propsData"
                                 :Url="url"
                                 ref="vbsDropDownSelectFilter"
                                 v-model="value"
@@ -16,7 +16,7 @@
                                 :AutoRequest="sendAutoMessage"
                                 :TableRequest="sendTableMessage"
                                 @on-valueChange="valueChange"
-                                :EventFun="eventFun"></vbsDropDownSelectFilter>
+                                :EventFun="eventFun"></arkDropDownSelectFilter>
         </div>
         <i-code lang="html" slot="code">{{ code.base }}</i-code>
       </Demo>
@@ -129,7 +129,7 @@
   import Code from '../../code/bcl/DropDownSelectFilter';
   import inAnchor from '../../components/anchor.vue';
   import Mixin from '../../mixins/common';
-  import {DropDownSelectFilter as vbsDropDownSelectFilter} from '@syman/ark-ui-bcl';
+  // import {DropDownSelectFilter as vbsDropDownSelectFilter} from '@syman/ark-ui-bcl';
 
   export default {
     components: {
@@ -137,7 +137,7 @@
       iCode,
       Demo,
       inAnchor,
-      vbsDropDownSelectFilter
+      // vbsDropDownSelectFilter
     },
     mixins: [Mixin],
     data() {
