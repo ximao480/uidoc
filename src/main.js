@@ -21,8 +21,8 @@ import '@syman/ark-ui/dist/styles/ark-ui.css'
 
 import Viewer from 'v-viewer'
 import 'viewerjs/dist/viewer.css'
-import $Bcl from '@syman/ark-ui-bcl/publish/ark.bcl.min';
-import '@syman/ark-ui-bcl/publish/ark.bcl.min.css'
+import $Bcl from '@syman/ark-ui-bcl';
+import '@syman/ark-ui-bcl'
 console.log("🚀 ~ file: main.js ~ line 25 ~ Bcl", $Bcl)
 
 Vue.use(VueRouter);

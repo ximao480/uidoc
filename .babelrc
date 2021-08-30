@@ -26,11 +26,7 @@
     "transform-es5-property-mutators",
     "transform-object-rest-spread",
     "transform-runtime",
-    "transform-vue-jsx",
-    ["import", {
-      "libraryName": "@syman/ark-ui-bcl",
-      "libraryDirectory": "src/components"
-    }]
+    "transform-vue-jsx"
   ],
   "comments": false
 }
