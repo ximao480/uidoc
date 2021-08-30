@@ -3,7 +3,7 @@
     <article>
       <h1>Docfile 文件上传</h1>
       <inAnchor title="概述" h2></inAnchor>
-      <p>封装了文件上传的基本功能</p>
+      <p>封装了文件上传的基本功能，包含删除提示等</p>
       <inAnchor title="代码示例" h2></inAnchor>
 
       <Demo title="基础用法">
@@ -121,6 +121,12 @@
             <td>Object</td>
             <td>-</td>
           </tr>
+          <tr>
+            <td>accept</td>
+            <td>接收上传文件的类型</td>
+            <td>String</td>
+            <td>-</td>
+          </tr>
           </tbody>
         </table>
         <inAnchor title="Docfile events" h3></inAnchor>
@@ -173,7 +179,17 @@
         dataitem: {
           url: '/posts', // 上传地址
         },
-        localHost: "http://jsonplaceholder.typicode.com",
+        dataitem: {
+          readonly: false, //控制字段是否可编辑
+          url:'/p/cs/batchUpload',
+          filesLength:2,
+          filesize:2*1024*1024,
+          accept: '*',
+          sendData:{
+            path: '',
+          },
+        },
+        localHost:'add-app'
 
       }
     },

@@ -26,6 +26,8 @@
                     <div class="index-content">{{ $t('index.title2') }}</div>
                     <div class="index-actions">
                         <Button class="index-btn" size="large" type="primary" shape="circle" :to="handleGoToMenu('/docs/guide/install')">{{ $t('index.start') }}</Button>
+                        <Button class="index-btn" size="large" type="primary" shape="circle" :to="handleGoToMenu('/bcl/start')">{{ $t('index.componentPro') }}</Button>
+
                         <!-- <Button class="index-btn" size="large" type="primary" shape="circle" ghost icon="ios-construct" to="https://dev.iviewui.com" target="_blank" v-if="lang === 'zh-CN'">开发者社区</Button>
                         <Button class="index-btn" size="large" type="primary" shape="circle" ghost icon="logo-github" to="https://github.com/iview/iview" target="_blank">GitHub</Button> -->
                     </div>

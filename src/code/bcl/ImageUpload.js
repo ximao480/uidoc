@@ -18,7 +18,10 @@ code.base = `
     },
     data() {
       return {
-        valuedata: [],
+        valuedata: [{
+          URL:'http://r3-project-file.oss-cn-hangzhou.aliyuncs.com/haha/4564e9fe-ed2c-493b-8d7f-225999fcc0e7.jpg',
+          NAME:'12'
+        }],
         localHost: 'r3-app',
         // localHost: "http://jsonplaceholder.typicode.com",
         // localHost: "http://ark-kiam.dev.burgeononline.com",
