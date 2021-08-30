@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.1.49" h2></inAnchor>
+            <p>
+              <code>2021-08-30</code>
+            </p>
+            <ul>
+              <li>1.[国际化]国际化的查缺补漏</li>
+              <li>2.[modal]实例按类型在content层新增class类</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.48" h2></inAnchor>
             <p>
               <code>2021-08-23</code>
