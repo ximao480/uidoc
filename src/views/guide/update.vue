@@ -31,6 +31,7 @@
             <ul>
               <li>1.[国际化]国际化语言包的补充</li>
               <li>2.[modal]实例按类型在content层新增class类</li>
+              <li>3.[iCircle]精准度优化</li>
             </ul>
           </TimelineItem>
           <TimelineItem pending>
