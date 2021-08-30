@@ -746,6 +746,13 @@ const routers = [
     component: (resolve) => require(['./views/bcl/ImageUpload'], resolve)
   },
   {
+    path: '/bcl/commonTableByAgGrid',
+    meta: {
+      title: 'commonTableByAgGrid ag表格'
+    },
+    component: (resolve) => require(['./views/bcl/commonTableByAgGrid'], resolve)
+  },
+  {
     path: '*',
     redirect: '/'
   }

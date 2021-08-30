@@ -2,14 +2,14 @@ let code = {};
 
 code.base = `
 <template>
-    <DropMultiSelectFilter :PropsData="propsData"
+    <arkDropMultiSelectFilter :PropsData="propsData"
                           :Url="url"
                           v-model="value"
                           :http="network"
                           :AutoRequest="sendAutoMessage"
                           :TableRequest="sendTableMessage"
                           @on-valueChange="valueChange"
-                          :EventFun="eventFun"></DropMultiSelectFilter>
+                          :EventFun="eventFun"></arkDropMultiSelectFilter>
 </template>
 <script>
   export default {

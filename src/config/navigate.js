@@ -584,6 +584,12 @@ const list = {
           iconfont: 'iconfont',
           icon: 'iconfont iconmd-photos'
         },
+        {
+          title: 'commonTableByAgGrid ag表格',
+          path: '/bcl/commonTableByAgGrid',
+          iconfont: 'iconfont',
+          icon: 'ios-grid'
+        },
       ]
     },
   ]

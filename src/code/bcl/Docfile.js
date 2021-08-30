@@ -2,11 +2,11 @@ let code = {};
 
 code.base = `
 <template>
-    <Docfile
+    <arkDocfile
             v-model="value"
             :dataitem="dataitem"
             :serviceId="localHost"
-    ></Docfile>
+    ></arkDocfile>
 </template>
 <script>
   export default {
