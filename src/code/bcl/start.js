@@ -29,8 +29,6 @@ arkWangeditor,
 arkDocfile,
 arkImageUpload,
 arkPreviewPicture,
-arkEnumerableInput,
-arkExtensionProperty,
 arkCommonTableByAgGrid
 
 `;

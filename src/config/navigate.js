@@ -585,6 +585,18 @@ const list = {
           icon: 'iconfont iconmd-photos'
         },
         {
+          title: 'PreviewPicture 图片预览',
+          path: '/bcl/PreviewPicture',
+          iconfont: 'iconfont',
+          icon: 'iconfont iconmd-aperture'
+        },
+        {
+          title: 'Wangeditor 富文本编辑器',
+          path: '/bcl/Wangeditor',
+          iconfont: 'iconfont',
+          icon: 'iconfont iconmd-expand'
+        },
+        {
           title: 'commonTableByAgGrid ag表格',
           path: '/bcl/commonTableByAgGrid',
           iconfont: 'iconfont',
