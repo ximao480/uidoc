@@ -202,34 +202,35 @@ export default {
   },
 
   methods: {
-    // 列组件筛选器
+    // 列组件定制渲染
     renderParams(cellData) {
       let renderComponent = null;
-      if (cellData.field === 'name') {
+      if (cellData.field === 'age') {
+        // 方式1:直接传入.vue组件
+        // renderComponent = {
+        //   renderComponent: MyComponent
+        // }
+        // 方式2:传入render组件
         renderComponent = {
           renderContainer: 'CellRenderByFunction',
           renderComponent: (h, params) => {
             return h('div', {
               domProps: {
-                innerHTML: `<h2>定制列-${params.index}</h2>`
+                innerHTML: `<div>定制列-${params.value}</div>`
               }
             })
           }
         }
       }
-
-      // 默认返回字符串的时候，要判断其字符长度
       return renderComponent
     },
-
-
   },
 
   mounted() {
     this.columns = [
       { field: 'name', displayName: '标题', checkboxSelection: true, tdAlign: 'left', filter: 'agTextColumnFilter', suppressFilter: false },
       { field: 'age', displayName: '标222题', tdAlign: 'left', floatingFilter: true, filter: true, },
-      { field: 'sex', displayName: '标题44441csdcsdcsdcsdcsdcscscscscscscsdcsdc', tdAlign: 'right', isagfilter: true },
+      { field: 'sex', displayName: '标题44dc', tdAlign: 'right', isagfilter: true },
       { field: 'phone', displayName: '地址', tdAlign: 'center' },
     ]
 
