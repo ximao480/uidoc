@@ -746,6 +746,20 @@ const routers = [
     component: (resolve) => require(['./views/bcl/ImageUpload'], resolve)
   },
   {
+    path: '/bcl/PreviewPicture',
+    meta: {
+      title: 'PreviewPicture 图片预览'
+    },
+    component: (resolve) => require(['./views/bcl/PreviewPicture'], resolve)
+  },
+  {
+    path: '/bcl/Wangeditor',
+    meta: {
+      title: 'Wangeditor 富文本编辑器'
+    },
+    component: (resolve) => require(['./views/bcl/Wangeditor'], resolve)
+  },
+  {
     path: '/bcl/commonTableByAgGrid',
     meta: {
       title: 'commonTableByAgGrid ag表格'
