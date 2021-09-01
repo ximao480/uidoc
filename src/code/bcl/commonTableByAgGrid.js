@@ -5,6 +5,7 @@ code.base = `
   <arkCommonTableByAgGrid
   ref="agGrid"
   height="300px"
+  :options="{datas:{}}"
   :columns="columns"
   :data="rows"
   :renderParams="renderParams"
@@ -43,10 +44,55 @@ export default {
 
   mounted() {
     this.columns = [
-      { field: 'name', displayName: '标题', checkboxSelection: true, tdAlign: 'left', filter: 'agTextColumnFilter', suppressFilter: false },
-      { field: 'age', displayName: '标222题', tdAlign: 'left', floatingFilter: true, filter: true, },
-      { field: 'sex', displayName: '标题44dc', tdAlign: 'right', isagfilter: true },
-      { field: 'phone', displayName: '地址', tdAlign: 'center' },
+      { field: 'name', headerName: '标题', checkboxSelection: true, tdAlign: 'left', filter: 'agTextColumnFilter', suppressFilter: false },
+      { field: 'age', headerName: '标222题', tdAlign: 'left', floatingFilter: true, filter: true, },
+      { field: 'sex', headerName: '标题44dc', tdAlign: 'right', isagfilter: true },
+      { field: 'phone', headerName: '地址', tdAlign: 'center' },
+    ]
+
+    this.rows = [
+      {
+        name: '测试cc',
+        age: 12,
+        sex: 'ss',
+        phone: 12312222
+      },
+      {
+        name: '测试dd',
+        age: 1212,
+        sex: '难',
+        phone: 12313213
+      },
+      {
+        name: '测试111',
+        age: 1332,
+        sex: 'mmmmmmm',
+        phone: 123123123
+      },
+    ]
+  }
+}
+</script>
+`
+
+code.sort = `
+<template>
+  <arkCommonTableByAgGrid
+  ref="agGrid"
+  height="300px"
+  :options="{datas:{}}"
+  :columns="columns"
+  :data="rows"
+  ></arkCommonTableByAgGrid>
+</template>
+
+<script>
+export default {
+  mounted() {
+    this.columns = [
+      { field: 'age', headerName: '标222题', isorder: true},
+      { field: 'sex', headerName: '标题44dc',isorder: true,sort:'asc'  },
+      { field: 'phone', headerName: '地址', isorder: true,sort:'desc' },
     ]
 
     this.rows = [
