@@ -6,7 +6,7 @@
         title="概述"
         h2
       ></inAnchor>
-      <p>封装了ag-grid的基本功能</p>
+      <p>封装了ag-grid的基本功能。注意：例子里面options对象里面datas虽然没有什么用，但是需要传，避免报错。近期会修复这个问题</p>
       <inAnchor
         title="代码示例"
         h2
@@ -24,6 +24,19 @@
           ></arkCommonTableByAgGrid>
         </div>
         <i-code lang="html" slot="code">{{ code.base }}</i-code>
+      </Demo>
+
+      <Demo title="列排序">
+        <div slot="demo">
+          <arkCommonTableByAgGrid
+            ref="agGrid"
+            height="300px"
+            :options="{datas:{},floatingFilter:false}"
+            :columns="columns1"
+            :data="rows1"
+          ></arkCommonTableByAgGrid>
+        </div>
+        <i-code lang="html" slot="code">{{ code.sort }}</i-code>
       </Demo>
 
       <div class="api">
@@ -198,42 +211,72 @@ export default {
       code: Code,
       columns: [],
       rows: [],
+      columns1: [],
+      rows1: [],
     }
   },
 
   methods: {
-    // 列组件筛选器
+    // 列组件定制渲染
     renderParams(cellData) {
       let renderComponent = null;
-      if (cellData.field === 'name') {
+      if (cellData.field === 'age') {
+        // 方式1:直接传入.vue组件
+        // renderComponent = {
+        //   renderComponent: MyComponent
+        // }
+        // 方式2:传入render组件
         renderComponent = {
           renderContainer: 'CellRenderByFunction',
           renderComponent: (h, params) => {
             return h('div', {
               domProps: {
-                innerHTML: `<h2>定制列-${params.index}</h2>`
+                innerHTML: `<div>定制列-${params.value}</div>`
               }
             })
           }
         }
       }
-
-      // 默认返回字符串的时候，要判断其字符长度
       return renderComponent
     },
-
-
   },
 
   mounted() {
     this.columns = [
-      { field: 'name', displayName: '标题', checkboxSelection: true, tdAlign: 'left', filter: 'agTextColumnFilter', suppressFilter: false },
-      { field: 'age', displayName: '标222题', tdAlign: 'left', floatingFilter: true, filter: true, },
-      { field: 'sex', displayName: '标题44441csdcsdcsdcsdcsdcscscscscscscsdcsdc', tdAlign: 'right', isagfilter: true },
-      { field: 'phone', displayName: '地址', tdAlign: 'center' },
+      { field: 'name', headerName: '标题', checkboxSelection: true, tdAlign: 'left', filter: 'agTextColumnFilter', suppressFilter: false },
+      { field: 'age', headerName: '标222题', tdAlign: 'left', floatingFilter: true, filter: true, },
+      { field: 'sex', headerName: '标题44dc', tdAlign: 'right', isagfilter: true },
+      { field: 'phone', headerName: '地址', tdAlign: 'center' },
     ]
 
     this.rows = [
+      {
+        name: '测试cc',
+        age: 12,
+        sex: 'ss',
+        phone: 12312222
+      },
+      {
+        name: '测试dd',
+        age: 1212,
+        sex: '难',
+        phone: 12313213
+      },
+      {
+        name: '测试111',
+        age: 1332,
+        sex: 'mmmmmmm',
+        phone: 123123123
+      },
+    ]
+
+    this.columns1 = [
+      { field: 'age', headerName: '标222题', isorder: true},
+      { field: 'sex', headerName: '标题44dc',isorder: true,sort:'asc'  },
+      { field: 'phone', headerName: '地址', isorder: true,sort:'desc' },
+    ]
+
+    this.rows1 = [
       {
         name: '测试cc',
         age: 12,
