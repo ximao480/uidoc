@@ -6,7 +6,8 @@
         title="概述"
         h2
       ></inAnchor>
-      <p>封装了ag-grid的基本功能。注意：例子里面options对象里面datas虽然没有什么用，但是需要传，避免报错。近期会修复这个问题</p>
+      <p>封装了ag-grid的基本功能。</p>
+      <p>【注意!!!】从1.0.4版本开始，表格参数options对象可以不传datas空对象了。之前版本不传会报错且导致表格很多功能失效</p>
       <inAnchor
         title="代码示例"
         h2
@@ -17,7 +18,6 @@
           <arkCommonTableByAgGrid
             ref="agGrid"
             height="300px"
-            :options="{datas:{}}"
             :columns="columns"
             :data="rows"
             :renderParams="renderParams"
@@ -31,7 +31,7 @@
           <arkCommonTableByAgGrid
             ref="agGrid"
             height="300px"
-            :options="{datas:{},floatingFilter:false}"
+            :options="{floatingFilter:false}"
             :columns="columns1"
             :data="rows1"
           ></arkCommonTableByAgGrid>

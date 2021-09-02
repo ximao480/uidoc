@@ -5,7 +5,6 @@ code.base = `
   <arkCommonTableByAgGrid
   ref="agGrid"
   height="300px"
-  :options="{datas:{}}"
   :columns="columns"
   :data="rows"
   :renderParams="renderParams"
@@ -80,7 +79,7 @@ code.sort = `
   <arkCommonTableByAgGrid
   ref="agGrid"
   height="300px"
-  :options="{datas:{}}"
+  :options="{floatingFilter:false}"
   :columns="columns"
   :data="rows"
   ></arkCommonTableByAgGrid>
