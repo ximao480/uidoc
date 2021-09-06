@@ -24,7 +24,16 @@
     <h1>更新日志</h1>
     <article class="doc-update" >
       <TimelineItem pending>
+        <inAnchor title="1.0.4" h2></inAnchor>
+        <ul>
+          <li>1.修复表格不传datas参数会报错。且影响一些功能的正常运转</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
         <inAnchor title="1.0.0" h2></inAnchor>
+        <ul>
+          <li>1.支持国际化</li>
+        </ul>
       </TimelineItem>
       <TimelineItem pending>
         <inAnchor title="0.3.10" h2></inAnchor>
