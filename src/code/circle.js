@@ -103,7 +103,7 @@ code.custom = `
 </style>
 <template>
     <i-circle
-        :size="250"
+        :style="{width: '200px', height: '200px'}"
         :trail-width="4"
         :stroke-width="5"
         :percent="75"

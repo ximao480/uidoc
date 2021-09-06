@@ -36,7 +36,7 @@
                     <p>可以使用 v-model 实现双向绑定。</p>
                     <p>默认按键盘<code>ESC</code>键也可以关闭。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/gORMKYZ">{{ code.base }}</i-code>
             </Demo>
             <Demo title="自定义样式">
                 <div slot="demo">
@@ -83,7 +83,7 @@
                     <p>Modal 组件提供了灵活的自定义样式 API 和 Slot，可以自由控制整个 Modal 的各个组成部分，比如页头、页脚、关闭按钮。</p>
                     <p>通过和其它组件的交互，能实现更复杂的功能，满足了大多业务场景。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/YzQWvzv">{{ code.custom }}</i-code>
             </Demo>
             <Demo title="异步关闭">
                 <div slot="demo">
@@ -165,7 +165,7 @@
                     <p>设置属性 <code>fullscreen</code> 可以全屏显示。</p>
                     <p>设置属性 <code>footer-hide</code> 可以隐藏底部内容。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.fullscreen }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/wveWXBb">{{ code.fullscreen }}</i-code>
             </Demo>
 
             <Demo title="拖拽移动">
@@ -182,7 +182,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>draggable</code>，对话框可以进行拖拽移动。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.draggable }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/XWgKYbM">{{ code.draggable }}</i-code>
             </Demo>
 
             <inAnchor title="实例化使用方法" h3></inAnchor>

@@ -90,7 +90,7 @@
             <Demo title="自定义更多样式">
                 <div slot="demo">
                     <i-circle
-                        :size="250"
+                        :style="{width: '250px', height: '250px'}"
                         :trail-width="4"
                         :stroke-width="5"
                         :percent="75"
@@ -151,6 +151,12 @@
                             <td>120</td>
                         </tr>
                         <tr>
+                            <td>style</td>
+                            <td>图表的宽度和高度，单位 px</td>
+                            <td>Object</td>
+                            <td></td>
+                        </tr>
+                        <tr>
                             <td>stroke-linecap</td>
                             <td>进度环顶端的形状，可选值为<code>square</code>（方）和<code>round</code>（圆）</td>
                             <td>String</td>
@@ -167,12 +173,6 @@
                             <td>进度环的颜色</td>
                             <td>String</td>
                             <td>#2db7f5</td>
-                        </tr>
-                        <tr>
-                            <td>trail-width</td>
-                            <td>进度环背景的线宽，单位 px</td>
-                            <td>Number</td>
-                            <td>5</td>
                         </tr>
                         <tr>
                             <td>trail-color</td>

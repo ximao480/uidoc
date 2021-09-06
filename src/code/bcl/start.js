@@ -11,6 +11,12 @@ Vue.use(Bcl);
 
 `;
 
+code.cdnstart = `
+// 全局使用
+在html文中
+<script src="https://unpkg.com/@syman/ark-ui-bcl@{版本号}/publish/ark.bcl.min.js"></script>
+`;
+
 code.import = `
 npm install babel-plugin-import --save-dev
 

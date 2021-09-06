@@ -139,7 +139,12 @@
                         <td>切换标签时的回调方法，参数：index当前标签的索引，name当前标签的名字，instance当前标签里组件的实例，但是要配ref属性</td>
                         <td>String</td>
                         <td>空</td>
-                    </tr>
+                    </tr>                        <tr>
+                            <td>before-leave</td>
+                            <td>切换前的函数，返回 false 或者返回 Promise 且被 reject可阻止标签关闭</td>
+                            <td>Function</td>
+                            <td>-</td>
+                        </tr>
                     </tbody>
                 </table>
                 <!--<inAnchor title="FkrpSelect events" h3></inAnchor>-->
