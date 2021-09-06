@@ -24,6 +24,17 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.0" h2></inAnchor>
+            <p>
+              <code>2021-09-06</code>
+            </p>
+            <ul>
+              <li>1.[tab/tabPanels]切换前的校验</li>
+              <li>2.[page]新增最大显示按钮数量支持</li>
+              <li>3.[iCircle]渲染方式重绘</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.1.49" h2></inAnchor>
             <p>
               <code>2021-08-30</code>

@@ -90,7 +90,7 @@
             <Demo title="自定义更多样式">
                 <div slot="demo">
                     <i-circle
-                        :size="250"
+                        :style="{width: '250px', height: '250px'}"
                         :trail-width="4"
                         :stroke-width="5"
                         :percent="75"
