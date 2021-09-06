@@ -4,11 +4,16 @@
       <h1>快速上手</h1>
       <inAnchor title="特性" h2></inAnchor>
       
-
+     
       <inAnchor title="全局使用方式" h2></inAnchor>
       <Alert show-icon>
-        全局使用，因为是基于R3框架编译的，所以至少部分组件，其余组件请按需引入
+        全局使用，因为是基于R3框架编译的，所以只挂载了框架必备的组件，其余组件请按需引入，
       </Alert>
+      <Alert type="warning">
+        如果是基于框架R3项目请cdn方式引入
+      </Alert>
+      <i-code lang="js" bg>{{ code.cdnstart }}</i-code>
+      <p>如果不是基于R3框架项目，可以用以下引用方式</p>
       <i-code lang="js" bg>{{ code.start }}</i-code>
       <inAnchor title="全局使用方式包含的组件" h2></inAnchor>
        <Alert show-icon>
