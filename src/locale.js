@@ -30,6 +30,7 @@ export default {
             chat: '在线讨论',
             ecosystem: '生态',
             code_copy: '复制代码',
+            code_pen: '在CodePen中打开',
             code_fullscreen: '放大',
             code_jsfiddle: '在 JSFiddle 中打开',
             current_version: '当前呈现版本：'
@@ -66,6 +67,7 @@ export default {
             chat: 'Chat Room',
             ecosystem: 'Ecosystem',
             code_copy: 'Copy code',
+            code_pen: 'open in CodePen',
             code_fullscreen: 'Fullscreen',
             code_jsfiddle: 'Open in JSFiddle',
             current_version: 'Current Version:'

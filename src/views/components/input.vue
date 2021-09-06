@@ -14,7 +14,7 @@
                     <p>基本用法，可以使用 <code>v-model</code> 实现数据的双向绑定。</p>
                     <p>可以直接设置 style 来改变输入框的宽度，默认 100%。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/powbVQo">{{ code.base }}</i-code>
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
@@ -34,7 +34,7 @@
                     <p>输入框有三种尺寸：大、默认（中）、小</p>
                     <p>通过设置<code>size</code>为<code>large</code>和<code>small</code>设置为大和小尺寸，不设置为默认（中）尺寸。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/JjJKvwN">{{ code.size }}</i-code>
             </Demo>
             <Demo title="可清空">
                 <div slot="demo">
@@ -43,7 +43,7 @@
                 <div slot="desc">
                     <p>开启属性 <code>clearable</code> 可显示清空按钮。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.clearable }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/XWgKqOj">{{ code.clearable }}</i-code>
             </Demo>
             <Demo title="带Icon的输入框">
                 <div slot="demo">
@@ -53,7 +53,7 @@
                     <p>通过 <code>icon</code> 属性可以在输入框右边加一个图标。</p>
                     <p>点击图标，会触发 <code>on-click</code> 事件。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/OJgXZdr">{{ code.icon }}</i-code>
             </Demo>
             <Demo title="前缀和后缀图标">
                 <div slot="demo">
@@ -75,7 +75,7 @@
                 <div slot="desc">
                     <p>除了设置 icon，也可以通过设置 <code>prefix</code> 和 <code>suffix</code> 及同名 slot 设置前缀及后缀图标。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.prefix }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/abwZGMJ">{{ code.prefix }}</i-code>
             </Demo>
             <Demo title="搜索框">
                 <div slot="demo">
@@ -86,7 +86,7 @@
                 <div slot="desc">
                     <p>开启 <code>search</code> 属性，可以设置为搜索型输入框。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.search }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/NWgrMJV">{{ code.search }}</i-code>
             </Demo>
             <Demo title="文本域">
                 <div slot="demo">
@@ -103,7 +103,7 @@
                     <p>通过设置属性 <code>type</code> 为 <code>textarea</code> 来使用文本域，用于多行输入。</p>
                     <p>通过设置属性 <code>rows</code> 控制文本域默认显示的行数。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.textarea }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/ExXyLzW">{{ code.textarea }}</i-code>
             </Demo>
             <Demo title="适应文本高度的文本域">
                 <div slot="demo">
@@ -168,7 +168,7 @@
                 <div slot="desc">
                     通过前置和后置的 slot 可以实现复合型的输入框。
                 </div>
-                <i-code lang="html" slot="code">{{ code.addon }}</i-code>
+                <i-code lang="html" slot="code"  codeLink="https://codepen.io/xc9010/pen/xxrOjor">{{ code.addon }}</i-code>
             </Demo>
 
             <Demo title="输入时格式化展示">
@@ -199,7 +199,7 @@
                     <p>maxlength 和 minlength 是原生属性，用来限制输入框的字符长度，其中字符长度是用 Javascript 的字符串长度统计的。</p>
                     <p>对于类型为 text 或 textarea 的输入框，在使用 maxlength 属性限制最大输入长度的同时，可通过设置 wordLimit 属性来展示字数统计。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.wordLimit }}</i-code>
+                <i-code lang="html" slot="code" codeLink="https://codepen.io/xc9010/pen/xxrOjvr">{{ code.wordLimit }}</i-code>
             </Demo>
 
 

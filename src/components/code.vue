@@ -17,6 +17,9 @@
   span.scale {
     right: 25px;
   }
+  span.scale {
+    right: 25px;
+  }
 
   span.open-fiddle {
     right: 50px;
@@ -58,6 +61,11 @@
                 <Icon type="md-checkmark" size="18" v-show="copied" style="color:#5cb85c"></Icon>
             </Tooltip>
         </span>
+    <span class="open-fiddle" @click="openCodePen" v-if="codeLink">
+            <Tooltip :content="$t('index.code_pen')" placement="top" transfer>
+                <Icon type="ios-create-outline" size="18"></Icon>
+            </Tooltip>
+        </span>
     <Modal class-name="code-scale-modal" :title="title" width="65" v-model="openScale">
       <pre :class="{bg: bg}"><code :class="language" ref="code2"></code></pre>
     </Modal>
@@ -86,6 +94,9 @@
       bg: {
         type: Boolean,
         default: false
+      },
+      codeLink: {
+        type: String
       }
     },
     data() {
@@ -210,6 +221,11 @@
         document.body.appendChild(form);
         form.submit();
         document.body.removeChild(form);
+      },
+      openCodePen() {
+        console.log(this)
+        if (!this.codeLink) return;
+        window.open(this.codeLink);
       }
     }
   }

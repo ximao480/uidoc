@@ -251,6 +251,12 @@
                             <td>Function</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>before-leave</td>
+                            <td>切换前的函数，返回 false 或者返回 Promise 且被 reject可阻止标签关闭</td>
+                            <td>Function</td>
+                            <td>-</td>
+                        </tr>
                     </tbody>
                 </table>
                 <inAnchor title="Tabs events" h3></inAnchor>
