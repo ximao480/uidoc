@@ -28,6 +28,8 @@
        <i-code lang="js" bg>{{ code.import }}</i-code> -->
       <inAnchor title="国际化" h2></inAnchor>
       <i-code lang="js" bg>{{ code.lang }}</i-code>
+      <p>定制语言函数BCL_mergeLocaleMessage。用法同i18n插件的mergeLocaleMessage( locale, message )。可以用于自定义翻译和扩展语言翻译</p>
+      <i-code lang="js" bg>{{ code.extendlang }}</i-code>
      
     </article>
   </i-article>

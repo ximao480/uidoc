@@ -44,4 +44,12 @@ const locale = $Bcl.locale  // $Bcl为组件库挂在window上的全局对象
 locale('en') // 参数目前支持：中文-'zh',英文-'en'
 `
 
+code.extendlang = `
+BCL_mergeLocaleMessage('us',{
+	newlang: {
+    test: '新增测试语言'   // 切换'us'语言后，会将$t('newlang.test')渲染成'新增测试语言'
+  }
+})
+`
+
 export default code;

@@ -118,7 +118,76 @@ export default {
 }
 </script>
 `
+code.cellspan = `
+<template>
+  <arkCommonTableByAgGrid
+  height="300px"
+  :options="{suppressRowTransform: true}"
+  :columns="columns2"
+  :data="rows2"
+  ></arkCommonTableByAgGrid>
+</template>
 
+<script>
+export default {
+  mounted() {
+    this.columns2 = [
+      {
+        field: 'name', headerName: '性别',
+        colSpan: params => {
+          // 行数据name值为'合并列啊啊啊啊啊啊啊啊'就跨两列
+          return params.data.name === '合并列啊啊啊啊啊啊啊啊' ? 2 : 1
+        },
+      },
+      {
+        field: 'age', headerName: '年龄',
+      },
+      { field: 'sex', headerName: '性别', },
+      {
+        field: 'desc', headerName: '描述', isorder: true,
+        rowSpan: params => {
+          // 行数据desc值为'3行'时就跨两行
+          const rows = params.data.desc === '3行' ? 2 : 1
+          // 如果表格在最后一行出现跨行。觉得显示不好看，可以调整该行高度
+          // 设置行高为 跨行数*行高
+          // if (params.node.rowIndex === this.rows2.length - 1 && params.data.desc === '3行') {
+          //   params.node.setRowHeight(rows * params.node.rowHeight)
+          // }
+          return rows
+        },
+        // 设置单元格样式,'show-cell'是组件库后期写好的一个类名(非ag-grid自带的)，作用是设置背景为白色
+        cellClassRules: {
+          'show-cell': (params => {
+            return params.value === '3行' // 将跨行的单元格背景设置白色。不设置的话看不出跨行效果
+          }),
+        },
+      },
+    ]
+
+    this.rows2 = [
+      {
+        name: '测试111',
+        age: 33,
+        sex: 'c',
+        desc: '3行'
+      },
+      {
+        name: '测试dd',
+        age: 22,
+        sex: 'b',
+        desc: '2行'
+      },
+      {
+        name: '合并列啊啊啊啊啊啊啊啊',
+        age: 12,
+        sex: 'a',
+        desc: '1行',
+      },
+    ]
+  }
+}
+</script>
+`
 
 
 export default code;

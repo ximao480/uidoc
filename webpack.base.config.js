@@ -112,5 +112,8 @@ module.exports = {
             // 'vue': 'vue/dist/vue.runtime.js'
             // '@': resolve('src')
         }
-    }
+    },
+    externals: {
+        'VueI18n': 'VueI18n',
+    },
 };

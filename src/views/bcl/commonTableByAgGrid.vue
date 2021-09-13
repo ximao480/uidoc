@@ -23,7 +23,10 @@
             :renderParams="renderParams"
           ></arkCommonTableByAgGrid>
         </div>
-        <i-code lang="html" slot="code">{{ code.base }}</i-code>
+        <i-code
+          lang="html"
+          slot="code"
+        >{{ code.base }}</i-code>
       </Demo>
 
       <Demo title="列排序">
@@ -36,7 +39,32 @@
             :data="rows1"
           ></arkCommonTableByAgGrid>
         </div>
-        <i-code lang="html" slot="code">{{ code.sort }}</i-code>
+        <i-code
+          lang="html"
+          slot="code"
+        >{{ code.sort }}</i-code>
+      </Demo>
+
+      <Demo title="合并单元格">
+        <div slot="desc">
+          <p style='color:red;'>注意事项!!!：</p>
+          <p>1.使用行合并<code>rowSpan</code>时，需要给表格传参数<code>suppressRowTransform: true</code>(ag-grid官网有说明这点)</p>
+          <p>2.使用行合并<code>rowSpan</code>时，需要自己根据情况，给跨行的单元格设置背景色为白色。不设置的话显示默认背景色透明，看起来就好像合并没生效一样，其实是因为单元格透明后可以看见被遮挡的单元格的内容(ag-grid官网有说明这点)</p>
+          <p>3.使用行合并<code>rowSpan</code>时，尽量保证最后一行不出现跨行。会发生什么现象，好奇的话可以点击本案例里表格【描述】那列进行排序，可以看到。官网没说怎么处理，这里提供两种方案参考解决：1.见本案例中注释掉的代码部分，即手动设置行高 2.把最后一行跨行单元格恢复成透明背景</p>
+        </div>
+        <div slot="demo">
+          <arkCommonTableByAgGrid
+            ref="agGrid"
+            height="300px"
+            :options="{suppressRowTransform: true}"
+            :columns="columns2"
+            :data="rows2"
+          ></arkCommonTableByAgGrid>
+        </div>
+        <i-code
+          lang="html"
+          slot="code"
+        >{{ code.cellspan }}</i-code>
       </Demo>
 
       <div class="api">
@@ -213,6 +241,8 @@ export default {
       rows: [],
       columns1: [],
       rows1: [],
+      columns2: [],
+      rows2: [],
     }
   },
 
@@ -243,10 +273,10 @@ export default {
 
   mounted() {
     this.columns = [
-      { field: 'name', headerName: '标题', checkboxSelection: true, tdAlign: 'left', filter: 'agTextColumnFilter', suppressFilter: false },
-      { field: 'age', headerName: '标222题', tdAlign: 'left', floatingFilter: true, filter: true, },
-      { field: 'sex', headerName: '标题44dc', tdAlign: 'right', isagfilter: true },
-      { field: 'phone', headerName: '地址', tdAlign: 'center' },
+      { field: 'name', headerName: '姓名', checkboxSelection: true, tdAlign: 'left', filter: 'agTextColumnFilter', suppressFilter: false },
+      { field: 'age', headerName: '年龄', tdAlign: 'left', floatingFilter: true, filter: true, },
+      { field: 'sex', headerName: '性别', tdAlign: 'right', isagfilter: true },
+      { field: 'phone', headerName: '手机', tdAlign: 'center' },
     ]
 
     this.rows = [
@@ -271,9 +301,9 @@ export default {
     ]
 
     this.columns1 = [
-      { field: 'age', headerName: '标222题', isorder: true},
-      { field: 'sex', headerName: '标题44dc',isorder: true,sort:'asc'  },
-      { field: 'phone', headerName: '地址', isorder: true,sort:'desc' },
+      { field: 'age', headerName: '标222题', isorder: true },
+      { field: 'sex', headerName: '标题44dc', isorder: true, sort: 'asc' },
+      { field: 'phone', headerName: '地址', isorder: true, sort: 'desc' },
     ]
 
     this.rows1 = [
@@ -294,6 +324,60 @@ export default {
         age: 1332,
         sex: 'mmmmmmm',
         phone: 123123123
+      },
+    ]
+
+
+    this.columns2 = [
+      {
+        field: 'name', headerName: '性别',
+        colSpan: params => {
+          // 行数据name值为'合并列啊啊啊啊啊啊啊啊'就跨两列
+          return params.data.name === '合并列啊啊啊啊啊啊啊啊' ? 2 : 1
+        },
+      },
+      {
+        field: 'age', headerName: '年龄',
+      },
+      { field: 'sex', headerName: '性别', },
+      {
+        field: 'desc', headerName: '描述', isorder: true,
+        rowSpan: params => {
+          // 行数据desc值为'3行'时就跨两行
+          const rows = params.data.desc === '3行' ? 2 : 1
+          // 如果表格在最后一行出现跨行。觉得显示不好看，可以调整该行高度
+          // 设置行高为 跨行数*行高
+          // if (params.node.rowIndex === this.rows2.length - 1 && params.data.desc === '3行') {
+          //   params.node.setRowHeight(rows * params.node.rowHeight)
+          // }
+          return rows
+        },
+        cellClassRules: {
+          'show-cell': (params => {
+            return params.value === '3行' // 将跨行的单元格背景设置白色
+          }),
+        },
+      },
+    ]
+
+    this.rows2 = [
+      {
+        name: '测试111',
+        age: 33,
+        sex: 'c',
+        desc: '3行'
+      },
+      {
+        name: '测试dd',
+        age: 22,
+        sex: 'b',
+        desc: '2行'
+      },
+      {
+        name: '合并列啊啊啊啊啊啊啊啊',
+        age: 12,
+        sex: 'a',
+        desc: '1行',
       },
     ]
   }
