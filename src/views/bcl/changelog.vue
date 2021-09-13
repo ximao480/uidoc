@@ -24,6 +24,28 @@
     <h1>更新日志</h1>
     <article class="doc-update" >
       <TimelineItem pending>
+        <inAnchor title="1.1.0" h2></inAnchor>
+        <ul>
+          <li>1.升级ag表格的底层ag-grid，从17.1.1版本升级到新的26.0.0版本</li>
+          <li>2.新增日期快捷选项的扩展属性</li>
+          <li>3.vue-i18n改为cdn引入</li>
+          <li>4.支持扩展国际化语言</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
+        <inAnchor title="1.0.6" h2></inAnchor>
+        <ul>
+          <li>1.兼容弹窗多选的空值问题</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
+        <inAnchor title="1.0.5" h2></inAnchor>
+        <ul>
+          <li>1.子表点击显示隐藏列失效</li>
+          <li>2.主表点击显示所有列后，取消固定列功能失效</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
         <inAnchor title="1.0.4" h2></inAnchor>
         <ul>
           <li>1.修复表格不传datas参数会报错。且影响一些功能的正常运转</li>
