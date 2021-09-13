@@ -210,6 +210,37 @@
           </tbody>
         </table>
       </div>
+
+      <div>
+        <inAnchor
+          title="注意事项"
+          h2
+        ></inAnchor>
+        <p>
+          1.使用时，需要注意是否会覆盖掉组件库里内置的事件。目前组件库内置事件有如下几个：
+        </p>
+        <i-code
+          lang="html"
+          slot="code"
+        >{{ code.eventList }}</i-code>
+        <p>2.renderParams函数返回对象里的`renderComponent`支持组件和`render`函数渲染两种方式。推荐直接传入组件，因为传render函数的话，组件的注册流程是业务组件库处理的，所以render函数里的vue实例是指向业务组件库的vue，如果render组件里用到项目里的router或者vuex会出现拿不到值的情况，解决方案是，手动传给你render组件router和vuex</p>
+        <p>3.业务组件库1.1.0版本之前，ag表格中没提到属性和方法，可以去`ag-grid`[官方文档](https://www.ag-grid.com/javascript-grid/getting-started/)(网上慢的话，试下翻墙看。或者看[ag中文文档](http://www.itxst.com/ag-grid/z2mbaiju.html))上查阅。大部分属性和方法业务组件是已经支持的，可以试着调用一下。特别注意：使用官网上事件回调时，如果不生效，试着改成on开头。例如官网上有方法gridReady，实际要写成onGridReady(这个因为我们的ag企业版的版本太低，跟官网api命名有些出入)</p>
+        <p>4.建议传值给表格时，先赋值列数据，再赋值行数据</p>
+        <p>5.表格配置项属性`options`不是个响应式数据，请在表格渲染前就定义好</p>
+        <p>6.行数据和列数据支持响应式更新。需要注意一点，更新条件是通过数组浅比较实现的，所以如果只改数据里某一项的值并不会自动更新。解决这个问题可以通过返回一个新数组实现数据响应式更新，例如`rowData = [...rowData]</p>
+      </div>
+
+      <div>
+        <inAnchor
+          title="功能答疑"
+          h2
+        ></inAnchor>
+
+        <Alert show-icon>
+          <p>Q: 如何获取AG表格的原生方法</p>
+          <p>A: 给组件节点加上一个`ref`属性，例如`ref=''table`之后通过`this.$refs.table`可以拿到ag表格原生的`api`和`columnApi`方法。例如`const {api, columnApi} = this.$refs.table`</p>
+        </Alert>
+      </div>
     </article>
   </i-article>
 </template>
@@ -275,7 +306,7 @@ export default {
     this.columns = [
       { field: 'name', headerName: '姓名', checkboxSelection: true, tdAlign: 'left', filter: 'agTextColumnFilter', suppressFilter: false },
       { field: 'age', headerName: '年龄', tdAlign: 'left', floatingFilter: true, filter: true, },
-      { field: 'sex', headerName: '性别', tdAlign: 'right', isagfilter: true },
+      { field: 'sex', headerName: '性别', tdAlign: 'right', isagfilter: true, agfilter: 'FUZZY' },
       { field: 'phone', headerName: '手机', tdAlign: 'center' },
     ]
 

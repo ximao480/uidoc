@@ -43,10 +43,10 @@ export default {
 
   mounted() {
     this.columns = [
-      { field: 'name', headerName: '标题', checkboxSelection: true, tdAlign: 'left', filter: 'agTextColumnFilter', suppressFilter: false },
-      { field: 'age', headerName: '标222题', tdAlign: 'left', floatingFilter: true, filter: true, },
-      { field: 'sex', headerName: '标题44dc', tdAlign: 'right', isagfilter: true },
-      { field: 'phone', headerName: '地址', tdAlign: 'center' },
+      { field: 'name', headerName: '姓名', checkboxSelection: true, tdAlign: 'left', filter: 'agTextColumnFilter', suppressFilter: false },
+      { field: 'age', headerName: '年龄', tdAlign: 'left', floatingFilter: true, filter: true, },
+      { field: 'sex', headerName: '性别', tdAlign: 'right', isagfilter: true, agfilter: 'FUZZY' },
+      { field: 'phone', headerName: '手机', tdAlign: 'center' },
     ]
 
     this.rows = [
@@ -188,6 +188,25 @@ export default {
 }
 </script>
 `
-
+code.eventList = `
+onGridReady,
+getContextMenuItems,
+getMainMenuItems,
+onCellClicked,
+onCellDoubleClicked,
+onRowClicked,
+onRowDoubleClicked,
+onSelectionChanged,
+onSortChanged,
+onVirtualColumnsChanged,
+onColumnVisible,
+onColumnMoved,
+onColumnPinned,
+onRowDataChanged,
+onBodyScroll,
+getRowClass,
+onFilterChanged,
+onColumnResized
+`
 
 export default code;
