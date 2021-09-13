@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.1" h2></inAnchor>
+            <p>
+              <code>2021-09-13</code>
+            </p>
+            <ul>
+              <li>1.[auto-complete]修复匹配值自动失去焦点bug</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.0" h2></inAnchor>
             <p>
               <code>2021-09-06</code>
