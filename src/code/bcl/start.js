@@ -14,6 +14,10 @@ Vue.use(Bcl);
 code.cdnstart = `
 // 全局使用
 在html文中
+// 从1.1.0版本开始需要用cdn引入vue-i18n
+// 从1.1.0版本开始使用的r3框架版本至少需要v3.1.0
+<script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
+
 <script src="https://unpkg.com/@syman/ark-ui-bcl@{版本号}/publish/ark.bcl.min.js"></script>
 `;
 

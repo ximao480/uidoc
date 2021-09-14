@@ -30,6 +30,8 @@
           <li>2.新增日期快捷选项的扩展属性</li>
           <li>3.vue-i18n改为cdn引入</li>
           <li>4.支持扩展国际化语言</li>
+          <li>**从1.1.0版本开始需要用cdn引入vue-i18n**</li>
+          <li>**使用的r3框架版本至少需要v3.1.0**</li>
         </ul>
       </TimelineItem>
       <TimelineItem pending>
