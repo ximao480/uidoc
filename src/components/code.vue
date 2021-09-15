@@ -50,7 +50,7 @@
             <Icon type="md-code" size="18" />
         </Tooltip>
     </span> -->
-    <span class="scale" @click="scale">
+    <span class="scale" @click="scale" v-if="false">
             <Tooltip :content="$t('index.code_fullscreen')" placement="top" transfer>
                 <Icon type="md-qr-scanner" size="18"></Icon>
             </Tooltip>
