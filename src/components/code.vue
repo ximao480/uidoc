@@ -61,7 +61,7 @@
                 <Icon type="md-checkmark" size="18" v-show="copied" style="color:#5cb85c"></Icon>
             </Tooltip>
         </span>
-    <span class="open-fiddle" @click="openCodePen" v-if="codeLink">
+    <span class="scale" @click="openCodePen" v-if="codeLink">
             <Tooltip :content="$t('index.code_pen')" placement="top" transfer>
                 <Icon type="ios-create-outline" size="18"></Icon>
             </Tooltip>
