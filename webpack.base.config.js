@@ -113,7 +113,4 @@ module.exports = {
             // '@': resolve('src')
         }
     },
-    externals: {
-        'VueI18n': 'VueI18n',
-    },
 };
