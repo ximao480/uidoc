@@ -8,6 +8,7 @@
       ></inAnchor>
       <p>封装了ag-grid的基本功能。</p>
       <p>【注意!!!】从1.0.4版本开始，表格参数options对象可以不传datas空对象了。之前版本不传会报错且导致表格很多功能失效</p>
+      <p>【注意!!!】从1.1.0版本开始，我们对底层ag-grid升级到了最新版本，使接口跟ag官网基本保持一致</p>
       <inAnchor
         title="代码示例"
         h2
@@ -88,7 +89,7 @@
           <tbody>
             <tr>
               <td>options</td>
-              <td>对应ag-grid的gridOptions的配置。注意：由于组件库里封装的ag-grid版本较低，可能会出现实际用的api名称与最新ag-grid官网提供的api不一致的情况出现</td>
+              <td>对应ag-grid的gridOptions的配置。注意：1.1.0版本之前的组件库里的ag-grid版本较低，可能会出现实际用的api名称与最新ag-grid官网提供的api不一致的情况出现</td>
               <td>Object</td>
               <td>可参考ag-grid官网的网格属性</td>
             </tr>
@@ -106,7 +107,7 @@
             </tr>
             <tr>
               <td>columns</td>
-              <td>表格列数据</td>
+              <td>表格列数据。相当于ag表格的列定义(columnDef)</td>
               <td>Array</td>
               <td>[]</td>
             </tr>
