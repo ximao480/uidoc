@@ -8,6 +8,11 @@ code.inline = `
             <Button type="posdefault" style="margin-left:120px" @click="submit" >提交</Button>
             <Button type="posdefault" style="margin-left:120px" @click="reset" >重置</Button>
         </div>
+        <div slot="tip" slot-scope="props">
+        <div class="tip" style="color:#999;padding:5px 0">
+            {{ props.item.tip }}
+        </div>
+    </div>
 </FormLayout>   
 </template>
 <script>

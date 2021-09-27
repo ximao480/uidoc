@@ -19,6 +19,12 @@
                             <Button type="posdefault" style="margin-left:120px" @click="reset" >重置</Button>
 
                         </div>
+                         <div slot="tip"
+                            slot-scope="props">
+                            <div class="tip" style="color:#999;padding:5px 0">
+                                {{ props.item.tip }}
+                            </div>
+                        </div>
                            
 
                         </FormLayout>    
@@ -257,6 +263,7 @@
                         required: true, // 是否必填
                         field:'key1',
                         label: 'Input组件',
+                        tip:'只能输入数字',
                         props: {
                         placeholder: '后台字段',
                         value: '',
