@@ -40,6 +40,12 @@
                         <td>Object</td>
                         <td>{}</td>
                     </tr>
+                    <tr>
+                        <td>setHeader</td>
+                        <td>设置上传的请求头部</td>
+                        <td>Object</td>
+                        <td>{}</td>
+                    </tr>
                     </tbody>
                 </table>
 
