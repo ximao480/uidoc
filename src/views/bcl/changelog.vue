@@ -24,6 +24,12 @@
     <h1>更新日志</h1>
     <article class="doc-update" >
       <TimelineItem pending>
+        <inAnchor title="1.1.2" h2></inAnchor>
+        <ul>
+          <li>1.修复富文本滚动问题</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
         <inAnchor title="1.1.1" h2></inAnchor>
         <ul>
           <li>1.由于项目组反馈使用起来不方便，vue-i18n改回组件库内置，不再使用cdn</li>
