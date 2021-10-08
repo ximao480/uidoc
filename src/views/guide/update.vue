@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.2" h2></inAnchor>
+            <p>
+              <code>2021-09-27</code>
+            </p>
+            <ul>
+              <li>1.【ImageUpload】新增setHeader，可设置上传的请求头部</li>
+              <li>2.【select】slotOptions优化</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.1" h2></inAnchor>
             <p>
               <code>2021-09-13</code>
