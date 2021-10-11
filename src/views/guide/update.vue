@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.3" h2></inAnchor>
+            <p>
+              <code>2021-10-11</code>
+            </p>
+            <ul>
+              <li>1.【select】多选且在过滤和搜索的条件下下拉框异常</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.2" h2></inAnchor>
             <p>
               <code>2021-09-27</code>
