@@ -209,4 +209,83 @@ onFilterChanged,
 onColumnResized
 `
 
+code.header = `
+<template>
+  <arkCommonTableByAgGrid
+  ref="agGrid"
+  height="300px"
+  :columns="columns"
+  :data="rows"
+  ></arkCommonTableByAgGrid>
+</template>
+
+<script>
+import Test from './Test.vue'
+import Vue from 'vue'
+Vue.component('Test',Test) // 示例中是全局注册的组件库。所有这里定制头部用到的组件也全局注册
+
+export default {
+  mounted() {
+    this.columns = [
+      {
+        field: 'name',
+        headerName: '名字',
+      },
+      {
+        field: 'age',
+        headerName: '年龄',
+        headerComponentFramework: 'Test', // 用到的组件
+        headerComponentParams: {
+          myParams: '定制参数' // 自定义组件接受的参数
+        }
+      },
+      { field: 'sex', headerName: '性别', },
+      {
+        field: 'phone', headerName: '手机',
+
+      },
+    ]
+
+    this.rows = [
+      {
+        name: '啊',
+        age: 12,
+        sex: 'a',
+        phone: 12312222,
+      },
+      {
+        name: '搜索',
+        age: 22,
+        sex: 'b',
+        phone: 222
+      },
+      {
+        name: '测试',
+        age: 33,
+        sex: 'c',
+        phone: 3333
+      },
+    ]
+  }
+}
+</script>
+
+<!-- Test.vue文件内容 -->
+<template>
+  <div>
+    定制头部--{{params.myParams}}
+  </div>
+</template>
+
+<script type="text/ecmascript-6">
+export default {
+  name: 'Test',
+  
+  mounted() {
+    console.log(this.params)
+  }
+}
+</script>
+`
+
 export default code;

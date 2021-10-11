@@ -57,7 +57,6 @@
           <arkCommonTableByAgGrid
             ref="agGrid"
             height="300px"
-            :options="{suppressRowTransform: true}"
             :columns="columns2"
             :data="rows2"
           ></arkCommonTableByAgGrid>
@@ -66,6 +65,26 @@
           lang="html"
           slot="code"
         >{{ code.cellspan }}</i-code>
+      </Demo>
+
+      <Demo title="定制表格头部">
+        <div slot="desc">
+          <p style='color:red;'>注意事项!!!：</p>
+          <p>如果表格(或业务组件库)是全局注册的，那么定制的头部组件也要全局注册。如果是按需引入的表格,那么定制的头部组件可以在vue文件中进行局部注册</p>
+        </div>
+        <div slot="demo">
+          <arkCommonTableByAgGrid
+            ref="agGrid"
+            height="300px"
+            :columns="columns3"
+            :data="rows3"
+            :options="options3"
+          ></arkCommonTableByAgGrid>
+        </div>
+        <i-code
+          lang="html"
+          slot="code"
+        >{{ code.header }}</i-code>
       </Demo>
 
       <div class="api">
@@ -254,7 +273,9 @@ import Demo from '../../components/demo.vue';
 import inAnchor from '../../components/anchor.vue';
 import Mixin from '../../mixins/common';
 import Code from '../../code/bcl/commonTableByAgGrid';
-
+import Test from './Test.vue'
+import Vue from 'vue'
+Vue.component('Test',Test)
 export default {
   name: '',
 
@@ -263,6 +284,7 @@ export default {
     iCode,
     Demo,
     inAnchor,
+    Test
   },
 
   mixins: [Mixin],
@@ -276,6 +298,13 @@ export default {
       rows1: [],
       columns2: [],
       rows2: [],
+      columns3: [],
+      rows3: [],
+      options3: {
+        frameworkComponents: {
+          Test
+        }
+      }
     }
   },
 
@@ -411,6 +440,48 @@ export default {
         age: 12,
         sex: 'a',
         desc: '1行',
+      },
+    ]
+
+
+    this.columns3 = [
+      {
+        field: 'name',
+        headerName: '名字',
+      },
+      {
+        field: 'age',
+        headerName: '年龄',
+        headerComponentFramework: 'Test',
+        headerComponentParams: {
+          myParams: '定制参数'
+        }
+      },
+      { field: 'sex', headerName: '性别', },
+      {
+        field: 'phone', headerName: '手机',
+
+      },
+    ]
+
+    this.rows3 = [
+      {
+        name: '啊',
+        age: 12,
+        sex: 'a',
+        phone: 12312222,
+      },
+      {
+        name: '搜索',
+        age: 22,
+        sex: 'b',
+        phone: 222
+      },
+      {
+        name: '测试',
+        age: 33,
+        sex: 'c',
+        phone: 3333
       },
     ]
   }
