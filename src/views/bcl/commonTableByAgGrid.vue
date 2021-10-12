@@ -8,7 +8,7 @@
       ></inAnchor>
       <p>封装了ag-grid的基本功能。</p>
       <p>【注意!!!】从1.0.4版本开始，表格参数options对象可以不传datas空对象了。之前版本不传会报错且导致表格很多功能失效</p>
-      <p>【注意!!!】从1.1.0版本开始，我们对底层ag-grid升级到了最新版本，使接口跟ag官网基本保持一致</p>
+      <p>【注意!!!】从1.1.0版本开始，我们对底层ag-grid升级到了最新版本，使接口跟ag官网基本保持一致(遇到表格渲染问题请参考【注意事项】里的第7条)</p>
       <inAnchor
         title="代码示例"
         h2
@@ -108,7 +108,7 @@
           <tbody>
             <tr>
               <td>options</td>
-              <td>对应ag-grid的gridOptions的配置。注意：1.1.0版本之前的组件库里的ag-grid版本较低，可能会出现实际用的api名称与最新ag-grid官网提供的api不一致的情况出现</td>
+              <td>相当于ag-grid的gridOptions的配置。注意：1.1.0版本之前的组件库里的ag-grid版本较低，可能会出现实际用的api名称与最新ag-grid官网提供的api不一致的情况出现</td>
               <td>Object</td>
               <td>可参考ag-grid官网的网格属性</td>
             </tr>
@@ -132,7 +132,7 @@
             </tr>
             <tr>
               <td>renderParams</td>
-              <td>用于自定义单元格渲染组件(详细用法见下文)</td>
+              <td>用于自定义单元格渲染组件(详细用法见下文。该属性基于ag-grid原生的cellRendererSelector和cellRendererParams方法进行了封装)</td>
               <td>Function</td>
               <td>-</td>
             </tr>
@@ -237,7 +237,7 @@
           h2
         ></inAnchor>
         <p>
-          1.使用时，需要注意是否会覆盖掉组件库里内置的事件。目前组件库内置事件有如下几个：
+          1.使用时，需要注意，options里的属性是否会覆盖掉组件库里内置的事件，例如options.onGridReady这样的写法，会覆盖组件库原有的事件。目前组件库重写的表格事件有如下几个：
         </p>
         <i-code
           lang="html"
@@ -249,6 +249,7 @@
         <p>5.表格配置项属性`options`不是个响应式数据，请在表格渲染前就定义好</p>
         <p>6.行数据和列数据支持响应式更新。需要注意一点，更新条件是通过数组浅比较实现的，所以如果只改数据里某一项的值并不会自动更新。解决这个问题可以通过返回一个新数组实现数据响应式更新，例如`rowData = [...rowData]</p>
         <p>7.业务组件库1.1.0版本及以上版本，如果出现表格样式问题，需要查看项目里是否引用了旧版ag-grid.css和ag-theme-balham.css的样式(包括node_modules里面也要搜索下。或者升级@syman/burgeon-r3库到3.1.0以上,@syman/burgeon-r3-component库升级到到2.0.0以上，因为这个两个包的之前也含有旧版表格样式)，然后删除掉，因为旧版表格样式会影响新版表格</p>
+        <p>8.1.0.4版本之前，表格参数options对象必须传datas属性，即使是传个空对象:datas="{}"，不然会报错</p>
       </div>
 
       <div>

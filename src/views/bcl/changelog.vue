@@ -24,6 +24,13 @@
     <h1>更新日志</h1>
     <article class="doc-update" >
       <TimelineItem pending>
+        <inAnchor title="1.1.3" h2></inAnchor>
+        <ul>
+          <li>1.当表格文本是数字0时，渲染不出来内容</li>
+          <li>2.修复表格自适应问题</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
         <inAnchor title="1.1.2" h2></inAnchor>
         <ul>
           <li>1.修复富文本滚动问题</li>

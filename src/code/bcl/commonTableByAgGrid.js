@@ -206,7 +206,9 @@ onRowDataChanged,
 onBodyScroll,
 getRowClass,
 onFilterChanged,
-onColumnResized
+onColumnResized,
+getRowStyle,
+onGridSizeChanged
 `
 
 code.header = `
