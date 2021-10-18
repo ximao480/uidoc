@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.4" h2></inAnchor>
+            <p>
+              <code>2021-10-18</code>
+            </p>
+            <ul>
+              <li>1.【Notice】新增position定位</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.3" h2></inAnchor>
             <p>
               <code>2021-10-11</code>

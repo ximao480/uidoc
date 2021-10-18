@@ -56,6 +56,18 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
+            <Demo title="position">
+                <div slot="demo">
+                    <Button @click="() => renderFunc('top-right')">右上角</Button>
+                    <Button @click="() => renderFunc('bottom-right')">右下角</Button>
+                    <Button @click="() => renderFunc('top-left')">左上角</Button>
+                    <Button @click="() => renderFunc('bottom-left')">左下角</Button>
+                </div>
+                <div slot="desc">
+                    <p>可以让 Notice 从屏幕四角中的任意一角弹出</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.position }}</i-code>
+            </Demo>
 
 
 
@@ -126,6 +138,12 @@
                             <td>关闭时的回调</td>
                             <td>Function</td>
                             <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>position</td>
+                            <td>自定义弹出位置【top-right/top-left/bottom-right/bottom-left】</td>
+                            <td>string</td>
+                            <td>top-right</td>
                         </tr>
                     </tbody>
                 </table>
@@ -230,18 +248,12 @@
                     duration: 0
                 });
             },
-            renderFunc () {
-                this.$Notice.success({
-                    title: '这是通知标题',
-                    desc: '当你定义了render之后，这个描述会被覆盖',
-                    render: h => {
-                        return h('span', [
-                            '这是',
-                            h('a', 'render'),
-                            '函数渲染的'
-                        ])
-                    }
-                });
+            renderFunc (position) {
+              this.$Notice.info({
+                title: position,
+                desc: position,
+                position
+              });
             }
         }
     }

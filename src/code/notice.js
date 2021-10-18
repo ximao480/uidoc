@@ -108,6 +108,28 @@ code.render = `
 </script>
 `;
 
+code.position = `
+<template>
+    <Button @click="() => renderFunc('top-right')">右上角</Button>
+    <Button @click="() => renderFunc('bottom-right')">右下角</Button>
+    <Button @click="() => renderFunc('top-left')">左上角</Button>
+    <Button @click="() => renderFunc('bottom-left')">左下角</Button>
+</template>
+<script>
+    export default {
+        methods: {
+            renderFunc (position) {
+                this.$Notice.info({
+                    title: position,
+                    desc: position,
+                    position
+                });
+            }
+        }
+    }
+</script>
+`;
+
 code.config = `
 this.$Notice.config({
     top: 50,
