@@ -110,15 +110,15 @@ code.render = `
 
 code.position = `
 <template>
-    <Button @click="() => renderFunc('top-right')">右上角</Button>
-    <Button @click="() => renderFunc('bottom-right')">右下角</Button>
-    <Button @click="() => renderFunc('top-left')">左上角</Button>
-    <Button @click="() => renderFunc('bottom-left')">左下角</Button>
+    <Button @click="() => positionFunc('top-right')">右上角</Button>
+    <Button @click="() => positionFunc('bottom-right')">右下角</Button>
+    <Button @click="() => positionFunc('top-left')">左上角</Button>
+    <Button @click="() => positionFunc('bottom-left')">左下角</Button>
 </template>
 <script>
     export default {
         methods: {
-            renderFunc (position) {
+            positionFunc (position) {
                 this.$Notice.info({
                     title: position,
                     desc: position,

@@ -58,10 +58,10 @@
             </Demo>
             <Demo title="position">
                 <div slot="demo">
-                    <Button @click="() => renderFunc('top-right')">右上角</Button>
-                    <Button @click="() => renderFunc('bottom-right')">右下角</Button>
-                    <Button @click="() => renderFunc('top-left')">左上角</Button>
-                    <Button @click="() => renderFunc('bottom-left')">左下角</Button>
+                    <Button @click="() => positionFunc('top-right')">右上角</Button>
+                    <Button @click="() => positionFunc('bottom-right')">右下角</Button>
+                    <Button @click="() => positionFunc('top-left')">左上角</Button>
+                    <Button @click="() => positionFunc('bottom-left')">左下角</Button>
                 </div>
                 <div slot="desc">
                     <p>可以让 Notice 从屏幕四角中的任意一角弹出</p>
@@ -248,11 +248,24 @@
                     duration: 0
                 });
             },
-            renderFunc (position) {
+          renderFunc () {
+            this.$Notice.success({
+              title: 'Notification title',
+              desc: 'The desc will hide when you set render.',
+              render: h => {
+                return h('span', [
+                  'This is created by ',
+                  h('a', 'render'),
+                  ' function'
+                ])
+              }
+            });
+          },
+            positionFunc (position) {
               this.$Notice.info({
-                title: position,
-                desc: position,
-                position
+                title: position || 'top-right',
+                desc: position || 'top-right',
+                position: position || 'top-right'
               });
             }
         }
