@@ -30,6 +30,7 @@
             </p>
             <ul>
               <li>1.【Notice】新增position定位</li>
+              <li>2.【Select】自定义下拉icon</li>
             </ul>
           </TimelineItem>
           <TimelineItem pending>
