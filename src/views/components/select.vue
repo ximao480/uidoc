@@ -31,6 +31,21 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
+            <Demo title="自定义下拉icon">
+                <div slot="demo">
+                    <Select v-model="model1" style="width:200px">
+                      <template v-slot:icon>
+                        <Icon type="md-arrow-down" ></Icon>
+                      </template>
+                        <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
+                    </Select>
+                    <span class="demo-data">{{ model1 }}</span>
+                </div>
+                <div slot="desc">
+                    <p>通过插槽实现自定义下拉icon</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+            </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
                     <Select v-model="model2" size="small" style="width:100px">
