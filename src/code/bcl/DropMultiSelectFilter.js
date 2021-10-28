@@ -44,7 +44,8 @@ code.base = `
         },
         url: {
           autoUrl: '/p/cs/fuzzyquerybyak',
-          tableUrl: 'p/cs/QueryList'
+          tableUrl: 'p/cs/QueryList',
+          tableSearchUrl:'/p/cs/newQueryList'
         }
       }
     },

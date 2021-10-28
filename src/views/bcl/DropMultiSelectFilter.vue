@@ -88,6 +88,12 @@
             <td>Function</td>
             <td>-</td>
           </tr>
+           <tr>
+            <td>filterMode</td>
+            <td>模糊查询是否支持多选</td>
+            <td>Boolean</td>
+            <td>-</td>
+          </tr>
           </tbody>
         </table>
         <inAnchor title="DropDownSelectFilter events" h3></inAnchor>
