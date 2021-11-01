@@ -24,6 +24,13 @@
     <h1>更新日志</h1>
     <article class="doc-update" >
       <TimelineItem pending>
+        <inAnchor title="1.2.0" h2></inAnchor>
+        <ul>
+          <li>1.优化表格体积</li>
+          <li>1.修复表格表头样式问题</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
         <inAnchor title="1.1.4" h2></inAnchor>
         <ul>
           <li>1.修改文件下载失败问题</li>
