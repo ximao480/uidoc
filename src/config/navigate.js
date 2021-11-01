@@ -376,6 +376,12 @@ const list = {
           icon: 'ios-git-network'
         },
         {
+          title: 'TreeV 树形控件-虚拟列表版',
+          path: '/components/treeV',
+          img: 'tree.png',
+          icon: 'ios-git-network'
+        },
+        {
           title: 'Tooltip 文字提示',
           path: '/components/tooltip',
           img: 'tooltip.png',

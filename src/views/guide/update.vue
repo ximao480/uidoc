@@ -24,6 +24,24 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.6" h2></inAnchor>
+            <p>
+              <code>2021-11-1</code>
+            </p>
+            <ul>
+              <li>1.新增TreeV 树形控件 虚拟列表版</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
+            <inAnchor title="1.2.5" h2></inAnchor>
+            <p>
+              <code>2021-10-20</code>
+            </p>
+            <ul>
+              <li>1.修复已知bug</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.4" h2></inAnchor>
             <p>
               <code>2021-10-18</code>

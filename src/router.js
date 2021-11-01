@@ -486,6 +486,13 @@ const routers = [
     component: (resolve) => require(['./views/components/tree.vue'], resolve)
   },
   {
+    path: '/components/treeV',
+    meta: {
+      title: '树形控件-虚拟列表版 TreeV'
+    },
+    component: (resolve) => require(['./views/components/treeV.vue'], resolve)
+  },
+  {
     path: '/components/menu',
     meta: {
       title: '导航菜单 Menu'
