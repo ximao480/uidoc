@@ -87,6 +87,30 @@
         >{{ code.header }}</i-code>
       </Demo>
 
+      <Demo title="设置序号列、合计、总计">
+        <div slot="desc">
+          <p style='color:red;'>注意事项!!!：</p>
+          <p>1.使用了序号列属性后，也代表了该列是不允许被定制的。即使用renderParams函数对该列的定制渲染不生效</p>
+          <p>2.通过options配置出的合计行和总计行也是不允许被定制的。如果想定制，可以使用表格提供的setPinnedBottomRowData方法来设置新的底部固定行</p>
+          <p>3.如果修改合计总计值没有生效，请确保代码逻辑是先修改了表格的options，再修改表格行数据。因为表格options本身不是响应式数据，需要重新渲染行数据触发数据更新</p>
+        </div>
+        <div slot="demo">
+          <arkCommonTableByAgGrid
+            ref="agGrid"
+            height="300px"
+            :columns="columns4"
+            :data="rows4"
+            :options="options4"
+            sequenceColumnField="index"
+            rowDataType="string"
+          ></arkCommonTableByAgGrid>
+        </div>
+        <i-code
+          lang="html"
+          slot="code"
+        >{{ code.total }}</i-code>
+      </Demo>
+
       <div class="api">
         <inAnchor
           title="API"
@@ -135,6 +159,18 @@
               <td>用于自定义单元格渲染组件(详细用法见下文。该属性基于ag-grid原生的cellRendererSelector和cellRendererParams方法进行了封装)</td>
               <td>Function</td>
               <td>-</td>
+            </tr>
+            <tr>
+              <td>sequenceColumnField</td>
+              <td>设置表格某一列为序号列。值为列的field字段</td>
+              <td>string</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>rowDataType</td>
+              <td>声明表格行数据的结构。string指行数据结构为[{key:value}],object指行数据结构为[{key:{val: value}}]</td>
+              <td>string</td>
+              <td>object</td>
             </tr>
           </tbody>
         </table>
@@ -249,7 +285,8 @@
         <p>5.表格配置项属性`options`不是个响应式数据，请在表格渲染前就定义好</p>
         <p>6.行数据和列数据支持响应式更新。需要注意一点，更新条件是通过数组浅比较实现的，所以如果只改数据里某一项的值并不会自动更新。解决这个问题可以通过返回一个新数组实现数据响应式更新，例如`rowData = [...rowData]</p>
         <p>7.业务组件库1.1.0版本及以上版本，如果出现表格样式问题，需要查看项目里是否引用了旧版ag-grid.css和ag-theme-balham.css的样式(包括node_modules里面也要搜索下。或者升级@syman/burgeon-r3库到3.1.0以上,@syman/burgeon-r3-component库升级到到2.0.0以上，因为这个两个包的之前也含有旧版表格样式)，然后删除掉，因为旧版表格样式会影响新版表格</p>
-        <p>8.1.0.4版本之前，表格参数options对象必须传datas属性，即使是传个空对象:datas="{}"，不然会报错</p>
+        <p>8.【1.0.4】版本之前，表格参数options对象必须传datas属性，即使是传个空对象:datas="{}"，不然会报错</p>
+        <p>9.如果某列定义了colname字段，则该列的行数据结构必须是{field: {val: value}}这种格式(与表格属性rowDataType不同的是,rowDataType为object是对所有列都生效)。最佳实践是，定义某一列的时候，field和colname字段不要同时出现</p>
       </div>
 
       <div>
@@ -276,7 +313,7 @@ import Mixin from '../../mixins/common';
 import Code from '../../code/bcl/commonTableByAgGrid';
 import Test from './Test.vue'
 import Vue from 'vue'
-Vue.component('Test',Test)
+Vue.component('Test', Test)
 export default {
   name: '',
 
@@ -305,7 +342,22 @@ export default {
         frameworkComponents: {
           Test
         }
-      }
+      },
+      columns4: [],
+      rows4: [],
+      options4: {
+        datas: {
+          isFullRangeSubTotalEnabled: true,
+          isSubTotalEnabled: true,
+          fullRangeSubTotalRow: {
+            age: 888
+          },
+          subtotalRow: {
+            age: 45
+          },
+          start: 0
+        }
+      },
     }
   },
 
@@ -482,6 +534,46 @@ export default {
         name: '测试',
         age: 33,
         sex: 'c',
+        phone: 3333
+      },
+    ]
+
+    this.columns4 = [
+      {
+        field: 'index',
+        headerName: '序号',
+        checkboxSelection: true,
+      },
+      {
+        field: 'name',
+        headerName: '名字',
+        tdAlign: 'left',
+      },
+      {
+        field: 'age',
+        headerName: '年龄',
+        floatingFilter: true,
+        filter: true,
+      },
+      {
+        field: 'phone', headerName: '手机', comment: '提示呀'
+      },
+    ]
+
+    this.rows4 = [
+      {
+        name: '啊',
+        age: 12,
+        phone: 12312222,
+      },
+      {
+        name: '搜索',
+        age: 0,
+        phone: 222
+      },
+      {
+        name: '测试',
+        age: 33,
         phone: 3333
       },
     ]
