@@ -290,4 +290,86 @@ export default {
 </script>
 `
 
+code.total = `
+<template>
+  <arkCommonTableByAgGrid
+  ref="agGrid"
+  height="300px"
+  :columns="columns4"
+  :data="rows4"
+  :options="options4"
+  sequenceColumnField="index"
+  rowDataType="string"
+  ></arkCommonTableByAgGrid>
+</template>
+
+<script type="text/ecmascript-6">
+export default {
+  data() {
+    return {
+      columns4: [],
+      rows4: [],
+      options4: {
+        datas: {
+          isFullRangeSubTotalEnabled: true, // 显示总计
+          isSubTotalEnabled: true, // 显示合计
+          fullRangeSubTotalRow: {
+            age: 888 // 设置age列的总计值。写成age:{val: 888}也行，组件做了兼容
+          },
+          subtotalRow: {
+            age: 45 // 设置age列的合计值。写成age:{val: 45}也行，组件做了兼容
+          },
+          start: 0 // 当前表格页页码，用于计算序号索引
+        }
+      },
+
+    }
+  },
+
+  mounted() {
+    this.columns4 = [
+      {
+        field: 'index',
+        headerName: '序号',
+        checkboxSelection: true,
+      },
+      {
+        field: 'name',
+        headerName: '名字',
+        tdAlign: 'left',
+      },
+      {
+        field: 'age',
+        headerName: '年龄',
+        floatingFilter: true,
+        filter: true,
+      },
+      {
+        field: 'phone', 
+        headerName: '手机', 
+        comment: '提示呀'
+      },
+    ]
+
+    this.rows4 = [
+      {
+        name: '啊',
+        age: 12,
+        phone: 12312222,
+      },
+      {
+        name: '搜索',
+        age: 0,
+        phone: 222
+      },
+      {
+        name: '测试',
+        age: 33,
+        phone: 3333
+      },
+    ]
+  }
+}
+</script>
+`
 export default code;

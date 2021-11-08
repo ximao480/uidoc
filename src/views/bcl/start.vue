@@ -13,8 +13,8 @@
         如果是基于框架R3项目请cdn方式引入
       </Alert>
       <i-code lang="js" bg>{{ code.cdnstart }}</i-code>
-      <p>如果不是基于R3框架项目，可以用以下引用方式</p>
-      <i-code lang="js" bg>{{ code.start }}</i-code>
+      <!-- <p>如果不是基于R3框架项目，可以用以下引用方式</p>
+      <i-code lang="js" bg>{{ code.start }}</i-code> -->
       <inAnchor title="全局使用方式包含的组件" h2></inAnchor>
        <Alert show-icon>
         为了和arkui 的组件区分，前缀加了ark（全局使用的时候），按需引用无需

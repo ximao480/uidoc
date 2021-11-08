@@ -2,7 +2,6 @@
  * Created by aresn on 16/6/20.
  */
 import 'babel-polyfill';
-import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';
 import Locales from './locale';
@@ -21,14 +20,10 @@ import '@syman/ark-ui/dist/styles/ark-ui.css'
 
 import Viewer from 'v-viewer'
 import 'viewerjs/dist/viewer.css'
-import $Bcl from '@syman/ark-ui-bcl';
-import '@syman/ark-ui-bcl/publish/ark.bcl.min.css'
-console.log("🚀 ~ file: main.js ~ line 25 ~ Bcl", $Bcl)
 
 Vue.use(VueRouter);
 Vue.use(VueI18n);
 Vue.use(ArkUi);
-Vue.use($Bcl)
 Vue.use(Viewer)
 
 

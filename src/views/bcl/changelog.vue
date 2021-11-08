@@ -24,6 +24,13 @@
     <h1>更新日志</h1>
     <article class="doc-update" >
       <TimelineItem pending>
+        <inAnchor title="1.2.1" h2></inAnchor>
+        <ul>
+          <li>1.优化表格合计总计逻辑</li>
+          <li>2.优化数据兼容性。行数据可以传[{key:value}]格式。之前部分场景如果不按[{key:{val: value}}]这种格式传会影响功能使用</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
         <inAnchor title="1.2.0" h2></inAnchor>
         <ul>
           <li>1.优化表格体积</li>
