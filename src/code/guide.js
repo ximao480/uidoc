@@ -394,8 +394,20 @@ loader.tags = `
 global.example = `
 Vue.use(ArkUi, {
     transfer: true,
-    size: 'large'
+    size: 'large',
+    componentsFix: ''
 });
+`;
+
+global.exampleCDN = `
+    <script>
+      arkOpt = {
+        'transfer': true,
+        'size': 'large',
+        'componentsFix': 'Xc'
+      }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/dist/ark.min.js"></script>
 `;
 
 export default {

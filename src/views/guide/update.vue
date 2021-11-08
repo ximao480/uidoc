@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.7" h2></inAnchor>
+            <p>
+              <code>2021-11-08</code>
+            </p>
+            <ul>
+              <li>1.新增全局配置支持组件前缀 -> <router-link to="/docs/guide/global">跳转</router-link></li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.6" h2></inAnchor>
             <p>
               <code>2021-11-1</code>

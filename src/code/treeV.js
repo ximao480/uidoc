@@ -2,7 +2,7 @@ let code = {};
 
 code.base = `
 <template>
-    <TreeV ref="treev" :listData="data" @on-check-change="change"></TreeV>
+    <TreeV ref="treev" :listData="data" :options="options" @on-check-change="change"></TreeV>
 </template>
 <script>
     export default {
@@ -25,6 +25,11 @@ code.base = `
               return list;
             }
             return {
+                options: {
+                  keygen: 'key',
+                  childKey: 'children',
+                  renderTitle: 'title'
+                },
                 data: dig()
             }
         },

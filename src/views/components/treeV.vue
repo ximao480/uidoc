@@ -6,13 +6,24 @@
             <p>由于Tree组件不能满足在海量数据场景下的正常使用，借鉴虚拟列表实现这一版，具体功能后续版本完善中</p>
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
-                <div slot="demo" style="width: 500px; height: 600px">
-                    <i-button @click="expandAll">展开所有</i-button>
-                    <i-button @click="collapseAll">收起所有</i-button>
-                    <TreeV ref="treev" :listData="data" @on-check-change="change"></TreeV>
+                <div slot="demo" style="width: 500px;">
+                    <i-button @click="expandAll('treev')">展开所有</i-button>
+                    <i-button @click="collapseAll('treev')">收起所有</i-button>
+                    <TreeV ref="treev" :listData="data" :options="options" @on-check-change="change"></TreeV>
                 </div>
                 <div slot="desc">
                     <p>最简单的用法，展示可选中，默认展开功能。</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+            </Demo>
+            <Demo title="默认选中">
+                <div slot="demo" style="width: 500px;">
+                    <i-button @click="expandAll('treevValue')">展开所有</i-button>
+                    <i-button @click="collapseAll('treevValue')">收起所有</i-button>
+                    <TreeV ref="treevValue" :listData="data" :options="options" :value="['0-0']" @on-check-change="change"></TreeV>
+                </div>
+                <div slot="desc">
+                  <p>展示已勾选</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
@@ -29,6 +40,12 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>height</td>
+                            <td>tree的高度</td>
+                            <td>String, Number</td>
+                            <td>300px</td>
+                        </tr>
                         <tr>
                             <td>listData</td>
                             <td>可嵌套的节点属性的多维数组，生成 tree 的数据</td>
@@ -170,6 +187,11 @@
         data () {
             return {
                 code: Code,
+                options: {
+                  keygen: 'key',
+                  childKey: 'children',
+                  renderTitle: 'title'
+                },
                 data: dig()
             }
         },
@@ -178,13 +200,13 @@
             console.log('checked',checked)
             console.log('node',node)
           },
-          expandAll() {
+          expandAll(ref) {
             console.log('expandAll')
-            this.$refs.treev.expandAll()
+            this.$refs[ref] && this.$refs[ref].expandAll()
           },
-          collapseAll() {
+          collapseAll(ref) {
             console.log('collapseAll')
-             this.$refs.treev.collapseAll()
+            this.$refs[ref] && this.$refs[ref].collapseAll()
           }
         }
     };
