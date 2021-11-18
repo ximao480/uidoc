@@ -181,6 +181,8 @@
                     this.activeKey = 'component';
                 } else if (route.indexOf('bcl') > -1) {
                     this.activeKey = 'bcl';
+                } else if (route.indexOf('cli') > -1) {
+                    this.activeKey = 'cli';
                 }
                 else if (route.indexOf('practice') > -1) {
                     this.activeKey = 'practice';

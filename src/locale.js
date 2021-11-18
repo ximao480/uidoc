@@ -33,7 +33,8 @@ export default {
             code_pen: '在CodePen中打开',
             code_fullscreen: '放大',
             code_jsfiddle: '在 JSFiddle 中打开',
-            current_version: '当前呈现版本：'
+            current_version: '当前呈现版本：',
+            scaffold: '脚手架'
         }
     },
     'en-US': {
@@ -70,7 +71,8 @@ export default {
             code_pen: 'open in CodePen',
             code_fullscreen: 'Fullscreen',
             code_jsfiddle: 'Open in JSFiddle',
-            current_version: 'Current Version:'
+            current_version: 'Current Version:',
+            scaffold: 'scaffold'
         }
     }
 }

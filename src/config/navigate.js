@@ -610,7 +610,14 @@ const list = {
         },
       ]
     },
-  ]
+  ],
+  cli: [
+    {
+      title: '快速上手',
+      titleEn: 'Quick Start',
+      path: '/cli/start'
+    }
+  ],
 };
 
 export default list;

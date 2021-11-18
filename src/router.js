@@ -774,6 +774,13 @@ const routers = [
     component: (resolve) => require(['./views/bcl/commonTableByAgGrid'], resolve)
   },
   {
+    path: '/cli/start',
+    meta: {
+      title: '快速上手'
+    },
+    component: (resolve) => require(['./views/cli/start'], resolve)
+  },
+  {
     path: '*',
     redirect: '/'
   }

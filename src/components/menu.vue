@@ -40,6 +40,10 @@
                     <!--<Icon type="ios-keypad"></Icon>-->
                     {{ $t('index.componentPro') }}
                 </Menu-item>
+                <Menu-item name="cli" :to="handleGoToMenu('/cli/start')">
+                    <!--<Icon type="ios-keypad"></Icon>-->
+                    {{ $t('index.scaffold') }}
+                </Menu-item>
                 <!-- <Menu-item name="live" v-if="lang === 'zh-CN'" :to="handleGoToMenu('/live')">
                     <Badge :dot="liveDot" :offset="[20,0]">
                         {{ $t('index.live') }}

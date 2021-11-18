@@ -91,6 +91,12 @@
                 </Menu-item>
             </Menu-group>
         </Menu>
+        <Menu width="auto" :active-name="activeKey" v-if="type === 'cli'">
+            <Menu-item v-for="item in navigate.cli" :key="item.path" :name="item.path" :to="handleGoToMenu(item.path)">
+                <template v-if="lang === 'zh-CN'">{{ item.title }}</template>
+                <template v-else>{{ item.titleEn }}</template>
+            </Menu-item>
+        </Menu>
     </div>
 </template>
 <script>
