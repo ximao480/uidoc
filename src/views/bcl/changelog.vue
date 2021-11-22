@@ -24,6 +24,13 @@
     <h1>更新日志</h1>
     <article class="doc-update" >
       <TimelineItem pending>
+        <inAnchor title="1.2.2" h2></inAnchor>
+        <ul>
+          <li>1.移动端表格双击事件失效.新增设置window.arkui_BCL_in_mobile = true兼容移动端</li>
+          <li>2.默认开启表格滚动防抖</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
         <inAnchor title="1.2.1" h2></inAnchor>
         <ul>
           <li>1.优化表格合计总计逻辑</li>
