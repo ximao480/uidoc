@@ -280,6 +280,12 @@ const list = {
           icon: 'ios-time-outline'
         },
         {
+          title: 'MonthDay 月日选择器',
+          path: '/components/month-day',
+          img: 'date-picker.png',
+          icon: 'ios-time-outline'
+        },
+        {
           title: 'Cascader 级联选择',
           path: '/components/cascader',
           img: 'cascader.png',
