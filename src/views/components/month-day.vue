@@ -2,24 +2,15 @@
     <div>
         <i-article>
             <article>
-                <h1>TimePicker 时间选择器</h1>
+                <h1>MonthDay 月日选择器</h1>
                 <inAnchor title="概述" h2></inAnchor>
-                <p>选择或输入月份和日期，支持选择范围。</p>
+                <p>选择或输入月份和日期。</p>
                 <inAnchor title="代码示例" h2></inAnchor>
                 <Demo title="基础用法">
                     <div slot="demo">
-                        <Row>
-                            <Col span="12">
-                                <TimePicker type="time" placeholder="Select time" style="width: 168px"></TimePicker>
-                            </Col>
-                            <Col span="12">
-                                <TimePicker type="timerange" placement="bottom-end" placeholder="Select time" style="width: 168px"></TimePicker>
-                            </Col>
-                        </Row>
+                        <MonthDay></MonthDay>
                     </div>
                     <div slot="desc">
-                        <p>设置属性 <code>type</code> 为 <code>time</code> 或 <code>timerange</code> 分别显示<strong>选择单个时间</strong>和<strong>选择范围时间</strong>类型。</p>
-                        <p>设置属性 <code>placement</code> 可以更改选择器出现的方向，与 Poptip 和 Tooltip 配置一致，支持 12 个方向，详见 API。</p>
                     </div>
                     <i-code lang="html" slot="code">{{ code.base }}</i-code>
                 </Demo>
@@ -27,90 +18,21 @@
                     <div slot="demo">
                         <row>
                             <Col span="12">
-                                <TimePicker :value="value1" format="HH点mm分ss秒" placeholder="Select time" style="width: 168px"></TimePicker>
+                              <MonthDay v-model="monthday2" format="MM-dd"></MonthDay>
                             </Col>
                             <Col span="12">
-                                <TimePicker :value="value2" format="HH’mm’ss" type="timerange" placement="bottom-end" placeholder="Select time" style="width: 168px"></TimePicker>
+                              <MonthDay v-model="monthday3" format="MM月dd日"></MonthDay>
                             </Col>
                         </Row>
                     </div>
                     <div slot="desc">
-                        <p>设置属性 <code>format</code> 可以改变时间的显示格式，详见 <a href="javascript:void(0)" @click="handleShowDate"><Icon type="information-circled"></Icon> Date</a>。</p>
-                        <p>注意，format 只是改变显示的格式，并非改变 value 值。</p>
+                        <p>属性 <code>format</code> 默认为 <code>"MM-dd"</code></p>
                     </div>
                     <i-code lang="html" slot="code">{{ code.format }}</i-code>
                 </Demo>
-                <Demo title="选择时分">
-                    <div slot="demo">
-                        <row>
-                            <Col span="12">
-                                <TimePicker format="HH:mm" placeholder="Select time" style="width: 112px"></TimePicker>
-                            </Col>
-                            <Col span="12">
-                                <TimePicker format="HH:mm" type="timerange" placement="bottom-end" placeholder="Select time" style="width: 168px"></TimePicker>
-                            </Col>
-                        </Row>
-                    </div>
-                    <div slot="desc">
-                        <p>组件浮层中的列会随着 <code>format</code> 变化，当略去 <code>format</code> 中的秒时，浮层中对应的列也会消失。</p>
-                    </div>
-                    <i-code lang="html" slot="code">{{ code.hours }}</i-code>
-                </Demo>
-                <Demo title="时间间隔">
-                    <div slot="demo">
-                        <TimePicker :steps="[1, 15, 15]" placeholder="Select time" style="width: 112px"></TimePicker>
-                    </div>
-                    <div slot="desc">
-                        <p>通过属性 <code>steps</code> 可以设置时间间隔。数组的三项分别对应小时、分钟、秒。</p>
-                    </div>
-                    <i-code lang="html" slot="code">{{ code.steps }}</i-code>
-                </Demo>
-                <Demo title="不可选时间">
-                    <div slot="demo">
-                        <row>
-                            <Col span="12">
-                                <TimePicker
-                                        :disabled-hours="[1,5,10]"
-                                        :disabled-minutes="[0,10,20]"
-                                        placeholder="Select time"
-                                        style="width: 168px"></TimePicker>
-                            </Col>
-                            <Col span="12">
-                                <TimePicker
-                                        hide-disabled-options
-                                        :disabled-hours="[1,5,10]"
-                                        :disabled-minutes="[0,10,20]"
-                                        placeholder="Select time"
-                                        style="width: 168px"></TimePicker>
-                            </Col>
-                        </Row>
-                    </div>
-                    <div slot="desc">
-                        <p>可以使用 <code>disabled-hours</code> <code>disabled-minutes</code> <code>disabled-seconds</code> 组合禁止用户选择某个时间。</p>
-                        <p>使用 <code>hide-disabled-options</code> 可以直接把不可选择的项隐藏。</p>
-                    </div>
-                    <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
-                </Demo>
-                <Demo title="带有确认操作">
-                    <div slot="demo">
-                        <row>
-                            <Col span="12">
-                                <TimePicker confirm placeholder="Select time" style="width: 168px"></TimePicker>
-                            </Col>
-                            <Col span="12">
-                                <TimePicker type="timerange" confirm placement="bottom-end" placeholder="Select time" style="width: 168px"></TimePicker>
-                            </Col>
-                        </Row>
-                    </div>
-                    <div slot="desc">
-                        <p>设置属性 <code>confirm</code>，选择器会有清空和确定按钮。</p>
-                        <p>确认按钮并没有影响时间的正常选择。</p>
-                    </div>
-                    <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
-                </Demo>
                 <Demo title="手动控制组件">
                     <div slot="demo">
-                        <TimePicker
+                        <MonthDay
                                 :open="open"
                                 :value="value3"
                                 confirm
@@ -119,10 +41,10 @@
                                 @on-ok="handleOk">
                             <a href="javascript:void(0)" @click="handleClick">
                                 <Icon type="ios-clock-outline"></Icon>
-                                <template v-if="value3 === ''">Select time</template>
+                                <template v-if="value3 === ''">Select MonthDay</template>
                                 <template v-else>{{ value3 }}</template>
                             </a>
-                        </TimePicker>
+                        </MonthDay>
                     </div>
                     <div slot="desc">
                         <p>对于一些定制化的场景，可以使用 slot 配合参数 <code>open</code> <code>confirm</code> 及事件来手动控制组件的显示状态，详见示例和 API。</p>
@@ -133,13 +55,13 @@
                     <div slot="demo">
                         <row :gutter="16">
                             <Col span="8">
-                                <TimePicker size="small" placeholder="Select time"></TimePicker>
+                                <MonthDay size="small" placeholder="Select MonthDay"></MonthDay>
                             </Col>
                             <Col span="8">
-                                <TimePicker placeholder="Select time"></TimePicker>
+                                <MonthDay placeholder="Select MonthDay"></MonthDay>
                             </Col>
                             <Col span="8">
-                                <TimePicker size="large" placeholder="Select time"></TimePicker>
+                                <MonthDay size="large" placeholder="Select MonthDay"></MonthDay>
                             </Col>
                         </Row>
                     </div>
@@ -170,36 +92,22 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
                             <td>type</td>
-                            <td>显示类型，可选值为 <code>time</code>、<code>timerange</code></td>
+                            <td>显示类型</td>
                             <td>String</td>
-                            <td>time</td>
+                            <td>monthDay</td>
                         </tr>
                         <tr>
                             <td>value</td>
-                            <td>
-                                时间，可以是 JavaScript 的 Date，例如 <strong>new Date()</strong>，也可以是标准的时间格式，点击右边查看<br>
-                                注意：value 使用 v-model 时，值是 Date 类型，可以配合 @on-change 使用
-                            </td>
-                            <td>
-                                <a href="javascript:void(0)" @click="handleShowDate"><Icon type="information-circled"></Icon> Date</a>
-                            </td>
+                            <td>format之后的值</td>
+                            <td>String</td>
                             <td>-</td>
                         </tr>
                         <tr>
                             <td>format</td>
                             <td>展示的时间格式</td>
-                            <td>
-                                <a href="javascript:void(0)" @click="handleShowDate"><Icon type="information-circled"></Icon> Date</a>
-                            </td>
-                            <td>HH:mm:ss</td>
-                        </tr>
-                        <tr>
-                            <td>steps</td>
-                            <td>下拉列表的时间间隔，数组的三项分别对应小时、分钟、秒。例如设置为 [1, 15] 时，分钟会显示：00、15、30、45。</td>
-                            <td>Array</td>
-                            <td>[]</td>
+                            <td>String</td>
+                            <td>MM-dd</td>
                         </tr>
                         <tr>
                             <td>placement</td>
@@ -326,7 +234,7 @@
     import iArticle from '../../components/article.vue';
     import iCode from 'iCode';
     import Demo from '../../components/demo.vue';
-    import Code from '../../code/time-picker';
+    import Code from '../../code/month-day';
     import inAnchor from '../../components/anchor.vue';
     import DateType from '../../components/date-type.vue';
 
@@ -341,6 +249,9 @@
         data () {
             return {
                 code: Code,
+                monthday2: '05-01',
+                monthday3: '06月01日',
+
                 showDateModal: false,
                 value1: '09:41:00',
                 value2: ['09:41:00', '12:00:00'],

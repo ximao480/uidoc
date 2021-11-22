@@ -332,6 +332,13 @@ const routers = [
     component: (resolve) => require(['./views/components/time-picker.vue'], resolve)
   },
   {
+    path: '/components/month-day',
+    meta: {
+      title: '月日选择器 MonthDay'
+    },
+    component: (resolve) => require(['./views/components/month-day.vue'], resolve)
+  },
+  {
     path: '/components/cascader',
     meta: {
       title: '级联选择 Cascader'

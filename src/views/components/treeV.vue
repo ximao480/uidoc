@@ -7,25 +7,46 @@
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
                 <div slot="demo" style="width: 500px;">
-                    <i-button @click="expandAll('treev')">展开所有</i-button>
-                    <i-button @click="collapseAll('treev')">收起所有</i-button>
                     <TreeV ref="treev" :listData="data" :options="options" @on-check-change="change"></TreeV>
                 </div>
                 <div slot="desc">
-                    <p>最简单的用法，展示可选中，默认展开功能。</p>
+                    <p>最简单的用法</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.base }}</i-code>
+            </Demo>
+            <Demo title="勾选">
+                <div slot="demo" style="width: 500px;">
+                    <i-button @click="expandAll('treevCheck')">展开所有</i-button>
+                    <i-button @click="collapseAll('treevCheck')">收起所有</i-button>
+                    <TreeV ref="treevCheck" :listData="data" :options="options" @on-check-change="change" :showCheckbox="true"></TreeV>
+                </div>
+                <div slot="desc">
+                    <p>展示可勾选</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.baseCheck }}</i-code>
             </Demo>
             <Demo title="默认选中">
                 <div slot="demo" style="width: 500px;">
                     <i-button @click="expandAll('treevValue')">展开所有</i-button>
                     <i-button @click="collapseAll('treevValue')">收起所有</i-button>
-                    <TreeV ref="treevValue" :listData="data" :options="options" :value="['0-0']" @on-check-change="change"></TreeV>
+                    <TreeV ref="treevValue" :listData="data" :options="options" :value="['0-0']" @on-check-change="change" :showCheckbox="true"></TreeV>
                 </div>
                 <div slot="desc">
                   <p>展示已勾选</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code lang="html" slot="code">{{ code.base1 }}</i-code>
+            </Demo>
+            <Demo title="查询">
+                <div slot="demo" style="width: 500px;">
+                    <i-button @click="expandAll('treevQuery')">展开所有</i-button>
+                    <i-button @click="collapseAll('treevQuery')">收起所有</i-button>
+                    <i-input v-model="val"  @on-enter="search" placeholder="请输入关键词后回车"/>
+                    <TreeV ref="treevQuery" :listData="data" :options="options" :value="['0-0']" @on-check-change="change"></TreeV>
+                </div>
+                <div slot="desc">
+                  <p>通过关键字高亮节点</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.baseQuery }}</i-code>
             </Demo>
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
@@ -63,6 +84,18 @@
                             <td>配置项</td>
                             <td>Object</td>
                             <td>{ keygen: 'ID', childKey: 'children', renderTitle: 'title'}</td>
+                        </tr>
+                        <tr>
+                            <td>showCheckbox</td>
+                            <td>是否显示多选框</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>emptyText</td>
+                            <td>没有数据时的提示</td>
+                            <td>String</td>
+                            <td>暂无数据</td>
                         </tr>
                     </tbody>
                 </table>
@@ -192,7 +225,8 @@
                   childKey: 'children',
                   renderTitle: 'title'
                 },
-                data: dig()
+                data: dig(),
+                val: ''
             }
         },
         methods: {
@@ -207,6 +241,9 @@
           collapseAll(ref) {
             console.log('collapseAll')
             this.$refs[ref] && this.$refs[ref].collapseAll()
+          },
+          search() {
+            this.$refs.treevQuery.search(this.val);
           }
         }
     };
