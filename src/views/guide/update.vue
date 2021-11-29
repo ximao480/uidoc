@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.9" h2></inAnchor>
+            <p>
+              <code>2021-11-29</code>
+            </p>
+            <ul>
+              <li>1.[tree-v]新增连接线、跳转样式细节问题</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.8" h2></inAnchor>
             <p>
               <code>2021-11-22</code>

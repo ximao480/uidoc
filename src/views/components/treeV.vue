@@ -6,7 +6,7 @@
             <p>由于Tree组件不能满足在海量数据场景下的正常使用，借鉴虚拟列表实现这一版，具体功能后续版本完善中</p>
             <inAnchor title="代码示例" h2></inAnchor>
             <Demo title="基础用法">
-                <div slot="demo" style="width: 500px;">
+                <div slot="demo" style="width: 500px;height: 500px">
                     <TreeV ref="treev" :listData="data" :options="options" @on-check-change="change"></TreeV>
                 </div>
                 <div slot="desc">
@@ -15,7 +15,7 @@
                 <i-code lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="勾选">
-                <div slot="demo" style="width: 500px;">
+                <div slot="demo" style="width: 500px;height: 500px">
                     <i-button @click="expandAll('treevCheck')">展开所有</i-button>
                     <i-button @click="collapseAll('treevCheck')">收起所有</i-button>
                     <TreeV ref="treevCheck" :listData="data" :options="options" @on-check-change="change" :showCheckbox="true"></TreeV>
@@ -26,7 +26,7 @@
                 <i-code lang="html" slot="code">{{ code.baseCheck }}</i-code>
             </Demo>
             <Demo title="默认选中">
-                <div slot="demo" style="width: 500px;">
+                <div slot="demo" style="width: 500px;height: 500px">
                     <i-button @click="expandAll('treevValue')">展开所有</i-button>
                     <i-button @click="collapseAll('treevValue')">收起所有</i-button>
                     <TreeV ref="treevValue" :listData="data" :options="options" :value="['0-0']" @on-check-change="change" :showCheckbox="true"></TreeV>
@@ -37,7 +37,7 @@
                 <i-code lang="html" slot="code">{{ code.base1 }}</i-code>
             </Demo>
             <Demo title="查询">
-                <div slot="demo" style="width: 500px;">
+                <div slot="demo" style="width: 500px;height: 500px">
                     <i-button @click="expandAll('treevQuery')">展开所有</i-button>
                     <i-button @click="collapseAll('treevQuery')">收起所有</i-button>
                     <i-input v-model="val"  @on-enter="search" placeholder="请输入关键词后回车"/>
@@ -47,6 +47,17 @@
                   <p>通过关键字高亮节点</p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.baseQuery }}</i-code>
+            </Demo>
+            <Demo title="连接线">
+                <div slot="demo" style="width: 500px;height: 500px">
+                    <i-button @click="expandAll('treevLine')">展开所有</i-button>
+                    <i-button @click="collapseAll('treevLine')">收起所有</i-button>
+                    <TreeV ref="treevLine" :listData="data" :options="optionsLine" @on-check-change="change"></TreeV>
+                </div>
+                <div slot="desc">
+                  <p>节点之间带连接线的树，常用于文件目录结构展示</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.line }}</i-code>
             </Demo>
             <div class="api">
                 <inAnchor title="API" h2></inAnchor>
@@ -127,6 +138,18 @@
                             <td>渲染的字段</td>
                             <td>string</td>
                             <td>title</td>
+                        </tr>
+                        <tr>
+                            <td>line</td>
+                            <td>线</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>checkedKey</td>
+                            <td>替换checked属性</td>
+                            <td>String</td>
+                            <td>''</td>
                         </tr>
                     </tbody>
                 </table>
@@ -224,6 +247,12 @@
                   keygen: 'key',
                   childKey: 'children',
                   renderTitle: 'title'
+                },
+                optionsLine: {
+                  keygen: 'key',
+                  childKey: 'children',
+                  renderTitle: 'title',
+                  line: true
                 },
                 data: dig(),
                 val: ''
