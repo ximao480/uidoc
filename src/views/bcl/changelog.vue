@@ -24,6 +24,14 @@
     <h1>更新日志</h1>
     <article class="doc-update" >
       <TimelineItem pending>
+        <inAnchor title="1.2.3" h2></inAnchor>
+        <ul>
+          <li>1.下拉单选模糊查询问题</li>
+          <li>2.下载组件没给链接加网关的问题</li>
+          <li>3.富文本a标签路径问题</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
         <inAnchor title="1.2.2" h2></inAnchor>
         <ul>
           <li>1.移动端表格双击事件失效.新增设置window.arkui_BCL_in_mobile = true兼容移动端</li>
