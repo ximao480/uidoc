@@ -624,6 +624,13 @@ const list = {
       path: '/cli/start'
     }
   ],
+  material: [
+    {
+      title: '物料库',
+      titleEn: 'material',
+      path: '/material/list'
+    }
+  ],
 };
 
 export default list;

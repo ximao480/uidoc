@@ -44,6 +44,10 @@
                     <!--<Icon type="ios-keypad"></Icon>-->
                     {{ $t('index.scaffold') }}
                 </Menu-item>
+                <Menu-item v-if="false" name="material" :to="handleGoToMenu('/material/list')">
+                    <!--<Icon type="ios-keypad"></Icon>-->
+                    {{ $t('index.material') }}
+                </Menu-item>
                 <!-- <Menu-item name="live" v-if="lang === 'zh-CN'" :to="handleGoToMenu('/live')">
                     <Badge :dot="liveDot" :offset="[20,0]">
                         {{ $t('index.live') }}

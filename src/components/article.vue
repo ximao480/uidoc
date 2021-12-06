@@ -10,7 +10,7 @@
                 <nav-menu :active-key="activeKey" @on-change="handleNavMenuChange"></nav-menu>
             </div>
             <div class="wrapper-container">
-                <Row>
+                <Row v-if="activeKey !== 'material'">
                     <i-col span="4" class="wrapper-navigate" style="min-height: 200px">
                         <Navigate :type="activeKey"></Navigate>
                     </i-col>
@@ -57,6 +57,9 @@
                         </Row>
                     </i-col>
                 </Row>
+                <template v-else>
+                  <slot></slot>
+                </template>
             </div>
         </div>
 
@@ -183,11 +186,12 @@
                     this.activeKey = 'bcl';
                 } else if (route.indexOf('cli') > -1) {
                     this.activeKey = 'cli';
-                }
-                else if (route.indexOf('practice') > -1) {
+                } else if (route.indexOf('practice') > -1) {
                     this.activeKey = 'practice';
                 } else if (route.indexOf('live') > -1) {
                     this.activeKey = 'live';
+                } else if (route.indexOf('material') > -1) {
+                    this.activeKey = 'material';
                 }  else {
                     this.activeKey = 'guide';
                 }
@@ -218,7 +222,7 @@
         },
         mounted () {
             this.updateActiveNav();
-
+            if (this.activeKey === 'material') return;
             const examples = this.$slots.default[0].elm.querySelectorAll('.example');
 
             // 有示例时，显示示例的目录，没有，显示标题为目录

@@ -34,7 +34,8 @@ export default {
             code_fullscreen: '放大',
             code_jsfiddle: '在 JSFiddle 中打开',
             current_version: '当前呈现版本：',
-            scaffold: '脚手架'
+            scaffold: '脚手架',
+            material: '物料库',
         }
     },
     'en-US': {
@@ -72,7 +73,8 @@ export default {
             code_fullscreen: 'Fullscreen',
             code_jsfiddle: 'Open in JSFiddle',
             current_version: 'Current Version:',
-            scaffold: 'scaffold'
+            scaffold: 'scaffold',
+            material: 'material',
         }
     }
 }
