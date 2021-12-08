@@ -24,6 +24,17 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.10" h2></inAnchor>
+            <p>
+              <code>2021-12-6</code>
+            </p>
+            <ul>
+              <li>1.[tree-v]样式修复</li>
+              <li>2.[complex]多选框未展示的问题修复</li>
+              <li>3.[时间选择器]初始值引发的bug修复</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.9" h2></inAnchor>
             <p>
               <code>2021-11-29</code>
