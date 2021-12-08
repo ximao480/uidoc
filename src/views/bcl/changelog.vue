@@ -24,6 +24,13 @@
     <h1>更新日志</h1>
     <article class="doc-update" >
       <TimelineItem pending>
+        <inAnchor title="1.3.0" h2></inAnchor>
+        <ul>
+          <li>1.字段扩展属性添加行转列配置</li>
+          <li>2.深拷贝函数bug</li>
+        </ul>
+      </TimelineItem>
+      <TimelineItem pending>
         <inAnchor title="1.2.3" h2></inAnchor>
         <ul>
           <li>1.下拉单选模糊查询问题</li>
