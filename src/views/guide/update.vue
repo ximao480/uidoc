@@ -24,6 +24,18 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.11" h2></inAnchor>
+            <p>
+              <code>2021-12-20</code>
+            </p>
+            <ul>
+              <li>1.[DatePicker]vModelFormat初始值bug修复</li>
+              <li>2.[Modal]实例添加footer-hide</li>
+              <li>3.[treeV]新增全选方法</li>
+              <li>4.[InputNumber]blur时新增min的判断</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.10" h2></inAnchor>
             <p>
               <code>2021-12-6</code>

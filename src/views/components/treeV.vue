@@ -195,6 +195,11 @@
                             <td>清除所有选中的</td>
                             <td>-</td>
                         </tr>
+                        <tr>
+                            <td>checkAll</td>
+                            <td>选中所有</td>
+                            <td>-</td>
+                        </tr>
                         <!-- <tr>
                             <td>getCheckedAndIndeterminateNodes</td>
                             <td>获取选中及半选节点</td>

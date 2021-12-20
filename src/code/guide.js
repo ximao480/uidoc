@@ -404,10 +404,13 @@ global.exampleCDN = `
       arkOpt = {
         'transfer': true,
         'size': 'large',
-        'componentsFix': 'Xc'
+        'componentsFix': 'Ark'
       }
     </script>
     <script src="//cdn.jsdelivr.net/npm/@syman/ark-ui@1.1.40/dist/ark.min.js"></script>
+    <script>
+      window.Ark || document.write('<script src="/static/ark/dist/ark.min.js"></script>')
+    </script>
 `;
 
 export default {
