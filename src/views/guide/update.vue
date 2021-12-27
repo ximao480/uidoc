@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.13" h2></inAnchor>
+            <p>
+              <code>2021-12-27</code>
+            </p>
+            <ul>
+              <li>1.[DatePicker]已知bug修复</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.11" h2></inAnchor>
             <p>
               <code>2021-12-20</code>

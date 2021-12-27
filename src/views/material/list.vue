@@ -2,7 +2,7 @@
   <i-article>
     <div class="material">
       <div class="material-filter">
-        material-filter
+        <span class="filter-all">全部({{list && list.length}})</span>
       </div>
       <div class="material-content">
         <div class="material-list">
@@ -16,13 +16,21 @@
                 </div>
                 <div class="item-body">
                   <div class="item-body-title">
-                    {{item.name}}
+                    <a target="_blank" :href="item.links && item.links.npm">{{item.name}}</a>
                   </div>
                   <div class="item-body-footer">
-                    <span>{{item.author}}</span>
-                    <div>
-                      <span>{{item.download}}</span>
-                      <span>{{item.fav}}</span>
+                    <Dropdown>
+                      <a href="javascript:void(0)">
+                        {{item.publisher && item.publisher.username}}
+                        <Icon type="ios-arrow-down"></Icon>
+                      </a>
+                      <DropdownMenu slot="list">
+                        <DropdownItem v-for="item in item.maintainers">{{ item.username }}</DropdownItem>
+                      </DropdownMenu>
+                    </Dropdown>
+                    <div class="tips">
+                      <span><Icon type="ios-pricetag-outline" />{{item.version}}</span>
+                      <span><Icon type="ios-time-outline" />{{item.date && item.date.slice(0, 10)}}</span>
                     </div>
                   </div>
                 </div>
@@ -32,8 +40,31 @@
         </div>
       </div>
     </div>
-    <Modal v-model="modal11" fullscreen :title="title">
-      <iframe :src="link" width="100%" height="800" frameborder="0" scrolling="auto" id="iframename" name="iframename"></iframe>
+    <Modal class-name="modal" v-model="showmodal" fullscreen closable :title="title">
+      <Tabs v-model="tabType" @on-click="changeTab" v-if="!iframeloading">
+        <TabPane label="文档" name="1"></TabPane>
+        <TabPane label="更新日志" name="2"></TabPane>
+      </Tabs>
+      <div class="loading" v-if="iframeloading">
+        <Spin size="large"></Spin>
+      </div>
+      <iframe
+          v-show="!iframeloading && tabType === '1'"
+          :src="link"
+          seamless
+          width="100%"
+          height="100%"
+          frameborder="0"
+          scrolling="auto"
+          id="iframename"
+          name="iframename"
+          @load="iframeLoaded"
+      ></iframe>
+
+      <Table v-if="tabType === '2'" :columns="logCol" :data="logData"></Table>
+      <div slot="footer">
+        <Button size="large"  @click="close">关闭</Button>
+      </div>
     </Modal>
   </i-article>
 </template>
@@ -44,6 +75,8 @@ import iCode from 'iCode';
 import Code from '../../code/cli/start';
 import inAnchor from '../../components/anchor.vue';
 import Study from '../../components/study.vue';
+import { http } from '../../libs/network';
+
 
 export default {
   name: '',
@@ -57,29 +90,76 @@ export default {
 
   data() {
     return {
-      list: [
-        { name: 'name1', author: 'xc', download: 20, fav: 8, type: 'vue', link: 'http://www.baidu.com/'},
-        { name: 'name2', author: 'xc', download: 11, fav: 9, type: 'vue', link: 'http://www.baidu.com/'},
-        { name: 'name3', author: 'xc', download: 22, fav: 10, type: 'vue', link: 'http://www.baidu.com/'},
-        { name: 'name4', author: 'xc', download: 22, fav: 10, type: 'vue', link: 'http://www.baidu.com/'},
-        { name: 'name5', author: 'xc', download: 22, fav: 10, type: 'vue', link: 'http://www.baidu.com/'},
-        { name: 'name6', author: 'xc', download: 22, fav: 10, type: 'vue', link: 'http://www.baidu.com/'},
-        { name: 'name7', author: 'xc', download: 22, fav: 10, type: 'vue', link: 'http://www.baidu.com/'},
-        { name: 'name8', author: 'xc', download: 22, fav: 10, type: 'vue', link: 'http://www.baidu.com/'},
-      ],
-      modal11: false,
+      list: [],
+      showmodal: false,
+      iframeloading: false,
       link: '',
-      title: ''
+      title: '',
+      tabType: 1,
+      logCol: [
+        {
+          title: '版本号',
+          key: 'version'
+        },
+        {
+          title: '日期',
+          key: 'time',
+          sortable: true,
+          sortType: 'desc'
+        },
+
+      ],
+      logData: [],
     }
+  },
+
+  created() {
+    http.get('/search/suggestions?q=%40syman').then(r => {
+      if (r.status === 200 && r.data) {
+        this.list = r.data
+      }
+    })
+  },
+
+  mounted () {
   },
 
   methods: {
     showPage(item) {
-      console.log('item', item)
-      this.modal11 = true;
-      this.link = item.link;
-      this.title = item.name;
+      if (item) {
+        this.showmodal = true;
+        this.iframeloading = true;
+        this.tabType = '1';
+        this.link = 'https://unpkg.com/xc-bar-charts@0.1.3/dist/index.html';
+        this.title = `${item.description} - ${item.name}`;
+        this.getDetail(item)
+      }
 
+    },
+    getDetail(item) {
+      http.get(`/${item.name}`).then(r => {
+        if (r.status === 200 && r.data) {
+          this.logData = r.data.time && Object.keys(r.data.time).map(v => ({ version: v, time: this.formatData(r.data.time[v]) }))
+        }
+      })
+
+    },
+    close() {
+      this.showmodal = false;
+      this.title = '';
+      this.link = '';
+      this.tabType = '1';
+      this.logData = [];
+    },
+    iframeLoaded() {
+      this.iframeloading = false;
+    },
+    changeTab(val) {
+      this.tabType = val;
+    },
+    formatData(t) {
+      let time = new Date(t).valueOf()+ 8*3600*1000;
+      return new Date(time).toJSON().substr(0, 19).replace('T', ' ');
     }
   },
 }
@@ -94,7 +174,16 @@ export default {
     min-height: calc(100vh - 369px);
     margin: 0 auto;
     .material-filter{
-
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      .filter-all{
+        min-width: 108px;
+        height: 32px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 32px;
+      }
     }
     .material-content{
       display: flex;
@@ -122,7 +211,7 @@ export default {
                 justify-content: center;
                 position: relative;
                 border-radius: 4px 4px 0 0;
-                background-color: var(--color-fill-1);
+                background-color: #f7f8fa;
                 cursor: pointer;
                 overflow: hidden;
                 &:after{
@@ -145,12 +234,20 @@ export default {
                 justify-content: space-between;
                 font-weight: 600!important;
                 font-size: 14px!important;
+                a{
+                  color: #4e5969;
+                }
               }
               .item-body-footer{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 margin-top: 6px;
+                .tips{
+                  height: 16px;
+                  line-height: 16px;
+                  vertical-align: text-bottom;
+                }
               }
             }
           }
@@ -159,5 +256,16 @@ export default {
 
     }
 
+  }
+  .modal{
+    .loading{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      .ark-spin{
+        display: inline-block;
+      }
+    }
   }
 </style>
