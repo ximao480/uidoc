@@ -115,7 +115,7 @@ export default {
   },
 
   created() {
-    http.get('/search/suggestions?q=%40syman&size=10000').then(r => {
+    http.get(process.env.NODE_ENV === 'production' ? 'https://www.npmjs.com/search/suggestions?q=%40syman&size=10000' : '/search/suggestions?q=%40syman&size=10000' ).then(r => {
       if (r.status === 200 && r.data) {
         this.list = r.data.filter(v => v.keywords && qs.parse(v.keywords[0]) && qs.parse(v.keywords[0]).type)
       }
