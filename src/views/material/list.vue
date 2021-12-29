@@ -72,6 +72,7 @@
 <script type="text/ecmascript-6">
 import iArticle from '../../components/article.vue';
 import iCode from 'iCode';
+import qs from 'qs';
 import Code from '../../code/cli/start';
 import inAnchor from '../../components/anchor.vue';
 import Study from '../../components/study.vue';
@@ -114,14 +115,11 @@ export default {
   },
 
   created() {
-    http.get('/search/suggestions?q=%40syman').then(r => {
+    http.get('/search/suggestions?q=%40syman&size=10000').then(r => {
       if (r.status === 200 && r.data) {
-        this.list = r.data
+        this.list = r.data.filter(v => v.keywords && qs.parse(v.keywords[0]) && qs.parse(v.keywords[0]).type)
       }
     })
-  },
-
-  mounted () {
   },
 
   methods: {
@@ -130,8 +128,8 @@ export default {
         this.showmodal = true;
         this.iframeloading = true;
         this.tabType = '1';
-        this.link = 'https://unpkg.com/xc-bar-charts@0.1.3/dist/index.html';
-        this.title = `${item.description} - ${item.name}`;
+        this.link = `https://unpkg.com/${item.name}@${item.version}/.arkdoc-dist/index.html`;
+        this.title = item.name;
         this.getDetail(item)
       }
 

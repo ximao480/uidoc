@@ -28,7 +28,7 @@
                         <Button class="index-btn" size="large" type="primary" shape="circle" :to="handleGoToMenu('/docs/guide/install')">{{ $t('index.start') }}</Button>
                         <Button class="index-btn" size="large" type="primary" shape="circle" :to="handleGoToMenu('/bcl/start')">{{ $t('index.componentPro') }}</Button>
                         <Button class="index-btn" size="large" type="primary" shape="circle" :to="handleGoToMenu('/cli/start')">{{ $t('index.scaffold') }}</Button>
-                        <Button v-if="false" class="index-btn" size="large" type="primary" shape="circle" :to="handleGoToMenu('/material/list')">{{ $t('index.material') }}</Button>
+                        <Button class="index-btn" size="large" type="primary" shape="circle" :to="handleGoToMenu('/material/list')">{{ $t('index.material') }}</Button>
 
                         <!-- <Button class="index-btn" size="large" type="primary" shape="circle" ghost icon="ios-construct" to="https://dev.iviewui.com" target="_blank" v-if="lang === 'zh-CN'">开发者社区</Button>
                         <Button class="index-btn" size="large" type="primary" shape="circle" ghost icon="logo-github" to="https://github.com/iview/iview" target="_blank">GitHub</Button> -->
