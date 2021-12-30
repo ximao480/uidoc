@@ -115,9 +115,9 @@ export default {
   },
 
   created() {
-    http.get('/p/c/get_service_id').then(r => {
+    http.get('/s?ie=utf-8&mod=1&isbd=1&isid=8356489400014736&ie=utf-8&f=8&rsv_bp=1&rsv_idx=2&tn=baiduhome_pg&wd=nginx%20%20%E4%BB%A3%E7%90%86504&rsv_spt=1&oq=nginx%2520%25E4%25BB%25A3%25E7%2590%2586504&rsv_pq=8356489400014736&rsv_t=d34btLHe8C%2BdBTEYEzSMRlvN9nV5RqLjOLZfDpBehTX6WfcRmgOxPcN379l%2BIWjWLUZN&rqlang=cn&rsv_enter=0&rsv_dl=tb&rsv_btype=t&prefixsug=nginx%2520%2520%25E4%25BB%25A3%25E7%2590%2586504&rsp=9&bs=nginx%20%E4%BB%A3%E7%90%86504&rsv_sid=undefined&_ss=1&clist=&hsug=&f4s=1&csor=9&_cr1=36884/').then(r => {
       if (r.status === 200 && r.data) {
-        this.list = r.data && r.data.filter(v => v.keywords && qs.parse(v.keywords[0]) && qs.parse(v.keywords[0]).type)
+        // this.list = r.data && r.data.filter(v => v.keywords && qs.parse(v.keywords[0]) && qs.parse(v.keywords[0]).type)
       }
     })
   },
