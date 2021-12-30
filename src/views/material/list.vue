@@ -77,7 +77,6 @@ import Code from '../../code/cli/start';
 import inAnchor from '../../components/anchor.vue';
 import Study from '../../components/study.vue';
 import { http } from '../../libs/network';
-import jsonp from 'jsonp';
 
 
 export default {
