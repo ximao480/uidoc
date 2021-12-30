@@ -115,7 +115,7 @@ export default {
   },
 
   created() {
-    http.get('/p/cs/QueryList').then(r => {
+    http.get('/search/suggestions?q=%40syman&size=10000').then(r => {
       if (r.status === 200 && r.data) {
         this.list = r.data && r.data.filter(v => v.keywords && qs.parse(v.keywords[0]) && qs.parse(v.keywords[0]).type)
       }
