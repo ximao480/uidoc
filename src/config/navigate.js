@@ -618,11 +618,16 @@ const list = {
     },
   ],
   cli: [
-    {
-      title: '快速上手',
-      titleEn: 'Quick Start',
-      path: '/cli/start'
-    }
+    // {
+    //   title: '快速上手',
+    //   titleEn: 'Quick Start',
+    //   path: '/cli/start'
+    // },
+    // {
+    //   title: '使用说明',
+    //   titleEn: 'Quick explain',
+    //   path: '/cli/explain'
+    // }
   ],
   material: [
     {

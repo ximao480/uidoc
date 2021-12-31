@@ -788,6 +788,13 @@ const routers = [
     component: (resolve) => require(['./views/cli/start'], resolve)
   },
   {
+    path: '/cli/explain',
+    meta: {
+      title: '使用说明'
+    },
+    component: (resolve) => require(['./views/cli/explain'], resolve)
+  },
+  {
     path: '/material/list',
     meta: {
       title: '物料库'
