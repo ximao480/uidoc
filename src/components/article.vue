@@ -11,7 +11,7 @@
             </div>
             <div class="wrapper-container">
                 <Row v-if="activeKey !== 'material'">
-                    <i-col span="4" class="wrapper-navigate" style="min-height: 200px">
+                    <i-col span="4" class="wrapper-navigate" style="min-height: 200px" v-show="show">
                         <Navigate :type="activeKey"></Navigate>
                     </i-col>
                     <i-col span="20">
@@ -149,6 +149,7 @@
                 activeKey: '',
                 lang: this.$lang,
                 adCarousel: 0,
+                show:true,
                 ad_index: this.app.ad_index
             }
         },
@@ -219,6 +220,11 @@
         },
         created () {
             this.lang = this.$lang;
+            if( /cli/.test(this.$route.path)){
+                this.show = false
+            }else{
+                this.show = true;
+            }
         },
         mounted () {
             this.updateActiveNav();
