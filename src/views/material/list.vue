@@ -207,7 +207,7 @@ export default {
       {
         "name": "@syman/html2pdf",
         "scope": "syman",
-        "version": "0.1.1",
+        "version": "0.1.2",
         "keywords": [
           "name=arkdoc&type=2"
         ],
