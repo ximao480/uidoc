@@ -275,7 +275,7 @@ export default {
       if (item) {
         this.showmodal = true;
         this.iframeloading = true;
-        this.link = `https://unpkg.com/${item.name}@${item.version}/.arkdoc-dist/index.html`;
+        this.link = `https://unpkg.com/${item.name}/.arkdoc-dist/index.html`;
         this.title = item.name;
         // this.getDetail(item)
       }
