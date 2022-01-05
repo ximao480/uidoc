@@ -129,6 +129,31 @@ export default {
         "email": "278199196@qq.com"
       }, {"username": "xuchen199010", "email": "xc9010@qq.com"}]
     }, {
+      "name": "@syman/line-charts",
+      "scope": "syman",
+      "version": "0.1.2",
+      "description": "## Project setup ``` npm install ```",
+      "keywords": ["name=arkdoc&type=2"],
+      "date": "2021-12-31T06:26:11.045Z",
+      "links": {"npm": "https://www.npmjs.com/package/%40syman%2Fline-charts"},
+      "publisher": {"username": "xuchen199010", "email": "xc9010@qq.com"},
+      "maintainers": [{"username": "huai.yang", "email": "hycool.happy@163.com"}, {
+        "username": "shiliuyuea",
+        "email": "liuyuewo@126.com"
+      }, {"username": "qubingnian", "email": "1752711471@qq.com"}, {
+        "username": "bi.j",
+        "email": "1285345902@qq.com"
+      }, {"username": "xia.hj", "email": "baizhi0425@163.com"}, {
+        "username": "ximao",
+        "email": "576747591@qq.com"
+      }, {"username": "xieshihua", "email": "843748862@qq.com"}, {
+        "username": "burgeon-developer",
+        "email": "huai.y@burgeon.cn"
+      }, {"username": "gqw", "email": "guo.qw@burgeon.cn"}, {
+        "username": "yiq",
+        "email": "278199196@qq.com"
+      }, {"username": "xuchen199010", "email": "xc9010@qq.com"}]
+    }, {
       "name": "@syman/pie-charts",
       "scope": "syman",
       "version": "0.1.2",
@@ -179,32 +204,6 @@ export default {
         "email": "278199196@qq.com"
       }, {"username": "xuchen199010", "email": "xc9010@qq.com"}]
     }, {
-      "name": "@syman/line-charts",
-      "scope": "syman",
-      "version": "0.1.2",
-      "description": "## Project setup ``` npm install ```",
-      "keywords": ["name=arkdoc&type=2"],
-      "date": "2021-12-31T06:26:11.045Z",
-      "links": {"npm": "https://www.npmjs.com/package/%40syman%2Fline-charts"},
-      "publisher": {"username": "xuchen199010", "email": "xc9010@qq.com"},
-      "maintainers": [{"username": "huai.yang", "email": "hycool.happy@163.com"}, {
-        "username": "shiliuyuea",
-        "email": "liuyuewo@126.com"
-      }, {"username": "qubingnian", "email": "1752711471@qq.com"}, {
-        "username": "bi.j",
-        "email": "1285345902@qq.com"
-      }, {"username": "xia.hj", "email": "baizhi0425@163.com"}, {
-        "username": "ximao",
-        "email": "576747591@qq.com"
-      }, {"username": "xieshihua", "email": "843748862@qq.com"}, {
-        "username": "burgeon-developer",
-        "email": "huai.y@burgeon.cn"
-      }, {"username": "gqw", "email": "guo.qw@burgeon.cn"}, {
-        "username": "yiq",
-        "email": "278199196@qq.com"
-      }, {"username": "xuchen199010", "email": "xc9010@qq.com"}]
-    },
-      {
         "name": "@syman/html2pdf",
         "scope": "syman",
         "version": "0.1.2",
@@ -265,7 +264,7 @@ export default {
             "email": "xc9010@qq.com"
           }
         ]
-      },];
+      }];
     this.list = json
     console.log(JSON.stringify(this.list))
   },
