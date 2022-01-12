@@ -1,14 +1,14 @@
 <template>
   
   <i-article>
-    <iframe data-v-e561dc48="" src="https://unpkg.com/@syman/ark-cli/doc/index.html?path=/story/%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85--page" seamless="seamless" width="100%" height="100%" frameborder="0" scrolling="auto" 
+    <iframe data-v-e561dc48="" src="https://unpkg.com/@syman/ark-cli/storybook-static/index.html?path=/story/%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85--page" seamless="seamless" width="100%" height="100%" frameborder="0" scrolling="auto" 
     id="iframename" name="iframename"
      style="height: 800px; 
     left: -0px;
     top:0px;
     position: absolute;
     z-index: 9999;
-    width: 1440px;"></iframe>
+    width: 100%;"></iframe>
   </i-article>
 </template>
 

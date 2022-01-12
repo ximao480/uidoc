@@ -14,14 +14,14 @@
                     <i-col span="4" class="wrapper-navigate" style="min-height: 200px" v-show="show">
                         <Navigate :type="activeKey"></Navigate>
                     </i-col>
-                    <i-col span="20">
+                    <i-col :span="show ? 20 :24">
                         <Row>
-                            <i-col span="21">
+                            <i-col :span="show ? 21 :24">
                                 <div class="wrapper-content ark-article">
                                     <slot></slot>
                                 </div>
                             </i-col>
-                            <i-col span="3">
+                            <i-col span="3" v-show="show">
                                 <Affix :offset-top="75">
                                     <div class="catalogue" v-if="list.length">
                                         <!--<card dis-hover>-->
