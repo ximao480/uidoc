@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.2.16" h2></inAnchor>
+            <p>
+              <code>2022-01-24</code>
+            </p>
+            <ul>
+              <li>1.[treeV]已知bug修复</li>
+              <li>2.[AutoComplete]新增回车事件</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.2.13" h2></inAnchor>
             <p>
               <code>2021-12-27</code>
