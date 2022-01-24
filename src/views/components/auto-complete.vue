@@ -221,6 +221,11 @@
                             <td>失焦时触发</td>
                             <td>event</td>
                         </tr>
+                        <tr>
+                            <td>on-enter</td>
+                            <td>回车时触发</td>
+                            <td>event</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
