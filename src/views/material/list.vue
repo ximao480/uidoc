@@ -10,8 +10,8 @@
             <div class="material-item" v-for="item in list">
               <Card style="width:320px;height: 260px" :padding="0">
                 <div class="item-cover" @click="showPage(item)">
-                  <div class="cover-content">
-                    <h3 style="position:absolute;">{{ item.name }}</h3>
+                  <div class="cover-content" :style="{'backgroundImage': `url(https://cdn.jsdelivr.net/npm/${item.name}/.arkdoc-dist/ark-cover-shot.png)`}">
+<!--                    <h3 style="position:absolute;">{{ item.name }}</h3>-->
                   </div>
                 </div>
                 <div class="item-body">
@@ -181,11 +181,36 @@ export default {
     }, {
       "name": "@syman/tree-charts",
       "scope": "syman",
-      "version": "0.1.2",
+      "version": "0.1.4",
       "description": "## Project setup ``` npm install ```",
       "keywords": ["name=arkdoc&type=2"],
-      "date": "2021-12-29T07:50:42.730Z",
+      "date": "2022-02-25T07:50:42.730Z",
       "links": {"npm": "https://www.npmjs.com/package/%40syman%2Ftree-charts"},
+      "publisher": {"username": "xuchen199010", "email": "xc9010@qq.com"},
+      "maintainers": [{"username": "huai.yang", "email": "hycool.happy@163.com"}, {
+        "username": "shiliuyuea",
+        "email": "liuyuewo@126.com"
+      }, {"username": "qubingnian", "email": "1752711471@qq.com"}, {
+        "username": "bi.j",
+        "email": "1285345902@qq.com"
+      }, {"username": "xia.hj", "email": "baizhi0425@163.com"}, {
+        "username": "ximao",
+        "email": "576747591@qq.com"
+      }, {"username": "xieshihua", "email": "843748862@qq.com"}, {
+        "username": "burgeon-developer",
+        "email": "huai.y@burgeon.cn"
+      }, {"username": "gqw", "email": "guo.qw@burgeon.cn"}, {
+        "username": "yiq",
+        "email": "278199196@qq.com"
+      }, {"username": "xuchen199010", "email": "xc9010@qq.com"}]
+    },{
+      "name": "@syman/wordcloud-charts",
+      "scope": "syman",
+      "version": "0.1.3",
+      "description": "## Project setup ``` npm install ```",
+      "keywords": ["name=arkdoc&type=2"],
+      "date": "2022-03-01T07:50:42.730Z",
+      "links": {"npm": "https://www.npmjs.com/package/%40syman%2Fwordcloud-charts"},
       "publisher": {"username": "xuchen199010", "email": "xc9010@qq.com"},
       "maintainers": [{"username": "huai.yang", "email": "hycool.happy@163.com"}, {
         "username": "shiliuyuea",
@@ -384,6 +409,7 @@ export default {
               background-color: #f7f8fa;
               cursor: pointer;
               overflow: hidden;
+              background-size: 100% 100%;
 
               &:after {
                 content: "";
