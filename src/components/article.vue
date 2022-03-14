@@ -222,7 +222,10 @@
             this.lang = this.$lang;
             if( /cli/.test(this.$route.path)){
                 this.show = false
-            }else{
+            }else if( /bcl/.test(this.$route.path)){
+                this.show = false
+            }
+            else{
                 this.show = true;
             }
         },
