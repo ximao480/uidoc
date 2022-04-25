@@ -23,6 +23,16 @@
     <i-article>
         <h1>更新日志</h1>
         <article class="doc-update" >
+           <TimelineItem pending>
+            <inAnchor title="1.3.3" h2></inAnchor>
+            <p>
+              <code>2022-04-25</code>
+            </p>
+            <ul>
+              <li>1.input 兼容低版本浏览器的输入事件</li>
+              <li>2.穿梭框右上角添加0/全部</li>
+            </ul>
+          </TimelineItem>
           <TimelineItem pending>
             <inAnchor title="1.2.16" h2></inAnchor>
             <p>
