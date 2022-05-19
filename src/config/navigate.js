@@ -321,21 +321,15 @@ const list = {
           img: 'upload.png',
           icon: 'ios-cloud-upload-outline'
         },
-        // {
-        //     title: 'ColorPicker 颜色选择器',
-        //     path: '/components/color-picker',
-        //     img: 'color-picker.png',
-        //     icon: 'ios-color-palette-outline'
-        // },
+        {
+            title: 'ColorPicker 颜色选择器',
+            path: '/components/color-picker',
+            img: 'color-picker.png',
+            icon: 'ios-color-palette-outline'
+        },
         {
           title: 'Form 表单',
           path: '/components/form',
-          img: 'form.png',
-          icon: 'ios-list-box-outline'
-        },
-        {
-          title: 'Formlayout 表单配置',
-          path: '/components/formlayout',
           img: 'form.png',
           icon: 'ios-list-box-outline'
         }

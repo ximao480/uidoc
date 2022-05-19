@@ -597,13 +597,13 @@ const routers = [
     },
     component: (resolve) => require(['./views/components/avatar.vue'], resolve)
   },
-  // {
-  //     path: '/components/color-picker',
-  //     meta: {
-  //         title: '颜色选择器 ColorPicker'
-  //     },
-  //     component: (resolve) => require(['./views/components/color-picker.vue'], resolve)
-  // },
+  {
+      path: '/components/color-picker',
+      meta: {
+          title: '颜色选择器 ColorPicker'
+      },
+      component: (resolve) => require(['./views/components/color-picker.vue'], resolve)
+  },
   // {
   //     path: '/components/color-picker-en',
   //     meta: {

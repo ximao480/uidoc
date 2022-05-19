@@ -23,6 +23,17 @@
     <i-article>
         <h1>更新日志</h1>
         <article class="doc-update" >
+          <TimelineItem pending>
+            <inAnchor title="1.3.4" h2></inAnchor>
+            <p>
+              <code>2022-05-18</code>
+            </p>
+            <ul>
+              <li>1.AttachFilter 修复气泡导入功能多次导入失效问题</li>
+              <li>2.添加ColorPicker 组件</li>
+
+            </ul>
+          </TimelineItem>
            <TimelineItem pending>
             <inAnchor title="1.3.3" h2></inAnchor>
             <p>
