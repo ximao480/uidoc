@@ -10,7 +10,7 @@
             <div class="material-item" v-for="item in list">
               <Card style="width:320px;height: 260px" :padding="0">
                 <div class="item-cover" @click="showPage(item)">
-                  <div class="cover-content" :style="{'backgroundImage': `url(https://cdn.jsdelivr.net/npm/${item.name}/.arkdoc-dist/ark-cover-shot.png)`}">
+                  <div class="cover-content" :style="{'backgroundImage': `url(https://oss.font.burgeononline.com/DOC/${item.name}/ark-cover-shot.png)`}">
 <!--                    <h3 style="position:absolute;">{{ item.name }}</h3>-->
                   </div>
                 </div>
@@ -18,7 +18,7 @@
                   <div class="item-body-title">
                     <a target="_blank" :href="item.links && item.links.npm">{{ item.name }}</a>
                   </div>
-                  <div class="item-body-footer">
+                  <!-- <div class="item-body-footer">
                     <Dropdown>
                       <a href="javascript:void(0)">
                         {{ item.publisher && item.publisher.username }}
@@ -32,7 +32,7 @@
                       <span><Icon type="ios-pricetag-outline"/>{{ item.version }}</span>
                       <span><Icon type="ios-time-outline"/>{{ item.date && item.date.slice(0, 10) }}</span>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </Card>
             </div>
@@ -98,11 +98,9 @@ export default {
     // window.callback = function(data){
     //   console.log(data)
     // }
-    // http.get('/search/suggestions?q=%40syman&size=10000').then(r => {
-    //   if (r.status === 200 && r.data) {
-    //     this.list = r.data && r.data.filter(v => v.keywords && qs.parse(v.keywords[0]) && qs.parse(v.keywords[0]).type)
-    //   }
-    // })
+                  console.log('1213213==============2323');
+
+   
     const json = [{
       "name": "@syman/line-charts",
       "scope": "syman",
@@ -340,8 +338,22 @@ export default {
           }
         ]
       }];
-    this.list = json
-    console.log(JSON.stringify(this.list))
+     http.get('https://oss.font.burgeononline.com/ossDoc.json',).then((r)=>{
+        if(r.data.code !== 200){
+            return ;
+        }
+         let data = Object.keys(r.data.data || {}).reduce((arr,item)=>{
+           if(item !== '@syman/ark-ui-bcl'){
+             arr.push({
+              name:item,
+              url:r.data.data[item]
+            });
+           }
+            return arr;
+         },[]);
+        this.list = data;
+
+    })  
   },
 
   methods: {
@@ -349,7 +361,7 @@ export default {
       if (item) {
         this.showmodal = true;
         this.iframeloading = true;
-        this.link = `https://unpkg.com/${item.name}/.arkdoc-dist/index.html`;
+        this.link = `https://oss.font.burgeononline.com/DOC/${item.name}/index.html`;
         this.title = item.name;
         // this.getDetail(item)
       }
