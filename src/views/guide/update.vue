@@ -24,6 +24,16 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.3.5" h2></inAnchor>
+            <p>
+              <code>2022-06-13</code>
+            </p>
+            <ul>
+              <li>1.dataPicker支持编辑年份</li>
+              <li>2.修复dataPicker输入框的一些不符合日期格式的输入</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.3.4" h2></inAnchor>
             <p>
               <code>2022-05-18</code>
