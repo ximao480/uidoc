@@ -394,6 +394,12 @@
                             <td>Boolean</td>
                             <td>false</td>
                         </tr>
+                        <tr>
+                            <td>editableYear</td>
+                            <td>开启后，弹框里的年份双击可以进行编辑</td>
+                            <td>Boolean</td>
+                            <td>false</td>
+                        </tr>
                         </tbody>
                     </table>
                     <inAnchor title="options" h3></inAnchor>
