@@ -364,6 +364,63 @@ code.render = `
     }
 </script>
 `;
+code.template = `
+<template>
+<p>
+<Button @click="handleConter">自定内容区域</Button>
+</p>
+<p>
+<Button @click="handleFooter">自定底部区域</Button>
+</p>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                value: ''
+            }            
+        },
+        methods: {
+            handleConter(){
+                this.$Modal.fcSuccess({
+                    title: '成功',
+                    contentTemplate:{
+                        template:
+                             "<div><Button size="small" type="fcdefault" @click="test">复制</Button>
+                              <Button size="small" type="posdefault">确定</Button></div>",
+                        methods:{
+                            test(){
+                                console.log(this,'====');
+                                this.$parent.cancel();
+                            }
+                        }
+
+                    },
+                    draggable: false
+                });
+            },
+            handleFooter(){
+                this.$Modal.fcSuccess({
+                    title: '成功',
+                    footerTemplate:{
+                        template:
+                             "<div><Button size="small" type="fcdefault" @click="test">复制</Button>
+                              <Button size="small" type="posdefault">确定</Button></div>",
+                        methods:{
+                            test(){
+                                console.log(this,'====');
+                                this.$parent.cancel();
+                            }
+                        }
+
+                    },
+                    draggable: false
+                });
+            }
+        }
+    }
+</script>
+`;
 
 code.fullscreen = `
 <template>

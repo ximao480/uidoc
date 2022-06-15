@@ -26,6 +26,16 @@
           <TimelineItem pending>
             <inAnchor title="1.3.4" h2></inAnchor>
             <p>
+              <code>2022-06-13</code>
+            </p>
+            <ul>
+              <li>1.this.$Modal等方法添加组件渲染内容区域及底部按钮区域</li>
+
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
+            <inAnchor title="1.3.4" h2></inAnchor>
+            <p>
               <code>2022-05-18</code>
             </p>
             <ul>

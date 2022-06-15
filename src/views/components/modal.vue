@@ -231,6 +231,21 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
+            <Demo title="模板渲染内容区域">
+                <div slot="demo">
+                    <p>
+                        <Button @click="handleConter">自定内容区域</Button>
+                    </p>
+                    <p>
+                        <Button @click="handleFooter">自定底部区域</Button>
+                    </p>
+                </div>
+                <div slot="desc">
+                    <p>使用 <code>footerTemplate or contentTemplate</code> 功能,请隐藏添加底部隐藏配置。</p>
+                    <p> footerHide: true</p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.template }}</i-code>
+            </Demo>
             <Demo title="属性测试实例">
                 <div slot="demo">
                     <Button @click="propsTest">标准</Button>
@@ -279,6 +294,12 @@
                             <td>是否允许点击遮罩层关闭</td>
                             <td>Boolean</td>
                             <td>true</td>
+                        </tr>
+                          <tr>
+                            <td>className</td>
+                            <td>添加弹窗class</td>
+                            <td>String</td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td>loading</td>
@@ -368,6 +389,32 @@
                         </tr>
                     </tbody>
                 </table>
+                 <inAnchor title="Modal props.Template" h3></inAnchor>
+                 <table>
+                    <thead>
+                        <tr>
+                            <th>属性</th>
+                            <th>说明</th>
+                            <th>类型</th>
+                            <th>默认值</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> contentTemplate</td>
+                            <td>用来渲染弹窗的内容区域显示</td>
+                            <td>OBject</td>
+                            <td>无</td>
+
+                        </tr>
+                        <tr>
+                            <td> footerTemplate</td>
+                            <td>用来渲染弹窗的底部内区域显示</td>
+                            <td>OBject</td>
+                            <td>无</td>
+                        </tr>
+                    </tbody>
+                 </table>    
                 <inAnchor title="Modal events" h3></inAnchor>
                 <table>
                     <thead>
@@ -646,6 +693,42 @@
                     this.modal2 = false;
                     this.$Message.success('删除成功');
                 }, 2000);
+            },
+            handleConter(){
+                this.$Modal.fcSuccess({
+                    title: '成功',
+                    contentTemplate:{
+                        template:
+                             `<div><Button size="small" type="fcdefault" @click="test">复制</Button>
+                              <Button size="small" type="posdefault">确定</Button></div>`,
+                        methods:{
+                            test(){
+                                console.log(this,'====');
+                                this.$parent.cancel();
+                            }
+                        }
+
+                    },
+                    draggable: false
+                });
+            },
+            handleFooter(){
+                this.$Modal.fcSuccess({
+                    title: '成功',
+                    footerTemplate:{
+                        template:
+                             `<div><Button size="small" type="fcdefault" @click="test">复制</Button>
+                              <Button size="small" type="posdefault">确定</Button></div>`,
+                        methods:{
+                            test(){
+                                console.log(this,'====');
+                                this.$parent.cancel();
+                            }
+                        }
+
+                    },
+                    draggable: false
+                });
             },
             asyncOK () {
                 setTimeout(() => {
