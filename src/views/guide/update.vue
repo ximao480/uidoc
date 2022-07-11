@@ -24,6 +24,15 @@
         <h1>更新日志</h1>
         <article class="doc-update" >
           <TimelineItem pending>
+            <inAnchor title="1.4.0" h2></inAnchor>
+            <p>
+              <code>2022-07-08</code>
+            </p>
+            <ul>
+              <li>1.含弹框的组件，会在组件不可见时自动关闭弹框</li>
+            </ul>
+          </TimelineItem>
+          <TimelineItem pending>
             <inAnchor title="1.3.5" h2></inAnchor>
             <p>
               <code>2022-06-13</code>
