@@ -1,7 +1,7 @@
 <template>
   
   <i-article>
-    <iframe data-v-e561dc48="" src="https://oss.font.burgeononline.com/DOC/%40syman/ark-ui-bcl/index.html" seamless="seamless" width="100%" height="100%" frameborder="0" scrolling="auto" 
+    <iframe data-v-e561dc48="" :src="url" seamless="seamless" width="100%" height="100%" frameborder="0" scrolling="auto" 
     id="iframename" name="iframename"
      style="height: 800px; 
     left: -0px;
@@ -32,6 +32,12 @@ export default {
   data() {
     return {
       code: Code
+    }
+  },
+
+  computed: {
+    url() {
+      return `https://oss.font.burgeononline.com/DOC/%40syman/ark-ui-bcl/index.html?hash=${+new Date()}`
     }
   },
 
